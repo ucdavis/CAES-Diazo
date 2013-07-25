@@ -1,0 +1,26 @@
+Metadata-Version: 1.0
+Name: ucdavis.uccalfresh
+Version: 1.0
+Summary: Diazo Template
+Home-page: http://svn.plone.org/svn/collective/
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: GPL
+Description: Introduction
+        ============
+        
+        Simple skeleton for a Diazo (plone.app.theming) add on with plugins.
+        
+        This product was created with ZopeSkel, and likely contains traces of nuts.
+        
+        Changelog
+        =========
+        
+        1.0dev (unreleased)
+        -------------------
+        
+        - Initial release
+        
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Programming Language :: Python

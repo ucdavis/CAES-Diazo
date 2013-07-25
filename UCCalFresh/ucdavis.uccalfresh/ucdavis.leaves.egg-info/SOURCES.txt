@@ -1,0 +1,13 @@
+README
+setup.cfg
+setup.py
+ucdavis/__init__.py
+ucdavis.uccalfresh.egg-info/PKG-INFO
+ucdavis.uccalfresh.egg-info/SOURCES.txt
+ucdavis.uccalfresh.egg-info/dependency_links.txt
+ucdavis.uccalfresh.egg-info/entry_points.txt
+ucdavis.uccalfresh.egg-info/namespace_packages.txt
+ucdavis.uccalfresh.egg-info/not-zip-safe
+ucdavis.uccalfresh.egg-info/requires.txt
+ucdavis.uccalfresh.egg-info/top_level.txt
+ucdavis/uccalfresh/__init__.py

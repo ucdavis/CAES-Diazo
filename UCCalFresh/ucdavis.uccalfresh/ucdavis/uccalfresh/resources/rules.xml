@@ -1,0 +1,49 @@
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+    <theme href="frontpage.html" css:if-content=".section-front-page #visual-portal-wrapper" />
+    <theme href="index.html" css:if-content="#visual-portal-wrapper" />
+
+
+    <!-- head -->
+    <replace content='/html/head/title' theme='/html/head/title' />
+    <before css:content="head style, head link, head script, head meta" css:theme-children="head"/>
+
+    <!-- content area -->
+    <copy content='//*[@id="front-page-image"]' theme='//*[@id="front-page-image"]' />
+    <replace css:content='#portal-logo' css:theme='#logo' />
+
+    <replace css:content="#portal-personaltools-wrapper" css:theme="#login" />
+
+    <merge attributes="class" css:content="body" css:theme="body" />
+    <copy attributes="id dir" css:content="body" css:theme="body" />
+    <replace css:content="#portal-columns" css:theme="#mainarea" />
+
+    <copy css:content=".portlet-static-top-nav ul li" css:theme="ul#secondarynav" />
+    <append css:content="#portal-searchbox" css:theme="ul#secondarynav" />
+
+    <replace content='//*[@id="portal-globalnav"]' theme='//*[@class="primarynav"]' />
+    <replace css:content="#portal-globalnav li.toplevel" css:theme-children="#splash nav ul" />
+
+    <copy css:content="#portlets-footer" css:theme="#footcontent" />
+
+
+    <replace content='//*[@id="portal-globalnav"]' 
+            theme='//*[@class="primary_nav"]' />
+
+    <!-- Portlets -->
+   <copy content='//*[@id="portal-logo"]' 
+         theme='//*[@id="title"]' />
+
+   <copy content='//*[@id="portal-personaltools"]'
+         theme='//*[@id="links"]' />
+   
+
+<drop content='//*/dl/dd/a/img' /> 
+
+</rules>
+
+

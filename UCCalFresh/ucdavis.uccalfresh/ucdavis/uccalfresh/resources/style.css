@@ -1,0 +1,100 @@
+
+/* General */
+html, body {
+    margin: 0 auto;
+    padding:0;
+    background: url(img/lightwool.png);
+  	font-family: Helvetica Neue, Helvetica Std, Helvetica, Arial, sans-serif;
+    font-weight:normal;
+    text-decoration:none;
+    width: 1040px;
+}
+
+a {text-decoration: none;}
+
+a:hover {color: #e1bc00;}
+.clear {clear: both;}
+
+
+h1, h2, h3, h4, h5, h6 {font-family: "futura-pt", Futura, Futura Std, Helvetica, Helvetica Neue, sans-serif; font-weight: 500;}
+
+
+/* Layout */
+#wrapper {background: #fff; box-shadow: 0px 0px 6px #ccc; height: 100%; width: 1040px; margin-bottom: 20px;}
+#footer {width: 1040px; font-size: .8em;}
+#portlets-footer {margin-bottom: 10px;}
+
+#header {padding: 45px 20px 0;}
+#header #portal-logo {display: inline-block; width: 420px; margin: 0 260px 0 0;}
+#header nav {display: inline-block; width: 300px;}
+
+#splash {margin-top: 15px; padding: 0 16px 0 23px;}
+#splash nav {display: inline-block;}
+#splash #slideshow {display: inline-block; width: 660px;}
+
+#portal-breadcrumbs, #mainarea {padding: 0 10px;}
+#portal-breadcrumbs {margin-top: 2em;}
+
+/* Front page specific */
+.section-front-page #portal-breadcrumbs {display: none;}
+#edit-bar, #mainarea ul.formTabs {clear: both;}
+#portal-personaltools {right: 25px;}
+
+
+/* nav */
+nav ul {margin: 0; padding: 0;}
+nav li {list-style: none;}
+
+#header nav {vertical-align: top;}
+#header nav li {display: inline-block; width: 140px; font-size: .8em; vertical-align: top; height: 20px;}
+
+#portal-searchbox {margin: 0;}
+.searchSection {display: none;}
+#searchGadget {width: 12em;}
+.searchButton {display: none;}
+#LSResult {z-index: 9999;}
+#header nav #LSResult li {display: block;}
+
+#splash nav {vertical-align: top; z-index: 30;}
+#splash nav li {display: inline-block; background: #002757; border: 1px solid #fff; text-transform: uppercase; text-align: center;}
+#splash nav li a {border-bottom: 3px solid #002757; display: block; color: #fff !important; font-family: "futura-pt", Futura Std; line-height: .9em; font-size: 0.8em; letter-spacing: 1px; height: 15px; width: 130px; padding: 15px 5px 0 5px;}
+#splash nav li:hover {background: #004c85;}
+#splash nav li:hover a {border-bottom: 3px solid #004c85;}
+#splash nav li a:hover {border-bottom: 3px solid #e1bc00; color: #e1bc00 !important;}
+
+#splash nav li {position: relative;}
+#splash nav li:hover ul.submenu {text-indent: 0; width: auto;}
+#splash nav li ul.submenu {text-indent: -9999px; position: absolute; z-index: 50; top: 34px; left: -1px; overflow: hidden; width: 0px;}
+#splash nav li ul.submenu li {background: #004c85; text-transform: none; text-align: left;}
+#splash nav li ul.submenu li a {border-bottom: 3px solid #004c85; padding: 10px 10px 0 10px; letter-spacing: 0px; font-size: .85em; line-height: 1.1em; vertical-align: bottom; display: table-cell;}
+#splash nav li ul.submenu li a:hover {border-bottom: 3px solid #e1bc00;}
+#splash nav li:hover > ul.submenu {display: block;}
+
+
+/* Portlets */
+dl.portlet dt, div.portletAssignments div.portletHeader {
+	font-family: "futura-pt", Futura, Futura Std, Helvetica, Helvetica Neue, sans-serif;
+    font-weight: 500;
+	font-size: 1.2em;
+	background: #002757; padding: 15px 10px 5px; border-bottom: 3px solid #e1bc00; color: #fff;}
+
+dl.portlet {background: #f7f6f6; border: 1px solid #e6e6e6; min-height: 220px;}
+
+dl.portlet.slideshowPortlet {background: transparent; border: 0px; min-height: 0px; margin-top: 1em;}
+dl.portlet.slideshowPortlet dt {background: transparent; border: 0px; min-height: 0px; padding: 0px;}
+dl.portlet.slideshowPortlet dd.portletItem {padding: 0px;}
+dl.portlet.slideshowPortlet dt.portletHeader {display: none;}
+
+
+
+/* --- browser hacks --- */
+.ie8 #wrapper, .ie7 #wrapper {border-left: 1px solid #ddd; border-right: 1px solid #ddd;}
+.ie8 #primarynav li#portaltab-weekly-updates,
+.ie7 #primarynav li#portaltab-weekly-updates {font-size: .9em;}
+
+.ie7 #portal-logo {float: left; width: 420px; height: 75px; margin-bottom: 20px;}
+.ie7 #portal-searchbox, .ie7 ul.submenu {display: none;}
+.ie7 #primarynav li {}
+.ie7 #splash nav li:hover ul.submenu {text-indent: -9999px; width: 0px; height: 0px;}
+
+

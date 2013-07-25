@@ -1,0 +1,10 @@
+#header #portal-logo,
+#header nav,
+#splash nav,
+#splash #slideshow,
+#header nav li,
+#splash nav li {
+display: inline-block;
+*display: inline;
+zoom: 1;
+}
