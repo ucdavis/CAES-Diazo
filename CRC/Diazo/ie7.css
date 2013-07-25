@@ -1,0 +1,8 @@
+
+#crclogo, #main_nav, #ul1, #ul1 ul.submenu li a, h1#parent-fieldname-title, .section-front-page #moresites, .sitebutton, #leftcontent, #moresites,
+.portlet_column, .portlet_column ul li, h2.tabheadsevents, a.moreevents, dd.eventrow, span.etitle,
+#footer, .footerboxes, .slides_container div.slide, .caption
+{display: inline-block;
+*display: inline;
+zoom: 1;
+}

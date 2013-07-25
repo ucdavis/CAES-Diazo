@@ -1,0 +1,24 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+.accordion-inner div {height: auto !important;}
+
+#filterAccordian li {display: inline !important;}
+
+input[type="radio"], input[type="checkbox"] {margin-top: -1px;}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,478 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+	/*background-color:rgba(200,200,200,.5);*/
+	box-sizing:border-box;	
+}
+img
+{ max-width: 100%;
+height:auto; }
+
+body {
+	background-image:url(images/ios-linen.png);
+	margin: 0 auto;
+	font-size:62.5%;
+	letter-spacing: .5px;
+	letter-spacing: .25px;
+	line-height: 1.0em;
+	padding:10px;
+}
+#container {
+	width: 95%;
+	max-width: 1100px;
+	overflow: hidden;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	box-shadow: 0px 0px 20px rgb(16,16,16);
+	box-shadow: 0px 0px 20px rgba(16,16,16,.5);
+	box-shadow: 0px 0px 20px rgba(16,16,16,.5);
+	background-color:#ebe9e4;
+	padding-bottom:1.2em;
+}
+
+hr {
+border: 1px solid #b99107;
+margin-bottom: 10px;
+
+}
+p {
+	line-height: 1.2em;
+}
+
+/* Banner + Nav + Search */
+#banner {
+	width:90%;
+	height:auto;
+	overflow:hidden;
+	margin-left:auto;
+	margin-right: auto;
+	border-bottom-width: 1.0em;
+	border-bottom-style: solid;
+	border-bottom-color: #002855;
+}
+#logo {
+	display:inline-block;
+}
+#logo img {
+	display: block;
+    height: auto;
+    max-width: 100%;
+}
+#portal-logo {
+    margin: 0;
+}
+#searchandnav {
+	float:right;
+	vertical-align: top;
+	padding-top: 4em;
+}
+#nav {
+	display: block;
+	text-align: right;
+	margin-bottom: 1em;
+}
+#searchbar {
+	text-align:right;
+	display: block;
+}
+#portal-searchbox {
+    margin: 0;
+ 
+}
+ul#list-nav {
+	list-style:none;
+	width:auto;
+	
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size:1.4em;
+}
+ul#list-nav li {
+	display:inline-block;
+}
+ul#list-nav li a {
+	text-decoration:none;
+	padding:5px 0;
+	padding-left:10px;
+	padding-right:10px;
+	width:auto;
+	color:#696969;
+	text-align:center;
+}
+ul#list-nav li a:hover {
+	background:#B2BDCD;
+	color:#000
+}
+/* end of Banner + Nav + Search */
+
+
+
+
+/* title+description */
+
+#title {
+	margin-top: 10px;
+    background-image: url(images/title_line.png);
+    background-repeat: repeat-x;
+    background-position: center center;
+    width: 70%;
+    padding-left: 5.0em;
+}
+#title h1 {
+	display: inline-block;
+	padding: 0 12px;
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color:#000;
+	line-height:31px;
+	margin:0px;
+	font-size:31px;	
+	background-color: #ebe9e4;
+}
+#title_description {
+	margin-left:12%;
+    width:60%;
+    font-size:1.6em;
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color:#696969;
+	line-height: 1.3em;
+	margin-bottom: 1.0em;
+}
+
+#title_description a {
+	color:#b99107;
+}
+
+/* Dashboard index */
+#edit-bar li {
+    display: inline;
+}
+#dashboard {
+	width:90%;
+	height:auto;
+	margin-left:auto;
+	margin-right: auto;
+	/*background-image:url(images/dashback.png);*/
+	background-repeat: no-repeat;
+	margin-bottom:30px;
+}
+#dashboard h2 {
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size:20px;
+	color:#002855;
+	border-bottom-width:2px;
+	border-bottom-style:solid;
+	border-bottom-color: #b99107; 
+}
+#dashboard p {
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color:#191919;
+	font-size: 16px;
+	margin-top: 5px;
+	margin-bottom:5px;
+	line-height: 20px;
+}
+#dashboard li {
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color:#222222;
+	font-size: 16px;
+	padding-top: 5px;
+	line-height: 18px;
+}
+li.caes {
+	border-top: solid 2px #002855;
+}
+li.ucdlinks {
+	border-top: solid 2px #b99107;
+}
+ul#buttons {
+	list-style:none;
+	width:100%;
+	display:block;
+	margin:0 auto;
+
+}
+
+ul#buttons a {
+	transition:all .5s ease-in-out .5s;
+	-moz-transition:background-color .5s; /* Firefox 4 */
+	-webkit-transition:background-color 0.5s; /* Safari and Chrome */
+	-o-transition:background-color 0.5s; /* Opera */
+}
+
+ul#buttons li {
+	display:inline-block;
+	padding:0px;
+	padding-bottom:5px;
+	margin:0px;
+}
+ul#buttons li a {
+	display:inline-block;
+}
+ul#buttons li a:hover {
+	background-color:#fff;
+}
+/* end of dashboard index */
+
+
+
+
+/* CONTENT text CSS */
+#content {
+margin-bottom: 10px;
+margin-left: auto;
+margin-right: auto;
+width: 90%;
+
+}
+#content-core {
+
+}
+.content_text {
+	width:875px;
+	margin-left:87.73px;
+	margin-bottom:50px;
+	padding-top:0px;
+	border-top-width: 4px;
+	border-top-style: solid;
+	border-top-color: #b99107;
+}
+.content_text h2 {
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size:16px;
+	color:#002844;
+}
+
+.content_text p {
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color:#b92453;
+}
+
+
+/* end of content text */
+
+
+
+/* Steps with pictures */
+
+.content_steppic {
+	width:875px;
+	margin-left:87.73px;
+	margin-bottom:50px;
+	padding-top:0px;
+	border-top-width: 4px;
+	border-top-style: solid;
+	border-top-color: #b99107;
+}
+.content_steppic h3 {
+	font-family: "futura-pt",sans-serif;
+	font-style: italic;
+	font-weight: 400;
+	font-size:12px;	
+}
+.content_steppic p {
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color:#212112;
+}
+
+/* FOOTER */
+
+#footer {
+	width:90%;
+	height:auto;
+	margin-left:auto;
+	margin-right: auto;
+	clear:both;
+	border-top-width: 5px;
+	border-top-style: solid;
+	border-top-color: #002855;
+	padding-top:10px;
+}
+#ucdlogo {
+	display:inline;
+	margin-top:10px;
+
+}
+#footer_text {
+	width:473px;
+	height:31px;
+	float:right;
+	text-align:right;
+}
+#footer_text h3 {
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size:14px;
+	color:#002855;
+	line-height:1px;
+	margin-top:5px;
+}
+#footer_text p {
+	font-size:12px;
+	margin:0px;
+	font-family: "futura-pt",sans-serif;
+	font-style: italic;
+	font-weight: 300;
+	margin-top:5px;
+	line-height: 20px;
+}
+ul#lower_nav {
+	list-style:none;
+	width:auto;
+	margin-top:0px;
+	text-align:right;
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size:14px;
+}
+ul#lower_nav li {
+	display:inline;
+}
+ul#lower_nav li a {
+	text-decoration:none;
+	padding:5px 0;
+	padding-left:10px;
+	padding-right:10px;
+	width:auto;
+	color:#002855;
+	text-align:center;
+}
+
+/*END OF footer */
+
+
+
+.section-front-page #dashboard p {
+	text-align: left;
+	font-size: 1.0em;
+	margin-left: 3%;
+
+	
+}
+span.caeslinks {
+	color:#002855;
+	display: inline-block;
+	position: absolute;
+	left:23px;
+	top:1px;
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+span.ucdlinktitle {
+	color:#b99107;
+	display: inline-block;
+	position: absolute;
+	left:243px;
+	top:185px;
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+.section-front-page #title_description {
+padding-bottom: 0px;
+}
+.section-front-page #content {
+padding-bottom:  1em 0.25em 2em;
+}
+#content a:link, dl.portlet a:link {
+    border-bottom: 0;
+}
+.section-front-page #portal-breadcrumbs {
+	display:none;
+}
+.template-folder_summary_view .tileFooter {
+	display:none;
+
+}
+.template-folder_summary_view #dashboard p {
+	margin-bottom: 20px;
+
+}
+.facultyStaffDirectory {
+	padding:10px;
+	width:713px;
+	margin-left: 87.73px;
+
+}
+
+.facultyStaffDirectory h1{
+	display:none;
+}
+.facultyStaffDirectory h2{
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size:20px;
+	color:#002855;
+	border-bottom-width:2px;
+	border-bottom-style:solid;
+	border-bottom-color: #b99107;
+}
+* li {
+	display:list-item;
+}
+ol ol, ul ul, ol ul, ul ol {
+	padding-left: 20px;
+}
+* ul {
+	list-style: inherit;
+	padding-left:30px;
+	padding-bottom:3px;
+}
+* ol {
+	list-style: inherit;
+}
+.discreet {
+	color: #666666;
+    font-size: 85%;
+    font-weight: normal;
+}
+.LSBox .searchSection {
+    display: none;
+}
+
+ul#buttons a:hover {
+	background-color: rgba(221, 221, 221, 0.85);
+	transition:all .5s ease-in-out .5s;
+	-moz-transition:background-color .5s; /* Firefox 4 */
+	-webkit-transition:background-color 0.5s; /* Safari and Chrome */
+	-o-transition:background-color 0.5s; /* Opera */
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+@media all and (min-width : 280px) and (max-width : 480px) {
+
+/* Styles */
+ul#list-nav li {
+	margin-top: 10px;
+}
+
+
+}
+
+
+

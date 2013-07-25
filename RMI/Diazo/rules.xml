@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    
+
+    <!-- Rules for special cases in Plone sites -->
+    <!--match path="regex:^.*/image_view_fullscreen" abort="1" />
+    <match path="regex:^.*/referencebrowser_popup$" abort="1" />
+    <match path="regex:^.*/refbrowser_popup$" abort="1" />
+    <match path="regex:^.*/filehtmlpreview_view$" abort="1" />
+    <match path="regex:^.*/presentation_view$" abort="1" />
+    <match path="regex:^.*/SFLight_event_view$" abort="1" />
+    <match path="regex:^/portal_javascripts/.*" abort="1" />
+    <match path="regex:^.*/tinymce-upload$" abort="1" />
+    <match path="regex:^.*plone(image|link)\.htm$" abort="1" />
+    <match path="regex:^.*/plugins/table/(table|row|cell|merge_cells)\.htm$" abort="1" />
+    <match path="regex:^.*/advanced/(source_editor|anchor)\.htm$" abort="1" />
+    <match path="regex:^/bodytext_view.html$" abort="1" />
+    <match path="regex:^/remotelink_view.html$" abort="1" />
+    <match path="regex:^.*/opensearchresults.html*" abort="1" /-->
+    <!-- Ajax calls -->
+    <!--match environ="QUERY_STRING: wildcard:ajax_load=*" abort="1" /-->
+
+
+    <!--Head-->
+    <copy css:content="html" css:theme="html" attributes="lang dir" />
+    <copy css:content="head base" css:theme="head base" />
+    <replace css:content="head title" css:theme="head title" />
+    <!--<replace content="/html/head/title/text()" css:theme="#logo-contain h1" />-->
+    <before css:content="head style, head link, head script, head meta" css:theme-children="head" />
+
+    <!--Favicons-->
+    
+
+    <!--Content-->
+    
+
+    <!-- events xml
+    <copy css:content="a.eventtitle" css:theme="span.event h2" />
+    <copy css:content="span.eventdate" css:theme="span.date" />
+    <copy css:content="span.eventdesc" css:theme="span.event p" /> -->
+    
+
+
+    <theme href="index.html" />
+    <theme href="front-page.html" css:if-content="body.section-front-page"/>
+    
+    <!-- events -->
+    <copy css:content=".portletEvents a.eventstitlep" css:theme="#events a.eventslink" attributes="href" />
+    <replace css:content=".portletEvents dd" css:theme="#events dt" />
+    <copy css:content=".portletEvents a.more" css:theme=".readmore" />
+
+
+
+    <copy css:content=".portletNews a.newstitlep" css:theme="#news a.newslink" attributes="href" />
+    <replace css:content=".portletNews dd" css:theme="#news dt" />
+    <drop css:content=".newsImageContainer" />
+    <drop css:content="#parent-fieldname-description" />
+   
+
+
+    <copy css:content=".portletStaticText a.supporttitlep" css:theme="#support a.supportlink" attributes="href" />
+
+    
+    <replace css:content="#foot" css:theme="#foot"/>
+
+
+
+    <copy css:content=".portlet-static-head-nav" css:theme="#top_nav" />
+    <copy css:content=".section-front-page dl.portlet-static-the-rmi-experience" css:theme="#socialportlet" />
+    <copy css:content="dl.portlet-static-support dd.portletItem" css:theme="#support_content" />
+    <drop css:if-content="body.section-front-page" css:content="#parent-fieldname-title" />
+    <drop css:content="dd.portletFooterNews" />
+    <copy css:content="#portal-column-one .portlet" css:theme="#portlethere" />
+
+    <strip css:content="dl.portlet" attribute="class" />
+
+    <copy css:content="#portlets-in-header" css:theme="#banner" />
+    <strip css:content="#content" attribute="id" />
+    <copy css:content="#content" css:theme="#main_content" />
+
+
+
+
+    <replace css:content="#edit-bar" css:theme="#kupu" />
+    <replace css:content="#viewlet-above-content" css:theme="#viewletabovecontent" />
+
+
+    <drop css:content="#plone-document-byline" />  
+    <copy css:content="#portal-searchbox " css:theme="#searchbar" />
+    <drop css:content="#portal-logo" attributes="id" />
+    <strip css:content="#portal-globalnav" />
+    <copy css:content="#portal-globalnav" css:theme="#ul1" />
+    <copy css:content="#portal-logo" css:theme="#ucdlogo" />
+
+
+
+    <merge attributes="class" css:content="body" css:theme="body" />
+    <copy attributes="id dir" css:content="body" css:theme="body" />
+
+    <drop css:content=".section-front-page #portal-breadcrumbs" />
+    <drop css:content="#portal-columns #portal-column-one" />
+
+   
+  
+
+     <!-- Scripts via Control Pannel -->
+    <after css:content="#visual-portal-wrapper script" css:theme="body" />
+
+    <!--Portlets-->
+
+</rules>

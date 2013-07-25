@@ -1,0 +1,10 @@
+#ul1, #portlethere, #main_content, #slide_img, #slide_text, #front_portlets, #front-page-left-column,
+span.date, span.event, span.news, #support,
+#donate, #friends, #left_foot, ul#foot-nav li,
+#right_foot, #social, #social ul li, #location,
+span.unibanner, span.uniquetitle, #cta1, #cta2, #button1, #button2,
+#button3, span.centersinfo, .slides_container div.slide, .caption, {
+display: inline-block;
+*display: inline;
+zoom: 1;
+}

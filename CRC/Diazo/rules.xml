@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <theme href="index.html" />
+    <theme href="hyhe.html" css:if-content="body.template-hyhedatabase_view"/>
+
+
+    <!-- Rules for special cases in Plone sites -->
+    <!--match path="regex:^.*/image_view_fullscreen" abort="1" />
+    <match path="regex:^.*/referencebrowser_popup$" abort="1" />
+    <match path="regex:^.*/refbrowser_popup$" abort="1" />
+    <match path="regex:^.*/filehtmlpreview_view$" abort="1" />
+    <match path="regex:^.*/presentation_view$" abort="1" />
+    <match path="regex:^.*/SFLight_event_view$" abort="1" />
+    <match path="regex:^/portal_javascripts/.*" abort="1" />
+    <match path="regex:^.*/tinymce-upload$" abort="1" />
+    <match path="regex:^.*plone(image|link)\.htm$" abort="1" />
+    <match path="regex:^.*/plugins/table/(table|row|cell|merge_cells)\.htm$" abort="1" />
+    <match path="regex:^.*/advanced/(source_editor|anchor)\.htm$" abort="1" />
+    <match path="regex:^/bodytext_view.html$" abort="1" />
+    <match path="regex:^/remotelink_view.html$" abort="1" />
+    <match path="regex:^.*/opensearchresults.html*" abort="1" /-->
+    <!-- Ajax calls -->
+    <!--match environ="QUERY_STRING: wildcard:ajax_load=*" abort="1" /-->
+
+
+    <!--Head-->
+    <copy css:content="html" css:theme="html" attributes="lang dir" />
+    <copy css:content="head base" css:theme="head base" />
+    <replace css:content="head title" css:theme="head title" />
+    <!--<replace content="/html/head/title/text()" css:theme="#logo-contain h1" />-->
+    <before css:content="head style, head link, head script, head meta" css:theme-children="head" />
+
+
+    <!-- new Edits -->
+
+    <!-- header -->
+    <copy css:content="#portal-logo" css:theme="#crclogo" />
+
+    <!-- nav -->
+            <strip css:content="#portal-globalnav" />
+            <copy css:content="#portal-globalnav" css:theme="#ul1" />
+            <copy css:content=".portletStaticText.portlet-static-navquicklinks" css:theme="#quicklinks" />
+
+    <!--content-->
+
+            <!--slider -->
+            <copy css:content=".portlet-static-slider" css:theme="#slider" />
+            <copy css:content=".portletStaticText.portlet-static-our-sites" css:theme="#moresites" />
+ <copy css:content="#portal-breadcrumbs" css:theme="#bc" />
+
+            <append css:content="#portlets-below" css:theme="#leftcontent" />
+            <!--side bar -->
+            <copy css:content="#portal-column-one .portletStaticText" css:theme=".portletstatic" />
+            <copy css:content="dt.portletHeader" css:theme=".portletstatic h2" />
+            <strip css:content="dl.portlet" attribute="class" />
+
+            <!-- events <copy css:content="span.portletEventItemDetails" css:theme="span.edate" />
+            <copy css:content="span.eventtitle" css:theme="span.etitle" /> -->
+            <!--<copy css:content="dt.portletEventsHeader" css:theme="h2.tabheadsevents" />
+            <replace css:content="dl.portletEvents dd.eventrow" css:theme="dt.eventrow" />
+            <copy css:content="a.moreevents" css:theme="a.moreevents" />
+            <copy css:content="#portal-breadcrumbs" css:theme="#bc" />
+            <copy css:content=".managePortletsLink" css:theme=".manage" />
+            <drop css:content=".newsImageContainer" />
+            <drop css:content="#parent-fieldname-description" /> -->
+
+            <!-- footer -->
+            <copy css:content="#portlets-footer" css:theme="#footer" />
+
+
+            <!--main content -->
+    <copy css:content="#edit-bar" css:theme="#kupu" />
+    <copy css:content="#content" css:theme="#leftcontent" />
+    <replace css:content="h1.documentFirstHeading" css:theme="h2.tabheads" />
+
+ 
+
+    <strip css:content="#content" attribute="id" />
+    <drop css:content="p#link-presentation" />
+
+
+
+
+    <copy css:content="#portal-searchbox " css:theme="#searchbar" />
+
+    <!--other
+
+    <copy css:content="h1.documentFirstHeading" css:theme="h2.tabheads" />
+    <drop css:theme="#leftcontent h1.documentFirstHeading" />
+
+
+     -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Favicons-->
+    <drop css:content="head link[rel='shortcut icon']" />
+    <drop css:content="head link[rel='apple-touch-icon']" />
+
+    <!--Content-->
+    <merge attributes="class" css:content="body" css:theme="body" />
+    <copy attributes="id dir" css:content="body" css:theme="body" />
+
+    <drop css:content=".section-front-page #portal-breadcrumbs" />
+    <drop css:content="#portal-columns #portal-column-one" />
+
+    <replace css:content="#portal-columns" css:theme="#portal-columns" />
+    <replace css:content-children="#portal-footer" css:theme-children="#portal-footer" />
+    <replace css:content="#portal-personaltools-wrapper" css:theme="#portal-personaltools-wrapper" />
+    <replace css:content="#portal-searchbox" css:theme="#portal-searchbox" />
+    <replace css:content="#portal-globalnav" css:theme="#portal-globalnav" />
+    <replace css:content="#portal-siteactions" css:theme="#portal-siteactions" />
+    <replace css:content="#portal-column-two" css:theme="#righthalf #rightportlets" />
+
+     <!-- Scripts via Control Pannel -->
+    <after css:content="#visual-portal-wrapper script" css:theme="body" />
+
+    <!--Portlets-->
+
+</rules>

@@ -1,0 +1,545 @@
+
+* {box-sizing: border-box; -moz-box-sizing: border-box;}
+
+body {
+	margin: 0 auto; min-width: 960px; 
+	background: url(img/bg.png) repeat;
+	font-family: Helvetica Neue, Helvetica Std, Helvetica, Univers, Arial, sans-serif;
+	color: #071626;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "futura-pt", Futura Std, Futura, Arial, sans-serif;
+	margin: 0; line-height: 1.1em;
+	font-weight: 500;
+	color: #002855;
+}
+h1 {margin-top: .75em;}
+h2 {margin-top: .75em;}
+h3 {margin-top: .5em;}
+h4 {margin-top: .5em;}
+h5 {margin-top: .25em;}
+h6 {margin-top: .25em;}
+p {
+	font-size: .75em;
+	margin: .5em 0 .75em;
+	line-height: 1.5em;
+}
+a:link, a:visited {text-decoration: none; color: inherit; }
+a:hover, a:active {}
+#content a:link, dl.portlet a:link {border-bottom: 0px !important;}
+
+.icon {font-family: "SSStandard"; font-size: .7em; padding-right: 5px;}
+.icon.social {font-family: "SSSocial";}
+
+#content-core dd {margin: 0 !important;}
+
+.clear {clear: both; display: block;}
+
+
+.currentLanguage {font-weight: bold;}
+
+
+
+.header {
+}
+.header .ucdavis-brand {background: #d9aa01; height: 35px;}
+.header .ucdavis-brand a {float: right; margin-right: 8%;}
+
+.header .top {width: 960px; margin: 0 auto;}
+.header #portal-logo {height: 100px; margin: 0 6%;}
+.header .logo img {display: inline-block; padding: 20px 10px 10px 0;}
+.header h1 {
+	display: inline-block; 
+	line-height: 1em; 
+	color: #113661; 
+	font-size: 2.2em; 
+	margin: 0; 
+	padding-top: 45px;
+	font-weight: 500;
+	letter-spacing: .5px;
+}
+.section-front-page .header h1 {
+	font-size: 1.5em; 
+	font-weight: 400; 
+	padding-top: 21px; 
+}
+
+#portal-searchbox {margin: 45px 6% 0 0 !important;}
+#LSResult {z-index: 50;}
+
+
+
+/* ----- nav! ----- */
+
+.diazoed .portlet-static-nav {display: block;}
+
+.header nav {
+	height:60px;
+	width:100%;
+	background: rgb(51, 83, 121); /* Fall-back for browsers that don't support rgba */
+	  background: rgba(51, 83, 121, .95);
+	border-bottom:3px solid #d9aa01;
+	border-top:1px solid #002855;
+	box-shadow: 0px 3px 5px rgba(0,11,11,.2);
+	position: relative;
+	z-index: 101;
+	clear: both;
+}
+.header nav ul {
+	width: 88%; height: 100%;
+	margin: 0 auto; padding: 0px;
+	font-family: "futura-pt", Futura Std, Futura, Arial, sans-serif;
+}
+.header nav ul li {
+	display: inline-block;
+	list-style: none;
+	width: 12%; height: 100%;
+	text-align: center;
+	position: relative;
+	z-index: 10;
+	vertical-align: top;
+}
+.header nav ul li a {
+	color: #fff;
+	display: inline-block;
+	padding: 6% 2% 4%;
+	font-weight: 300;
+	width: 100%;
+	height: 80%;
+}
+
+/* ----- mega menus ----- */
+.header nav ul > li:hover {
+	background: #d2a800;
+}
+.header nav ul > li:hover > a {
+	color: #fff;
+}
+.header nav .mega {
+	background: #fff;
+	position: absolute;
+	border-bottom-right-radius: 18px;
+	border-bottom-left-radius: 18px;
+	top: 56px; left: -3px;
+	text-align: left;
+	border: 3px solid #d2a800;
+	box-shadow: 0px 0px 5px rgba(33,33,33,.3);
+	padding: 10px 0px 20px;
+	z-index: 50;
+	min-width: 103%;
+	display: none;
+}
+	.header nav #portaltab-about .mega {left: -11px;}
+	.header nav #portaltab-students .mega {left: -160px;}
+	.header nav #portaltab-research .mega {left: -308px;}
+	.header nav #portaltab-outreach .mega {left: -457px;}
+	.header nav #portaltab-news .mega {left: -605px;}
+	.header nav #portaltab-connect .mega {left: -754px;}
+.header nav ul > li:hover > .mega {
+	display: block;
+}
+.header nav .mega {
+	width: auto;
+	height: auto;
+}
+.header nav .mega li {
+	display: block;
+	text-align: left;
+	width: auto !important;
+	height: auto !important;
+	/* float: left; */
+}
+.header nav ul.mega li:hover {
+	background: transparent;
+}
+.header nav ul.mega li a {
+	padding: 5px 15px;
+	width: 100%;
+	color: rgb(51, 83, 121) !important;
+}
+.header nav .selected ul.mega ul.submenu a.state-published,
+.selected ul.submenu .state-published {
+	color: rgb(51, 83, 121) !important;
+}  /* added this to ploneCustom.css because it was being overridden */
+
+.header nav ul.mega ul.sub li a {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.header nav ul.mega li:hover > a {
+	color: inherit;
+}
+.header nav ul.mega li a:hover {
+	background: #d9aa01;
+	color: #fff !important;
+}
+.header nav .mega ul.sub a,
+.header nav .mega ul.sub {
+	font-size: .9em;
+	font-weight: normal;
+	letter-spacing: .5px;
+}
+.header nav .mega ul.sub li {
+	width: auto;
+	float: none;
+	display: inline-block;
+}
+.header nav .mega ul.sub {
+	color: #B3B4B4;
+	font-weight: lighter;
+}
+.header nav .mega li em {
+	text-transform: uppercase;
+	font-style: normal;
+	font-size: .6em;
+	font-weight: bold;
+	color: #b3b4b4;
+	letter-spacing: 1px;
+	display: block;
+}
+
+
+
+
+
+.diazoed .portlet-static-slider,
+.diazoed .portlet-static-nivo {display: block;}
+.portlet-static-slider { position: relative; overflow: auto; }
+    .portlet-static-slider li { list-style: none; height: 310px; overflow: hidden;}
+        .portlet-static-slider ul li { float: left; }
+
+.slidefeature {
+	text-align: center;
+	background: #122122;
+	box-shadow: 0px 0px 7px rgba(0,0,0,.4);
+	border-bottom: 1px solid #fff;
+}
+.slider {width: 1190px; height: 310px; margin: 0 auto; position: relative;}
+/* .portlet-static-slider .sliderarrows {position: relative; top: -30px;}
+.portlet-static-slider .dots {position: relative; top: -30px;}
+	.portlet-static-slider .dots {display: inline-block; margin: 0; padding: 0; line-height: 1em;}
+*/
+.slidefeature img {
+}
+.slider-container, #slider-container {border: 0px;}
+.portlet-static-nivo .nivo-caption p {margin: 0;}
+.portlet-static-nivo .nivo-caption {
+	top: 20px; right: 125px; 
+	text-align: left; 
+	width: 252px; 
+	height: 262px; 
+	border: 4px solid #fff; 
+	background: rgb(255,255,255); 
+	background: rgba(255,255,255,.8);
+	font-family: "futura-pt", Futura Std, Futura, Arial, sans-serif;
+}
+.portlet-static-nivo .nivo-caption h3 {
+	background: #004c85; 
+	color: #fff;
+	height: 30px; 
+	display: block;
+	padding: 28px 11px 0 14px;
+	margin-top: 0px;
+	overflow: hidden;
+}
+.portlet-static-nivo .nivo-caption p {
+	font-size: 1em;
+	padding: 15px 11px 0 14px;
+	font-weight: 400;
+}
+.portlet-static-nivo .nivo-caption a {
+	font-size: .9em;
+	font-weight: 700;
+	color: #c39305;
+}
+.portlet-static-nivo .nivo-controlNav {
+	bottom: 35px;
+    right: 240px;
+    position: absolute;
+    text-align: center;
+    z-index: 20;
+    padding: 0;
+}
+
+
+
+.mid {
+	border-bottom: 1px solid #d4d4d4;
+	position: relative;
+	z-index: 5;
+	margin-top: -3px;
+}
+.section-afghanag #portal-breadcrumbs, .section-home #portal-breadcrumbs, .section-front-page #portal-breadcrumbs {display: none;}
+#portal-breadcrumbs {
+	width: 960px;
+	margin: 1em auto 0;
+	height: 32px;
+	font-family: "futura-pt", Futura Std, Futura, Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	font-size: .55em;
+	color: #75879b;
+	color: rgba(117,135,155,.75);
+}
+#portal-breadcrumbs span a, #portal-breadcrumbs span #breadcrumbs-current {
+	padding-bottom: 6px;
+	vertical-align: bottom;
+	display: inline-block;
+}
+/* #portal-breadcrumbs .home a, #portal-breadcrumbs #breadcrumbs-home a {
+	width: 25px; height: 32px;
+	background: url(img/path-home.png) no-repeat;
+	text-indent: -999px;
+	padding-right: 3px;
+	padding-bottom: 0;
+	overflow: hidden;
+} */
+	#portal-breadcrumbs .breadcrumbSeparator {
+		color: #75879b;
+		padding-bottom: 6px;
+		display: inline-block;
+	}
+	#portal-breadcrumbs #breadcrumbs-you-are-here {display: none;}
+
+#portal-languageselector {display: block; max-width: none;}
+
+
+.main {
+	width: 85%;
+	margin: 0 auto;
+	padding: 0px 20px 10px;
+	border-left: 1px solid rgba(0,0,0,.3);
+	border-right: 1px solid rgba(0,0,0,.3);
+	min-height: 500px;
+}
+
+
+
+
+/* ----- content pages ----- */
+.diazo-content .main, .section-news .main {margin-top: 0; position: relative; left: -20px;}
+.main .content {
+	width: 69%;
+	float: left;
+	min-height: 700px;
+}
+	.site-AfghanAg .main .content {width: 74%;}
+.main #content {font-size: 100%;} /* because Plone lowers it */
+.main .content h1 {
+	font-weight: 200;
+	font-size: 2.25em;
+	line-height: 1.2em;
+	margin: 0 80px 0 0;
+	letter-spacing: .25px;
+}
+.main .content p, .main .content li, .main .content td {
+	font-family: Georgia, Berkeley, serif;
+	font-size: 1em;
+	margin-right: 80px;
+	color: #272525;
+	color: rgba(39,37,37,.85);
+}
+.main .content p.description,
+#content .documentDescription {
+	font-family: "futura-pt", Futura Std, Futura, Arial, sans-serif;
+	color: #a3a3a3;
+	font-weight: 200;
+	font-size: 1.2em;
+	margin: 0 80px 25px 0;
+}
+.main .content p.byline {
+	font-weight: bold;
+	color: #24476d;
+	font-size: .9em;
+}
+.main .content h2, .main .content h3, .main .content h4 {
+	font-family: Georgia, Berkeley, serif;
+	color: #24476d;
+}
+.main .photoAlbumEntry, .main .photoAlbumFolder {
+	background-image: none;
+	box-shadow: 0 0 6px rgb(0,0,0);
+	box-shadow: 0 0 6px rgba(0,0,0,.05);
+	border: 1px solid rgb(0, 0, 0);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	margin: 5px 5px 20px;
+}
+.main .photoAlbumEntryTitle {
+	line-height: 1.2em;
+}
+
+
+.main .menuitem {
+	display: inline-block;
+	width: 31%;
+	margin-right: .5%;
+	vertical-align: top;
+	border: 1px solid #ddd;
+	padding: 8px;
+	min-height: 280px;
+	margin-bottom: 1em;
+}
+	.main .menuitem:hover {background: rgba(230,230,230,.8);}
+	.main .menuitem a {display: inline-block; padding: 3px;}
+	.main .menuitem img {max-width: 100%;}
+	.main .menuitem p, .main .menuitem li {font-size: .9em; margin-right: 10px;}
+
+
+
+
+
+.main aside {
+	width: 30%;
+	padding: 61px 0 30px;
+	float: right;
+	font-family: "futura-pt", Futura Std, Futura, Arial, sans-serif;
+	font-size: 1.2em;
+}
+	.site-AfghanAg .main aside {width: 25%;}
+.main aside dl.portlet ul.navTreeLevel0 > .navTreeItem {
+	width: 40%; 
+	display: inline-block;
+}
+	.site-AfghanAg .main aside dl.portlet ul.navTreeLevel0 > .navTreeItem {width: 60%;}
+
+.portlet-static-afghan-agriculture p {font-size: 1.1em;}
+dl.portlet.portlet-static-afghan-agriculture dd.portletItem {padding-bottom: 0;}
+.portlet-static-links p {
+	font-size: 1em;
+	font-weight: bold;
+	width: 80%;
+	border-radius: 8px;
+	background: #C79900;
+	text-align: center;
+	margin: 6px auto 12px;
+}
+.portlet-static-links p a {
+	color: #fff;
+	padding: 4px 8px;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+/* ----- news items ----- */
+#content div.documentByLine {display: none;}
+.template-newsitem_view #content div.documentByLine {
+	display: block;
+	color: rgb(36,71,109);
+	font-family: Georgia, Berkeley, serif;
+	font-weight: bold;
+	font-size: .9em;
+}
+
+.newsImage {
+	box-shadow: 0px 0px 13px rgba(45,45,44,.1); 
+	border: 4px solid #fff !important;
+}
+#content div.newsImageContainer p.discreet {
+	background-color: transparent; 
+	color: rgba(92,92,92,.8);
+	font-weight: lighter;
+	font-style: italic;
+	top: 0;
+	width: 290px;
+	padding: 10px 5px;
+	font-family: "futura-pt", Futura Std, Futura, Arial, sans-serif;
+}
+.main .rightcol div.LSBox, .main .rightcol div.LSBox div {margin-top: 0;}
+.rightcol .search form#livesearch1 {padding-left: 20px;}
+.related .topics li:first-child {display: none;}
+
+
+
+/* ----- FSD ----- */
+.facultyStaffDirectory .listing img,
+#content .personView .headshot img {
+	box-shadow: 0px 0px 13px rgba(45,45,44,.1); 
+	border: 4px solid #fff !important;
+}
+
+
+
+
+
+
+
+/* 
+
+!!!!!!!!! FOOTER INFO !!!!!!! !!!!!!!!! FOOTER INFO !!!!!!! !!!!!!!!! FOOTER INFO !!!!!!!
+
+*/
+
+#footer {
+	width:100%;
+	display:inline-block;
+	background-color:#343434;
+	border-bottom: 5px solid #000000;
+	border-top: 1px solid #2b2b2b;
+	padding-bottom: 5px;
+}
+#footer_contents {
+	width: 85%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.footerbox {
+	width:27%;
+	color:#fff;
+	display:inline-block;
+	vertical-align:top;
+	margin-right:5%;
+	margin-top: 10px;
+}
+.footerbox.four {display: none;}
+.footerbox h4 {color: #fff;}
+.footerbox p img {
+}
+
+.footerbox p{
+	color: #ffffff;
+	margin-top: 5px;
+	font-size: .75em;
+	line-height: 1.4em;
+}
+	.footerbox.two p {font-size: .9em}
+
+.footerbox a {
+	color: #C79900;
+	margin-top: 5px;
+	line-height: 1.4em;
+}
+
+#footer p a, #footer li a,
+#footer p a:link, #footer li a:link,
+#footer p a:visited, #footer li a:visited {
+	color:#c79900;
+}
+#footer p a:hover, #footer p a:active {
+	color:#335379;
+}
+
+#footer ul li {display: block; font-size: .8em;}
+
+
+
+
+
+
+
+
+
+/* ----- plone is silly ----- */
+#content li, dl.portlet li, div.portletStaticText li, .main .rightcol li {
+	display: list-item;
+}
+.main .content #edit-bar li {margin-right: 0;}
+.icons-on .contenttype-news-item {
+	display: block;
+	padding-left: 0px !important;
+	line-height: auto;
+	background: transparent;
+}
+
+

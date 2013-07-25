@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <theme href="index.html" css:if-content="#visual-portal-wrapper"  />
+
+    <!-- Rules for special cases in Plone sites -->
+    <!--match path="regex:^.*/image_view_fullscreen" abort="1" />
+    <match path="regex:^.*/referencebrowser_popup$" abort="1" />
+    <match path="regex:^.*/refbrowser_popup$" abort="1" />
+    <match path="regex:^.*/filehtmlpreview_view$" abort="1" />
+    <match path="regex:^.*/presentation_view$" abort="1" />
+    <match path="regex:^.*/SFLight_event_view$" abort="1" />
+    <match path="regex:^/portal_javascripts/.*" abort="1" />
+    <match path="regex:^.*/tinymce-upload$" abort="1" />
+    <match path="regex:^.*plone(image|link)\.htm$" abort="1" />
+    <match path="regex:^.*/plugins/table/(table|row|cell|merge_cells)\.htm$" abort="1" />
+    <match path="regex:^.*/advanced/(source_editor|anchor)\.htm$" abort="1" />
+    <match path="regex:^/bodytext_view.html$" abort="1" />
+    <match path="regex:^/remotelink_view.html$" abort="1" />
+    <match path="regex:^.*/opensearchresults.html*" abort="1" /-->
+    <!-- Ajax calls -->
+    <!--match environ="QUERY_STRING: wildcard:ajax_load=*" abort="1" /-->
+
+
+    <!--Head-->
+    <copy css:content="html" css:theme="html" attributes="lang dir" />
+    <copy css:content="head base" css:theme="head base" />
+    <replace css:content="head title" css:theme="head title" />
+    <!--<replace content="/html/head/title/text()" css:theme="#logo-contain h1" />-->
+    <before css:content="head style, head link, head script, head meta" css:theme-children="head" />
+
+    <!--Favicons-->
+    <drop css:content="head link[rel='shortcut icon']" />
+    <drop css:content="head link[rel='apple-touch-icon']" />
+
+    <!--Content-->
+    <merge attributes="class" css:content="body" css:theme="body" />
+    <copy attributes="id dir" css:content="body" css:theme="body" />
+
+    <drop css:content="#portal-breadcrumbs" />
+    <drop css:content="#portal-columns #portal-column-one" />
+
+    <replace css:content="#portal-columns" css:theme="#portal-columns" />
+    <replace css:content-children="#portal-footer" css:theme-children="#portal-footer" />
+    <replace css:content="#portal-personaltools-wrapper" css:theme="#portal-personaltools-wrapper" />
+    <replace css:content="#portal-searchbox" css:theme="#portal-searchbox" />
+    <replace css:content="#portal-globalnav" css:theme="#portal-globalnav" />
+    <replace css:content="#portal-siteactions" css:theme="#portal-siteactions" />
+    <replace css:content="#portal-column-two" css:theme="#righthalf #rightportlets" />
+
+     <!-- Scripts via Control Pannel -->
+    <after css:content="#visual-portal-wrapper script" css:theme="body" />
+
+    <!--Portlets-->
+
+</rules>

@@ -1,0 +1,2497 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	/*background-color:rgba(200,200,200,.5);*/
+	box-sizing:border-box;	
+}
+a {
+	color:inherit;
+}
+a:hover {
+	color:#b06c43;
+}
+a:link, a:visited {
+    color: #b06c43;
+}
+.slides_container a {
+	color:#421B4A;
+}
+.slides_container a:hover {
+	color:#B06C43 !important;
+}
+body {
+	margin: 0 auto;
+	font-size:62.5%;
+	max-width:1200px;
+	background-color:#ffffff;
+	letter-spacing: .5px;
+	padding-bottom: 20px;
+}
+body.section-frontpage #main_nav {
+	margin-bottom:25px;
+}
+#container tbody td li {
+	font-size: 1.6em;
+}
+#container tbody td p {
+	font-size: 1.6em;
+}
+#container {
+	background-color: #fff;
+}
+p {
+	letter-spacing: .5px;
+	font-size:1.6em;
+	color:#1e1e1e;
+	line-height:1.6;
+	margin-bottom:1.2em;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+#banner p#mission {
+	color:#555555;
+	font-style: italic;
+	font-size: 1.5em;
+	margin-top:-10px;
+}
+img {
+    max-width: 100%;
+}
+h2 {
+	  color: #421B4A;
+    font-family: "warnock-pro-display",serif;
+    font-size: 2.0em;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1.2em;
+    padding: 1px 0;
+}
+h3 {
+	color: #222222;
+    font-family: "warnock-pro-display",serif;
+ 	font-size:1.8em;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+ 
+    padding: 1px 0;
+}
+h5 {
+   color: #421B4A;
+    font-family: "warnock-pro-display",serif;
+    font-size: 2.2em;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1.2em;
+    padding: 1px 0;
+}
+h6 {
+	color:#808080;
+	font-size: 1.6em;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+#portlethere hr {
+	border: solid 2px #421B4A;
+	margin-bottom: 5px;
+}
+#content-core a:hover {
+	color:#421B4A;
+}
+#mid img {
+	height:auto;
+	background-color:#fff;
+	border:solid 1px #999;
+	padding:5px;
+}
+#container {
+	margin: 0 auto;
+	max-width:1200px;
+	border-left: solid 1px #f0f0e8;
+	border-right:solid 1px #f0f0e8;
+	border-bottom: solid 1px #f0f0e8;
+	background-color:#fffefa;
+	height:auto;
+	margin-top:0px;
+}
+
+/* 
+
+!!!!!!!!! GENERIC LIST INFO !!!!!!!
+
+*/
+#content-core ul {
+	margin-bottom: 10px;
+}
+#content-core li {
+	font-size: 1.6em;
+	margin-left:10px;
+}
+#mid li a {
+	color:#b06c43;
+}
+#mid li a:hover {
+	color:#421B4A;
+}
+#portlethere ul {
+	margin-bottom: 10px;
+}
+#portlethere li {
+	font-size: 1.6em;
+	margin-left:10px;
+	list-style-image: url("images/li.png");
+}
+
+#main_content ul, #portlethere ul {
+    list-style-type: square;
+    margin-left: 2em;
+}
+#main_content li, #portlethere li,  dl.portlet li {
+    display: list-item;
+    line-height: 1.5em;
+    margin-bottom: 0.25em;
+    font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+}
+
+
+
+
+
+
+
+
+/* 
+
+!!!!!!!!! TOP CSS : TOP NAV AND LOGO !!!!!!!
+
+*/
+
+#top {
+	height:auto;
+	width:95%;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #421b4a;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:10px;
+	padding-bottom:3px;
+	box-sizing: content-box;
+}
+#top_nav {
+	float:right;
+	padding-top: 3em;
+    vertical-align: top;
+}
+#ucdlogo {
+	display: inline-block;
+
+}
+#ucdlogo img {
+	max-width:100% !important;
+	height:auto;
+	display: block;
+
+}
+ul#list-nav {
+	width:100%;
+	margin:0px;
+	margin-top:-20px;
+	list-style:none;
+	width:auto;
+	float:right;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size:1.4em;
+}
+ul#list-nav li {
+	display:inline;
+}
+ul#list-nav li a {
+	text-decoration:none;
+	padding: 2px 6px;
+	width:auto;
+	color:#696969;
+	text-align:center;
+}
+ul#list-nav li a:hover {
+	color: #b06c43;
+}
+#banner .portlet-static-head-nav {
+	display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+!!!!!!!!! MIDDLE CSS : ALMOST EVERYTHING !!!!!!!
+
+*/
+
+#mid {
+	width:95%;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+#banner {
+	text-align:center;
+	padding-bottom: 10px;
+    padding-top: 10px;
+	
+}
+#banner h1 {
+	font-size:5.6em;
+	color:#421b4a;
+	margin:0px;
+	padding:0px;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: .5px;
+}
+
+#banner p {
+	font-size:3.6em;
+	color:#555555;
+	margin:0px;
+	padding:0px;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	padding-bottom: 20px;
+}
+span.discreet {
+	color:#808080;
+	font-size: .9em;
+	font-family: "warnock-pro-display" ;
+	font-weight: 400;
+}
+
+ p {
+	font-size:1.4em;
+	color:#1e1e1e;
+	line-height:1.4;
+	margin-bottom:1.2em;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}		
+
+
+
+
+
+
+
+/* 
+
+!!!!!!!!! MAIN NAVIGATION !!!!!!!
+
+*/
+
+#main_nav {
+	width:100%;
+	border-top-width: 2px;
+	border-bottom-width: 2px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #555555;
+	border-bottom-color: #421b4a;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+	clear:both;
+}
+#ul1 {
+	list-style:none;
+	width:100%;
+	text-align:left;
+	font-family: "warnock-pro-display",serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size:2.4em;
+	font-variant:small-caps;
+	text-transform:lowercase;
+	display:inline-block;
+	margin-top:4px;
+	margin-bottom:4px;
+	margin-left: 8%;
+}
+#ul1 li {
+	display:inline;
+	text-align:center;
+	position: relative;
+	float:left;
+}
+#ul1 li a {
+	text-decoration:none;
+	padding-left:15px;
+	padding-right:15px;
+	width:auto;
+	color:#222222;
+	text-align:center;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color:#d1cfc7;
+}
+#ul1 li a:hover {
+	color:#808080;	
+	text-decoration: underline;
+}
+
+#ul1 ul.submenu {
+	text-indent:-9999px;
+	display:block;
+	direction: ltr;
+	position:absolute;
+	top:35px;
+	background-color: #fefcf7;
+	background: rgb(254, 253, 247); /* Fall-back for browsers that don't support rgba */
+    background: rgba(254, 253, 247, .95);
+	border-radius: 0 0 2px 2px;
+	overflow:hidden;
+	padding-left:0px;
+	margin-top:0px;
+	width:0;
+	z-index: 500;
+
+}
+#ul1 ul.submenu li {
+	width: 100%;
+	display: block;
+	font-size: 0.7em;
+	text-align: left;
+	padding: 6px 5px 0px 5px;
+
+}
+#ul1 ul.submenu li a {
+	border: 0px;
+	padding:0px;
+	text-transform:none;
+	font-variant: normal;
+	width:85%;
+	line-height: 1em;
+	border-top: 1px solid #dfdfdf;
+	display:inline-block;
+	padding-top: 10px;
+	padding-bottom:10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#ul1 li:hover ul.submenu{
+	text-indent: 0px;
+	width:100%;
+}
+#ul1 li:last-child a {
+	border-right:none;
+}
+#ul1 ul.submenu li:first-child a {
+	border-top: none !important;
+}
+.LSBox .searchSection {
+    display: none;
+}
+#searchbar {
+	width:18%;
+	display:inline;
+}
+input[type=text] {
+	width:60%;
+	margin-right: 10px;
+}
+input[type=button] {
+	width:30%;	
+}
+
+
+
+
+
+
+
+
+/* 
+
+!!!!!!!!! MAIN_CONTENT !!!!!!!
+
+*/
+
+#portlethere {
+	width:20%;
+	display:inline-block
+	vertical-align:top;
+	margin-top:18px;
+	margin-left: 1%
+}
+
+#main_content {
+	width:100%;	
+	margin-left:auto;
+	margin-right:auto;
+	display:inline-block;
+	clear:both;
+	/*margin-bottom: 10px;*/
+	
+}
+
+
+#main_content img {
+	height:auto;
+	background-color:#fff;
+	border:solid 1px #999;
+	padding:5px;
+	margin-right:2%;
+}
+#main_content div {
+	vertical-align:top;	
+}
+
+#main_content h1 {
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #421b4a;
+	font-size:3.3em;
+	margin:0px;
+	padding-bottom:0px;
+	color:#421b4a;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom:10px;
+	letter-spacing: .25px;
+
+}
+#main_content p {
+	font-size:1.6em;
+	color:#1e1e1e;
+	line-height:1.6;
+	margin-bottom:.5em;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}		
+
+#slider {
+	width:100%;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+#slide_img {
+	width:70%;
+	border-top-width: 5px;
+	border-top-style: solid;
+	border-top-color: #421b4a;
+	display:inline-block;
+	overflow:hidden;
+	padding-top:5px;
+}
+#slide_img img{
+	width:100%;	
+	border:none;
+	margin: 0px;
+	padding:0px;
+}
+#slide_text {
+	float:right;
+	display:inline-block;
+	width:28.25%;
+	border-top-width: 5px;
+	border-top-style: solid;
+	border-top-color: #421b4a;
+}
+#slide_text img {
+	border:none;
+	background-color: none;
+	margin:0px;
+
+}
+#slide_text h2 {
+	font-size:3.0em;
+	color:#421b4a;
+	line-height:1.2em;
+	margin:5px;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: .25px;
+}
+span.slidedate {
+	font-size:1.4em;
+	color:#b06c43;
+	line-height:1.3em;
+	margin-left:20px;
+	margin-right:5px;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+font-style: italic;
+font-weight: 300;
+}
+#slide_text p {
+	font-size:1.6em;
+	color:#424242;
+	line-height:1.6;
+	margin: 5px 20px;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+dd.image-caption {
+	color:#808080;
+	font-size: 1.0em;
+	line-height: 1.3;
+}
+p.claresig img {
+	border: none !important;
+}
+
+
+
+/* 
+
+!!!!!!!!! FRONT PAGE PORTLETS !!!!!!!
+
+*/
+
+#front_portlets {
+	width:100%;	
+	margin-left:auto;
+	margin-right:auto;
+	display:inline-block;
+	clear:both;
+	margin-top: -11px;
+	
+}
+#front_portlets div {
+	vertical-align:top;	
+}
+
+#front_portlets h1 {
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #421b4a;
+	font-size:3.3em;
+	margin:0px;
+	margin-top:20px;
+	padding-bottom:0px;
+	color:#421b4a;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom:10px;
+	letter-spacing: .25px;
+
+}
+#front_portlets h1:hover{
+	color:#808080;
+}
+#front_portlets p {
+	font-size:1.4em;
+	color:#1e1e1e;
+	line-height:1.6;
+	margin-bottom:1.2em;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+font-style: normal;
+font-weight: 400;
+}		
+	
+
+
+
+
+
+
+/* 
+
+!!!!!!!!! FRONT PAGE _ EVENTS INFO !!!!!!!
+
+*/
+
+
+#front-page-left-column {
+	width:29%;
+	display:inline-block;
+	margin-right:1.5%;
+}
+
+#events {
+	
+}
+
+dl.eventdl {
+	width:100%;
+	margin-bottom:0px;
+	padding-top:10px;
+}
+span.date {
+	width:15%;
+	display:inline-block;
+	vertical-align:top;
+	font-size:1.6em;
+	margin:0px;
+	text-align:right;
+	margin-right:3%;
+	color:#421b4a;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	line-height:1;
+	text-decoration:none;
+	color:#421b4a;
+}
+span.event {
+	width:80%;
+	display:inline-block;
+	vertical-align:top;
+	margin:0px;
+	margin-bottom:5px;
+	padding-top:2px;
+}
+span.event a {
+	text-decoration:none;
+	color:#080808;	
+	
+}
+span.event h2 {
+	font-size:1.6em;
+	line-height:1.2em;
+	margin:0px;	
+	margin-top:-1px;
+	font-family: "warnock-pro-display",serif;
+font-style: normal;
+font-weight: 700;
+	letter-spacing: .5px;
+}
+span.event h2 a:hover {
+	color:#808080;
+}
+#front_portlets span.event p {
+	font-size:1.4em;
+	margin:0px;
+	line-height:1.4em;
+	color:#262626;
+	margin-bottom:1.0em;
+	
+}
+a.more {
+	float:right;
+	color:#b06c43;
+	text-decoration: none;
+	font-size: 1.4em;
+	margin-bottom: 15px;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+}
+a.more:hover {
+	color:#555555;
+}
+
+
+
+
+
+
+/* 
+
+!!!!!!!!! FRONT PAGE _ NEWS INFO !!!!!!!
+
+*/
+#news {
+	width:39.2%;
+	display:inline-block;
+	margin-right:1.5%;
+}
+#news img {
+	width:24%;
+	height:auto;
+	background-color:#fff;
+	border:solid 1px #999;
+	padding:1.5%;
+	float:left;
+	margin-right:3%;
+}
+#news dt{
+	margin-bottom:15px;
+}
+#news dl p{
+	line-height: 1.4em;
+}
+.newsitemp {
+	float:right;
+	width:69%;
+	margin-bottom: 20px;
+}
+#news dl {
+	margin-top:14px;
+}
+dl.newsdl .portletItem {
+	clear:both;
+}
+}
+span.news {
+	width:58%;
+	display:inline-block;
+	vertical-align:top;
+	margin:0px;
+	margin-bottom:20px;
+	margin-top:7px;
+}
+span.news a {
+	text-decoration:none;
+	color:#421b4a;
+}
+span.news a:hover {
+	text-decoration:none;
+	color:#b06c43;
+}
+#news h2 {
+	font-size:2em;
+	line-height:1.2em;
+	border-bottom:solid 2px #421b4a;
+	font-family: "warnock-pro-display",serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .5px;
+	display: inline-block;
+	color:#421B4A;
+}
+#news h2:hover{
+	color:#808080;
+}
+span.newsdate {
+	font-size:1.2em;
+	color:#7b7b7b;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-weight: 300;
+	margin-left: 0px;
+	padding-bottom: 2px;
+}
+span.news p {
+	margin-top:3px;
+}
+
+
+
+p.readmore {
+	color:#555555 !important;
+	border-bottom: 2px solid #7f93ae !imporant;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color:#266799;
+	font-size: 1.3em;
+	float:right;
+}
+p.readmore a {
+	color:#555555 !important;
+}
+p.readmore a:hover {
+	color:#7f93ae !important;
+}
+
+
+
+
+/* 
+
+!!!!!!!!! FRONT PAGE _ SUPPORT INFO !!!!!!!
+
+*/
+
+.section-support #portlethere p {
+	font-size: 1.0em !important;
+}
+
+#support {
+	width:27.25%;
+	display:inline-block;
+}
+#support img {
+	width:96%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	background-color:#fff;
+	border:solid 1px #999;
+	padding:5px;
+}
+#support h1{
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #421b4a;
+	font-size:3.3em;
+	margin:0px;
+	margin-top:20px;
+	padding-bottom:0px;
+	color:#421b4a;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;	font-style: normal;
+	font-weight: 400;
+	margin-bottom:10px;
+	letter-spacing: .25px;
+
+}
+#supportbuttons {
+	border-bottom: 5px double #421B4A;
+	padding-bottom:17px;
+	text-align:center;
+}
+#supportbuttons a {
+	text-decoration:none;
+	color:#fff;
+	font-size:1.4em;
+	line-height: 1.8em;
+	text-align:center;
+	font-weight:bold;
+	font-variant:small-caps;
+	text-transform:lowercase;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+#donate {
+	width:28%;
+	height: auto;
+	background-color:#fff;
+	display:inline-block;
+	border: 3px solid #b06c43;
+	padding: 1px;
+	margin-right:10px;
+	box-sizing: content-box;
+}
+#donate a {background-color: #b06c43;}
+
+#friends {
+	width:58%;
+	height: auto;
+	background-color:#fff;
+	display:inline-block;
+	border: 3px solid #421b4a;
+	padding: 1px;
+	box-sizing: content-box;
+}
+#friends a {background-color: #421b4a;}
+
+#addons {
+	width:100%;
+	margin-top:13px;
+	margin-bottom:10px;	
+}
+#addons a {
+	text-decoration:none;
+	color:#333333;
+	font-size:1.2em;
+	text-transform:uppercase;
+	font-family: "warnock-pro-display",serif;
+
+	
+}
+#addons h2 {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #b06c43;
+	font-size:1.8em;
+	margin:0px;
+	color:#080808;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom:7px;
+	letter-spacing: .25px;
+}
+#addons ul {
+	padding-left:30px;
+	
+}
+#addons li {
+	list-style-image:url(images/li.png);
+	padding-bottom:6px;
+	display: list-item;
+}
+#addons a:hover {
+	text-decoration: underline;
+	color:#6e6e6e;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+!!!!!!!!! FOOTER INFO !!!!!!!
+
+*/
+
+#foot {
+	clear:both;
+	width:95%;
+	border-top-width: 5px;
+	border-top-style: solid;
+	border-top-color: #421b4a;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:20px;
+}
+#left_foot {
+	text-align:left;
+	width:30%;
+	padding-top:10px;
+	display:inline-block
+}
+#left_foot a{
+	font-size:1.3em;
+	color:#b06c43;
+	text-decoration:none;
+}
+#left_foot a:hover {
+	color:#421b4a;
+}
+#left_foot p{
+	font-size:1.2em;
+	color:#aaaaaa;
+	font-style:italic;
+	margin:0px;
+	margin-top:10px;
+}
+ul#foot-nav {
+	margin:0px;
+	list-style:none;
+	width:auto;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size:1.1em;
+	margin-top:10px;
+	padding-left:0px;
+}
+ul#foot-nav li {
+	display:inline-block;
+}
+ul#foot-nav li a {
+	text-decoration:none;
+	padding:2px 0;
+	padding-left:0px;
+	padding-right:6px;
+	width:auto;
+	color:#696969;
+	text-align:center;
+}
+ul#foot-nav li a:hover {
+	color:#b06c43;
+}
+
+#right_foot {
+	width:50%;
+	float:right;
+}
+#right_foot div {
+	vertical-align:top;	
+}
+#social {
+	width:45%;
+	display:inline-block;
+	text-align:right;
+	border-right-width: 3px;
+	border-right-style: solid;
+	border-right-color: #CCC;
+	padding-right:10px;
+	padding-bottom: 19px;
+	padding-top: 6px;
+	margin-top: 5px;
+	}
+	
+#social h2 {
+	color:#421b4a;
+	font-size:1.6em;
+	letter-spacing: .5px;
+	margin-bottom:9px;
+}
+#social ul li {
+	display:inline-block;
+	list-style:none;
+	
+}
+#social ul li a{
+	background-image:url(images/social-icons.png);
+	display:block;
+	height:0px;
+	width:0px;
+	text-indent:-9999px;
+	overflow:hidden;
+	padding-top:30px;
+	padding-left:30px;
+	margin-top:5px;
+	margin-left:4px;
+		
+}
+li.fb a {
+	background-position: 0 -30px;
+}
+li.tw a {
+	background-position: 0 -60px;
+}
+li.rss a {
+	
+}
+li.fb a:hover {
+	background-position: 30px -30px;
+}
+li.tw a:hover {
+	background-position: 30px -60px;
+}
+li.rss a:hover {
+	background-position: 30px 0px;
+}
+
+#location {
+	width:45%;
+	display:inline-block;
+	padding-left:10px;
+	}
+#right_foot p{
+	font-size:1.2em;
+	color:#421b4a;
+	font-style:italic;
+	margin:0px;
+	margin-top:10px;
+}
+/*
+back up options
+#backup {
+	width:95%;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+#onespot {
+	width:50%;
+	display:inline-block;
+	border-top-width: 5px;
+	border-top-style: solid;
+	border-top-color: #421b4a;
+	margin-left:.5%;
+}
+#twospot {
+	width:49%;
+	display:inline-block;
+	border-top-width: 5px;
+	border-top-style: solid;
+	border-top-color: #421b4a;
+} */ 
+
+
+/* 
+
+!!!!!!!!! UNIQUE BANNER CSS !!!!!!!
+
+*/
+
+
+#portlets-in-header a{
+	color:#421B4A;
+	text-decoration: none;
+}
+#portlets-in-header p a{
+	color:#555555;
+	text-decoration: none;
+}
+
+#uniquebanner {
+	padding-top:9px;
+	padding-bottom:18px;
+	text-align: left;
+	
+}
+span.unibanner {
+	width:47%;
+	display:inline-block;
+	padding-top:30px;
+	padding-bottom:30px;
+	text-align:right;
+}
+#uniquebanner h1 {
+	font-size:2.5em;
+	color:#421b4a;
+	margin:0px;
+	padding:0px;
+font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+#uniquebanner p {
+	font-size:1.6em;
+	color:#555555;
+	margin:0px;
+	padding:0px;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	
+
+}
+span.uniquetitle {
+	font-size:5.7em;
+	color:#424242;
+	display:inline-block;
+	border-left:solid 2px #d1cfc7;
+	margin-left:25px;
+	padding-left:25px;
+	padding-top:30px;
+	padding-bottom:20px;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+span.uniquetitleIPP {
+	font-size:5.7em;
+	color:#424242;
+	display:inline-block;
+	border-left:solid 2px #d1cfc7;
+	margin-left:25px;
+	padding-left:25px;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	width:50%;
+}
+
+
+
+/* 
+
+---------------------||||||||| TEMPLATE SECION |||||||||-----
+
+*/
+
+
+
+
+
+/* 
+
+!!!!!!!!! TWOcol_VIEW : ABOUT,C and D, IPP PRETTY MUCH EVERYTHING BUT NEWs and EVENTS; !!!!!!!
+
+*/
+
+.template-twocol_view #main_content {
+	width:71%;
+	display: inline-block;
+}
+.template-twocol_view #portlethere {
+	width:26%;
+	display: inline-block;
+	vertical-align: top;
+	margin-left:2%;
+	/*background-color: rgba(152,169,191,.25); */
+
+}
+.template-twocol_view #portlethere h2 {
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #421b4a;
+	font-size:3.3em;
+	margin:0px;
+	margin-top:20px;
+	padding-bottom:0px;
+	color:#421b4a;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom:10px;
+	letter-spacing: .25px;
+}
+.template-twocol_view #main_content h2{
+	color: #421B4A;
+    font-family: "warnock-pro-display",serif;
+    font-size: 2.2em;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1.2em;
+    padding:1px 0 1px 0;
+}
+.template-twocol_view #main_content h3{
+	color: #222222;
+    font-family: "warnock-pro-display",serif;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin: -1px 0 0;
+}
+.template-twocol_view #portlethere p {
+	font-size:1.6em;
+	color:#444444;
+	line-height:1.6;
+	margin-bottom:1.2em;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}	
+
+
+/* 
+
+!!!!!!!!! TWOcolsummary_VIEW : ARCHIVE pages !!!!!!!
+
+*/
+
+.template-twocolsummary_view #main_content {
+	width:71%;
+	display: inline-block;
+}
+.template-twocolsummary_view #portlethere {
+	width:26%;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 2%;
+	/*background-color: rgba(152,169,191,.25); */
+
+}
+
+.template-twocolsummary_view .newsitemp {
+    width: 100%;
+}
+.template-twocolsummary_view #main_content img {
+	display:none;
+}
+.template-twocolsummary_view #content-core a {
+	color:#421b4a;
+}
+.template-twocolsummary_view #content-core a:hover {
+	color:#555555;
+}
+
+
+
+
+
+/* 
+
+!!!!!!!!! EVENTS PAGE : EVERYTHING; !!!!!!!
+
+*/
+
+/* Events Landing  */
+
+.template-events_landing_view #main_content {
+	width:71%;
+	display: inline-block;
+}
+.template-events_landing_view #portlethere {
+	width:26%;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 2%
+}
+#annnualevent {
+	width: 27%;
+	float:right;
+	display: inline-block;
+	padding: 10px 10px 10px 40px;
+	margin-bottom: 10px;
+}
+#annnualevent img {
+	margin-bottom: 5px;
+}
+#annnualevent p {
+	font-size: 1.4em
+}
+.template-events_landing_view #content-core {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#annnualevent h4 {
+	color:#b06c43;
+	font-family: "warnock-pro-display",serif;
+    font-size: 1.6em;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+}
+.template-events_landing_view #content-core h3 {
+	color: #222222;
+    font-family: "warnock-pro-display",serif;
+    font-size: 2.2em;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1.3em;
+    margin: -1px 0 0;
+}
+.template-events_landing_view #content-core img {
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+.template-events_landing_view #content-core p {
+	margin-bottom: 0px;
+}
+.template-events_landing_view #content-core a {
+	color:#421b4a;
+}
+.template-events_landing_view #content-core a:hover {
+	color:#808080;
+}
+.template-events_landing_view #button3 a {
+ 	color:#ffffff;
+}
+.template-events_landing_view hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+a.eventstitlep {
+	font-size:2.3em;
+	margin:0px;
+	margin-top:20px;
+	padding-bottom:0px;
+	color:#421b4a;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom:10px;
+	letter-spacing: .25px;
+}
+span.eventstitlep {
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #421b4a;
+	padding-bottom: 2px;
+	width: 100%;
+	display:block;
+	margin-bottom: 20px;
+}
+
+/* event portlet separate from front page portlet */
+
+
+
+/* Individual Event View */
+
+.template-twocolevent_view #main_content {
+	width:71%;
+	display: inline-block;
+}
+.template-twocolevent_view #portlethere {
+	width:26%;
+	display: inline-block;
+	vertical-align: top;
+	margin-left:2%;
+
+}
+.template-twocolevent_view #parent-fieldname-text{
+	padding-left:20px;
+}
+/*.template-twocolevent_view #parent-fieldname-text img:first-child{
+	min-width: 20%;
+	margin-bottom:10px;
+	margin-top: 15px;
+	margin-left:5px;
+}
+
+/* event individual table info */
+table.listing tbody {
+	background: none;
+}
+.eventtable{
+	width:60%;
+	margin-bottom: 10px;
+	margin-right: 8%;
+	margin-left:10px;
+	float:left;
+	display:none;
+
+}
+.eventtable tbody {
+	vertical-align: top;
+}
+.eventtable td {
+	color:#828282;
+	font-size:1.6em;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	padding-bottom: 8px;
+}
+.eventtable th {
+	font-size: 1.6em;
+	font-family: "warnock-pro-display",serif;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.5;
+	text-align: right;
+	padding-right: 15px;
+}
+.eventtable a{
+	color:#266799;
+}
+/* annual events view */
+.template-annual_events_view #main_content {
+	width:71%;
+	display: inline-block;
+}
+.template-annual_events_view #portlethere {
+	width:26%;
+	display: inline-block;
+	vertical-align: top;
+	margin-left:2%;
+}
+#annnualevent {
+	width: 27%;
+	float:right;
+	display: inline-block;
+	padding: 10px 10px 10px 40px;
+	margin-bottom: 10px;
+}
+#annnualevent img {
+	margin-bottom: 5px;
+}
+#annnualevent p {
+	font-size: 1.4em
+}
+.template-annual_events_view #content-core {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#annnualevent h4 {
+	color:#b06c43;
+	font-family: "warnock-pro-display",serif;
+    font-size: 1.6em;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+}
+.template-annual_events_view #content-core h3 {
+	color: #222222;
+    font-family: "warnock-pro-display",serif;
+    font-size: 1.8em;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1.3em;
+    margin: -1px 0 0;
+}
+.template-annual_events_view #content-core img {
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+.template-annual_events_view #content-core p {
+	
+}
+.template-annual_events_view #content-core a {
+	color:#421b4a;
+}
+.template-annual_events_view #content-core a:hover {
+	color:#808080;
+}
+.template-annual_events_view #button3 a {
+ 	color:#ffffff;
+}
+.template-annual_events_view hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+!!!!!!!!! NEWS PAGE : EVERYTHING; !!!!!!!
+
+*/
+.tileItem p.tileBody {
+	min-height: 70px;
+}
+
+/* news Landing  */
+
+.template-news1_landing_view #main_content {
+	width:71.5%;
+	display: inline-block;
+}
+.template-news1_landing_view #portlethere {
+	width:25%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 3%;
+}
+.template-news1_landing_view #portlethere p{
+	color: #1E1E1E;
+    font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+    font-size: 1.4em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 1.2em;
+}
+/* news landing 2.0 */
+.template-news_collection_landing #main_content {
+	width:71%;
+	display: inline-block;
+}
+.template-news_collection_landing #portlethere {
+	width:26%;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 2%;
+}
+.template-news_collection_landing #portlethere p{
+	color: #1E1E1E;
+    font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+    font-size: 1.4em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: .5em;
+}
+.template-news_collection_landing #main_content img{
+	float:left;
+	margin-bottom: 5px;
+}
+.template-news_collection_landing #content-core a {
+	color:#421b4a;
+}
+.template-news_collection_landing #content-core a:hover {
+	color:#808080;
+}
+.template-news_collection_landing span.newsdate {
+	font-size: 1.0em;
+	  font-family: "warnock-pro-display",serif;
+}
+/* event archives */
+.template-events_collection_landing #main_content {
+	width:71%;
+	display: inline-block;
+}
+.template-events_collection_landing #portlethere {
+	width:26%;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 2%;
+}
+.template-events_collection_landing #portlethere p{
+	color: #1E1E1E;
+    font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+    font-size: 1.4em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: .5em;
+}
+.template-events_collection_landing #main_content img{
+	float:left;
+	margin-bottom: 5px;
+}
+.template-events_collection_landing #content-core a {
+	color:#421b4a;
+}
+.template-events_collection_landing #content-core a:hover {
+	color:#808080;
+}
+.template-events_collection_landing span.newsdate {
+	font-size: 1.0em;
+	font-family: "warnock-pro-display";
+}
+
+
+/*
+#enews {
+	width: 27%;
+	float:right;
+	display: inline-block;
+	padding: 10px 10px 10px 40px;
+	margin-bottom: 10px;
+}
+#enews img {
+	margin-bottom: 5px;
+}
+#enews p {
+	font-size: 1.4em
+}
+.template-news1_landing_view #content-core {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#enews h4 {
+	color:#b06c43;
+	font-family: "warnock-pro-display",serif;
+    font-size: 1.6em;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+}
+#enews #buttons {
+	margin-top: 10px;
+}*/
+.template-news1_landing_view #content-core h3 {
+	color: #222222;
+    font-family: "warnock-pro-display",serif;
+    font-size: 2.2em;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1.3em;
+    margin: -1px 0 0;
+    margin-bottom: 3px;
+}
+.template-news1_landing_view #content-core img {
+	margin-bottom: 4px;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+.template-news1_landing_view #content-core p {
+	margin-bottom: 0px;
+}
+.template-news1_landing_view #content-core a {
+	color:#421b4a;
+}
+.template-news1_landing_view #content-core a:hover {
+	color:#808080;
+}
+.template-news1_landing_view #button3 a {
+ 	color:#ffffff;
+}
+.template-news1_landing_view hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+/* News Portlet SEPARATE FROM MAIN NEWS PORTLET */
+
+.template-news1_landing_view .newsitemp {
+	width:100%;
+}
+a.newstitlep {
+	font-size:2.3em;
+	margin:0px;
+	margin-top:20px;
+	padding-bottom:0px;
+	color:#421b4a;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom:10px;
+	letter-spacing: .25px;
+}
+span.newstitlep{
+	border-bottom: 5px solid #421B4A;
+    display: block;
+    margin-bottom: 10px;
+    padding-bottom: 2px;
+    width: 100%;
+}
+.template-news_item_view .newsitemp {
+	width:100%;
+}
+.template-news_item_view .newsitemp h2 {
+	color:#421B4A;
+}
+.template-news_item_view .newsitemp p {
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.2em
+}
+.template-news_item_view .newsitemp h2:hover {
+	color:#555555;
+	}
+
+/* Individual News View */
+
+#portlethere img.newsthumbnail {
+	display:none;
+}
+
+.template-news_item_view #main_content {
+	width:71%;
+	display: inline-block;
+}
+.template-news_item_view #portlethere {
+	width:26%;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 2%;
+
+}
+
+
+
+
+
+
+
+/* 
+
+!!!!!!!!! Publications CSS HERE  !!!!!!!
+
+*/
+#anreport {
+	width: 29%;
+	float:right;
+	display: inline-block;
+	padding: 10px 10px 10px 40px;
+	margin-bottom: 10px;
+}
+#anreport img {
+	margin-bottom: 5px;
+	margin-left: -1px;
+	margin-right: 0px;
+}
+#anreport p {
+	font-size: 1.4em;
+	padding:10px;
+}
+.template-news1_landing_view #content-core {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#anreport h2 {
+	text-align: center;
+}
+#anreport #buttons {
+	margin-top: 10px;
+}
+
+
+
+
+
+
+
+/* 
+
+!!!!!!!!! BUTTONS CSS HERE  !!!!!!!
+
+*/
+#calltoaction {
+	width:42%;
+	padding-bottom:17px;
+	text-align:center;
+	float:right;th
+}
+#calltoaction a {
+	text-decoration:none;
+	color:#fff;
+	font-size:1.4em;
+	line-height: 1.8em;
+	text-align:center;
+	font-weight:bold;
+	font-variant:small-caps;
+	text-transform:lowercase;
+	width: 100%;
+	height: 100%;
+	display: block;
+	font-family: "warnock-pro-display",serif;
+font-style: normal;
+font-weight: 700;
+}
+
+#cta1 {
+	width:45%;
+	height: 24px;
+	background-color:#fff;
+	display:inline-block;
+	border: 3px solid #b06c43;
+	padding: 1px;
+	margin-right:10px;
+}
+#cta1 a {background-color: #b06c43;}
+
+#cta2 {
+	width:45%;
+	height: 24px;
+	background-color:#fff;
+	display:inline-block;
+	border: 3px solid #421b4a;
+	padding: 1px;
+}
+#cta2 a {background-color: #421b4a;}
+
+#casing {
+	width:50%;
+}
+
+#buttons {
+	padding-bottom:17px;
+	text-align:center;
+}
+#buttons a {
+	text-decoration:none;
+	color:#fff;
+	font-size:1.4em;
+	line-height: 1.8em;
+	text-align:center;
+	font-weight:bold;
+	font-variant:small-caps;
+	text-transform:lowercase;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+#button1 {
+	width:28%;
+	height: 24px;
+	background-color:#fff;
+	display:inline-block;
+	border: 3px solid #b06c43;
+	padding: 1px;
+	margin-right:10px;
+	box-sizing: content-box;
+}
+#button1 a {background-color: #b06c43;}
+
+#button2 {
+	width:58%;
+	height: 24px;
+	background-color:#fff;
+	display:inline-block;
+	border: 3px solid #421b4a;
+	padding: 1px;
+	box-sizing: content-box;
+}
+#button2 a {background-color: #421b4a;}
+
+#button3 {
+	width:39%;
+	height: 24px;
+	background-color:#fff;
+	display:inline-block;
+	border: 3px solid #421b4a;
+	padding: 1px;
+	margin-left: 56%;
+	box-sizing: content-box;
+}
+#button3 a {background-color: #421b4a;}
+
+
+#supportcasing {
+	width:50%;
+}
+#supportbuttons a {
+	font-size: 1.5em;
+	letter-spacing:.5px;
+	line-height:1.5em;
+}
+
+
+
+
+
+
+
+
+
+/* 
+
+!!!!!!!!! CENTER AND DEPARTMENTS PAGE  !!!!!!!
+
+*/
+img.centersimage {
+	float:none;
+	width:13%;
+}
+span.centersinfo {
+	width:70%;
+	vertical-align: top;
+	display:inline-block;
+}
+#main_content ul#centersanddepartments h2 {
+	font-size: 1.6em;
+}
+ul#centersanddepartments h2:hover {
+	color:#808080;
+}
+ul#centersanddepartments p {
+	font-size:1.0em;
+	margin:0px;
+	line-height:1.4em;
+	color:#262626;
+	margin-bottom:1.0em;
+}
+ul#centersanddepartments {
+	list-style: none;
+	margin-left: 0px;
+}
+
+/* 
+
+!!!!!!!!! Portlet Breadcrumbs  !!!!!!!
+
+*/
+
+#portal-breadcrumbs {
+    font-size: inherit;
+    margin-bottom: 1em;
+    margin-left: 0.25em;
+}
+
+
+/* 
+
+!!!!!!!!! Static Portlet CSS  !!!!!!!
+
+*/
+
+span.statichead {
+	font-size:2.3em;
+	margin:0px;
+	padding-bottom:0px;
+	color:#421b4a;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom:10px;
+	letter-spacing: .25px;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #421b4a;
+	padding-bottom: 2px;
+	width: 100%;
+	display:block;
+	margin-bottom: 10px;
+}
+
+.image-left {
+	margin-right: 25px;
+}
+
+
+
+/*
+
+!!!!!!!!! Slider  !!!!!!!
+
+*/
+
+
+/* ---  Slideshow  --- */
+.portlet-static-splash {
+	width:100%;
+	margin:0 auto;
+	position:relative;
+	z-index:0;
+}
+
+#slides {
+	z-index:100;
+	vertical-align: top;
+	position: relative;
+}
+
+
+.slides_container {
+	width:100%;
+	overflow:hidden;
+	position:relative;
+	display:none;
+	vertical-align: top;
+}
+
+
+.slides_container div.slide {
+	width:1140px;
+	height:350px;
+	display:inline-block;
+}
+#main_content a.img_slide img {
+	background-color: none;
+	border:none;
+	margin: 0px;
+	padding: 0px;
+	width:70%; 	
+	display: inline-block;
+	border-top: 5px solid #421b4a;
+	padding-top: 5px;
+}
+#main_content .slide img {
+	background-color: none;
+	border:none;
+	margin: 0px;
+	padding: 0px;
+	width:70%; 	
+	display: inline-block;
+	border-top: 5px solid #421b4a;
+	padding-top: 5px;
+}
+#slides .next,#slides .prev {
+	position:absolute;
+	top:107px;
+	left:-39px;
+	width:24px;
+	height:43px;
+	display:none;
+	z-index:101;
+}
+
+#slides .next {
+	left:585px;
+}
+
+
+ul.pagination {
+	float:right;
+	position:absolute;
+	z-index: 8000;
+	top:22px;
+	right:360px;
+
+}
+
+.pagination li {float:left; margin: 0 2px; list-style:none;}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(images/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+        border-bottom: 0px;
+}
+
+.pagination li.current a {background-position:0 -12px; border-bottom: 0px;}
+
+.caption {
+	display:inline-block;
+	background:#ffffff;
+	margin-left: 1%;
+	width:28%;
+	font-size:1em;
+	line-height:1.33;
+	color:#555555;
+	border-top-width: 5px;
+	border-top-style: solid;
+	border-top-color: #421b4a;
+	text-shadow:none;
+	position: absolute;
+	top: 0px
+}
+.caption h2 {
+	
+	color:#421b4a;
+	line-height:1.2em;
+	font-size:3.0em;
+	margin:5px;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: .25px;
+}
+.caption p {
+
+	color:#424242;
+	line-height:1.6;
+	margin: 5px 20px;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size:1.6em;
+
+}
+span.slidedate {
+	
+	color:#b06c43;
+	line-height:1.3em;
+	font-size:1.4em;
+	margin-left:20px;
+	margin-right:5px;
+	font-family: "futura-pt", Futura,“Century Gothic”, AppleGothic sans-serif;
+	font-style: italic;
+	font-weight: 300;
+}
+
+
+/* contact page */
+.section-contact #content-core img {
+	vertical-align: top;
+	margin-top: 5px;
+	margin-right: 15px;
+	float:left;
+}
+.section-contact #content-core li {
+	display: inline-block;
+	width:48%;
+	list-style: none;
+	margin-bottom: 10px;
+	vertical-align: top;
+}
+.section-contact #content-core ul {
+	display: inline-block;
+}
+
+#portlethere #supportbuttons {
+	border:none;
+}
+iframe {
+	height:auto;
+	width:100%;
+}
+span.edate {
+	font-size: 1.2em;
+	font-family: "warnock-pro-display",serif;
+	font-style: normal;
+    font-weight: 700;
+    color:#808080;
+}
+blockquote.pullquote {
+	-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #CCCCCC -moz-use-text-color;
+    border-image: none;
+    border-left: 0 none;
+    border-right: 0 none;
+    border-style: solid none;
+    border-width: 3px 0 1px;
+    color: #000000;
+    float: right;
+    font-size: 1.4em;
+    font-style: italic;
+    line-height: 1.1em;
+    margin: 5px 0 5px 20px;
+    padding: 1em 0;
+    width: 200px;
+}
+
+/* moz */
+.gecko b, strong {
+	font-weight: 500;
+}
+.webkit b, strong {
+	font-weight: 500;
+}
+.webkit #ul1 {
+	font-size: 2.6em;
+}
+/* search template */
+#LSResult {
+	z-index: 9999;
+	margin-top: 0px;
+}
+
+.ie  {
+}
+.ie7  {
+
+}
+
+
+#container li p, #container li li, #container li blockquote, #container li td,
+#container td p, #container td li, #container td blockquote, #container td td {font-size: 1em;}
+
+/* MEDIA QUERIES */
+
+
+@media all and (max-width : 700px) {
+
+
+#portlethere {
+    width: 100% !important;
+}
+#main_content {
+    width: 100% !important;
+    padding: 5px;
+}
+}
+
+
+
+/* media queries for navigation */
+@media all and (min-width : 700px){
+	.webkit #ul1 {
+	margin-left: 11%;
+}
+
+
+}
+@media all and (min-width : 980px) and (max-width : 1024px) {
+
+/* Styles */
+#ul1 {
+	margin-left: 1% !important;	
+}
+}
+@media all and (min-width : 885px) and (max-width : 979px) {
+	#ul1 {
+		font-size: 2em !important;
+		margin-left: 5% !important;
+	}
+}
+@media all and (min-width : 700px) and (max-width : 884px) {
+	#ul1 {
+		font-size: 1.75em!important;
+		margin-left: 5% !important;
+	}
+}
+
+
+
+/* FOR FOOTER */
+@media only screen and (min-width : 300px) and (max-width : 569px) {
+
+	#social {
+		display: none;
+	}
+	#location {
+		width:100%;
+		float:right;
+	}
+
+}
+@media only screen and (min-width : 570px) and (max-width : 716px) {
+
+	#right_foot p {
+		font-size: 1em;
+	}
+	#social h2 {
+		font-size: 1.2em;
+	}
+
+}
+
+
+/* MEDIA QUERIES FOR TITLES *//
+
+@media all and (max-width : 700px) {
+
+/* Styles */
+#uniquebanner h1 {
+	font-size: 1.5em;
+}
+span.uniquetitle {
+	font-size: 3.7em;
+}
+#ul1 ul.submenu{
+	display:none;
+}
+}
+
+@media all and (max-width : 700px) {
+
+/* Styles */
+#uniquebanner h1 {
+	font-size: 1.5em;
+}
+span.uniquetitle {
+	font-size: 3.7em;
+}
+#ul1 ul.submenu{
+	display:none;
+}
+}
+
+
+@media all and (max-width : 880px) {
+
+/* Styles */
+#uniquebanner h1 {
+	font-size: 1.7em;
+}
+span.uniquetitle {
+	font-size: 3.7em;
+}
+#uniquebanner p {
+	font-size: 1.3em;
+}
+}
+
+
+@media all and (max-width : 625px) {
+
+/* Styles */
+span.uniquetitle {
+	font-size: 2.7em;
+}
+}
+
+
+@media all and (max-width : 600px){
+.section-front-page #banner h1 {
+	font-size: 3.6em;
+}
+.section-front-page #banner p {
+	font-size: 2.6em;
+}
+	}
+
+@media all and (max-width : 320px){
+.section-front-page #banner h1 {
+	font-size: 2.6em;
+}
+.section-front-page #banner p {
+	font-size: 1.6em;
+}
+	}
+
+@media all and (max-width : 496px) {
+
+/* Styles */
+span.unibanner {
+	display:none;
+}
+span.uniquetitle {
+	border: none;
+	font-size: 3.7em;
+}
+#uniquebanner {
+	padding: 0px;
+}
+}
+
+	
+
+
+
+/* slider */
+@media all and (max-width: 1024px) {
+.slides_container div.slide {
+	width:962px;
+}
+
+.caption {
+	font-size: 83%;
+}
+}
+
+
+@media all and (max-width : 780px) {
+
+ul.pagination {
+	float:right;
+	position:absolute;
+	z-index: 8000;
+	top:22px;
+	right:10px;
+}
+.LSBox {
+	width:40% ;
+}
+.slides_container div.slide {
+	width: 1031px;
+}
+.gecko .caption {
+	right:309px;
+
+}
+.caption {
+	right:310px;
+	top:164px;
+	width:31%;
+
+}
+.caption h2 {
+	font-size: 2em;
+}
+.caption p {
+	font-size: 1.2em !important;
+}
+
+span.slidedate {
+	font-size: 1.0em;
+	display:inline;
+}
+
+#supportbuttons {
+	text-align: left;
+}
+
+
+}
+@media all and (min-width: 760px) and (max-width : 827px) {
+
+	#donate {
+	margin-bottom: 5px;
+}
+
+#friends {
+	width: 75%;
+}
+
+}
+
+
+
+@media all and (min-width : 300px) and (max-width : 500px) {
+	body {
+		font-size: 55%;
+	}
+	#searchbar {
+		display: none;
+	}
+	#ucdlogo img {
+		width:150px;
+	}
+	.portlet-static-splash {
+		display: none;
+	}
+	#ul1 {
+		margin-left: 0px;
+	}
+	
+
+}
+
+
+/* Front page Portlets */
+
+
+@media all and (max-width: 760px) {
+	#news {
+		width:49%;
+	}
+	#front-page-left-column {
+		width:47%;
+	}
+	#support {
+		width: 50%;
+	}
+
+}
+	@media all and (min-width : 300px) and (max-width : 500px) {
+	#news {
+		width:100%;
+	}
+	#front-page-left-column {
+		width:100%;
+	}
+	#support {
+		width: 100%;
+	}
+	
+
+}
+
+
+

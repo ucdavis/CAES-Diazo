@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <!-- Apply the following rules to standard Plone pages -->
+    <rules css:if-content="#visual-portal-wrapper">
+
+        <theme href="index.html" />
+
+        <!-- Replace title with Plone's page title  -->
+        <replace css:theme="html head title" css:content="html head title" />
+
+        <!-- Copy base tag from Plone -->
+        <before css:theme-children="html head" css:content="html head base" />
+
+        <!-- Copy link, style, meta tags from Plone head -->
+        <after css:theme-children="html head"
+               content="/html/head/link | /html/head/style | /html/head/meta" />
+
+        <!-- merge classes from Plone body with theme body -->
+        <merge attributes="class" css:theme="body" css:content="body" />
+
+        <!-- Copy script tags from Plone head to end of body -->
+        <after css:theme-children="html body" css:content="html head script" />
+
+        <!-- Insert your own rules here -->
+        
+        <replace css:content="#portal-personaltools-wrapper" css:theme="#personalbar" />
+        <replace css:content="#portal-searchbox" css:theme="#searchbar" />
+
+        <copy css:content="h1.sitetitle" css:theme="#portal-logo h1" />
+
+        <replace css:content="#portal-globalnav" css:theme="nav ul" />
+        <drop css:content="#portal-globalnav" attributes="id" />
+
+        <copy css:content="#portal-column-content" css:theme="section.main .content" />
+        <replace css:content="#portal-languageselector" css:theme=".portal-languageselector" />
+        <copy css:content="#portal-column-one" css:theme="section.main .column-left .aside-content" />
+        <drop css:content="#portal-column-content" attributes="class" />
+        <drop css:content="#portal-column-one" attributes="class" />
+        
+        <copy css:content=".FooterPortletManager1 .portletContent div" css:theme=".footerbox.one" />
+        <copy css:content=".FooterPortletManager2 .portletContent div" css:theme=".footerbox.two" />
+        <copy css:content=".FooterPortletManager3 .portletContent div" css:theme=".footerbox.three" />
+        <copy css:content=".FooterPortletManager4 .portletContent div" css:theme=".footerbox.four" />
+
+        <copy css:content="#portal-footer-wrapper script" css:theme="#footer-js" />
+
+    </rules>
+
+</rules>

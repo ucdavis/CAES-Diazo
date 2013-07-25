@@ -1,0 +1,30 @@
+#ul1, #portlethere, #main_content, #slide_img, #slide_text, #front_portlets, #front-page-left-column, #searchbar, #ul1 ul.submenu li,
+span.date, span.event, span.news, #support, #news, .template-twocol_view #main_content, .template-twocol_view #portlethere,
+#donate, #friends, #left_foot, ul#foot-nav li, .template-events_landing_view #portlethere, .template-events_landing_view #main_content,
+#right_foot, #social, #social ul li, #location, .template-twocolevent_view #main_content, .template-twocolevent_view #portlethere, .template-news_collection_landing #portlethere, .template-news_collection_landing #main_content, .template-news_item_view #main_content, .template-news_item_view #portlethere,
+span.unibanner, span.uniquetitle, #cta1, #cta2, #button1, #button2, .template-annual_events_view #portlethere, .template-annual_events_view #main_content,
+#button3, span.centersinfo, .slides_container div.slide, .caption, .template-events_collection_landing #main_content, .template-events_collection_landing #portlethere {
+display: inline-block;
+*display: inline;
+zoom: 1;
+}
+#support img {
+	margin-left: -40px;
+}
+#portlethere img {
+	margin-left: -40px;
+}
+span.date {
+	width:60%;
+	text-align: left;
+}
+ul.submenu {
+	left:0px;
+}
+input[type=text] {
+	width:50%;
+	margin-right: 10px;
+}
+#searchbar {
+	margin-right: 0px;
+}
