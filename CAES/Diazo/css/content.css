@@ -1,0 +1,171 @@
+.subsection-academics-executive-committee .main .content table {width: 100%; margin-bottom: 2.5em !important;}
+.subsection-academics-executive-committee .main .content td {width: 50%;}
+
+.subsection-academics-executive-committee .main .rightcol .portletCollection h4 {margin-top: .25em;}
+.subsection-academics-executive-committee .main .rightcol .portletCollection div {display: inline-block; width: 40%;}
+.subsection-academics-executive-committee .main .rightcol .portletCollection p {display: none;}
+.subsection-academics-executive-committee .main .rightcol .portletCollection a {display: inline-block;}
+.subsection-academics-executive-committee .main .content {min-height: 1200px;}
+
+/* ---- directory ---- */
+.subsection-directory-managers table {width: 100%; margin-bottom: 2.5em !important;}
+.subsection-directory-managers td {width: 33%;}
+
+.subsection-directory-directory-org #content table, 
+.subsection-directory-directory-alpha #content table {width: 100%; margin-bottom: 2.5em;}
+.subsection-directory-directory-org #content table td, 
+.subsection-directory-directory-alpha #content table td,
+.subsection-ce table td {border-top: 1px solid #CACACA;}
+.subsection-ce .main .content table td {font-size: .9em; padding-bottom: 1.5em;}
+
+.subsection-directory-directory-org table td.col-33, 
+.subsection-directory-directory-alpha table td.col-33,
+.col-33 {width: 33%;}
+.col-25 {width: 25%;}
+.col-50 {width: 50%;}
+.col-66 {width: 66%;}
+
+.subsection-directory-fsd .main .content {width: 679px; padding-right: 10px;}
+
+.subsection-directory-fsd #breadcrumbs-3 {display: none;}
+#content .facultyStaffDirectory .listing {
+	display: inline-block; width: 47%;
+	min-height: 175px;
+	margin-right: 1em;
+}
+
+#content .facultyStaffDirectory .fsd-headshot {
+	display: inline-block;
+	margin-right: .25em;
+	vertical-align: top;
+	width: 35%;
+}
+#content .facultyStaffDirectory .fsd-details {
+	display: inline-block;
+	vertical-align: top;
+	width: 60%;
+}
+.template-person_view #content .facultyStaffDirectory .headshot {float: right; padding-right: 10%;}
+
+
+/* ---- students ---- */
+.subsection-grad .main .content .ugmajorsbox li {margin-right: 0;}
+
+.template-search nav.section {display: none;}
+
+.menuitem {
+	display: inline-block; 
+	vertical-align: top; 
+	width: 29%; 
+	margin-right: 5%;
+	margin-bottom: 25px;
+}
+	.menuitem.rightedge {margin-right: 0;}
+.main .content .menuitem h3 {
+	color: #004c85;
+	font-family: "futura-pt", Futura Std, Futura, Arial, sans-serif;
+	font-size: 1.75em;
+}
+.main .content .menuitem p {
+	font-size: .85em;
+	margin-right: 0;
+}
+
+/* menu item for dept page */
+	.subsection-dept .main .content,
+	.subsection-centers .main .content {width: 679px; padding-right: 10px;}
+	.subsection-dept .menuitem, .subsection-centers .menuitem {
+		width: 48%;
+		margin-right: 1%;
+		margin-bottom: 10px;
+		height: 135px;
+		overflow: hidden;
+		position: relative;
+	}
+	.subsection-dept .main .content .menuitem h4,
+	.subsection-museums .main .content .menuitem h4,
+	.subsection-centers .main .content .menuitem h4 {
+		font-family: "futura-pt", Futura Std, Futura, Arial, sans-serif;
+		font-weight: 600;
+		position: absolute;
+		bottom: 8px; left: 0px;
+		z-index: 10;
+		width: 70%;
+		text-shadow: 0px 0px 10px rgba(33,33,33,.7);
+		background: rgba(33,33,33,.5);
+		padding: 3px 5px 5px 10px;
+	}
+	.subsection-dept .main .content .menuitem h4 a:link,
+	.subsection-dept .main .content .menuitem h4 a:visited,
+	.subsection-dept .main .content #content .menuitem h4 a:hover,
+	.subsection-dept .main .content .menuitem h4 a:active,
+	.subsection-centers .main .content .menuitem h4 a:link,
+	.subsection-centers .main .content .menuitem h4 a:visited,
+	.subsection-centers .main .content .menuitem h4 a:hover,
+	.subsection-centers .main .content .menuitem h4 a:active {
+		color: #fff !important;
+	}
+	.subsection-dept .menuitem img,
+	.subsection-museums .menuitem img,
+	.subsection-centers .menuitem img {
+		width: 100%;
+		overflow: hidden;
+	}
+
+/* menu item for museums */
+	.subsection-museums .menuitem {
+		width: 90%;
+		height: 130px;
+		overflow: hidden;
+		position: relative;
+	}
+	.subsection-museums .main .content .menuitem h4 a:link,
+	.subsection-museums .main .content .menuitem h4 a:visited,
+	.subsection-museums .main .content #content .menuitem h4 a:hover,
+	.subsection-museums .main .content .menuitem h4 a:active {
+		color: #fff !important;
+	}
+
+
+
+/* ---- news section ---- */
+
+.publication {
+	display: inline-block;
+	width: 28%;
+	margin: 0 2em 4em 0;
+	font-size: .85em;
+	vertical-align: bottom;
+	line-height: 1.2em;
+}
+.subsection-articles-topic .documentByLine {display: none;}
+.subsection-articles-topic #content dt {
+	width: 48%; margin-right: 1%; 
+	padding: 3px 0;
+	display: inline-block;
+	vertical-align: top;
+}
+.subsection-articles-topic #content dt a {padding: 3px 0;}
+
+
+
+
+/* ---- jobs section ---- */
+.subsection-asp-open .main .documentByLine {display: none;}
+.subsection-asp-open.template-tabular_view table.listing td:last-child {
+	width: 100px; 
+	overflow: hidden; 
+	height: 1em; 
+	display: inline-block;
+	margin-right: 0;
+}
+.subsection-asp-open.template-tabular_view table.listing th:nth-child(2) {
+	overflow: hidden;
+	text-indent: -100px;
+}
+.subsection-asp-open.template-tabular_view table.listing th:nth-child(2):after {
+	content: ' Department';
+	padding-left: 20px;
+}
+.subsection-asp-open h1.documentFirstHeading {margin-bottom: 1em;}
+.subsection-asp-open-categories .main #content li {font-size: 1.5em;}

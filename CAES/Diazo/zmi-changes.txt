@@ -1,0 +1,39 @@
+Changes made in the ZMI:
+
+1. Overwrite sunburst_images/logo.png with UC Davis logo.
+
+2. Edit portal_view_customizations/plone.logo
+   <h1>College of Agricultural &amp; Environmental Sciences</h1>
+
+3. In portal_view_customizations/collection.pt
+    <tal:events tal:repeat="obj view/results">
+    <div class="box article"
+        tal:define="useView python:obj.portal_type in viewActions;
+                    itemUrl python:useView and obj.getURL() + '/view' or obj.getURL();
+                    normalizeString nocall:plone_view/normalizeString;">
+        <a href="#"
+           tal:attributes="href itemUrl;
+                           class python:'tile contenttype-' + normalizeString(obj.portal_type);
+                           title obj/Description">
+            <img tal:define="imgURL obj/getURL" tal:attributes="src string:${imgURL}/image" alt="" />
+            <h4 tal:content="obj/pretty_title_or_id">
+             Title
+            </h4>
+        </a>
+            <p><span class="details"
+                  tal:condition="view/data/show_dates"
+                  tal:content="python:toLocalizedTime(obj.Date)">
+                Date
+            </span>
+            <span class="description" tal:content="obj/Description">hjhk</span>
+            </p>
+    </div>
+    </tal:events>
+
+
+4. Portlet convenience: add to ploneCustom.css
+	
+	#portlets-above .portletWrapper {display: none;}
+	.template-document_view #portlets-above .portletWrapper {display: block;}
+
+
