@@ -37,34 +37,27 @@ Supports Thumbs: true
 }
 .theme-default .nivo-controlNav a.active {
 	background-position:0 -22px;
-	margin-top: -22px;
 }
-
 .theme-default .nivo-directionNav a {
 	display:block;
 	width:30px;
 	height:30px;
-	background:url("arrows.png") no-repeat scroll 10% 28% transparent;
+	background:url(arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	opacity: 0;
+	-webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 .theme-default:hover .nivo-directionNav a { opacity: 1; }
 .theme-default a.nivo-nextNav {
-	background-position:-28px 28%;
-	right:37.3%;
-	position: absolute;
-	top:78.5%;
-	background-color: #f2bd64;
-	padding:8em 0;
-	color:#f2bd64;
+	background-position:-30px 0;
+	right:15px;
 }
 .theme-default a.nivo-prevNav {
-	left:37.3%;
-	bottom:0px;
-	position: absolute;
-	background-color: #f2bd64;
-	height:52px;
-	width:2%;
-	padding:3em 0;
-	color:#f2bd64;
+	left:15px;
 }
 
 .theme-default .nivo-caption {
@@ -74,6 +67,7 @@ Supports Thumbs: true
     text-align: center;
     font-size: 1.4em;
     padding: 2.2em;
+    padding-top: 1.8em;
     bottom: 0px;
     background-color: #efa11f;
     margin-left: 39%;
