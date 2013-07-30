@@ -13,3 +13,5 @@ These are Diazo themes used by UC Davis CA&amp;ES Dean's Office websites. Feel f
 
 For more information, contact Trish Ang (pgang@ucdavis.edu) or Cal Doval (cydoval@mac.com)
 
++ Plone, a Python-based open source content management system — http://plone.org
++ Diazo, a theming engine — http://diazo.org
