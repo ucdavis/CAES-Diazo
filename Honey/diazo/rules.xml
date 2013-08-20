@@ -15,8 +15,9 @@
     <drop css:content="head link[rel='shortcut icon']" />
     <drop css:content="head link[rel='apple-touch-icon']" />
 
-    <theme href="content.html" />
+    
     <theme href="index.html" css:if-content="body.section-front-page" />
+    <theme href="content.html" css:if-content="#visual-portal-wrapper"/>
 
 
     <!--Header-->
@@ -40,8 +41,28 @@
     <copy css:theme=".maincol" css:content="#content"/>
     <prepend css:content="#edit-bar" css:theme=".maincol" />
 
-    <drop css:content="#portal-breadcrumbs" />
-    <drop css:content="#portal-columns #portal-column-one" />
+    <!--Sidebar -->
+    <copy css:content="#portal-column-one .portletStaticText" css:theme=".portletstatic" />
+    <copy css:content="dt.portletHeader" css:theme=".portletstatic h2" />
+    <strip css:content="dl.portlet" attribute="class" />
+    <replace css:content=".managePortletsLink" css:theme=".manage" />
+
+    <!--Spotlight -->
+    <copy css:content=".portlet-static-connect" css:theme="#slleft" />
+    <copy css:content=".portlet-static-spotlightnews" css:theme="#slright" />
+
+    <!-- News on front page -->
+    <strip css:content="dl.portletNews" />
+    <copy css:content=".BelowPortletManager4 dl.portletNews" css:theme="#mainnews" />
+
+    <copy css:content=".BelowPortletManager5 dl.portletNews" css:theme=".recent_news_class" />
+
+
+    <!-- Footer -->
+    <copy css:content=".portlet-static-contact" css:theme=".bottomcol.first" />
+    <copy css:content=".portlet-static-aboutfoot" css:theme=".bottomcol.second" />
+    <copy css:content=".portlet-static-connectfoot" css:theme=".bottomcol.third" />
+    <copy css:content=".portlet-static-otherlinks" css:theme=".bottomcol.last" />
 
     <replace css:content="#portal-columns" css:theme="#portal-columns" />
     <replace css:content-children="#portal-footer" css:theme-children="#portal-footer" />
@@ -55,5 +76,6 @@
     <after css:content="#visual-portal-wrapper script" css:theme="body" />
 
     <!--Portlets-->
+
 
 </rules>

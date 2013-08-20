@@ -31,6 +31,7 @@
 .rightcol .share li {padding: 3px 0; font-weight: 300; font-size: .9em;}
 .rightcol .share li a,
 .rightcol .share .twitter-share-button {padding-left: 20px;}
+.rightcol .share li.twitter {padding-top: 8px; padding-bottom: 0px;}
 
 
 .newsheader {display: none;}
@@ -67,7 +68,8 @@
 .subsection-publications-currents.template-newsitem_view #content div.documentByLine,
 .subsection-publications-currents .related {display: none;}
 .subsection-publications-currents h1.documentFirstHeading {font-size: 1.25em; text-align: right; position: relative; z-index: 20; top: -51px; color: #fff; margin-right: 0;}
-.subsection-publications-currents .main .rightcol {padding-top: 103px;}
+.subsection-publications-currents .main .rightcol {padding-top: 38px;}
+.subsection-publications-currents .main .rightcol nav {margin-top: 50px;}
 
 
 

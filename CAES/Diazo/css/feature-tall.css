@@ -56,24 +56,27 @@ div.portlet-static-nivo li {
 
 
 /*   custom pages   */
+.subsection-current-commencement .main .content {min-height: 900px;}
 .subsection-current-commencement .main .content #content-core div {margin-bottom: 2em;}
 .subsection-current-commencement .main .content #content-core div p {margin-right: 0;}
 
 .subsection-current-commencement .main .content #content-core div.menuitem {
 	margin-bottom: 1em;
 	width: 40%;
-	margin-left: 5%;
+	margin-left: 6%;
+	margin-right: 0;
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
 }
 .subsection-current-commencement #content .menuitem a {
-	padding: 1em .5em;
 	background: #d2a800;
 	color: #fff;
-	font-size: 1.25em;
+	font-size: 1.1em;
 	width: 100%;
-	height: 100%;
 	display: block;
+}
+.subsection-current-commencement #content .menuitem a:hover {
+	background: rgba(200,150,0,.5);
 }
 

@@ -13,6 +13,8 @@ div.portlet-static-nivo img {
 	width: 100%; height: auto;
 }
 
+#slider.nocaption {position: absolute; top: 0;}
+
 .portlet-static-nivo .nivo-caption {
 	position: relative;
 	display: block;
@@ -32,6 +34,7 @@ div.portlet-static-nivo img {
 	.portlet-static-nivo .static-text .nivo-caption {
 		left: 0; position: absolute;
 	}
+	.portlet-static-nivo .nocaption .nivo-caption {display: none !important;}
 .portlet-static-nivo img {
 	float: left;
 }
@@ -91,4 +94,41 @@ div.portlet-static-nivo img {
 .section-research .main .news .box.gold p {margin-top: 0em;}
 .section-outreach .main .news .box.gold p.leadtext,
 .section-research .main .news .box.gold p.leadtext {margin-top: 1em;}
+
+
+
+
+/* ---- student - academics ---- */
+.subsection-future-academics .slidefeature {height: 365px;}
+.subsection-future-academics .main .news .box.col4 {font-size: 115%; width: 938px;}
+.subsection-future-academics .main .news .box.col2 p.aboutacademics {font-size: 92%;}
+
+img[title='Studentfarm'] {
+	padding: 13px 0px;
+}
+
+.subsection-future-academics .box .col2 .left .masonry-brick {font-size: 115%;}
+.subsection-future-academics .majorcaes {
+	display: inline-block;
+	width: 32.97%;
+	vertical-align: top;
+}
+.subsection-future-academics .majorcaes .es {
+	margin-right: 0px;
+}
+.subsection-future-academics .majorcaes p {
+	color:rgba(7, 22, 38, 0.7);
+	line-height: 200%;
+}
+.subsection-future-academics .majorcaes a:hover {
+	color:#002855;
+}
+.subsection-future-academics .main .news .box.col4.gold {
+	background-color: #fff;
+}
+
+
+/* ---- students - student life ---- */
+.subsection-future-life-student-life .slidefeature {height: 365px;}
+.subsection-future-life-student-life .portlet-static-nivo iframe {position: relative; top: -50px; left: -60px;}
 

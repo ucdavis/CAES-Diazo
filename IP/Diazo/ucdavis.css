@@ -1,5 +1,5 @@
 
-* {box-sizing: border-box; -moz-box-sizing: border-box;}
+* {box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
 
 body {
 	margin: 0 auto; min-width: 960px; 
@@ -74,7 +74,8 @@ a:hover, a:active {}
 .diazoed .portlet-static-nav {display: block;}
 
 .header nav {
-	height:60px;
+	min-height: 60px;
+	height: auto;
 	width:100%;
 	background: rgb(51, 83, 121); /* Fall-back for browsers that don't support rgba */
 	  background: rgba(51, 83, 121, .95);
@@ -98,6 +99,7 @@ a:hover, a:active {}
 	position: relative;
 	z-index: 10;
 	vertical-align: top;
+	min-height: 60px;
 }
 .header nav ul li a {
 	color: #fff;
@@ -147,6 +149,7 @@ a:hover, a:active {}
 	text-align: left;
 	width: auto !important;
 	height: auto !important;
+	min-height: 0px;
 	/* float: left; */
 }
 .header nav ul.mega li:hover {
@@ -324,6 +327,9 @@ a:hover, a:active {}
 	float: left;
 	min-height: 700px;
 }
+	.main .content iframe {
+		max-width: 95%;
+	}
 	.site-AfghanAg .main .content {width: 74%;}
 .main #content {font-size: 100%;} /* because Plone lowers it */
 .main .content h1 {
@@ -333,13 +339,18 @@ a:hover, a:active {}
 	margin: 0 80px 0 0;
 	letter-spacing: .25px;
 }
+.main .content table {width: 100%; max-width: 100%;}
+	.main .content table img {max-width: 100%;}
 .main .content p, .main .content li, .main .content td {
-	font-family: Georgia, Berkeley, serif;
+	/* font-family: Georgia, Berkeley, serif; */
 	font-size: 1em;
 	margin-right: 80px;
 	color: #272525;
 	color: rgba(39,37,37,.85);
 }
+	.main .content td p, .main .content td li {
+		margin-right: 0px;
+	}
 .main .content p.description,
 #content .documentDescription {
 	font-family: "futura-pt", Futura Std, Futura, Arial, sans-serif;
@@ -354,7 +365,7 @@ a:hover, a:active {}
 	font-size: .9em;
 }
 .main .content h2, .main .content h3, .main .content h4 {
-	font-family: Georgia, Berkeley, serif;
+	font-family: "futura-pt", Futura Std, Futura, Arial, sans-serif;
 	color: #24476d;
 }
 .main .photoAlbumEntry, .main .photoAlbumFolder {
@@ -372,18 +383,21 @@ a:hover, a:active {}
 
 .main .menuitem {
 	display: inline-block;
-	width: 31%;
+	width: 23%;
 	margin-right: .5%;
 	vertical-align: top;
 	border: 1px solid #ddd;
 	padding: 8px;
-	min-height: 280px;
+	min-height: 200px;
 	margin-bottom: 1em;
+	min-width: 150px;
+	text-align: center;
 }
 	.main .menuitem:hover {background: rgba(230,230,230,.8);}
 	.main .menuitem a {display: inline-block; padding: 3px;}
-	.main .menuitem img {max-width: 100%;}
+	.main .menuitem img {max-width: 100%; width: 100%;}
 	.main .menuitem p, .main .menuitem li {font-size: .9em; margin-right: 10px;}
+	.main .menuitem li {list-style: none;}
 
 
 
@@ -427,7 +441,7 @@ dl.portlet.portlet-static-afghan-agriculture dd.portletItem {padding-bottom: 0;}
 .template-newsitem_view #content div.documentByLine {
 	display: block;
 	color: rgb(36,71,109);
-	font-family: Georgia, Berkeley, serif;
+	font-family: "futura-pt", Futura Std, Futura, Arial, sans-serif;
 	font-weight: bold;
 	font-size: .9em;
 }
@@ -541,5 +555,8 @@ dl.portlet.portlet-static-afghan-agriculture dd.portletItem {padding-bottom: 0;}
 	line-height: auto;
 	background: transparent;
 }
+
+
+.subsection-natural-resource-management .main .content #portal-column-one {display: none;}
 
 

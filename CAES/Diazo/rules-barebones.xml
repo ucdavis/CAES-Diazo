@@ -1,0 +1,25 @@
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <!--Head-->
+    <copy css:content="html" css:theme="html" attributes="lang dir"/>
+    <copy css:content="head base" css:theme="head base"/>
+    <replace css:content="head title" css:theme="head title"/>
+    <before css:content="head style, head link, head script, head meta" css:theme-children="head"/>
+
+    <theme href="content.html" css:if-content="#visual-portal-wrapper" />
+
+    <merge attributes="class" css:content="body" css:theme="body" />
+    <copy attributes="id dir" css:content="body" css:theme="body" />
+
+
+    <copy css:theme=".main .content" css:content="#content"/>
+    <prepend css:content="#edit-bar" css:theme=".main .content" />
+
+
+     <!-- Scripts via Control Pannel -->
+    <after css:content="#visual-portal-wrapper script" css:theme="body" />
+
+</rules>

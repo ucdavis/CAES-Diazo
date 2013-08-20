@@ -8,9 +8,22 @@
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <script src="js/css_browser_selector.js"></script>
 
+<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
+<script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.6"></script>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+    /* Simple image gallery. Uses default settings */
+    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').fancybox();
+    $('.fancybox-media').attr('rel', 'media-gallery').fancybox();
+  });
+</script>
+
 <link rel="stylesheet" href="webfonts/ss-social.css">
 <link rel="stylesheet" href="webfonts/ss-standard.css">
 <link href="css/caes.css" rel="stylesheet" type="text/css" />
+<link href="css/content.css" rel="stylesheet" type="text/css" />
 <link href="css/feature.css" rel="stylesheet" type="text/css" />
 </head>
 

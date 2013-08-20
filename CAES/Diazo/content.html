@@ -3,6 +3,19 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>UC Davis CA&amp;ES</title>
+
+<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
+<script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.6"></script>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+    /* Simple image gallery. Uses default settings */
+    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').fancybox();
+    $('.fancybox-media').attr('rel', 'media-gallery').fancybox();
+  });
+</script>
+
 <link rel="stylesheet" href="webfonts/ss-social.css">
 <link rel="stylesheet" href="webfonts/ss-standard.css">
 <link href="css/caes.css" rel="stylesheet" type="text/css" />
@@ -129,7 +142,7 @@
 
 <section class="main">
   <section class="content">
-  <div id="edit-bar"></div>
+<!--  <div id="edit-bar"></div>-->
     <h1>Mary Delany and Richard Bostock are new AAAS fellows</h1>
     <p class="description">Two CA&amp;ES faculty join 15 other UC Davis faculty in becoming new fellows of the American Association for the Advancement of Science.</p>
     <p class="byline">January 3, 2013 &mdash; UC Davis News Service &mdash; Pat Bailey</p>

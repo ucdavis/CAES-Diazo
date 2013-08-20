@@ -14,6 +14,18 @@
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="js/jquery.masonry.min.js"></script>
 
+<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
+<script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.6"></script>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+    /* Simple image gallery. Uses default settings */
+    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').fancybox();
+    $('.fancybox-media').attr('rel', 'media-gallery').fancybox();
+  });
+</script>
+
 <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="light/light.css" type="text/css" media="screen" />
 <style type="text/css">
@@ -255,7 +267,8 @@ var $container = $('.news');
 
 $container.imagesLoaded( function(){
   $container.masonry({
-    itemSelector : '.box'
+    itemSelector : '.box',
+    columnWidth: 240
   });
 });
 </script>

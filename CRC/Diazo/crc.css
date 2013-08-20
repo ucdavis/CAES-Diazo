@@ -8,6 +8,7 @@ body {
 	background-image:url(images/grid_noise.png);
 	background-repeat:repeat;
 	letter-spacing: .25px;
+	min-width: 1100px;
 }
 hr {
 	margin-bottom: 10px;
@@ -1179,8 +1180,11 @@ span.slidedate {
 	font-family: "futura-pt", “Century Gothic”, AppleGothic, sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 1.3em;
+	font-size: 1.1em;
+	color:#c79900;
 	text-decoration: none;
+	float:left;
+	vertical-align: top;
 }
 .template-events_collection_landing #leftcontent h2 {
 	font-size: 2.0em;
@@ -1798,4 +1802,15 @@ table.dataTable tr.odd {
 	height:192px;
 	margin-bottom: 10px;
 }
-
+.template-event_view .documentDescription {
+	display: none;
+}
+.template-events_collection_landing dd.portletItem {
+	min-height: 45px;
+}
+.template-events_collection_landing span.portletItemDetails {
+	display: none;
+}
+.template-newsitem_view .documentDescription {
+	margin-bottom: 20px;
+}

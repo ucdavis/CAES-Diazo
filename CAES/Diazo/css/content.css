@@ -1,3 +1,8 @@
+/* misc */
+.main .content img {max-width: 100%;}
+
+
+/* --- exec com --- */
 .subsection-academics-executive-committee .main .content table {width: 100%; margin-bottom: 2.5em !important;}
 .subsection-academics-executive-committee .main .content td {width: 50%;}
 
@@ -6,6 +11,7 @@
 .subsection-academics-executive-committee .main .rightcol .portletCollection p {display: none;}
 .subsection-academics-executive-committee .main .rightcol .portletCollection a {display: inline-block;}
 .subsection-academics-executive-committee .main .content {min-height: 1200px;}
+
 
 /* ---- directory ---- */
 .subsection-directory-managers table {width: 100%; margin-bottom: 2.5em !important;}
@@ -25,7 +31,7 @@
 .col-50 {width: 50%;}
 .col-66 {width: 66%;}
 
-.subsection-directory-fsd .main .content {width: 679px; padding-right: 10px;}
+.subsection-directory-fsd .main .content {/* width: 679px; padding-right: 10px;*/ width: 69%; padding-right: 1%;}
 
 .subsection-directory-fsd #breadcrumbs-3 {display: none;}
 #content .facultyStaffDirectory .listing {
@@ -70,11 +76,22 @@
 	font-size: .85em;
 	margin-right: 0;
 }
+.portlet-collection-related-majors img {display: none;}
+
+
+/* aggie amb */
+
+.main .rightcol .portlet-static-aggie-ambassadors li a {font-size: 1.2em;}
+.subsection-current-clubs-aa .main .content {min-height: 1400px;}
+
+
 
 /* menu item for dept page */
-	.subsection-dept .main .content,
-	.subsection-centers .main .content {width: 679px; padding-right: 10px;}
-	.subsection-dept .menuitem, .subsection-centers .menuitem {
+	.template-menu_view .main .content {
+		/* width: 679px; */ padding-right: 10px;
+		width: 68.85%;
+	}
+	.template-menu_view .menuitem {
 		width: 48%;
 		margin-right: 1%;
 		margin-bottom: 10px;
@@ -82,9 +99,8 @@
 		overflow: hidden;
 		position: relative;
 	}
-	.subsection-dept .main .content .menuitem h4,
-	.subsection-museums .main .content .menuitem h4,
-	.subsection-centers .main .content .menuitem h4 {
+	.template-menu_view .main .content .menuitem h4,
+	.subsection-museums .main .content .menuitem h4 {
 		font-family: "futura-pt", Futura Std, Futura, Arial, sans-serif;
 		font-weight: 600;
 		position: absolute;
@@ -95,19 +111,14 @@
 		background: rgba(33,33,33,.5);
 		padding: 3px 5px 5px 10px;
 	}
-	.subsection-dept .main .content .menuitem h4 a:link,
-	.subsection-dept .main .content .menuitem h4 a:visited,
-	.subsection-dept .main .content #content .menuitem h4 a:hover,
-	.subsection-dept .main .content .menuitem h4 a:active,
-	.subsection-centers .main .content .menuitem h4 a:link,
-	.subsection-centers .main .content .menuitem h4 a:visited,
-	.subsection-centers .main .content .menuitem h4 a:hover,
-	.subsection-centers .main .content .menuitem h4 a:active {
+	.template-menu_view .main .content .menuitem h4 a:link,
+	.template-menu_view .main .content .menuitem h4 a:visited,
+	.template-menu_view .main .content #content .menuitem h4 a:hover,
+	.template-menu_view .main .content .menuitem h4 a:active {
 		color: #fff !important;
 	}
-	.subsection-dept .menuitem img,
-	.subsection-museums .menuitem img,
-	.subsection-centers .menuitem img {
+	.template-menu_view .menuitem img,
+	.subsection-museums .menuitem img {
 		width: 100%;
 		overflow: hidden;
 	}
@@ -130,6 +141,8 @@
 
 /* ---- news section ---- */
 
+.rightcol .portletSearch form#livesearch1 {padding-left: 20px;}
+
 .publication {
 	display: inline-block;
 	width: 28%;
@@ -146,6 +159,13 @@
 	vertical-align: top;
 }
 .subsection-articles-topic #content dt a {padding: 3px 0;}
+
+.outlookSquare {width: 32%; display: inline-block; min-height: 300px; vertical-align: top; text-align: center;}
+.outlookSquare h2 {margin-bottom: .5em;}
+
+	/* hide "Files folder" in year archive */
+
+	.portaltype-folder.subsection-articles #content-core dt:first-child {display: none;}
 
 
 
@@ -169,3 +189,8 @@
 }
 .subsection-asp-open h1.documentFirstHeading {margin-bottom: 1em;}
 .subsection-asp-open-categories .main #content li {font-size: 1.5em;}
+.subsection-resources-aes-reeport .main .content {min-height: 1200px;}
+.subsection-resources-aes-reeport .portlet-static-aes-menu {display: none;}
+
+.subsection-business-commencement-menu .portlet-static-commencement-training {display: none;}
+.subsection-business-commencement .main .content {min-height: 1000px;}

@@ -11,6 +11,9 @@ div.portlet-static-nivo li {
 }
 .portlet-static-nivo ul li {float: none;}
 
+.slider {height: 310px;}
+	.subsection-events-college-celebration .slidefeature .nivo-caption {display: none !important;}
+	
 .spotlighttext {
 	position: absolute;
 	display: block;
@@ -54,4 +57,7 @@ div.portlet-static-nivo li {
 
 .subsection-overview-visit .slider {width: auto; overflow: hidden;}
 .subsection-overview-visit .slider p {margin: 0;}
+.subsection-future-academics-majors .main .content,
+.subsection-centers .main .content {min-height: 800px;}
+
 
