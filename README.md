@@ -1,7 +1,7 @@
 CAES-Diazo
 ==========
 
-Diazo themes used by UC Davis CA&amp;ES Dean's Office
+These are Diazo themes used by UC Davis CA&amp;ES Dean's Office websites. Feel free to view the code as an example of how Diazo can be used, but please don't use the themes without talking with one of us first. Thanks for stopping by!
 
 + http://169.237.124.230:8081/CAES
 + http://regionalchange.ucdavis.edu
@@ -11,4 +11,7 @@ Diazo themes used by UC Davis CA&amp;ES Dean's Office
 + http://rmi.ucdavis.edu
 + http://uccalfresh.org
 
+For more information, contact Trish Ang (pgang@ucdavis.edu) or Cal Doval (cydoval@mac.com)
 
++ Plone, a Python-based open source content management system — http://plone.org
++ Diazo, a theming engine — http://diazo.org
