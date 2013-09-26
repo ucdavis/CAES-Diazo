@@ -29,6 +29,8 @@
         <!-- for all menu news things -->
         <strip css:theme=".col.story a" attributes="href" />
 
+    <replace css:content="#portaltab-index_html > a" css:theme="#portaltab-index_html > a" />
+
     <replace css:content="#portaltab-about > a" css:theme="#portaltab-about > a" />
         <copy css:content=".portlet-static-nav .about-menu" css:theme="#portaltab-about .col.nav" />
 
@@ -72,6 +74,15 @@
 
     <replace css:content="#portaltab-news > a" css:theme="#portaltab-news > a" />
         <copy css:content=".portlet-static-nav .news-menu" css:theme="#portaltab-news .col.nav" />
+
+        <!-- replace the diff pieces of the menu news story -->
+        <replace css:content="#portlets-below .portlet-collection-college-spotlight .article img" css:theme="#portaltab-news .col.story .featpic img" />
+        <copy css:content="#portlets-below .portlet-collection-college-spotlight .article a.contenttype-news-item" css:theme="#portaltab-news .col.story a" attributes="href" />
+        <!-- <copy css:content-children="#portlets-below .portlet-collection-college-spotlight .portletHeader" css:theme="#portaltab-news .col.story h4" /> -->
+        <copy css:content-children="#portlets-below .portlet-collection-college-spotlight .article p" css:theme="#portaltab-news .col.story p" />
+        <copy css:content-children="#portlets-below .portlet-collection-college-spotlight .article h4" css:theme="#portaltab-news .col.story h3" />
+
+        
     <replace css:content="#portaltab-connect > a" css:theme="#portaltab-connect > a" />
         <copy css:content=".portlet-static-nav .connect-menu" css:theme="#portaltab-connect .col.nav" />
         <copy css:content-children="#portlets-below .portlet-static-connect-news" css:theme="#portaltab-connect .col.story" />

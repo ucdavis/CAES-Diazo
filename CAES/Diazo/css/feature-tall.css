@@ -4,6 +4,20 @@ h1.documentFirstHeading {display: none;}
 
 .slidefeature {height: 390px;}
 	.subsection-current-commencement .slidefeature .nivo-caption {display: none !important;}
+/*
+	
+	.slider .text {
+		position: relative;
+		width: 70%;
+		margin: 0px auto;
+		max-width: 1300px;
+		min-width: 960px;
+		height: 310px;
+		display: block;
+		left: -20px;
+	}*/
+
+
 
 .portlet-static-nivo ul {
 	width: 1190px; width: 100%; 
@@ -15,7 +29,7 @@ div.portlet-static-nivo li {
 }
 .portlet-static-nivo ul li {float: none;}
 
-.spotlighttext {
+.portlet-static-nivo .static.text .nivo-caption, .portlet-static-nivo .static.text .spotlighttext {
 	position: absolute;
 	display: block;
 	width: 480px;
@@ -25,7 +39,9 @@ div.portlet-static-nivo li {
 	text-align: left;
 	top: 309px;
 	/* top: -168px; left: 95px;  */
-	bottom: 0px; right: 51.6%;
+	bottom: 0px; /*right: 51.6%;*/
+	left: 13.5%;
+	z-index: 1000;
 }
 .spotlighttext img {
 	float: left;

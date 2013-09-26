@@ -24,6 +24,9 @@ p {
 	margin: .5em 0 .75em;
 	line-height: 1.5em;
 }
+
+	
+
 a:link, a:visited {text-decoration: none; color: inherit; }
 a:hover, a:active {}
 #content a:link, dl.portlet a:link {border-bottom: 0px !important;}
@@ -339,7 +342,7 @@ a:hover, a:active {}
 	margin: 0 80px 0 0;
 	letter-spacing: .25px;
 }
-.main .content table {width: 100%; max-width: 100%;}
+.main .content table {max-width: 100%;}
 	.main .content table img {max-width: 100%;}
 .main .content p, .main .content li, .main .content td {
 	/* font-family: Georgia, Berkeley, serif; */
@@ -348,9 +351,10 @@ a:hover, a:active {}
 	color: #272525;
 	color: rgba(39,37,37,.85);
 }
-	.main .content td p, .main .content td li {
+	.main .content td p, .main .content th p, .main .content td li {
 		margin-right: 0px;
 	}
+
 .main .content p.description,
 #content .documentDescription {
 	font-family: "futura-pt", Futura Std, Futura, Arial, sans-serif;

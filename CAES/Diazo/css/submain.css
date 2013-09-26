@@ -1,3 +1,5 @@
+.main {width: 50%;}
+
 .slidefeature {height: 266px;}
 .portlet-static-nivo {
 	width: 1190px; 
@@ -5,25 +7,32 @@
 	margin: 0 auto;
 	position: relative;
 }
-	.portlet-static-nivo .static-slider {}
-	.portlet-static-nivo .static-text {position: relative; width: 960px; margin: 0 auto;}
+	.portlet-static-nivo .static-slider {
+		position: absolute; 
+		left: 0; right: 0; 
+		margin: auto;
+	}
+	.portlet-static-nivo .static.text {
+		position: relative;
+		width: 70%; width: 960px; /* change this after getting masonry to be flexy */
+		margin: 0px auto;
+		max-width: 1300px;
+		min-width: 960px;
+		height: 266px;
+		display: block;
+		/* left: -20px; why was this here? */ 
+	}
 
 div.portlet-static-nivo img {
 	height: 266px; overflow: hidden; margin-bottom: 0px;
-	width: 100%; height: auto;
+	width: 100%; height: auto; max-width: 2000px;
 }
 
 #slider.nocaption {position: absolute; top: 0;}
 
 .portlet-static-nivo .nivo-caption {
-	position: relative;
-	display: block;
-	width: 480px; height: 86px;
-	font-family: "futura-pt", Futura Std, Futura, Arial, sans-serif;
-	background: #fff;
-	box-shadow: 0px 0px 10px rgba(0,0,0,.1);
-	border: 0px none;
-	text-align: left;
+	height: 86px;
+	width: 480px;
 	top: 180px; left: -1074px;
 }
 	.webkit .portlet-static-nivo .nivo-caption {
@@ -31,39 +40,15 @@ div.portlet-static-nivo img {
 		top: 180px;
 		left: 9%;
 	}
-	.portlet-static-nivo .static-text .nivo-caption {
-		left: 0; position: absolute;
-	}
-	.portlet-static-nivo .nocaption .nivo-caption {display: none !important;}
-.portlet-static-nivo img {
-	float: left;
-}
-.portlet-static-nivo .nivo-caption h4 {
-	height: 12px;
-	padding: 10px 12px 4px;
-	margin-top: 0px;
-	background: #a1770f;
-	display: block;
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: .6em;
-	letter-spacing: 2px;
-	color: #fff;
-}
-.portlet-static-nivo .nivo-caption h2 {
-	margin-top: .6em;
-	padding: 0px 10px 12px;
-	letter-spacing: .5px;
-}
-.portlet-static-nivo .nivo-caption a {font-weight: normal;}
 
 
 .main .news .box.article h4 {font-size: 1em;}
 
 .section-news .main .news .box.large p {font-size: .75em;}
 .section-news .main .news .box.gold .leadtext {font-size: .35em;}
-.section-news .main .news .box.gold label {font-size: .8em;}
-.section-news .main .news .box.gold input.email {
+.section-news .main .news .box.gold label {font-size: .5em;}
+.section-news .main .news .box.gold .mc-field-group {line-height: .7em;}
+.section-news .main .news .box.gold .mc-field-group input {
 	width: 93%; padding: 8px 5px 6px; 
 	color: #5c5c5c; margin-bottom: .5em;
 	text-align: center;
@@ -97,38 +82,69 @@ div.portlet-static-nivo img {
 
 
 
-
-/* ---- student - academics ---- */
-.subsection-future-academics .slidefeature {height: 365px;}
-.subsection-future-academics .main .news .box.col4 {font-size: 115%; width: 938px;}
-.subsection-future-academics .main .news .box.col2 p.aboutacademics {font-size: 92%;}
-
-img[title='Studentfarm'] {
-	padding: 13px 0px;
-}
-
-.subsection-future-academics .box .col2 .left .masonry-brick {font-size: 115%;}
-.subsection-future-academics .majorcaes {
-	display: inline-block;
-	width: 32.97%;
-	vertical-align: top;
-}
-.subsection-future-academics .majorcaes .es {
-	margin-right: 0px;
-}
-.subsection-future-academics .majorcaes p {
-	color:rgba(7, 22, 38, 0.7);
-	line-height: 200%;
-}
-.subsection-future-academics .majorcaes a:hover {
-	color:#002855;
-}
-.subsection-future-academics .main .news .box.col4.gold {
-	background-color: #fff;
-}
-
-
 /* ---- students - student life ---- */
 .subsection-future-life-student-life .slidefeature {height: 365px;}
 .subsection-future-life-student-life .portlet-static-nivo iframe {position: relative; top: -50px; left: -60px;}
+
+.subsection-future-academics-academics .box.col2 {min-height: 305px;}
+.subsection-future-academics-academics .box.col2.right h3 {margin-top:17px;}
+.subsection-future-academics-academics .box.col2.right a {display: inline-block; width: 46%; font-size: 1.1em; vertical-align: top; margin-right: 3%;}
+.subsection-future-academics-academics .box.col2 img {width: 100%;}
+.subsection-future-academics-academics .box.col2.right img {margin-top: 5px;}
+
+.subsection-future-academics-academics .box.col4 h3 {font-weight: 600; text-transform: uppercase; font-size: .9em; letter-spacing: 1px;}
+.subsection-future-academics-academics .box.col4 ul {
+	margin: .25em 0em 1em 1em;
+}
+.subsection-future-academics-academics .box.col4 li {
+	display: list-item; font-size: .75em;
+	list-style: square; color: #002855; list-style-position: outside;
+	margin-bottom: .5em;
+	line-height: 1.5em;
+}
+
+
+
+/* ----- admin section ----- */
+.section-admin .box {font-family: "futura-pt", Futura Std, Futura, Arial, sans-serif;}
+	.section-admin .box.intro {font-family: Helvetica Neue,Helvetica Std,Helvetica,Univers,Arial,sans-serif; min-height: 399px;}
+.section-admin .box.title {background: #ba8c00;}
+	.section-admin .box.title.college {background: #3b5a7a;}
+	.section-admin .box.title.campus {background: #083561;}
+
+.section-admin .box.title h2 {color: #fff;}
+.section-admin .box.button a {
+	display: block; 
+	height: 50px; 
+	padding-top: 100px; 
+	text-align: center; 
+	background: url(../img/sprite-admin.png) no-repeat 35px -20px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+	.section-admin .box.button a.cru {background-position: -115px -15px;}
+	.section-admin .box.button a.newemployee {background-position: -265px -15px;}
+	.section-admin .box.button a.staffdir {background-position: -415px -15px;}
+
+	.section-admin .box.button a.ays {background-position: 35px -165px; color: #083561;}
+	.section-admin .box.button a.trs {background-position: -115px -165px; color: #083561;}
+	.section-admin .box.button a.prepurch {background-position: -265px -165px; color: #083561;}
+	.section-admin .box.button a.mytravel {background-position: -415px -165px; color: #083561;}
+
+.section-admin .box.button a:hover {color: #fff; background: url(../img/sprite-admin.png) no-repeat #ba8c00 -565px -20px;}
+}
+	.section-admin .box.button a:hover.bizoffice {background-position: -565px -20px;}
+	.section-admin .box.button a:hover.cru {background-position: -715px -15px;}
+	.section-admin .box.button a:hover.newemployee {background-position: -865px -15px;}
+	.section-admin .box.button a:hover.staffdir {background-position: -1015px -15px;}
+
+	.section-admin .box.button a:hover.ays {background-position: -565px -165px; color: #fff; background-color: #083561;}
+	.section-admin .box.button a:hover.trs {background-position: -715px -165px; color: #fff; background-color: #083561;}
+	.section-admin .box.button a:hover.prepurch {background-position: -865px -165px; color: #fff; background-color: #083561;}
+	.section-admin .box.button a:hover.mytravel {background-position: -1015px -165px; color: #fff; background-color: #083561;}
+
+.section-admin .box.college {min-height: 200px;}
+	.section-admin .box.college.title {min-height: 0px;}
+.section-admin .box.college li {display: list-item; color: #ba8c00; list-style: square; margin: 0.25em 0 0.25em 1em; font-size: 1.1em;}
+	.section-admin .box.college .col {float: left; width: 45%; margin-right: 4%;}
 

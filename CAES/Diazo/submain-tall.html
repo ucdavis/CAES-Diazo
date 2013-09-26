@@ -3,31 +3,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>UC Davis CA&amp;ES</title>
-<script src="js/css_browser_selector.js"></script>
 <script type="text/javascript" src="//use.typekit.net/dwz8sqy.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-<link rel="stylesheet" href="webfonts/ss-social.css">
-<link rel="stylesheet" href="webfonts/ss-standard.css">
-<link href="css/caes.css" rel="stylesheet" type="text/css" />
+<link href="css/submain-tall-html.min.css" rel="stylesheet" type="text/css" />
+
+<!-- <link href="css/caes.min.css" rel="stylesheet" type="text/css" />
 <link href="css/submain-tall.css" rel="stylesheet" type="text/css" />
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="js/jquery.masonry.min.js"></script>
+<link href="css/caes.3rdparty.min.css" rel="stylesheet" type="text/css" /> -->
 
-<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
-<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
-<script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.6"></script>
-
-  <script type="text/javascript">
-  $(document).ready(function() {
-    /* Simple image gallery. Uses default settings */
-    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').fancybox();
-    $('.fancybox-media').attr('rel', 'media-gallery').fancybox();
-  });
-</script>
-
+<!-- <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
 <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="light/light.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/light.css" type="text/css" media="screen" /> -->
 <style type="text/css">
 .nivoSlider {
     position:relative;
@@ -46,7 +33,7 @@
 </style>
 </head>
 
-<body class="diazo-submain diazoed">
+<body class="diazo-submaintall diazoed">
 <div id="container">
 
 <section class="header">
@@ -57,6 +44,7 @@
   </div>
   <nav>
     <ul>
+      <li id="portaltab-index_html"><a href="#">Home</a></li>
       <li id="portaltab-about"><a href="#">About</a>
         <div class="mega">
           <div class="col nav">
@@ -243,6 +231,25 @@
 </div><!-- end of container -->
 
 
+<!-- browser selector classes -->
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.masonry.min.js"></script>
+<script src="js/css_browser_selector.js"></script>
+
+
+<!-- code to enable Masonry -->
+<script>
+var $container = $('.news');
+
+$container.imagesLoaded( function(){
+  $container.masonry({
+    itemSelector : '.box',
+    columnWidth: 240
+  });
+});
+</script>
+
+
 <!-- code to enable nivo slider -->
 <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
 <script type="text/javascript">
@@ -260,17 +267,16 @@ $(window).load(function() {
 });
 </script>
 
+<!-- code to enable fancybox -->
+<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+<script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.6"></script>
 
-<!-- code to enable Masonry -->
-<script>
-var $container = $('.news');
-
-$container.imagesLoaded( function(){
-  $container.masonry({
-    itemSelector : '.box',
-    columnWidth: 240
+  <script type="text/javascript">
+  $(document).ready(function() {
+    /* Simple image gallery. Uses default settings */
+    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').fancybox();
+    $('.fancybox-media').attr('rel', 'media-gallery').fancybox();
   });
-});
 </script>
 
 

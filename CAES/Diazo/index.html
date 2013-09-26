@@ -7,33 +7,18 @@
 <head>
 <meta name="google-site-verification" content="Nl2SjzZvSawtDR64Vcr1b26gulRZ3JCs-Yf3RpJR3v4" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta content="width=device-width; initial-scale=1.0;" name="viewport" />
 <title>UC Davis CA&amp;ES</title>
 
 <script type="text/javascript" src="//use.typekit.net/dwz8sqy.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-<script src="js/css_browser_selector.js"></script>
 
-<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
-<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
-<script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.6"></script>
+<!-- <link href="css/caes.css" rel="stylesheet" type="text/css" />
+<link href="css/caes.3rdparty.min.css" rel="stylesheet" type="text/css" /> -->
+<link href="css/index-html.min.css" rel="stylesheet" type="text/css" />
 
-  <script type="text/javascript">
-  jQuery(document).ready(function() {
-    /* Simple image gallery. Uses default settings */
-    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').fancybox();
-    $('.fancybox-media').attr('rel', 'media-gallery').fancybox();
-  });
-</script>
-
-<link href="css/caes.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="webfonts/ss-social.css">
-<link rel="stylesheet" href="webfonts/ss-standard.css">
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="js/jquery.masonry.min.js"></script>
-
+<!-- <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
 <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="light/light.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/light.css" type="text/css" media="screen" /> -->
 <style type="text/css">
   .nivoSlider {
       position:relative;
@@ -54,7 +39,7 @@
 </style>
 </head>
 
-<body class="section-front-page diazoed">
+<body class="section-front-page diazo-index diazoed">
 <div id="container">
 
 <section class="header">
@@ -65,6 +50,7 @@
   </div>
   <nav>
     <ul>
+      <li id="portaltab-index_html"><a href="#">Home</a></li>
       <li id="portaltab-about"><a href="#">About</a>
         <div class="mega">
           <div class="col nav">
@@ -198,10 +184,6 @@
     </div>-->
   </section>
   <section class="actions">
-    <div class="search">
-      <input class="field" type="text" />
-      <input class="btn" type="button" />
-    </div>
     <ul class="buttons">
       <li class="apply"><a href="#">Apply online</a></li>
       <!--<li class="about"><a href="#">About CA&amp;ES</a></li>
@@ -214,6 +196,10 @@
     </ul>
     <div class="social">
       &nbsp;
+    </div>
+    <div class="search">
+      <input class="field" type="text" />
+      <input class="btn" type="button" />
     </div>
   </section>
 </section>    
@@ -254,6 +240,12 @@
 </section>
 </div><!-- end of container -->
 
+<!-- browser selector classes -->
+<!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
+<!-- <script src="js/caes.min.js"></script> -->
+<script src="js/css_browser_selector.js"></script>
+<script src="js/jquery.masonry.min.js"></script>
+
 
 <!-- code to enable Masonry -->
 <script>
@@ -275,7 +267,7 @@ jQuery(window).load(function() {
     $('#slider').nivoSlider({
         effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
         animSpeed: 1000, // Slide transition speed
-        pauseTime: 6000, // How long each slide will show
+        pauseTime: 8000, // How long each slide will show
         directionNav: false, // Next & Prev navigation
         controlNav: true, // 1,2,3... navigation
         controlNavThumbs: false, // Use thumbnails for Control Nav
@@ -283,6 +275,18 @@ jQuery(window).load(function() {
         manualAdvance: false // Force manual transitions
     });
 });
+</script>
+
+<!-- code to enable fancybox -->
+<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+<script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.6"></script>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+    /* Simple image gallery. Uses default settings */
+    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='image']").attr('rel', 'gallery').fancybox();
+    $('.fancybox-media').attr('rel', 'media-gallery').fancybox();
+  });
 </script>
 
 

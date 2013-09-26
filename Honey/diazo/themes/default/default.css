@@ -76,18 +76,19 @@ Supports Thumbs: true
     background-color: #efa11f;
    	left:10%;
     position: absolute;
-    z-index: 9999;
+    z-index: 100;
     top:2em;
     max-width: 270px;
 }
 .theme-default .nivo-caption a {
     color:#fff;
-    border-bottom:1px dotted #fff;
-}
+    }
 .theme-default .nivo-caption a:hover {
     color:#fff;
 }
-
+.theme-default .nivo-caption:hover {
+	background-color: #826cb0;
+}
 .theme-default .nivo-controlNav.nivo-thumbs-enabled {
 	width: 100%;
 }

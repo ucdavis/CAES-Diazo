@@ -1,30 +1,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>UC Davis CA&amp;ES</title>
 
 <script type="text/javascript" src="//use.typekit.net/dwz8sqy.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-<script src="js/css_browser_selector.js"></script>
 
-<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
-<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
-<script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.6"></script>
+<link href="css/feature-tall-html.min.css" rel="stylesheet" type="text/css" />
 
-  <script type="text/javascript">
-  $(document).ready(function() {
-    /* Simple image gallery. Uses default settings */
-    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').fancybox();
-    $('.fancybox-media').attr('rel', 'media-gallery').fancybox();
-  });
-</script>
-
-<link rel="stylesheet" href="webfonts/ss-social.css">
-<link rel="stylesheet" href="webfonts/ss-standard.css">
-<link href="css/caes.css" rel="stylesheet" type="text/css" />
+<!-- <link href="css/caes.css" rel="stylesheet" type="text/css" />
 <link href="css/content.css" rel="stylesheet" type="text/css" />
 <link href="css/feature-tall.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css?v=2.1.5" media="screen" /> -->
+
 </head>
 
 <body class="diazo-feature diazoed">
@@ -38,6 +28,7 @@
   </div>
   <nav>
     <ul>
+      <li id="portaltab-index_html"><a href="#">Home</a></li>
       <li id="portaltab-about"><a href="#">About</a>
         <div class="mega">
           <div class="col nav">
@@ -242,26 +233,8 @@
 </section>
 </div><!-- end of container -->
 
-
-<!-- code for scroll up -->
-<script type="text/javascript">
-    $(document).ready(function(){ 
- 
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > 100) {
-                $('.scrollup').fadeIn();
-            } else {
-                $('.scrollup').fadeOut();
-            }
-        }); 
- 
-        $('.scrollup').click(function(){
-            $("html, body").animate({ scrollTop: 0 }, 600);
-            return false;
-        });
- 
-    });
-</script>
+<!-- browser selector classes -->
+<script src="js/css_browser_selector.js"></script>
 
 
 <!-- code to enable nivo slider -->
@@ -284,6 +257,44 @@ $(window).load(function() {
         afterLoad: function(){} // Triggers when slider has loaded
     });
 });
+</script>
+
+<!-- code to enable fancybox -->
+<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+<script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.6"></script>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+    /* Simple image gallery. Uses default settings */
+    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='image']").attr('rel', 'gallery').fancybox();
+    $('.fancybox-media').attr('rel', 'media-gallery').fancybox();
+  });
+</script>
+  <script type="text/javascript">
+  $(document).ready(function() {  
+    $(".rightcol nav").find("a[href='"+window.location.href+"']").filter(":last").addClass("current");
+  });
+  </script>
+
+
+<!-- code for scroll up -->
+<script type="text/javascript">
+    $(document).ready(function(){ 
+ 
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        }); 
+ 
+        $('.scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+ 
+    });
 </script>
 
 
