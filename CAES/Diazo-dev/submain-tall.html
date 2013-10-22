@@ -3,24 +3,43 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>UC Davis CA&amp;ES</title>
-
 <script type="text/javascript" src="//use.typekit.net/dwz8sqy.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-<link href="css/news-html.min.css" rel="stylesheet" type="text/css" />
+<link href="css/submain-tall-html.min.css" rel="stylesheet" type="text/css" />
 
-<!-- <link href="css/caes.min.css" rel="stylesheet" type="text/css" />
-<link href="css/news.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css?v=2.1.5" media="screen" /> -->
+<link href="css/caes.css" rel="stylesheet" type="text/css" />
+<link href="css/submain-tall.css" rel="stylesheet" type="text/css" />
+<!-- <link href="css/caes.3rdparty.min.css" rel="stylesheet" type="text/css" />
+ -->
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
+<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/light.css" type="text/css" media="screen" />
+<style type="text/css">
+.nivoSlider {
+    position:relative;
+    background:url(img/loading.gif) no-repeat 50% 50%;
+}
+.nivoSlider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+.nivoSlider a {
+    border:0;
+    display:block;
+}
+</style>
 </head>
 
-<body class="section-news diazo-news diazoed">
+<body class="diazo-submaintall diazoed">
 <div id="container">
 
 <section class="header">
   <div class="top">
     <a class="logo" href="#"><img src="img/logo-ucdavis.png" title="UC Davis" alt="UC Davis" />
-    <h1>College of Agricultural &amp; Environmental Sciences</h1></a>
+    <h1>College of Agricultural and Environmental Sciences</h1></a>
     <div class="search"><img src="img/temp-search.png" alt="placeholder for search" /></div>
   </div>
   <nav>
@@ -121,73 +140,60 @@
   </nav>
 </section>
 
-<section class="mid">
-  <div class="pathbar">
-    <span class="home"><a href="#">Home</a></span> 
-    <span class="crumb"><a href="#">News Center</a></span>
-    <span class="crumb last"><a href="#">Article title</a></span>
+<section class="slidefeature">
+  <div class="slider">
+  <img src="img/feat-tractor.jpg" alt="tractor" />
   </div>
-</section>
-
-<div class="newsheader"><img src="" alt="" /></div>
-<section class="main">
-  <section class="content">
-  <div id="edit-bar"></div>
-    <h1>Mary Delany and Richard Bostock are new AAAS fellows</h1>
-    <p class="description">Two CA&amp;ES faculty join 15 other UC Davis faculty in becoming new fellows of the American Association for the Advancement of Science.</p>
-    <p class="byline">January 3, 2013 &mdash; UC Davis News Service &mdash; Pat Bailey</p>
-    <h2>Mary Delany</h2>
-    <p>Animal science professor Mary Delany, a distinguished avian geneticist and interim dean of CA&amp;ES, has been elected as a fellow of the American Association for the Advancement of Science, one of 17 faculty members from UC Davis to receive the honor this year.</p>
-    <p>Delany was recognized for her contributions to poultry genetics and genomics, administrative leadership in the agricultural sciences, and service in science policy and conservation of avian research resources. Using chickens as a research model, she studies the biology of telomeres, DNA regions that cap the end of chromosomes and have important implications for aging and disease in humans as well as birds and other animal species.</p>
-    <p>Delany is among 702 new fellows, honored for their scientifically or socially distinguished efforts to advance science or its applications. Delany and other new fellows will be formally recognized in February during the association's annual meeting in Boston.</p>
-    <h2>Richard Bostock</h2>
-    <p>Plant pathology professor Richard Bostock has been elected as a fellow of the American Association for the Advancement of Science, one of 17 faculty members from UC Davis to receive the honor this year. Bostock was recognized for his distinguished contributions to basic research in plant-microbe interactions and exemplary leadership in the National Plant Diagnostic Network, a surveillance and diagnostic program designed to protect plants against serious pests and diseases that could be introduced accidentally or through bioterrorism. His research focuses on fungal diseases of orchard crops and on root- and crown-rot diseases caused by the destructive Phytophthora species, using various research plants including tomato, Arabidopsis, peach, walnut and rhododendron.</p>
-    <p>Bostock is among 702 new fellows, honored for their scientifically or socially distinguished efforts to advance science or its applications. Bostock and other new fellows will be formally recognized in February during the association's annual meeting in Boston.</p>
-  </section>
-  <section class="rightcol">
-    <nav class="toc">
-    </nav>
-    <div class="archive">
-    </div>
-    <nav class="section">
-      <h3>In this section</h3>
-      <ul><!--
-        <li class="parent"><a href="#">News Center</a></li>
-        <li><a href="#">Articles</a>
-          <ul>
-            <li><a href="#">Latest news</a></li>
-            <li><a href="#">Archive</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Publications</a>
-          <ul>
-            <li><a href="#">Outlook alumni magazine</a></li>
-            <li><a href="#">Impact statements</a></li>
-            <li><a href="#">Discover factsheets</a></li>
-          </ul>
-        </li>-->
-      </ul>
-    </nav>
-    <div class="related">
-      <h3>Related topics</h3>
-      <ul class="topics">
-        <li></li>
-      </ul>
-      <p class="more"><a href="#">View all topics</a></p>
-    </div>
-    <div class="share">
-      <h3>Share this article</h3>
-      <ul></ul>
-    </div>
-    <div class="search">
-      <h3>News Center search</h3>
-      <img src="img/temp-search.png" alt="placeholder for search" />
-      <p class="more"><a>Advanced search options</a></p>
-    </div>
-  </section>
 </section>    
 
-<a class="scrollup" href="#">Scroll to top</a>
+<section class="main">
+  <section class="news masonry">
+    <div class="box article">
+      <img src="img/news01.jpg" alt="" />
+      <h4>UC Davis researchers aid effort</h4>
+      <p><span class="details">December 11, 2012</span> <span class="description">Intent on developing wheat varieties with higher yields and enhanced nutritional content, researchers at UC Davis have teamed up with scientists at nine other institutions in an attempt to sequence the wheat genome.</span></p>
+    </div>
+    <!--<div class="box article">
+      <h4>Pollution-detecting Aircraft Surveys PG&amp;E Pipeline for Gas Leaks</h4>
+      <p><span class="details">December 11, 2012</span> UC Davis atmospheric scientist Stephen Conley is flying over the spine of California, tracing 600 miles of Pacific Gas and Electric Co.’s natural gas pipeline for methane leaks. Specialized instruments on Conley's plane allow UC Davis researchers to detect gas leaks several miles downwind from the source.</p>
+    </div>
+    <div class="box article">
+      <img src="img/news02.jpg" alt="" />
+      <h4>Hope dawns for aging feed mill</h4>
+      <p><span class="details">December 3, 2012</span> There's a time warp at the UC Davis feedlot. New infrastructure will help UC Davis assess livestock’s environmental footprint.</p>
+    </div>
+    <div class="box students">
+      <img src="img/news03.jpg" alt="" />
+      <h2>Visit UC Davis</h2>
+      <p>Interested in taking a tour? Contact our Aggie Ambassadors and we'll give you a look around life on campus as an Aggie.</p>
+    </div>
+    <div class="box article">
+      <img src="img/news04.jpg" alt="" />
+      <h4>Science, still a man's world?</h4>
+      <p><span class="details">November 22, 2012</span> Discrimination against women in science continues to be a problem, even in fields dominated by female researchers. UC Davis found a startling gender disparity in who is chosen to speak at scientific conferences.</p>
+    </div>
+    <div class="box spotlight">
+      <img src="img/news05.jpg" alt="" />
+      <p>The latest issue of Outlook, hot off the presses. <a href="#">Read a copy online</a> or <a href="#">download the PDF</a>.</p>
+    </div>-->
+  </section>
+  <section class="actions">
+    <!--<div class="search">
+      <input class="field" type="text" />
+      <input class="btn" type="button" />
+    </div>
+    <ul class="buttons">
+      <li class="apply"><a href="#">Apply online</a></li>
+      <li class="about"><a href="#">About CA&amp;ES</a></li>
+      <li class="support"><a href="#">Support CA&amp;ES</a></li>
+    </ul>
+    <ul class="internal">
+      <li><a href="#">Visit UC Davis</a></li>
+      <li><a href="#">CA&amp;ES Staff</a></li>
+      <li><a href="#">CA&amp;ES Careers</a></li>
+    </ul>-->
+  </section>
+</section>    
     
 <section class="footer">
   <section class="content">
@@ -224,8 +230,42 @@
 </section>
 </div><!-- end of container -->
 
+
 <!-- browser selector classes -->
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.masonry.min.js"></script>
 <script src="js/css_browser_selector.js"></script>
+
+
+<!-- code to enable Masonry -->
+<script>
+var $container = $('.news');
+
+$container.imagesLoaded( function(){
+  $container.masonry({
+    itemSelector : '.box',
+    columnWidth: 240
+  });
+});
+</script>
+
+
+<!-- code to enable nivo slider -->
+<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+    $('#slider').nivoSlider({
+        effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
+        animSpeed: 1000, // Slide transition speed
+        pauseTime: 6000, // How long each slide will show
+        directionNav: false, // Next & Prev navigation
+        controlNav: true, // 1,2,3... navigation
+        controlNavThumbs: false, // Use thumbnails for Control Nav
+        pauseOnHover: true, // Stop animation while hovering
+        manualAdvance: false, // Force manual transitions
+    });
+});
+</script>
 
 <!-- code to enable fancybox -->
 <script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
@@ -234,41 +274,14 @@
   <script type="text/javascript">
   $(document).ready(function() {
     /* Simple image gallery. Uses default settings */
-    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='/image']").attr('rel', 'gallery').fancybox();
+    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').fancybox();
     $('.fancybox-media').attr('rel', 'media-gallery').fancybox();
   });
-</script>
-  <script type="text/javascript">
-  $(document).ready(function() {  
-    $(".rightcol nav").find("a[href='"+window.location.href+"']").filter(":last").addClass("current");
-  });
-  </script>
-
-
-<!-- code for scroll up -->
-<script type="text/javascript">
-    $(document).ready(function(){ 
- 
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > 100) {
-                $('.scrollup').fadeIn();
-            } else {
-                $('.scrollup').fadeOut();
-            }
-        }); 
- 
-        $('.scrollup').click(function(){
-            $("html, body").animate({ scrollTop: 0 }, 600);
-            return false;
-        });
- 
-    });
 </script>
 
 
 <!-- code for Google Analytics -->
 <div id="footer-js">&nbsp;</div>
-
 
 </body>
 </html>

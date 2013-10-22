@@ -7,14 +7,14 @@
 <script type="text/javascript" src="//use.typekit.net/dwz8sqy.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-<link href="css/news-html.min.css" rel="stylesheet" type="text/css" />
+<!-- <link href="css/jobpost-html.min.css" rel="stylesheet" type="text/css" /> -->
 
-<!-- <link href="css/caes.min.css" rel="stylesheet" type="text/css" />
-<link href="css/news.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css?v=2.1.5" media="screen" /> -->
+<link href="css/caes.css" rel="stylesheet" type="text/css" />
+<link href="css/jobpost.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css?v=2.1.5" media="screen" />
 </head>
 
-<body class="section-news diazo-news diazoed">
+<body class="diazo-jobpost diazoed">
 <div id="container">
 
 <section class="header">
@@ -147,8 +147,6 @@
   <section class="rightcol">
     <nav class="toc">
     </nav>
-    <div class="archive">
-    </div>
     <nav class="section">
       <h3>In this section</h3>
       <ul><!--
@@ -168,21 +166,28 @@
         </li>-->
       </ul>
     </nav>
-    <div class="related">
-      <h3>Related topics</h3>
+    <div class="details">
+      <h3>Position details</h3>
+      <h4>Application period</h4>
+      <p class="app-period">&nbsp;</p>
+      <h4>Location</h4>
+      <p class="location">&nbsp;</p>
+      <h4>Contact info</h4>
+      <p class="contact-email"></p>
+      <p class="contact-tel"></p>
+      <h4>Apply online</h4>
+      <p class="apply-online">&nbsp;</p>
+    </div>
+    <div class="categories">
+      <h3>View more open positions</h3>
       <ul class="topics">
         <li></li>
       </ul>
-      <p class="more"><a href="#">View all topics</a></p>
+      <p class="more"><a href="#">View all positions</a></p>
     </div>
     <div class="share">
-      <h3>Share this article</h3>
+      <h3>Share this position</h3>
       <ul></ul>
-    </div>
-    <div class="search">
-      <h3>News Center search</h3>
-      <img src="img/temp-search.png" alt="placeholder for search" />
-      <p class="more"><a>Advanced search options</a></p>
     </div>
   </section>
 </section>    
@@ -234,7 +239,7 @@
   <script type="text/javascript">
   $(document).ready(function() {
     /* Simple image gallery. Uses default settings */
-    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='/image']").attr('rel', 'gallery').fancybox();
+    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='image']").attr('rel', 'gallery').fancybox();
     $('.fancybox-media').attr('rel', 'media-gallery').fancybox();
   });
 </script>

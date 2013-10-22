@@ -133,7 +133,7 @@ ul#list-nav li a:hover {
 	background-color: #ebe9e4;
 }
 #title_description {
-	margin-left:12%;
+	margin-left:5%;
     width:60%;
     font-size:1.6em;
 	font-family: "futura-pt",sans-serif;
@@ -142,6 +142,9 @@ ul#list-nav li a:hover {
 	color:#696969;
 	line-height: 1.3em;
 	margin-bottom: 1.0em;
+}
+.section-front-page #title_description {
+	margin-left: 7.5%;
 }
 
 #title_description a {
@@ -458,7 +461,9 @@ ul#buttons a:hover {
 	-webkit-transition:background-color 0.5s; /* Safari and Chrome */
 	-o-transition:background-color 0.5s; /* Opera */
 }
-
+#portal-breadcrumbs {
+	font-size: 130%;
+}
 
 
 

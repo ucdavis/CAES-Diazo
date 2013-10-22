@@ -1,20 +1,22 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>UC Davis CA&amp;ES</title>
 
 <script type="text/javascript" src="//use.typekit.net/dwz8sqy.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-<link href="css/news-html.min.css" rel="stylesheet" type="text/css" />
+<!-- <link href="css/feature-html.min.css" rel="stylesheet" type="text/css" /> -->
 
-<!-- <link href="css/caes.min.css" rel="stylesheet" type="text/css" />
-<link href="css/news.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css?v=2.1.5" media="screen" /> -->
+<link href="css/caes.css" rel="stylesheet" type="text/css" />
+<link href="css/content.css" rel="stylesheet" type="text/css" />
+<link href="css/feature.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css?v=2.1.5" media="screen" />
 </head>
 
-<body class="section-news diazo-news diazoed">
+<body class="diazo-feature diazoed">
 <div id="container">
 
 <section class="header">
@@ -121,15 +123,20 @@
   </nav>
 </section>
 
-<section class="mid">
+<!--<section class="mid">
   <div class="pathbar">
     <span class="home"><a href="#">Home</a></span> 
     <span class="crumb"><a href="#">News Center</a></span>
     <span class="crumb last"><a href="#">Article title</a></span>
   </div>
-</section>
+</section>-->
 
-<div class="newsheader"><img src="" alt="" /></div>
+<section class="slidefeature">
+  <div class="slider">
+  <img src="img/feat-tractor.jpg" alt="tractor" />
+  </div>
+</section>   
+
 <section class="main">
   <section class="content">
   <div id="edit-bar"></div>
@@ -145,13 +152,9 @@
     <p>Bostock is among 702 new fellows, honored for their scientifically or socially distinguished efforts to advance science or its applications. Bostock and other new fellows will be formally recognized in February during the association's annual meeting in Boston.</p>
   </section>
   <section class="rightcol">
-    <nav class="toc">
-    </nav>
-    <div class="archive">
-    </div>
     <nav class="section">
       <h3>In this section</h3>
-      <ul><!--
+      <ul>
         <li class="parent"><a href="#">News Center</a></li>
         <li><a href="#">Articles</a>
           <ul>
@@ -165,25 +168,29 @@
             <li><a href="#">Impact statements</a></li>
             <li><a href="#">Discover factsheets</a></li>
           </ul>
-        </li>-->
+        </li>
       </ul>
     </nav>
-    <div class="related">
+    <div class="portlet">&nbsp;</div>
+    <!--<div class="related">
       <h3>Related topics</h3>
       <ul class="topics">
-        <li></li>
+        <li><a href="#">AAAS</a></li>
+        <li><a href="#">Avian Science</a></li>
+        <li><a href="#">Faculty</a></li>
+        <li><a href="#">Honors</a></li>
+        <li><a href="#">Mary Delany</a></li>
+        <li><a href="#">National Plant Diagnostic Network</a></li>
+        <li><a href="#">Plant pathology</a></li>
+        <li><a href="#">Richard Bostock</a></li>
       </ul>
       <p class="more"><a href="#">View all topics</a></p>
-    </div>
-    <div class="share">
-      <h3>Share this article</h3>
-      <ul></ul>
     </div>
     <div class="search">
       <h3>News Center search</h3>
       <img src="img/temp-search.png" alt="placeholder for search" />
-      <p class="more"><a>Advanced search options</a></p>
-    </div>
+      <p class="more"><a href="#">Advanced search options</a></p>
+    </div>-->
   </section>
 </section>    
 
@@ -218,6 +225,7 @@
   </section>
   <section class="sitemap">
 
+
   </section>
   </section>
   <span class="clear">&nbsp;</span>
@@ -227,6 +235,29 @@
 <!-- browser selector classes -->
 <script src="js/css_browser_selector.js"></script>
 
+
+<!-- code to enable nivo slider -->
+<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+    $('#slider.active').nivoSlider({
+        effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
+        animSpeed: 1000, // Slide transition speed
+        pauseTime: 6000, // How long each slide will show
+        directionNav: false, // Next & Prev navigation
+        controlNav: false, // 1,2,3... navigation
+        controlNavThumbs: false, // Use thumbnails for Control Nav
+        pauseOnHover: true, // Stop animation while hovering
+        manualAdvance: false, // Force manual transitions
+        beforeChange: function(){}, // Triggers before a slide transition
+        afterChange: function(){}, // Triggers after a slide transition
+        slideshowEnd: function(){}, // Triggers after all slides have been shown
+        lastSlide: function(){}, // Triggers when last slide is shown
+        afterLoad: function(){} // Triggers when slider has loaded
+    });
+});
+</script>
+
 <!-- code to enable fancybox -->
 <script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
 <script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.6"></script>
@@ -234,7 +265,7 @@
   <script type="text/javascript">
   $(document).ready(function() {
     /* Simple image gallery. Uses default settings */
-    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='/image']").attr('rel', 'gallery').fancybox();
+    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='image']").attr('rel', 'gallery').fancybox();
     $('.fancybox-media').attr('rel', 'media-gallery').fancybox();
   });
 </script>

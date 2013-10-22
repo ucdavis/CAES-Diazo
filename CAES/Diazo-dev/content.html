@@ -7,14 +7,14 @@
 <script type="text/javascript" src="//use.typekit.net/dwz8sqy.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-<link href="css/news-html.min.css" rel="stylesheet" type="text/css" />
+<!-- <link href="css/content-html.min.css" rel="stylesheet" type="text/css" /> -->
 
-<!-- <link href="css/caes.min.css" rel="stylesheet" type="text/css" />
-<link href="css/news.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css?v=2.1.5" media="screen" /> -->
+<link href="css/caes.css" rel="stylesheet" type="text/css" />
+<link href="css/content.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css?v=2.1.5" media="screen" />
 </head>
 
-<body class="section-news diazo-news diazoed">
+<body class="diazo-content diazoed">
 <div id="container">
 
 <section class="header">
@@ -129,10 +129,11 @@
   </div>
 </section>
 
-<div class="newsheader"><img src="" alt="" /></div>
+
+
 <section class="main">
   <section class="content">
-  <div id="edit-bar"></div>
+<!--  <div id="edit-bar"></div>-->
     <h1>Mary Delany and Richard Bostock are new AAAS fellows</h1>
     <p class="description">Two CA&amp;ES faculty join 15 other UC Davis faculty in becoming new fellows of the American Association for the Advancement of Science.</p>
     <p class="byline">January 3, 2013 &mdash; UC Davis News Service &mdash; Pat Bailey</p>
@@ -145,13 +146,9 @@
     <p>Bostock is among 702 new fellows, honored for their scientifically or socially distinguished efforts to advance science or its applications. Bostock and other new fellows will be formally recognized in February during the association's annual meeting in Boston.</p>
   </section>
   <section class="rightcol">
-    <nav class="toc">
-    </nav>
-    <div class="archive">
-    </div>
     <nav class="section">
       <h3>In this section</h3>
-      <ul><!--
+      <ul>
         <li class="parent"><a href="#">News Center</a></li>
         <li><a href="#">Articles</a>
           <ul>
@@ -165,25 +162,30 @@
             <li><a href="#">Impact statements</a></li>
             <li><a href="#">Discover factsheets</a></li>
           </ul>
-        </li>-->
+        </li>
       </ul>
     </nav>
-    <div class="related">
+    <div class="portlet">&nbsp;
+    </div>
+    <!--<div class="related">
       <h3>Related topics</h3>
       <ul class="topics">
-        <li></li>
+        <li><a href="#">AAAS</a></li>
+        <li><a href="#">Avian Science</a></li>
+        <li><a href="#">Faculty</a></li>
+        <li><a href="#">Honors</a></li>
+        <li><a href="#">Mary Delany</a></li>
+        <li><a href="#">National Plant Diagnostic Network</a></li>
+        <li><a href="#">Plant pathology</a></li>
+        <li><a href="#">Richard Bostock</a></li>
       </ul>
       <p class="more"><a href="#">View all topics</a></p>
-    </div>
-    <div class="share">
-      <h3>Share this article</h3>
-      <ul></ul>
     </div>
     <div class="search">
       <h3>News Center search</h3>
       <img src="img/temp-search.png" alt="placeholder for search" />
-      <p class="more"><a>Advanced search options</a></p>
-    </div>
+      <p class="more"><a href="#">Advanced search options</a></p>
+    </div>-->
   </section>
 </section>    
 
@@ -218,6 +220,7 @@
   </section>
   <section class="sitemap">
 
+
   </section>
   </section>
   <span class="clear">&nbsp;</span>
@@ -234,7 +237,7 @@
   <script type="text/javascript">
   $(document).ready(function() {
     /* Simple image gallery. Uses default settings */
-    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='/image']").attr('rel', 'gallery').fancybox();
+    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='image']").attr('rel', 'gallery').fancybox();
     $('.fancybox-media').attr('rel', 'media-gallery').fancybox();
   });
 </script>

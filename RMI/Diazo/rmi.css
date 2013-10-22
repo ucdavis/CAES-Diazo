@@ -400,11 +400,11 @@ span.discreet {
 	text-indent: 0px;
 	width:100%;
 }
-#ul1 li:last-child a {
-	border-right:none;
-}
 #ul1 ul.submenu li:first-child a {
 	border-top: none !important;
+}
+#ul1 li:last-child a {
+	border-right:none;
 }
 .LSBox .searchSection {
     display: none;

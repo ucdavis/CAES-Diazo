@@ -330,6 +330,7 @@ a:hover, a:active {}
 	float: left;
 	min-height: 700px;
 }
+	.site-ChinaApple .main .content {width: 98%;}
 	.main .content iframe {
 		max-width: 95%;
 	}
