@@ -268,6 +268,30 @@
     });
 </script>
 
+<script type="text/javascript">
+    $(document).ready(function() {
+        // Let's see, if we are coming from our special section:
+        if (document.referrer.indexOf('/news') != -1) {
+            // Yes, we have the button to toggle portal_type-filter:
+            if ($('#pt_toggle').length>0) {
+                // If it's checked we uncheck it:
+                if ($('#pt_toggle').is(':checked')) {
+                    $('#pt_toggle').click();
+                }
+                // If for any reason it's not checked, we check and uncheck it,
+                // which results in NO types to filter, for now:
+                else {
+                    $('#pt_toggle').click();
+                    $('#pt_toggle').click();
+                }
+                // Then we check types we want to filter:
+                // $("input[value='Event']").click();
+                $("input[value='News Item']").click();
+            }
+        }
+    });
+</script>
+
 
 <!-- code for Google Analytics -->
 <div id="footer-js">&nbsp;</div>
