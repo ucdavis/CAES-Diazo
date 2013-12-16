@@ -1,0 +1,68 @@
+// Admin section
+
+// Jobs
+.subsection-asp-open {
+	.main .documentByLine {display: none;}
+	&.template-tabular_view table.listing {
+		td:last-child {
+			width: 100px; 
+			overflow: hidden; 
+			height: 2em; 
+			@include inline-block(top);
+			margin-right: 0;
+		}
+		th:nth-child(2) {
+			overflow: hidden;
+			text-indent: -100px;
+		}
+		th:nth-child(2):after {
+			content: ' Department';
+			padding-left: 20px;
+		}
+	} // End .subsection-asp-open.template-tabular_view table.listing
+
+	h1.documentFirstHeading {margin-bottom: 1em;}
+}
+.subsection-asp-open-categories .main #content li {font-size: 1.5em;}
+
+.template-jobpost_view .thegoods .eventDetails {display: none;}
+
+.rightcol {
+	.details {
+		h4 {
+			font-size: .7em;
+			@include uppercased;
+			padding-left: 20px;
+		}
+		p {
+			font-size: .9em;
+			padding-left: 30px;
+			color: #777;
+		}
+		p.contact-email, p.apply-online {
+			padding-left: 0;
+			margin-bottom: 0;
+			a {padding-left: 30px;}
+		}
+		p.contact-tel {margin-top: 0;}
+	} // End .details
+
+	.position-categories a {padding-left: 20px; @include inline-block(top);}
+
+} // End .rightcol
+
+
+
+// Other custom pages
+
+.subsection-resources-aes-reeport {
+	.thegoods {min-height: 1200px;}
+	.portlet-static-aes-menu {display: none;}
+}
+
+.subsection-financial-college-financial-team .thegoods table.lotsotext td table td {padding-bottom: 0.5em;}
+
+.subsection-business-commencement .thegoods {min-height: 1000px;}
+.subsection-business-commencement-menu .portlet-static-commencement-training {display: none;}
+
+

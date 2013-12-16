@@ -1,0 +1,248 @@
+// Submain styles
+// Not quite the index page
+
+.main {width: 50%;}
+
+.slidefeature {height: 266px;}
+
+div.portlet-static-nivo {
+	width: 1190px; 
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+
+	.static-slider {
+		position: absolute; 
+		left: 0; right: 0; 
+		margin: auto;
+	}
+	.static.text {
+		position: relative;
+		width: 70%; width: 960px; /* change this after getting masonry to be flexy */
+		margin: 0px auto;
+		@include unresponsive-sizes;
+		height: 266px;
+		display: block;
+	}
+
+	img {
+		height: 266px; overflow: hidden; margin-bottom: 0px;
+		width: 100%; height: auto; max-width: 2000px;
+	}
+
+	.nivo-caption {
+		height: 86px;
+		width: 480px;
+		top: 180px; left: -1074px;
+
+		.webkit & {
+			position: absolute;
+			top: 180px;
+			left: 9%;
+		}
+	} // End .nivo-caption
+} // End div.portlet-static-nivo
+
+#slider.nocaption {position: absolute; top: 0;}
+
+
+// Custom pages
+.section-news .main .news {
+	.box.large p {font-size: 0.75em;}
+	.box.gold {
+		.leadtext {font-size: 0.35em;}
+		label {font-size: 0.5em;}
+		.mc-field-group {
+			line-height: 0.7em;
+			input {
+				width: 93%; padding: 8px 5px 6px; 
+				color: #5c5c5c; margin-bottom: 0.5em;
+				text-align: center;
+			}
+		} // End .mc-field-group
+		input.button {
+			background: rgba($ucdavis-blue, 0.9); 
+			border: 0px; width: 100%; 
+			color: #fff; 
+			font-family: $futura;
+			font-weight: $medium;
+			@include uppercased(1px);
+			cursor: pointer;
+			padding: 3px 0;
+			margin-bottom: 0.5em;
+		}
+	} // End .box.gold
+} // End .section-news .main .news
+
+
+
+.section-outreach .main .news, .section-research .main .news {
+	.box.blue .text {
+		width: 90%; font-size: 1.1em;
+		h4 {font-size: 0.8em;}
+		h3 {margin-top: 0.25em; font-size: 1.5em;}
+	} // End .box.blue .text
+
+	.box.gold {
+		p {margin-top: 0em;}
+		p.leadtext {margin-top: 1em;}
+	} // End .box.gold
+} // End of that mess
+
+
+
+
+.subsection-future-future { 
+	.slidefeature {height: 310px;}
+	.nivoSlider {width: 1440px;}
+}
+
+
+
+/* ---- students - student life ---- */
+.subsection-future-life-student-life {
+	.slidefeature {height: 365px;}
+	.portlet-static-nivo iframe {position: relative; top: -50px; left: -60px;}
+}
+
+.subsection-future-academics-academics {
+	.box.col2 {
+		min-height: 305px;
+		img {width: 100%;}
+		&.right a {
+			@include inline-block(top); 
+			width: 46%; 
+			font-size: 1.1em; 
+			vertical-align: top; 
+			margin-right: 3%;
+		}
+		&.right h3 {margin-top: 17px;}
+		&.right img {margin-top: 5px;}
+	} // End .box.col2
+
+	.box.col4 {
+		h3 {
+			@include uppercased(1px, $heavy);
+			font-size: 0.9em; 
+			letter-spacing: 1px;
+		}
+		ul {margin: 0.25em 0em 1em 1em;}
+		li {
+			display: list-item; 
+			font-size: 0.75em;
+			list-style: square; 
+			color: $ucdavis-blue; 
+			list-style-position: outside;
+			margin-bottom: 0.5em;
+			line-height: 1.5em;
+		}
+	} // End .box.col4
+}
+
+
+
+
+/* ---- student - academics ---- */
+.subsection-future-academics.template-submain_view .slidefeature {height: 365px;}
+.subsection-future-academics {
+	.main .news {
+
+		.box.col4 {font-size: 115%; width: 938px;}
+		.box.col4.gold {background-color: #fff;}
+
+		.box.col2 p.aboutacademics {font-size: 92%;}
+		.box .col2 .left .masonry-brick {font-size: 115%;}
+
+	} // End .main .news
+	.majorcaes {
+		@include inline-block(top);
+		width: 31.97%;
+		vertical-align: top;
+		.es {
+			margin-right: 0px;
+		}
+		p {
+			color: rgba(7, 22, 38, 0.7);
+			line-height: 200%;
+		}
+		a:hover {
+			color: $ucdavis-blue;
+		}
+	} // End .majorcaes
+} // End .subsection-future-academics
+
+
+
+/* ----- admin section ----- */
+.section-admin .box {
+	font-family: $futura;
+
+	&.intro {font-family: $sans-serif; min-height: 399px;}
+	&.title {
+		background: $ucdavis-gold;
+		h2 {color: #fff;}
+		&.college {background: rgba($ucdavis-blue,0.77);}
+		&.campus {background: rgba($ucdavis-blue,0.97);}
+	}
+	&.button a {
+		display: block; 
+		height: 150px; 
+		padding-top: 100px; 
+		text-align: center; 
+		background: url(../img/sprite-admin.png) no-repeat 35px -20px;
+		@include uppercased(1px);
+
+		&.cru {background-position: -115px -15px;}	
+		&.newemployee {background-position: -265px -15px;}	
+		&.staffdir {background-position: -415px -15px;}
+
+		&.ays {background-position: 35px -165px; color: rgba($ucdavis-blue,0.97);}
+		&.trs {background-position: -115px -165px; color: rgba($ucdavis-blue,0.97);}
+		&.prepurch {background-position: -265px -165px; color: rgba($ucdavis-blue,0.97);}
+		&.mytravel {background-position: -415px -165px; color: rgba($ucdavis-blue,0.97);}
+
+		&.cft {background-position: -265px -315px; color: rgba($ucdavis-blue,0.77) !important;}
+		&.cpt {background-position: -415px -315px; color: rgba($ucdavis-blue,0.77) !important;}
+
+		&:hover {
+			color: #fff; 
+			background: url(../img/sprite-admin.png) no-repeat $ucdavis-gold -565px -20px;
+
+			&.bizoffice {background-position: -565px -20px;}
+			&.cru {background-position: -715px -15px;}
+			&.newemployee {background-position: -865px -15px;}
+			&.staffdir {background-position: -1015px -15px;}
+
+			&.ays {background-position: -565px -165px; color: #fff; background-color: rgba($ucdavis-blue,0.97);}
+			&.trs {background-position: -715px -165px; color: #fff; background-color: rgba($ucdavis-blue,0.97);}
+			&.prepurch {background-position: -865px -165px; color: #fff; background-color: rgba($ucdavis-blue,0.97);}
+			&.mytravel {background-position: -1015px -165px; color: #fff; background-color: rgba($ucdavis-blue,0.97);}
+
+			&.cft {background-position: -565px -315px; color: #fff !important; background-color: rgba($ucdavis-blue,0.77);}
+			&.cpt {background-position: -715px -315px; color: #fff !important; background-color: rgba($ucdavis-blue,0.77);}
+
+
+		} // End a:hover
+	} // End .box.button a
+
+	&.college {
+		min-height: 200px;
+
+		li {
+			display: list-item; 
+			color: $ucdavis-gold; 
+			list-style: square;
+			margin: 0.25em 0 0.25em 1em; 
+			font-size: 1.1em;
+		}
+		.col {
+			float: left; 
+			width: 45%; 
+			margin-right: 4%;
+		}
+		&.title {min-height: 0px;}
+	} // End .box.college
+
+} // End .section-admin .box
+
+

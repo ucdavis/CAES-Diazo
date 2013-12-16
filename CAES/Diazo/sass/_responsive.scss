@@ -1,0 +1,41 @@
+// Responsive
+// Adjustments to type sizes, grids, and images.
+
+
+/* ---- "media queries" ----- */
+@media (max-width: 1024px) {
+  .header nav .mega {
+  	min-width: 858px;
+  }
+}
+
+
+@media only screen and (min-device-width: 320px) and (orientation:portrait),
+                   (max-device-width: 1024px) and (orientation:landscape){
+       .header .search {max-width: 80px; max-height: 45px; overflow: hidden; display: none;}
+       .header .search .searchField,
+       .header .search .searchButton {@include inline-block(top); float: left;}
+
+       .header .search .searchField {max-width: 80px;}
+
+       .search.footersearch .searchField {max-width: 120px;}
+
+       .footer .content section.social li a {background-image: none;}
+
+       .main object {display: none;}
+}
+
+@media only screen and (min-device-width: 320px) and (orientation:portrait),
+                   (max-device-width: 768px) and (orientation:portrait){
+       .header .search {max-width: 80px; max-height: 45px; overflow: hidden; display: none;}
+       .header .search .searchField,
+       .header .search .searchButton {@include inline-block(top); float: left;}
+
+       .header .search .searchField {max-width: 80px;}
+
+       .search.footersearch .searchField {max-width: 120px;}
+
+       .footer .content section.social li a {background-image: none;}
+
+       .main object {display: none;}
+}

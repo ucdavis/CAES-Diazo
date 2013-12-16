@@ -1,0 +1,223 @@
+// Feature 
+// Styles for feature.html
+
+.main {
+	margin-top: 0; 
+	position: relative; 
+	left: -20px;
+
+	.thegoods {padding-top: 20px;}
+}
+
+h1.documentFirstHeading {display: none;}
+
+div.portlet-static-nivo {
+	width: 100%;
+	ul {
+		width: 1190px; width: 100%; 
+		margin: 0 auto;
+		position: relative;
+	
+		li {
+			height: 310px; 
+			overflow: hidden; 
+			margin-bottom: 0px;
+			float: none;
+		}
+	}
+}
+
+
+.slider {
+	height: 310px; width: 1440px; /* what it was before */
+
+	.text {
+		z-index: 500;
+		position: relative;
+		width: 70%;
+		margin: 0px auto;
+		@include unresponsive-sizes;
+		height: 310px;
+		display: block;
+		left: -20px;
+	}
+}
+
+.subsection-events-college-celebration {
+	.slidefeature .nivo-caption {display: none !important;}
+	.slider .text {display: none;}
+}
+
+.slidefeature {
+	img {
+		position: absolute;
+		left: 0;
+		margin: auto;
+	}
+	.active img {display: none;}
+}
+
+.spotlighttext {
+	img {
+		float: left;
+		width: 100%;
+	}
+}
+
+.main .news .box.article h4 {font-size: 1em;}
+.thegoods .portlet-collection-news h4 {font-size: 1.2em;}
+
+
+
+/*   custom pages   */
+
+.subsection-overview-visit .slider {
+	width: auto; overflow: hidden;
+	p {margin: 0;}
+}
+
+.subsection-future-academics-majors .thegoods,
+.subsection-dept .thegoods, 
+.subsection-facilities .thegoods {min-height: 1300px;}
+.subsection-centers .thegoods {min-height: 800px;}
+
+
+
+// Facts and distinctions page
+
+/* facts+distinctionspage */
+.fact-distinctions {
+	width: 100%;
+	@include inline-block(top);
+	vertical-align: top;
+	margin-right: 5px;
+	h2 {margin-top: 0px;}
+}
+
+.subsection-overview-facts {
+	#content-core {
+		.majorcaes {
+			@include inline-block(top);
+			width: 30%;
+			margin-right: 1em;
+			vertical-align: top;
+
+			h3 {
+				font-size: 1em;
+				margin-bottom: 10px;
+			}
+			a:hover {
+				color: $ucdavis-blue;
+			}
+			ul {
+				margin: 0 1em 0 1em !important;
+			}
+			li {
+				color: rgba(7, 22, 38, 0.7);
+				font-size: 0.85em;
+				font-family: $futura;
+				margin-right: 0px;
+				margin-bottom: 0.5em;
+			}
+			&.hs {float: right;}
+		}
+	} // End #content-core
+
+	.main .news .box.col4.gold {
+		background-color: #fff;
+	}
+
+	/* first bit */
+	.firstaward {
+		margin: 0px -57px 25px -25px;
+		border-bottom: solid 1px #DDDDDD;
+	}
+	.fact-distinctions {
+		p.ranking {
+			color:#fff;
+			background-color: $dark-gold;
+			width:100px;
+			text-align: center;
+			border-radius: 50px;
+			font-size: 65px;
+			margin: 0px 0px 15px 43% !important;
+		}
+		p.rankingtitle {
+			font-weight: $heavy;
+			text-align: center;
+			margin: 0px;
+			margin-bottom: 0px;
+		}
+		p.rankingsum {
+			text-align: center;
+			margin-right: 0px;
+		}
+		p.rankingsmaller {
+			color:#fff;
+			background-color: $dark-gold;
+			width:60px;
+			text-align: center;
+			border-radius: 40px;
+			font-size: 40px;
+			margin-bottom: 0px !important;
+			margin-left: 35%;
+		}
+		p.blue {background-color: rgba($ucdavis-blue, 0.9);}
+	} // End .fact-distinctions
+
+	/* second bit */
+	.secondaward {
+		width: 45%;
+		@include inline-block(top);
+		vertical-align: top;
+
+		.fact-distinctions & ul {
+			margin-left: 0px;
+		}
+
+		ul li {
+			display: inline-block !important;
+			width: 49%;
+			margin-right: 0px !important;
+			margin-bottom: 10px !important;
+			vertical-align: top;
+		}
+		p.rankingtitle {
+			@include inline-block(top);
+			margin-bottom: 20px !important;
+			margin-top: 20px !important;
+			margin-left: 19%;
+		}
+	} // End .secondaward
+	.firsta {margin-right: 9%;}
+
+	.facts-notes {
+		border-top: solid 1px #DDDDDD;
+		border-bottom: solid 1px #DDDDDD;
+		padding: 20px;
+		margin-left: -25px;
+		margin-right: -57px;
+
+		.thegoods & li {
+			margin-right: 0px;
+			margin-bottom: 5px;
+		}
+		div.portletStaticText & li {margin-bottom: 1.25em}
+	}
+} // End -overview-facts
+
+ 
+
+
+/* ---- "media queries" ----- 
+@media (max-width: 1020px) {
+	.slider {width: 100%;}
+	.slider .text {
+		width: 100%;
+	}
+	.portlet-static-nivo .static.text .nivo-caption, 
+	.portlet-static-nivo .static.text .spotlighttext {
+		left: 20px;
+	}
+}
+*/

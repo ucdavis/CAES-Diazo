@@ -1,0 +1,124 @@
+// News section
+
+.publication {
+	@include inline-block(top);
+	width: 27%;
+	margin: 0 2em 4em 0;
+	font-size: 0.85em;
+	vertical-align: bottom;
+	line-height: 1.2em;
+}
+
+.subsection-articles-topic {
+	
+	.documentByLine {display: none;}
+	#content-core .tileItem .documentByLine {display: block !important;}
+
+	#content dt {
+		width: 48%; margin-right: 1%; 
+		padding: 3px 0;
+		@include inline-block(top);
+		vertical-align: top;
+
+		a {padding: 3px 0;}
+	}
+}
+
+.outlookSquare {
+	width: 32%; 
+	@include inline-block(top); 
+	min-height: 300px; 
+	vertical-align: top; 
+	text-align: center;
+
+	h2 {margin-bottom: 0.5em;}
+}
+
+/* hide "Files folder" in year archive */
+.portaltype-folder.subsection-articles #content-core dt:first-child {display: none;}
+
+
+
+/* ----- news items ----- */
+.template-newsitem_view #content div.documentByLine {
+	display: block;
+	color: rgba($ucdavis-blue,0.86);
+	font-family: $serif;
+	font-weight: $bold;
+	font-size: 0.9em;
+}
+
+#content-core dd.image-caption {margin: 0;}
+#content div.newsImageContainer p.discreet, dd.image-caption {
+	background-color: transparent; 
+	color: rgba(92,92,92,0.8);
+	font-weight: $light;
+	font-style: italic;
+	top: 0;
+	width: 300px;
+	padding: 10px 5px;
+	font-family: $futura;
+}
+
+
+// Currents styles
+
+.newsheader {
+	display: none;
+	margin: 0 auto;
+
+	.subsection-publications-currents & {
+		display: block;
+		background: repeat-x url(../img/bg-news.png) 0 6px; 
+		height: 50px;
+		margin-bottom: -100px;
+		width: 70%;
+		@include unresponsive-sizes;
+		position: relative;
+		z-index: 5;
+		top: -1px;
+	}
+	.portlet-static-header {
+		width: 71.9234%;
+		float: left;
+		background: $header-blue !important;
+		height: 50px;
+		padding-top: 18px;
+		margin: 0 auto;
+	}
+	h2 {
+		margin-top: 0; 
+		margin-left: 22px;
+		font-weight: $light; 
+		font-size: 1.4em; 
+		color: #fff;
+		letter-spacing: 1px;
+
+		img {padding-bottom: 5px;}
+	}
+
+} // End .newsheader
+
+.subsection-publications #content .menuitem img {border: 0px none; @include box-shadow(none);}
+.subsection-publications .newsheader {background-image: none !important;}
+
+.subsection-publications-currents {
+	.thegoods {padding-top: 53px;}
+	&.template-newsitem_view #content div.documentByLine, .related,
+	.documentByLine, .tileFooter {display: none;}
+	#content h1.documentFirstHeading {
+		color: #fff; 
+		font-size: 1.25em; 
+		text-align: right; 
+		position: relative; 
+		z-index: 20; 
+		top: -51px;
+		margin-top: -51px !important; 
+		margin-right: 0;
+	}
+	.rightcol {
+		padding-top: 38px;
+		nav {margin-top: 50px;}
+	}
+}
+

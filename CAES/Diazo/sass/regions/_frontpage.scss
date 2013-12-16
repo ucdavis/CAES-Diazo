@@ -1,0 +1,318 @@
+// Front page styles 
+// For index.html and submain.html 
+// Masonry styles
+
+.main {
+	.diazo-submain & {margin-top: 20px;}
+	.section-front-page & {margin: 1em auto;}
+}
+
+.main .news {
+	width: 75%;
+	@include inline-block(top);
+	position: relative;
+	z-index: 50;
+
+	.diazo-submain & {width: 960px;} /* -- make this flexible -- */
+
+	h4 {font-weight: $medium;}
+
+	.box {
+		width: 234px;
+		float: left;
+		padding: 6px;
+		background: #fff;
+		border: 1px solid rgba(33, 33, 33, 0.1);
+		vertical-align: top;
+		margin: 0 6px 6px 0;
+		color: rgba(7,22,38,0.7);
+
+		.section-front-page & {width: 230px;}
+		&.right {margin-right: 0px;}
+
+		h3 {margin-top: 0.25em;}
+		h4 {margin-top: 0.5em;}
+
+		p:last-child {margin-bottom: 0px;}
+		a:link, a:visited {color: $bright-gold; font-weight: $bold;}
+		a:hover, a:active {color: $ucdavis-gold; font-weight: $bold;}
+
+		.leadtext {
+			background: $ucdavis-blue;
+			color: #fff !important;
+			@include uppercased(1px, $bold);
+			margin-bottom: 0px;
+			font-size: 0.7em;
+			font-family: $futura;
+
+			a {display: block; padding: 10px 7px 8px;}
+			a:link, a:visited {color: #fff !important;}
+		} // End .box .leadtext
+
+		&.col2 {
+			width: 474px; 
+			padding: 10px 8px;
+
+			&.left.intro {width: 474px;} 
+		}
+		&.col3 {width: 710px;}
+		&.col4 {width: 960px; margin-right: 0;}
+
+		&.feature {	 
+			/* overwrite from slider feature */
+			text-align: left; 
+			@include box-shadow(none);
+
+			h3 {
+				font-size: 1.4em; 
+				font-weight: $bold;
+			}
+			h4 {
+				@include uppercased(2px, $bold);
+				font-size: .8em;
+			}
+			p a {font-weight: $bold;}
+
+			h3.deansearch {font-size: 1.2em; font-weight: $medium;}
+		} // End .box.feature
+
+		&.blue {
+			background: rgba($ucdavis-blue,0.5); 
+			color: #fff;
+
+			h3 {
+				color: #fff; 
+				font-weight: $medium;
+				margin-top: 0.5em;
+			}
+			h4 {
+				margin-top: 0px;
+				@include uppercased(2px, $bold);
+				font-size: 0.6em;
+				color: #fff;
+
+				.subsection-research-main &, 
+				.subsection-outreach-main &, 
+				.subsection-news-main & {margin-top: 10px;}
+
+				.subsection-future-future & img {
+					margin-top: 15px;
+					margin-right: 0px;
+					@include box-shadow(none);
+					border: none;
+				}
+
+			}
+			p {margin-bottom: 0.5em;}
+			a:link, a:visited {color: #fff; font-weight: $bold;}
+			a:hover, a:active {color: $bright-gold; font-weight: $bold;}
+
+			img {
+				@include inline-block(top); 
+				border: 2px solid #fff; 
+				@include box-shadow(0px 0px 5px rgba(0,0,0,0.2));
+			}
+			.subsection-current-current & .blueadvising img {
+				@include box-shadow(none);
+				border:none;
+			}
+			.buttons img {
+				border: 0px; 
+				@include box-shadow(none); 
+				margin-top: 0.25em;
+			}
+			.text {
+				@include inline-block(top);
+				margin: 8px 0 0 10px;
+				width: 150px;
+				vertical-align: top;
+			}
+
+
+			.blueadvising {
+				@include inline-block(top);
+				width: 49%;
+				margin-top: 10px;
+
+				h4 {text-transform: none;}
+				h4 a {
+					padding-bottom: 1px;
+					font-size: 1.5em;
+					text-transform: none;
+					letter-spacing: 0.25px;
+				}
+			} // End .blueadvising
+		} // End .box.blue
+
+		&.gold {
+			background: $dark-gold;
+			color: #fff;
+
+			a:link, a:visited {
+				color: #fff !important; 
+				font-weight: $bold;
+			}
+
+			.leadtext {
+				font-size: .3em;
+				background: #fff;
+				color: rgba($ucdavis-blue, 0.9);
+
+				a:link, a:visited {color: rgba($ucdavis-blue, 0.9) !important;}
+			}
+		} // End .box.gold
+
+		&.lightgold {
+			background: rgba($bright-gold, 0.7);
+
+			&.feature h4 {color: $dark-gold;}
+		} // End .box.lightgold
+
+		&.large {
+			font-size: 2.1em;
+			font-weight: $extralight;
+			font-family: $futura;
+			p {
+				line-height: 1.2em;
+				margin-bottom: 0.25em;
+				strong {font-weight: $book;}
+			}
+		} // End .box.large
+
+		&.article {
+			h4 {font-size: 1em;}
+			.section-front-page & h4 {font-size: 1.2em;}
+		} // End .box.article
+
+		&.actions {
+			img {margin-bottom: 0.25em;}
+			img:first-child {margin-top: 0.25em;}
+		} // End .box.actions
+
+		&.intro {
+			font-size: 1.5em;
+			h3 {margin-top: 0.2em; font-size: 1.5em;}
+			ul {
+				margin-top: 0.25em;
+			}
+			li {
+				list-style: square;
+				display: list-item;
+				font-size: 0.75em;
+				margin: 0 0 0.25em 1.5em;
+			}
+
+			.section-front-page & p {margin: 0.5em 2.5em 0.75em 0;}
+			.section-research & ul {
+				width: 45%;
+				margin-right: 3%;
+				@include inline-block(top);
+				font-size: 0.85em;
+				vertical-align: top;
+			}
+		} // End .box.intro
+
+		&.frontpagearchive {
+			border: none;
+			background-color: $ucdavis-blue;
+			padding-top: 0px;
+		}
+
+		.quote {
+			font-family: $futura;
+			font-size: 1em; font-weight: $light;
+		}
+		.quotee {
+			text-align: right; 
+			display: block; 
+			font-size: 0.9em;
+			a {font-size: 1.2em;}
+		}
+
+		.section-front-page &.blue.large a:link,
+		.section-front-page &.blue.large a:visited,
+		.section-front-page &.blue.large a:hover,
+		.section-front-page &.blue.large a:active {font-weight: $book !important;}
+
+	} // End .box
+
+	div img {max-width: 100%;}
+	.details {
+		font-weight: $bold;
+		&:after {content: ' —';}
+	}
+
+} // End .main .news
+
+
+.main {
+	.actions {
+		width: 24%;
+		@include inline-block(top);
+		vertical-align: top;
+
+		.search {
+			background: rgba(255,255,255,.5); 
+			width: 230px;
+			border: 1px solid rgba(33, 33, 33, 0.1);
+
+			input.searchField {
+				border: 1px solid #c7c7c7;
+				background: rgba(0,0,0,.03);
+				height: 40px; width: 211px;
+				padding: 11px 5px 7px;
+				margin: 8px 6px;
+				font-size: 1.4em;
+				-moz-appearance: none;
+			}
+			input.searchButton {
+				background: url(../img/btn-search.jpg);
+				height: 22px; width: 211px;
+				margin: 0px 6px 8px;
+				@include box-shadow(none);
+				border: 0px;
+				cursor: pointer;
+				text-indent: -9999px;
+				overflow: hidden;
+			}
+		}
+
+		.social {margin-top: 10px;}
+		.buttons {
+			padding: 0; margin: 0;
+
+			a {
+				display: block;
+				width: 230px; height: 50px;
+				margin-top: 8px;
+			}
+			li {list-style: none;}
+			li:first-child a {margin-top: 0px;}
+		} // End .main .actions .buttons
+
+		.internal {
+			font-family: $futura;
+			background: #fff;
+			border: 1px solid rgba(33, 33, 33, 0.1);
+			margin-top: 10px;
+			padding-left: 13px;
+
+			li {
+				list-style-image: url(../img/li-grey.png);
+				list-style-position: inside;
+				padding: 7px 0 7px 4px;
+				font-weight: $medium;
+				color: #646464;
+				display: list-item;
+
+				&.ucdavis {
+					list-style: none;
+					list-style-position: outside;
+					display: block;
+					padding: 7px 0 15px;
+				}
+			}
+		}
+	} // End .main .actions
+} // End .main
+

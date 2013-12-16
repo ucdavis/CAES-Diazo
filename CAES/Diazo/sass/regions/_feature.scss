@@ -1,0 +1,123 @@
+// Styles for the Nivo slider and feature area in general
+
+.slider a {display: block;}
+
+.diazoed .portlet-static-slider,
+.diazoed .portlet-static-nivo {display: block;}
+
+
+.slidefeature {
+	text-align: center;
+	background: #122122;
+	@include box-shadow(0px 0px 7px rgba(0,0,0,0.4));
+	border-bottom: 1px solid #fff;
+	height: 310px; width: 100%; /* #TODO - stretches image and weird crop */
+	overflow: hidden;
+}
+.slider {
+	width: 100%; /* setting to 1190px leaves black bars on right and left */
+	min-width: 1190px; 
+	height: auto; 
+	margin: 0 auto; 
+	position: relative;
+}
+
+.theme-light .nivoSlider {margin-bottom: 0 !important;}
+.slider-container, #slider-container {border: 0px;}
+
+.portlet-static-nivo {
+	.nivo-caption, .spotlighttext {
+		display: block;
+		font-family: $futura;
+		background: #fff;
+		@include box-shadow(0px 0px 10px rgba(0,0,0,.1));
+		border: 0px none;
+		text-align: left;
+
+		p {margin: 0;}
+
+		.webkit & {position: absolute;}
+
+		h2 {
+			margin-top: 0.6em;
+			padding: 0px 10px 12px;
+			letter-spacing: 0.5px;
+		}
+		h4 {
+			height: 26px;
+			padding: 10px 12px 4px;
+			margin-top: 0px;
+			background: $dark-gold;
+			display: block;
+			@include uppercased(2px, $bold);
+			font-size: 0.6em;
+			color: #fff;
+		}
+		a {font-weight: $book;}
+
+	} // end .nivo-caption, .spotlighttext
+	
+	.static.text .nivo-caption,
+	.static.text .spotlighttext {
+		top: auto; 
+		bottom: 0px; 
+		left: 0; 
+		position: absolute; 
+		width: 480px;
+	}
+
+	.section-front-page & {
+		.static.text .spotlighttext {width: auto;}
+		.nivo-caption {
+			width: auto;
+			position: absolute;
+			background: transparent;
+			top: 0; right: 0; left: 0; margin: auto;
+		}
+		img {
+			display: inline; position: absolute;
+			right: 0; left: 0; margin: auto;
+		}
+	} // end .section-front-page .portlet-static-nivo
+
+	.nivo-controlNav {
+		bottom: 0px;
+	    left: 85%;
+	    position: absolute;
+	    text-align: center;
+	    z-index: 20;
+	    padding: 0;
+	}
+
+	.nocaption .nivo-caption {display: none !important;}
+} // end .portlet-static-nivo 
+
+
+.section-front-page {
+	.slider .text {
+		display: block;
+		position: relative;
+		height: 310px;
+		width: 70%; /* width: 960px; change this after getting masonry to be flexy */
+		@include unresponsive-sizes;
+		z-index: 1000;
+		margin: 0px auto;
+		left: 0px;
+	}
+	.spotlighttext {
+		position: absolute;
+		display: block;
+		width: auto;
+		left: 0px; bottom: 0px;
+		font-family: $futura;
+		background: #fff;
+		@include box-shadow(0px 0px 10px rgba(0,0,0,.1));
+		text-align: left;
+
+		.smaller {
+			font-size: 0.65em; 
+			@include uppercased(0.5px, $medium);
+		}
+	}
+} // end .section-front-page
+

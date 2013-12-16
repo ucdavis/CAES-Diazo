@@ -1,0 +1,11 @@
+// Regions
+// Page regions, named after their class and role names.
+// i.e. Banner, navigation, etc.
+
+@import 'regions/header';			// The top blue area
+@import 'regions/nav';				// The top nav and mega menus
+@import 'regions/feature'; 			// The nivo slider and feature area
+@import 'regions/pathbar';			// The crumbiest breadcrumbs
+@import 'regions/frontpage';		// Front / masonry pages
+@import 'regions/footer';			// Footer styles, the great blue abyss
+

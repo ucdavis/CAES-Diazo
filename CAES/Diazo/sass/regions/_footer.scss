@@ -1,0 +1,68 @@
+// Footer styles
+
+footer {
+	clear: both;
+	background: $dark-blue;
+	color: #fff;
+	margin-top: 20px;
+	padding: 30px 0 10px;
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+		border-bottom: 1px solid rgba(255,255,255,.5);
+		margin-bottom: 5px;
+		padding-bottom: 5px;
+		padding-top: 3px;
+		font-size: 0.8em;
+		font-weight: $bold;
+	}
+	p {
+		color: rgba(255,255,255,0.9); 
+		letter-spacing: 0.5px;
+		em, strong {color: rgba(255,255,255,1);}
+	}
+
+	a:hover {color: $bright-gold;}
+
+	.container {
+		width: 70%;
+		margin: 0px auto;
+		@include unresponsive-sizes;
+
+		section {
+			width: 23%;
+			float: left;
+			padding-right: 2%;
+
+			&.social {
+				width: 20%;
+				li a {
+					padding-left: 25px;
+					padding-bottom: 2px;
+					background: url(../img/sprite-sosh.png) 0px -3px no-repeat;
+				}
+				li.facebook a {background-position: 0px -3px;}
+				li.twitter a {background-position: 0px -24px;}
+				li.wordpress a {background-position: 0px -45px;}
+			}
+			&.sitemap {width: 30%; padding-right: 0;}
+
+			li {list-style: none;}
+		} // End footer .container .section
+	} // End footer .container
+
+	.portlet-static-contact img {
+		position: relative;
+		left: -50px;
+	}
+	.portlet-static-social li {font-size: 0.8em;}
+
+	.portlet-static-sitemap li {
+		font-size: 0.75em;
+		width: 45%; margin-right: 4%; 
+		@include inline-block(top); vertical-align: top;
+	}
+} // End footer
+
+
+	 

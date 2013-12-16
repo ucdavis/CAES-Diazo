@@ -1,0 +1,44 @@
+// Header styles
+
+
+.header {
+	background: $header-blue;
+
+	.top {
+		width: 70%;
+		margin: 0px auto;
+		@include unresponsive-sizes;
+	}	
+	a.logo {float: left; @include inline-block(top);}
+	.logo img {
+		@include inline-block(top); 
+		margin: 20px 10px 10px 0;
+		width: 131px; height: 22px;
+	}
+	h1 {
+		@include inline-block(top); 
+		vertical-align: top; 
+		color: #fff; 
+		line-height: 1em; 
+		font-size: 1.2em; 
+		font-weight: $light;
+		letter-spacing: 0.75px;
+		margin: 0; 
+		padding: 24px 0 7px;
+	}
+	.section-front-page & h1 {
+		font-size: 1.35em; 
+		font-weight: $book; 
+		padding-top: 23px; 
+	}
+	.webkit & h1 {letter-spacing: 1px;}
+	.search {
+		@include inline-block(top); 
+		vertical-align: top; 
+		padding-top: 21px; 
+		float: right;
+		max-width: 220px;
+		overflow: hidden;
+	}
+}
+	

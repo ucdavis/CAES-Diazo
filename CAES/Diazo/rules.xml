@@ -95,14 +95,14 @@
     <strip css:content="#portal-breadcrumbs" attribute="id" />
     <drop css:content="#breadcrumbs-you-are-here" />
 
-    <copy css:theme=".main .content" css:content="#content"/>
-    <prepend css:content="#edit-bar" css:theme=".main .content" />
+    <copy css:theme=".thegoods" css:content="#content"/>
+    <prepend css:content="#edit-bar" css:theme=".thegoods" />
 
 
     <!--<copy css:content=".portlet-static-slider" css:theme=".slidefeature .slider" />-->
     <copy css:content=".portlet-static-nivo" css:theme=".slidefeature .slider" />
 
-    <replace attributes="class" css:content=".documentDescription" css:theme=".main .content p.description" />
+    <replace attributes="class" css:content=".documentDescription" css:theme=".thegoods p.description" />
 
     <copy css:content="#portlets-above div.box" css:theme=".news.masonry" />
 
@@ -136,17 +136,20 @@
 
     <!-- content pages -->
     <replace css:content="#portal-column-two .portlet" css:theme=".rightcol .portlet" />
-    <after css:content="#portlets-below" css:theme-children="section.main section.content" />
+    <after css:content="#portlets-below" css:theme-children=".thegoods" />
 
         <!-- portlets below positioning issue -->
         <drop css:content="#portlets-below div.cell" attributes="class" />
 
+        <!-- extra link in captioned images -->
+        <!-- <drop css:content="dl.captioned a" attributes="href" /> -->
+
 
     <!-- foooooter -->
-    <copy css:content="#portlets-footer .FooterPortletManager6 .portlet-static-contact" css:theme=".footer section.contact" />
-    <copy css:content="#portlets-footer .FooterPortletManager6 .portlet-static-about" css:theme=".footer section.about" />
-    <copy css:content="#portlets-footer .FooterPortletManager6 .portlet-static-social" css:theme=".footer section.social" />
-    <copy css:content="#portlets-footer .FooterPortletManager6 .portlet-static-sitemap" css:theme=".footer section.sitemap" />
+    <copy css:content="#portlets-footer .FooterPortletManager6 .portlet-static-contact" css:theme="footer section.contact" />
+    <copy css:content="#portlets-footer .FooterPortletManager6 .portlet-static-about" css:theme="footer section.about" />
+    <copy css:content="#portlets-footer .FooterPortletManager6 .portlet-static-social" css:theme="footer section.social" />
+    <copy css:content="#portlets-footer .FooterPortletManager6 .portlet-static-sitemap" css:theme="footer section.sitemap" />
 
     <copy css:content="#portal-footer-wrapper script" css:theme="#footer-js" />
 

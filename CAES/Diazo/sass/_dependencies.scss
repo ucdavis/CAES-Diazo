@@ -1,0 +1,92 @@
+// Shared styles and dependencies
+// Globaly used variables, mixins, and functions
+
+
+// Metrics
+
+
+
+// Colors
+	// The UC Davis standard colors
+	$ucdavis-blue: 		#002855;
+	$ucdavis-gold:		#c99700;
+
+	// Supplemental bright color palette for UC Davis
+	$unitrans-red: 		#ba0c2f;
+	$western-redbud:	#c6007e;
+	$california-poppy:	#ed8800;
+	$golden-lupine:		#ffcd00;
+	$sunny-grass:		#78be20;
+	$sky-blue:			#00b5e2;
+	$recpool-blue:		#008eaa;
+	$wine-grape:		#642667;
+
+	// Supplemental neutral color palette for UC Davis
+	$mu-brick:			#c26e60;
+	$harthall-stucco: 	#e6a65d;
+	$sage-green:		#9caf88;
+	$evergreen:			#00573f;
+	$wintersky-gray:	#5b7f95;
+	$cenwalk-gray:		#b1b3b3;
+	$cork-oak:			#aca39a;
+	$shingle-brown:		#4f2c1d;
+
+	// CA&ES color palette
+	$dark-blue:			#071626;
+	$med-blue: 			#153861;
+	$dull-blue: 		rgba($ucdavis-blue,0.7);
+	$gray-blue: 		rgba($ucdavis-blue,0.5);
+	$header-blue: 		#113661;
+	
+	$bright-gold: 		#d9a102;
+	$dark-gold: 		#a1770f;
+
+
+// Typography
+	$futura:			"futura-pt", Futura Std, Futura, Arial, sans-serif;
+	// $futura: 			"futura-pt", Arial, sans-serif; // For testing Typekit Futura
+	$sans-serif:		Helvetica Neue, Helvetica Std, Helvetica, Univers, Arial, sans-serif;
+	$serif:				Georgia, Berkeley, serif;
+
+	// [Compass] Vertical rhythm set up
+	// Change these values to whatever you want for your proj
+	// $base-font-size:					16px;
+	// $base-line-height:				24px;
+	// $default-rhythm-border-style:	solid;
+	// $relative-font-sizing:			true;
+
+	// Font weights - Futura Typekit
+	$extralight:		200;
+	$light:				300;
+	$book:				400;
+	$medium:			500;
+	$heavy:				600;
+	$bold:				700;
+	$extrabold:			800;
+
+
+// Themes
+
+	// Type styles
+	// @mixin uppercased($spacing) {
+	// 	text-transform: uppercase;
+	// 	letter-spacing: $spacing;
+	// }
+	@mixin uppercased($spacing: 1px, $weight: inherit) {
+		text-transform: uppercase;
+		letter-spacing: $spacing;
+		font-weight: $weight;
+	}
+
+	// Misc styles
+	@mixin unresponsive-sizes {
+		min-width: 960px;
+		max-width: 1300px;
+	}
+
+	@mixin img-border {
+		@include box-shadow(0px 0px 13px rgba(45,45,44,0.1)); 
+		border: 4px solid #fff !important;
+	}
+
+

@@ -1,0 +1,117 @@
+
+// Foundation
+// Styles for setting up the structure of the entire website
+
+// Normalize gets pulled in Bootstrap
+// @import 'normalize';
+
+// Border-box-sizing
+@import 'vendor/border-box-sizing';
+
+
+// Base typography
+body {
+	margin: 0 auto; 
+	min-width: 960px; 
+	background: url(../img/bg.jpg) repeat;
+	font-family: $sans-serif;
+	color: $dark-blue;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $futura;
+	font-weight: $medium;
+	color: $ucdavis-blue;
+	margin: 0; line-height: 1.1em;
+}
+h1 {margin-top: 1em;}
+h2 {margin-top: 1em; letter-spacing: 0.2px; font-size: 1.75em;}
+h3 {margin-top: 1em; font-size: 1.5em;}
+h4 {margin-top: 1em; font-size: 1.5em;}
+h5 {margin-top: 0.5em;}
+h6 {margin-top: 0.5em;}
+p {
+	font-size: 0.75em;
+	margin: 0.5em 0 0.75em;
+	line-height: 1.5em;
+}
+.thegoods blockquote {
+	font-size: 0.9em; 
+	margin-left: 1em; 
+	color: #777;
+
+	p, li, td {color: #777;}
+}
+
+ul.twocolumnlist {margin-left: 0;}
+.twocolumnlist {
+	.thegoods #content & li {
+		float: left; width: 40%; 
+		margin-right: 10%;
+		vertical-align: top;
+	}
+	.thegoods #content &:after { 
+	   content: ' — '; 
+	   visibility: hidden; 
+	   display: block; 
+	   height: 0; 
+	   clear: both;
+	}
+	.subsection-current-clubs .thegoods #content & li {		
+		margin-bottom: 1em;
+		min-height: 50px;
+	}
+}
+.thegoods #content .threecolumnlist li a {
+	display: block;
+}
+
+
+
+// Base CSS
+.clear {clear: both; display: block;}
+
+.main {
+	width: 70%;
+	margin: 0px auto;
+	@include unresponsive-sizes;
+}
+.subsection-help .main #content input.context {
+    background: rgba($ucdavis-blue, 0.9);
+ 	border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: $futura;
+    margin-bottom: 0.5em;
+    padding: 3px 0;
+    width: 25%;
+    @include uppercased(1px, $medium);
+}
+
+
+
+
+// Overwrite Plone styles
+#content li, dl.portlet li, div.portletStaticText li, .main .rightcol li {
+	display: list-item;
+}
+.thegoods #edit-bar li {margin-right: 0;}
+.icons-on .contenttype-news-item {
+	display: block;
+	padding-left: 0px !important;
+	line-height: auto;
+	background: transparent;
+}
+
+// Make sure byline details show while logged in
+.userrole-authenticated #content div.documentByLine, 
+.userrole-authenticated .template-summary_view .documentByLine, 
+.userrole-authenticated .diazoed.template-folder_listing .documentByLine {display: block !important;}
+
+// Not sure what this is...
+.portlet-static-contact .button {display: none;}
+.section-front-page .portlet-static-contact .button {display: none;}
+
+
+
+
+
