@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+
+    <!--Head-->
+    <copy css:content="html" css:theme="html" attributes="lang dir" />
+    <copy css:content="head base" css:theme="head base" />
+    <replace css:content="head title" css:theme="head title" />
+    <before css:content="head style, head link, head script, head meta" css:theme-children="head" />
+
+    <!--Favicons-->
+    
+
+    <!--Content-->
+    <theme href="gallery.html" css:if-content=".subsection-gallery #visual-portal-wrapper" />
+    <theme href="index.html" css:if-content="#visual-portal-wrapper" />
+
+    <merge attributes="class" css:content="body" css:theme="body" />
+    <copy attributes="id dir" css:content="body" css:theme="body" />
+
+    <replace css:content="#portal-logo a" css:theme="header h1 a" />
+
+    <replace css:content="#portal-globalnav > li" css:theme="header nav ul li" />
+
+    <copy css:theme=".content article" css:content-children="#content"/>
+    <prepend css:content="#edit-bar" css:theme=".content article" />
+
+    <!--Portlets-->
+    <copy css:theme=".content aside .portletswap" css:content="#portal-column-two .portlet" />
+    <copy css:theme=".content aside .lastfeat" css:content="#portal-column-two .portlet-static-article" />
+
+    <!-- Gallery -->
+    <append css:theme=".subsection-gallery .content article" css:content="#portal-column-two .portlet" />
+
+    <!--Footer-->
+    <replace css:content=".footer-about" css:theme=".footer-about" />
+    <replace css:content=".footer-sitemap" css:theme=".footer-sitemap" />
+
+</rules>

@@ -1,0 +1,119 @@
+// Regions
+// Page regions, named after their class and role names.
+// i.e. Banner, navigation, etc.
+
+// If you want more separation, you can set up an include per region, i.e.
+// @include 'region/banner';		// and then add region/_banner.scss
+
+//logo
+
+.pagelogo {
+	@include outer-container;
+	text-align:center;
+}
+
+// navigation 
+// #nav-toggle {
+// 	a:link, #nav-toggle a:visited {
+//   		color: #fff;
+// 	}sc
+// 	a {
+// 		display: none;
+// 		background: url("../images/navopen.png")
+// 	}
+// }
+
+.onepagernav {
+	@include outer-container;
+	margin-top:20px;
+}
+
+header nav {
+	display:none;
+}
+nav {
+	text-align:center;
+}
+#sticker {
+	width:auto;
+}
+.hey {
+	#sticker{
+		z-index:100000;
+		width:80%;
+		margin:0 auto;
+		ul#nav {
+			padding-bottom:5px;
+			padding-top:5px;
+		}
+	}
+}
+
+ul#nav {
+	display:inline-block;
+	padding:20px 0px;
+	background-color:rgba(255,255,255,.95);
+	border-top: solid 1px $borders;
+	border-bottom: solid 1px $borders;
+	width:70%;
+	li a:hover {
+		color: $secondary-color !important;
+	}
+	> li {
+		padding: 1em;
+		padding-bottom: 1.2em;
+		padding-right:2%;
+		position: relative;
+		display:inline;
+		padding-left: 2%;
+		font-size:20px;
+		a {
+			@include futurabook;
+			color:$primary-color;
+			text-decoration:none;
+		}
+		a:active{
+			background-color:#000;
+		}
+	}
+}
+
+
+// about cols
+.aboutcols {
+	clear:both;
+	width:30%;
+	display:inline-block;
+	float:right;
+	margin-left:3%;
+	margin-top:7px;
+	margin-bottom:20px;
+	.aboutcol {
+		display: inline-block;
+   		width: 100%;
+   		vertical-align:top;
+   		&.last {
+   			margin-right:0px;
+   		}
+	}
+}
+
+// table 
+table.ptftable {
+	margin:10px;
+	border:solid 1px #aaaaaa;
+	text-align:left;
+	tr.header th {
+		font-size:$h3-font-size;
+		color:$primary-color;
+		background-color:#ebf4ec;
+	}
+	th, td {
+		padding:5px 10px;
+		vertical-align:top;
+		border-bottom:1px dotted #777777;
+	}
+	tr.even {
+		background-color:#ebf4ec;
+	}
+}

@@ -1,0 +1,15 @@
+// Components
+// Modular components and their states. 
+// These pieces should be able to be used anywhere. Things like: icons, buttons, messages, etc.
+
+
+// Link styles
+a:link, a:visited {
+	text-decoration: none;
+	color: $main-link;
+
+	&.sub-link {color: $sub-link;}
+}
+a:hover, a:active {
+	border-bottom: 0px;
+}

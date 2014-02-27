@@ -1,0 +1,12 @@
+// CAES Starter set up
+// This is the base file that pulls together all the other elements.
+
+@import 'vendor';				// Select which vendor libraries to include here
+@import 'dependencies';			// Global variables and shared styles
+@import 'foundation';			// Structural CSS
+@import 'components';			// Reusable pieces, i.e. icons, buttons
+@import 'regions';				// Page region styles
+@import 'responsive';			// Responsive styles
+
+
+

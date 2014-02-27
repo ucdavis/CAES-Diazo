@@ -1,0 +1,151 @@
+// CAES Starter set up
+// This is the base file that pulls together all the other elements.
+
+@import 'vendor';				// Select which vendor libraries to include here
+@import 'dependencies';			// Global variables and shared styles
+@import 'foundation';			// Structural CSS
+@import 'components';			// Reusable pieces, i.e. icons, buttons
+@import 'regions';				// Page region styles
+@import 'responsive';			// Responsive styles
+
+
+
+
+// -----------------------------------------------------------------
+//
+// For the starter template. You can remove the below from any real proj 
+//
+// -----------------------------------------------------------------
+
+
+/* Plone Hax */
+
+.managePortletsBelowTitleLink, #LSResult, .recent_news_class .odd:first-child, .recent_news_class a.seemoremain {
+	display: none !important;
+}
+.portletItemDetails {
+	margin-left: 0px;
+}
+.highlightedSearchTerm {
+	background-color: #AAE8FF;
+}
+.section-questions-comments input.context
+{
+	-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: $primary-color;
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "futura-pt",Futura Std,Futura,Arial,sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 0.5em;
+    padding-bottom: 3px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 3px;
+    text-transform: uppercase;
+    width: 15%;}
+
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
+div.listingBar a:hover {
+    background-color:$secondary-color;
+}
+#content .listingBar a:hover {
+    color:#fff !important;
+}
+div.listingBar a:hover {
+   border-color:lighten($secondary-color, .9);
+}
+table.derelict {
+    background-color:#c6b399;
+}
+table.vanilla {
+    background-color:#F3E5AB;
+}
+table.chocolate{
+    background-color:#a58e68;
+}
+table.coffee {
+    background-color:#685c49;
+    color:#fff;
+}
+table.neopolitan {
+    background-color:#eab5c4;
+}
+table.truffle {
+    background-color:#d3be94;
+}
+table.azure {
+    background-color:#94d3d3;
+}
+table.raspberry {
+    background-color:#d394c0;
+}
+table.blackberry {
+    background-color:#c196ea;
+}
+table.pistachio {
+    background-color:#c0e2af;
+}
+table.mango {
+    background-color:#f7ae6d;
+}
+table.fiddy {
+    background-color:#e2d8af;
+}
+ul.golb li {
+    margin-bottom:10px;
+}
+div.tommytom {
+    border-left:solid 5px #78BE20;
+    padding-left:10px;
+}
+div.magic {
+    border-left:solid 5px #00B5E2;
+    padding-left:10px;
+}
+div.pixelsmithing {
+    border-left:solid 5px #ED8B00;
+    padding-left:10px;
+}
+p.blogorange {
+    color:#ED8B00;
+}
+p.bloggreen {
+    color:#78be20;
+}
+p.blogblue {
+    color:#00B5E2;
+}
+// .portletstatic li.pixel{
+//     p {
+//         color:#515151;
+//     }
+//     color:#ED8B00;
+// }
+// .portletstatic li.potter{
+//     p {
+//         color:#515151;
+//     }
+//     color:#00B5E2;
+// }
+// .portletstatic li.tips{
+//     p {
+//         color:#515151;
+//     }
+//     color:#78BE20;
+// }

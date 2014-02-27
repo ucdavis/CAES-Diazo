@@ -1,0 +1,1229 @@
+/* normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* normalize.scss v2.1.2 | MIT/GPLv2 License | bit.ly/normalize-with-compass */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ * 3. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  /* Set the font-size and line-height while keeping a proper vertical rhythm. */
+  font-size: 2em;
+  /* Set 1 unit of vertical rhythm on the top and bottom margins. */
+  margin-top: 0.75em;
+  margin-bottom: 0.75em; }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  margin: 0 2px;
+  /* Apply borders and padding that keep the vertical rhythm. */
+  border-color: #c0c0c0;
+  border-top-style: solid;
+  border-top-width: 0.0625em;
+  padding-top: 0.4625em;
+  border-bottom-style: solid;
+  border-bottom-width: 0.0625em;
+  padding-bottom: 0.9125em;
+  border-left-style: solid;
+  border-left-width: 0.0625em;
+  padding-left: 0.875em;
+  border-right-style: solid;
+  border-right-width: 0.0625em;
+  padding-right: 0.875em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ * 4. Improve appearance and consistency with IE 6/7.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*
+ * jQuery Nivo Slider v3.2
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+/* The Nivo Slider styles */
+.nivoSlider {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden; }
+
+.nivoSlider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  max-width: none; }
+
+.nivo-main-image {
+  display: block !important;
+  position: relative !important;
+  width: 100% !important; }
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 6;
+  display: none;
+  background: white;
+  filter: alpha(opacity=0);
+  opacity: 0; }
+
+/* The slices and boxes in the Slider */
+.nivo-slice {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  height: 100%;
+  top: 0; }
+
+.nivo-box {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  overflow: hidden; }
+
+.nivo-box img {
+  display: block; }
+
+/* Caption styles */
+.nivo-caption {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background: #000;
+  color: #fff;
+  width: 100%;
+  z-index: 8;
+  padding: 5px 10px;
+  opacity: 0.8;
+  overflow: hidden;
+  display: none;
+  -moz-opacity: 0.8;
+  filter: alpha(opacity=8);
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
+
+.nivo-caption p {
+  padding: 5px;
+  margin: 0; }
+
+.nivo-caption a {
+  display: inline !important; }
+
+.nivo-html-caption {
+  display: none; }
+
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+  position: absolute;
+  top: 45%;
+  z-index: 9;
+  cursor: pointer; }
+
+.nivo-prevNav {
+  left: 0px; }
+
+.nivo-nextNav {
+  right: 0px; }
+
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+  text-align: center;
+  padding: 15px 0; }
+
+.nivo-controlNav a {
+  cursor: pointer; }
+
+.nivo-controlNav a.active {
+  font-weight: bold; }
+
+/*
+Skin Name: Nivo Slider Default Theme
+Skin URI: http://nivo.dev7studios.com
+Description: The default skin for the Nivo Slider.
+Version: 1.3
+Author: Gilbert Pellegrom
+Author URI: http://dev7studios.com
+Supports Thumbs: true
+*/
+.theme-default .nivoSlider {
+  position: relative;
+  background: white url(../images/loading.gif) no-repeat 50% 50%;
+  margin-bottom: 10px; }
+
+.theme-default .nivoSlider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none; }
+
+.theme-default .nivoSlider a {
+  border: 0;
+  display: block; }
+
+.theme-default .nivo-controlNav {
+  text-align: center;
+  padding: 20px 0; }
+
+.theme-default .nivo-controlNav a {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url(../images/bullets.png) no-repeat;
+  text-indent: -9999px;
+  border: 0;
+  margin: 0 2px; }
+
+.theme-default .nivo-controlNav a.active {
+  background-position: 0 -22px; }
+
+.theme-default .nivo-directionNav a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/arrows.png) no-repeat;
+  text-indent: -9999px;
+  border: 0;
+  opacity: 0;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out; }
+
+.theme-default:hover .nivo-directionNav a {
+  opacity: 1; }
+
+.theme-default a.nivo-nextNav {
+  background-position: -30px 0;
+  right: 15px; }
+
+.theme-default a.nivo-prevNav {
+  left: 15px; }
+
+.theme-default .nivo-caption {
+  font-family: Helvetica, Arial, sans-serif; }
+
+.theme-default .nivo-caption a {
+  color: #fff;
+  border-bottom: 1px dotted #fff; }
+
+.theme-default .nivo-caption a:hover {
+  color: #fff; }
+
+.theme-default .nivo-controlNav.nivo-thumbs-enabled {
+  width: 100%; }
+
+.theme-default .nivo-controlNav.nivo-thumbs-enabled a {
+  width: auto;
+  height: auto;
+  background: none;
+  margin-bottom: 5px; }
+
+.theme-default .nivo-controlNav.nivo-thumbs-enabled img {
+  display: block;
+  width: 120px;
+  height: auto; }
+
+/**
+ * @license
+ * MyFonts Webfont Build ID 2745233, 2014-02-11T19:04:28-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Banda Regular by Typedepot
+ * URL: http://www.myfonts.com/fonts/typedepot/banda/regular/
+ * Copyright: All Rights reserved.Copyright &#x00A9; 2011 By typedepot.
+ * Licensed pageviews: Unlimited
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2745233
+ * 
+ * © 2014 MyFonts Inc
+*/
+@font-face {
+  font-family: 'BandaRegular';
+  src: url("../fonts/banda.eot");
+  src: url("../fonts/banda.eot?#iefix") format("embedded-opentype"), url("../fonts/banda.woff") format("woff"), url("../fonts/banda.ttf") format("truetype"); }
+
+body {
+  background: url("../images/bg01.jpg") fixed repeat;
+  background-size: cover; }
+
+body.bg02, body.section-videos {
+  background: url("../images/bg02.jpg") fixed repeat; }
+  body.bg02 h1, body.bg02 h2, body.bg02 h3, body.bg02 h4, body.bg02 h5, body.bg02 h6,
+  body.bg02 .h1, body.bg02 .h2, body.bg02 .h3, body.bg02 .h4, body.bg02 .h5, body.bg02 .h6, body.section-videos h1, body.section-videos h2, body.section-videos h3, body.section-videos h4, body.section-videos h5, body.section-videos h6,
+  body.section-videos .h1, body.section-videos .h2, body.section-videos .h3, body.section-videos .h4, body.section-videos .h5, body.section-videos .h6 {
+    color: #76757b; }
+  body.bg02 a:link, body.bg02 a:visited, body.section-videos a:link, body.section-videos a:visited {
+    color: #a8a7ad; }
+    body.bg02 a:link.sub-link, body.bg02 a:visited.sub-link, body.section-videos a:link.sub-link, body.section-videos a:visited.sub-link {
+      color: #353942; }
+  body.bg02 a:hover, body.bg02 a:active, body.section-videos a:hover, body.section-videos a:active {
+    color: #353942; }
+    body.bg02 a:hover.sub-link, body.bg02 a:active.sub-link, body.section-videos a:hover.sub-link, body.section-videos a:active.sub-link {
+      color: #a8a7ad; }
+  body.bg02 header nav a:link, body.bg02 header nav a:visited, body.section-videos header nav a:link, body.section-videos header nav a:visited {
+    color: #353942; }
+  body.bg02 header nav a:hover, body.bg02 header nav a:active, body.section-videos header nav a:hover, body.section-videos header nav a:active {
+    color: #a8a7ad; }
+  body.bg02 section.contact, body.section-videos section.contact {
+    background: rgba(24, 23, 31, 0.5); }
+  body.bg02 .content aside ul li, body.section-videos .content aside ul li {
+    color: #a8a7ad; }
+    body.bg02 .content aside ul li a.current, body.section-videos .content aside ul li a.current {
+      color: #353942; }
+  body.bg02 footer .footer-about a:link, body.bg02 footer .footer-about a:visited, body.section-videos footer .footer-about a:link, body.section-videos footer .footer-about a:visited {
+    color: #353942; }
+    body.bg02 footer .footer-about a:link.h3, body.bg02 footer .footer-about a:visited.h3, body.section-videos footer .footer-about a:link.h3, body.section-videos footer .footer-about a:visited.h3 {
+      color: #a8a7ad; }
+  body.bg02 footer .footer-sitemap ul li.primary a:link, body.bg02 footer .footer-sitemap ul li.primary a:visited, body.section-videos footer .footer-sitemap ul li.primary a:link, body.section-videos footer .footer-sitemap ul li.primary a:visited {
+    color: #353942; }
+
+body.bg03, body.section-artist.subsection-gallery {
+  background: url("../images/bg03.jpg") fixed repeat; }
+  body.bg03 h1, body.bg03 h2, body.bg03 h3, body.bg03 h4, body.bg03 h5, body.bg03 h6,
+  body.bg03 .h1, body.bg03 .h2, body.bg03 .h3, body.bg03 .h4, body.bg03 .h5, body.bg03 .h6, body.section-artist.subsection-gallery h1, body.section-artist.subsection-gallery h2, body.section-artist.subsection-gallery h3, body.section-artist.subsection-gallery h4, body.section-artist.subsection-gallery h5, body.section-artist.subsection-gallery h6,
+  body.section-artist.subsection-gallery .h1, body.section-artist.subsection-gallery .h2, body.section-artist.subsection-gallery .h3, body.section-artist.subsection-gallery .h4, body.section-artist.subsection-gallery .h5, body.section-artist.subsection-gallery .h6 {
+    color: #55a2b6; }
+  body.bg03 a:link, body.bg03 a:visited, body.section-artist.subsection-gallery a:link, body.section-artist.subsection-gallery a:visited {
+    color: #e89ab2; }
+    body.bg03 a:link.sub-link, body.bg03 a:visited.sub-link, body.section-artist.subsection-gallery a:link.sub-link, body.section-artist.subsection-gallery a:visited.sub-link {
+      color: #9b7486; }
+  body.bg03 a:hover, body.bg03 a:active, body.section-artist.subsection-gallery a:hover, body.section-artist.subsection-gallery a:active {
+    color: #9b7486; }
+    body.bg03 a:hover.sub-link, body.bg03 a:active.sub-link, body.section-artist.subsection-gallery a:hover.sub-link, body.section-artist.subsection-gallery a:active.sub-link {
+      color: #e89ab2; }
+  body.bg03 header nav a:link, body.bg03 header nav a:visited, body.section-artist.subsection-gallery header nav a:link, body.section-artist.subsection-gallery header nav a:visited {
+    color: #9b7486; }
+  body.bg03 header nav a:hover, body.bg03 header nav a:active, body.section-artist.subsection-gallery header nav a:hover, body.section-artist.subsection-gallery header nav a:active {
+    color: #e89ab2; }
+  body.bg03 section.contact, body.section-artist.subsection-gallery section.contact {
+    background: rgba(15, 52, 70, 0.5); }
+  body.bg03 .content aside ul li, body.section-artist.subsection-gallery .content aside ul li {
+    color: #e89ab2; }
+    body.bg03 .content aside ul li a.current, body.section-artist.subsection-gallery .content aside ul li a.current {
+      color: #9b7486; }
+  body.bg03 footer .footer-about a:link, body.bg03 footer .footer-about a:visited, body.section-artist.subsection-gallery footer .footer-about a:link, body.section-artist.subsection-gallery footer .footer-about a:visited {
+    color: #9b7486; }
+    body.bg03 footer .footer-about a:link.h3, body.bg03 footer .footer-about a:visited.h3, body.section-artist.subsection-gallery footer .footer-about a:link.h3, body.section-artist.subsection-gallery footer .footer-about a:visited.h3 {
+      color: #e89ab2; }
+  body.bg03 footer .footer-sitemap ul li.primary a:link, body.bg03 footer .footer-sitemap ul li.primary a:visited, body.section-artist.subsection-gallery footer .footer-sitemap ul li.primary a:link, body.section-artist.subsection-gallery footer .footer-sitemap ul li.primary a:visited {
+    color: #9b7486; }
+
+body.bg04, body.section-teacher.subsection-gallery {
+  background: url("../images/bg04.jpg") fixed repeat; }
+  body.bg04 h1, body.bg04 h2, body.bg04 h3, body.bg04 h4, body.bg04 h5, body.bg04 h6,
+  body.bg04 .h1, body.bg04 .h2, body.bg04 .h3, body.bg04 .h4, body.bg04 .h5, body.bg04 .h6, body.section-teacher.subsection-gallery h1, body.section-teacher.subsection-gallery h2, body.section-teacher.subsection-gallery h3, body.section-teacher.subsection-gallery h4, body.section-teacher.subsection-gallery h5, body.section-teacher.subsection-gallery h6,
+  body.section-teacher.subsection-gallery .h1, body.section-teacher.subsection-gallery .h2, body.section-teacher.subsection-gallery .h3, body.section-teacher.subsection-gallery .h4, body.section-teacher.subsection-gallery .h5, body.section-teacher.subsection-gallery .h6 {
+    color: #f72e5c; }
+  body.bg04 a:link, body.bg04 a:visited, body.section-teacher.subsection-gallery a:link, body.section-teacher.subsection-gallery a:visited {
+    color: #eea210; }
+    body.bg04 a:link.sub-link, body.bg04 a:visited.sub-link, body.section-teacher.subsection-gallery a:link.sub-link, body.section-teacher.subsection-gallery a:visited.sub-link {
+      color: #3391b7; }
+  body.bg04 a:hover, body.bg04 a:active, body.section-teacher.subsection-gallery a:hover, body.section-teacher.subsection-gallery a:active {
+    color: #3391b7; }
+    body.bg04 a:hover.sub-link, body.bg04 a:active.sub-link, body.section-teacher.subsection-gallery a:hover.sub-link, body.section-teacher.subsection-gallery a:active.sub-link {
+      color: #eea210; }
+  body.bg04 header nav a:link, body.bg04 header nav a:visited, body.section-teacher.subsection-gallery header nav a:link, body.section-teacher.subsection-gallery header nav a:visited {
+    color: #3391b7; }
+  body.bg04 header nav a:hover, body.bg04 header nav a:active, body.section-teacher.subsection-gallery header nav a:hover, body.section-teacher.subsection-gallery header nav a:active {
+    color: #eea210; }
+  body.bg04 section.contact, body.section-teacher.subsection-gallery section.contact {
+    background: rgba(27, 43, 33, 0.5); }
+  body.bg04 .content aside ul li, body.section-teacher.subsection-gallery .content aside ul li {
+    color: #eea210; }
+    body.bg04 .content aside ul li a.current, body.section-teacher.subsection-gallery .content aside ul li a.current {
+      color: #3391b7; }
+  body.bg04 footer .footer-about a:link, body.bg04 footer .footer-about a:visited, body.section-teacher.subsection-gallery footer .footer-about a:link, body.section-teacher.subsection-gallery footer .footer-about a:visited {
+    color: #3391b7; }
+    body.bg04 footer .footer-about a:link.h3, body.bg04 footer .footer-about a:visited.h3, body.section-teacher.subsection-gallery footer .footer-about a:link.h3, body.section-teacher.subsection-gallery footer .footer-about a:visited.h3 {
+      color: #eea210; }
+  body.bg04 footer .footer-sitemap ul li.primary a:link, body.bg04 footer .footer-sitemap ul li.primary a:visited, body.section-teacher.subsection-gallery footer .footer-sitemap ul li.primary a:link, body.section-teacher.subsection-gallery footer .footer-sitemap ul li.primary a:visited {
+    color: #3391b7; }
+
+body.bg05, body.section-teacher {
+  background: url("../images/bg05.jpg") fixed repeat; }
+  body.bg05 h1, body.bg05 h2, body.bg05 h3, body.bg05 h4, body.bg05 h5, body.bg05 h6,
+  body.bg05 .h1, body.bg05 .h2, body.bg05 .h3, body.bg05 .h4, body.bg05 .h5, body.bg05 .h6, body.section-teacher h1, body.section-teacher h2, body.section-teacher h3, body.section-teacher h4, body.section-teacher h5, body.section-teacher h6,
+  body.section-teacher .h1, body.section-teacher .h2, body.section-teacher .h3, body.section-teacher .h4, body.section-teacher .h5, body.section-teacher .h6 {
+    color: #e03a00; }
+  body.bg05 a:link, body.bg05 a:visited, body.section-teacher a:link, body.section-teacher a:visited {
+    color: #0084f0; }
+    body.bg05 a:link.sub-link, body.bg05 a:visited.sub-link, body.section-teacher a:link.sub-link, body.section-teacher a:visited.sub-link {
+      color: #e35f14; }
+  body.bg05 a:hover, body.bg05 a:active, body.section-teacher a:hover, body.section-teacher a:active {
+    color: #e35f14; }
+    body.bg05 a:hover.sub-link, body.bg05 a:active.sub-link, body.section-teacher a:hover.sub-link, body.section-teacher a:active.sub-link {
+      color: #0084f0; }
+  body.bg05 header nav a:link, body.bg05 header nav a:visited, body.section-teacher header nav a:link, body.section-teacher header nav a:visited {
+    color: #e35f14; }
+  body.bg05 header nav a:hover, body.bg05 header nav a:active, body.section-teacher header nav a:hover, body.section-teacher header nav a:active {
+    color: #0084f0; }
+  body.bg05 section.contact, body.section-teacher section.contact {
+    background: rgba(41, 33, 46, 0.5); }
+  body.bg05 .content aside ul li, body.section-teacher .content aside ul li {
+    color: #0084f0; }
+    body.bg05 .content aside ul li a.current, body.section-teacher .content aside ul li a.current {
+      color: #e35f14; }
+  body.bg05 footer .footer-about a:link, body.bg05 footer .footer-about a:visited, body.section-teacher footer .footer-about a:link, body.section-teacher footer .footer-about a:visited {
+    color: #e35f14; }
+    body.bg05 footer .footer-about a:link.h3, body.bg05 footer .footer-about a:visited.h3, body.section-teacher footer .footer-about a:link.h3, body.section-teacher footer .footer-about a:visited.h3 {
+      color: #0084f0; }
+  body.bg05 footer .footer-sitemap ul li.primary a:link, body.bg05 footer .footer-sitemap ul li.primary a:visited, body.section-teacher footer .footer-sitemap ul li.primary a:link, body.section-teacher footer .footer-sitemap ul li.primary a:visited {
+    color: #e35f14; }
+
+body.bg06, body.section-lecturer {
+  background: url("../images/bg06.jpg") fixed repeat; }
+  body.bg06 h1, body.bg06 h2, body.bg06 h3, body.bg06 h4, body.bg06 h5, body.bg06 h6,
+  body.bg06 .h1, body.bg06 .h2, body.bg06 .h3, body.bg06 .h4, body.bg06 .h5, body.bg06 .h6, body.section-lecturer h1, body.section-lecturer h2, body.section-lecturer h3, body.section-lecturer h4, body.section-lecturer h5, body.section-lecturer h6,
+  body.section-lecturer .h1, body.section-lecturer .h2, body.section-lecturer .h3, body.section-lecturer .h4, body.section-lecturer .h5, body.section-lecturer .h6 {
+    color: #ce90b5; }
+  body.bg06 a:link, body.bg06 a:visited, body.section-lecturer a:link, body.section-lecturer a:visited {
+    color: #7eb8c3; }
+    body.bg06 a:link.sub-link, body.bg06 a:visited.sub-link, body.section-lecturer a:link.sub-link, body.section-lecturer a:visited.sub-link {
+      color: #f3900f; }
+  body.bg06 a:hover, body.bg06 a:active, body.section-lecturer a:hover, body.section-lecturer a:active {
+    color: #f3900f; }
+    body.bg06 a:hover.sub-link, body.bg06 a:active.sub-link, body.section-lecturer a:hover.sub-link, body.section-lecturer a:active.sub-link {
+      color: #7eb8c3; }
+  body.bg06 header nav a:link, body.bg06 header nav a:visited, body.section-lecturer header nav a:link, body.section-lecturer header nav a:visited {
+    color: #f3900f; }
+  body.bg06 header nav a:hover, body.bg06 header nav a:active, body.section-lecturer header nav a:hover, body.section-lecturer header nav a:active {
+    color: #7eb8c3; }
+  body.bg06 section.contact, body.section-lecturer section.contact {
+    background: rgba(138, 103, 125, 0.5); }
+  body.bg06 .content aside ul li, body.section-lecturer .content aside ul li {
+    color: #7eb8c3; }
+    body.bg06 .content aside ul li a.current, body.section-lecturer .content aside ul li a.current {
+      color: #f3900f; }
+  body.bg06 footer .footer-about a:link, body.bg06 footer .footer-about a:visited, body.section-lecturer footer .footer-about a:link, body.section-lecturer footer .footer-about a:visited {
+    color: #f3900f; }
+    body.bg06 footer .footer-about a:link.h3, body.bg06 footer .footer-about a:visited.h3, body.section-lecturer footer .footer-about a:link.h3, body.section-lecturer footer .footer-about a:visited.h3 {
+      color: #7eb8c3; }
+  body.bg06 footer .footer-sitemap ul li.primary a:link, body.bg06 footer .footer-sitemap ul li.primary a:visited, body.section-lecturer footer .footer-sitemap ul li.primary a:link, body.section-lecturer footer .footer-sitemap ul li.primary a:visited {
+    color: #f3900f; }
+
+body.bg07, body.section-auth.subsection-excerpts {
+  background: url("../images/bg07.jpg") fixed repeat; }
+  body.bg07 h1, body.bg07 h2, body.bg07 h3, body.bg07 h4, body.bg07 h5, body.bg07 h6,
+  body.bg07 .h1, body.bg07 .h2, body.bg07 .h3, body.bg07 .h4, body.bg07 .h5, body.bg07 .h6, body.section-auth.subsection-excerpts h1, body.section-auth.subsection-excerpts h2, body.section-auth.subsection-excerpts h3, body.section-auth.subsection-excerpts h4, body.section-auth.subsection-excerpts h5, body.section-auth.subsection-excerpts h6,
+  body.section-auth.subsection-excerpts .h1, body.section-auth.subsection-excerpts .h2, body.section-auth.subsection-excerpts .h3, body.section-auth.subsection-excerpts .h4, body.section-auth.subsection-excerpts .h5, body.section-auth.subsection-excerpts .h6 {
+    color: #ac4f24; }
+  body.bg07 a:link, body.bg07 a:visited, body.section-auth.subsection-excerpts a:link, body.section-auth.subsection-excerpts a:visited {
+    color: #d58aa8; }
+    body.bg07 a:link.sub-link, body.bg07 a:visited.sub-link, body.section-auth.subsection-excerpts a:link.sub-link, body.section-auth.subsection-excerpts a:visited.sub-link {
+      color: #ad4b1c; }
+  body.bg07 a:hover, body.bg07 a:active, body.section-auth.subsection-excerpts a:hover, body.section-auth.subsection-excerpts a:active {
+    color: #ad4b1c; }
+    body.bg07 a:hover.sub-link, body.bg07 a:active.sub-link, body.section-auth.subsection-excerpts a:hover.sub-link, body.section-auth.subsection-excerpts a:active.sub-link {
+      color: #d58aa8; }
+  body.bg07 header nav a:link, body.bg07 header nav a:visited, body.section-auth.subsection-excerpts header nav a:link, body.section-auth.subsection-excerpts header nav a:visited {
+    color: #ad4b1c; }
+  body.bg07 header nav a:hover, body.bg07 header nav a:active, body.section-auth.subsection-excerpts header nav a:hover, body.section-auth.subsection-excerpts header nav a:active {
+    color: #d58aa8; }
+  body.bg07 section.contact, body.section-auth.subsection-excerpts section.contact {
+    background: rgba(98, 59, 54, 0.5); }
+  body.bg07 .content aside ul li, body.section-auth.subsection-excerpts .content aside ul li {
+    color: #d58aa8; }
+    body.bg07 .content aside ul li a.current, body.section-auth.subsection-excerpts .content aside ul li a.current {
+      color: #ad4b1c; }
+  body.bg07 footer .footer-about a:link, body.bg07 footer .footer-about a:visited, body.section-auth.subsection-excerpts footer .footer-about a:link, body.section-auth.subsection-excerpts footer .footer-about a:visited {
+    color: #ad4b1c; }
+    body.bg07 footer .footer-about a:link.h3, body.bg07 footer .footer-about a:visited.h3, body.section-auth.subsection-excerpts footer .footer-about a:link.h3, body.section-auth.subsection-excerpts footer .footer-about a:visited.h3 {
+      color: #d58aa8; }
+  body.bg07 footer .footer-sitemap ul li.primary a:link, body.bg07 footer .footer-sitemap ul li.primary a:visited, body.section-auth.subsection-excerpts footer .footer-sitemap ul li.primary a:link, body.section-auth.subsection-excerpts footer .footer-sitemap ul li.primary a:visited {
+    color: #ad4b1c; }
+
+body.bg08 {
+  background: url("../images/bg08.jpg") fixed repeat; }
+  body.bg08 h1, body.bg08 h2, body.bg08 h3, body.bg08 h4, body.bg08 h5, body.bg08 h6,
+  body.bg08 .h1, body.bg08 .h2, body.bg08 .h3, body.bg08 .h4, body.bg08 .h5, body.bg08 .h6 {
+    color: #849897; }
+  body.bg08 a:link, body.bg08 a:visited {
+    color: #af605c; }
+    body.bg08 a:link.sub-link, body.bg08 a:visited.sub-link {
+      color: #4d5973; }
+  body.bg08 a:hover, body.bg08 a:active {
+    color: #4d5973; }
+    body.bg08 a:hover.sub-link, body.bg08 a:active.sub-link {
+      color: #af605c; }
+  body.bg08 header nav a:link, body.bg08 header nav a:visited {
+    color: #4d5973; }
+  body.bg08 header nav a:hover, body.bg08 header nav a:active {
+    color: #af605c; }
+  body.bg08 section.contact {
+    background: rgba(60, 51, 80, 0.5); }
+  body.bg08 .content aside ul li {
+    color: #af605c; }
+    body.bg08 .content aside ul li a.current {
+      color: #4d5973; }
+  body.bg08 footer .footer-about a:link, body.bg08 footer .footer-about a:visited {
+    color: #4d5973; }
+    body.bg08 footer .footer-about a:link.h3, body.bg08 footer .footer-about a:visited.h3 {
+      color: #af605c; }
+  body.bg08 footer .footer-sitemap ul li.primary a:link, body.bg08 footer .footer-sitemap ul li.primary a:visited {
+    color: #4d5973; }
+
+body.bg09, body.section-biography {
+  background: url("../images/bg09.jpg") fixed repeat; }
+  body.bg09 h1, body.bg09 h2, body.bg09 h3, body.bg09 h4, body.bg09 h5, body.bg09 h6,
+  body.bg09 .h1, body.bg09 .h2, body.bg09 .h3, body.bg09 .h4, body.bg09 .h5, body.bg09 .h6, body.section-biography h1, body.section-biography h2, body.section-biography h3, body.section-biography h4, body.section-biography h5, body.section-biography h6,
+  body.section-biography .h1, body.section-biography .h2, body.section-biography .h3, body.section-biography .h4, body.section-biography .h5, body.section-biography .h6 {
+    color: #f7ab19; }
+  body.bg09 a:link, body.bg09 a:visited, body.section-biography a:link, body.section-biography a:visited {
+    color: #e96437; }
+    body.bg09 a:link.sub-link, body.bg09 a:visited.sub-link, body.section-biography a:link.sub-link, body.section-biography a:visited.sub-link {
+      color: #f9ab9f; }
+  body.bg09 a:hover, body.bg09 a:active, body.section-biography a:hover, body.section-biography a:active {
+    color: #f9ab9f; }
+    body.bg09 a:hover.sub-link, body.bg09 a:active.sub-link, body.section-biography a:hover.sub-link, body.section-biography a:active.sub-link {
+      color: #e96437; }
+  body.bg09 header nav a:link, body.bg09 header nav a:visited, body.section-biography header nav a:link, body.section-biography header nav a:visited {
+    color: #f9ab9f; }
+  body.bg09 header nav a:hover, body.bg09 header nav a:active, body.section-biography header nav a:hover, body.section-biography header nav a:active {
+    color: #e96437; }
+  body.bg09 section.contact, body.section-biography section.contact {
+    background: rgba(76, 69, 51, 0.5); }
+  body.bg09 .content aside ul li, body.section-biography .content aside ul li {
+    color: #e96437; }
+    body.bg09 .content aside ul li a.current, body.section-biography .content aside ul li a.current {
+      color: #f9ab9f; }
+  body.bg09 footer .footer-about a:link, body.bg09 footer .footer-about a:visited, body.section-biography footer .footer-about a:link, body.section-biography footer .footer-about a:visited {
+    color: #f9ab9f; }
+    body.bg09 footer .footer-about a:link.h3, body.bg09 footer .footer-about a:visited.h3, body.section-biography footer .footer-about a:link.h3, body.section-biography footer .footer-about a:visited.h3 {
+      color: #e96437; }
+  body.bg09 footer .footer-sitemap ul li.primary a:link, body.bg09 footer .footer-sitemap ul li.primary a:visited, body.section-biography footer .footer-sitemap ul li.primary a:link, body.section-biography footer .footer-sitemap ul li.primary a:visited {
+    color: #f9ab9f; }
+
+body.bg10, body.section-auth {
+  background: url("../images/bg10.jpg") fixed repeat; }
+  body.bg10 h1, body.bg10 h2, body.bg10 h3, body.bg10 h4, body.bg10 h5, body.bg10 h6,
+  body.bg10 .h1, body.bg10 .h2, body.bg10 .h3, body.bg10 .h4, body.bg10 .h5, body.bg10 .h6, body.section-auth h1, body.section-auth h2, body.section-auth h3, body.section-auth h4, body.section-auth h5, body.section-auth h6,
+  body.section-auth .h1, body.section-auth .h2, body.section-auth .h3, body.section-auth .h4, body.section-auth .h5, body.section-auth .h6 {
+    color: #75a4b4; }
+  body.bg10 a:link, body.bg10 a:visited, body.section-auth a:link, body.section-auth a:visited {
+    color: #d73526; }
+    body.bg10 a:link.sub-link, body.bg10 a:visited.sub-link, body.section-auth a:link.sub-link, body.section-auth a:visited.sub-link {
+      color: #f59c3e; }
+  body.bg10 a:hover, body.bg10 a:active, body.section-auth a:hover, body.section-auth a:active {
+    color: #f59c3e; }
+    body.bg10 a:hover.sub-link, body.bg10 a:active.sub-link, body.section-auth a:hover.sub-link, body.section-auth a:active.sub-link {
+      color: #d73526; }
+  body.bg10 header nav a:link, body.bg10 header nav a:visited, body.section-auth header nav a:link, body.section-auth header nav a:visited {
+    color: #f59c3e; }
+  body.bg10 header nav a:hover, body.bg10 header nav a:active, body.section-auth header nav a:hover, body.section-auth header nav a:active {
+    color: #d73526; }
+  body.bg10 section.contact, body.section-auth section.contact {
+    background: rgba(17, 30, 49, 0.5); }
+  body.bg10 .content aside ul li, body.section-auth .content aside ul li {
+    color: #d73526; }
+    body.bg10 .content aside ul li a.current, body.section-auth .content aside ul li a.current {
+      color: #f59c3e; }
+  body.bg10 footer .footer-about a:link, body.bg10 footer .footer-about a:visited, body.section-auth footer .footer-about a:link, body.section-auth footer .footer-about a:visited {
+    color: #f59c3e; }
+    body.bg10 footer .footer-about a:link.h3, body.bg10 footer .footer-about a:visited.h3, body.section-auth footer .footer-about a:link.h3, body.section-auth footer .footer-about a:visited.h3 {
+      color: #d73526; }
+  body.bg10 footer .footer-sitemap ul li.primary a:link, body.bg10 footer .footer-sitemap ul li.primary a:visited, body.section-auth footer .footer-sitemap ul li.primary a:link, body.section-auth footer .footer-sitemap ul li.primary a:visited {
+    color: #f59c3e; }
+
+body.bg11, body.section-artist {
+  background: url("../images/bg11.jpg") fixed repeat; }
+  body.bg11 h1, body.bg11 h2, body.bg11 h3, body.bg11 h4, body.bg11 h5, body.bg11 h6,
+  body.bg11 .h1, body.bg11 .h2, body.bg11 .h3, body.bg11 .h4, body.bg11 .h5, body.bg11 .h6, body.section-artist h1, body.section-artist h2, body.section-artist h3, body.section-artist h4, body.section-artist h5, body.section-artist h6,
+  body.section-artist .h1, body.section-artist .h2, body.section-artist .h3, body.section-artist .h4, body.section-artist .h5, body.section-artist .h6 {
+    color: #ff8106; }
+  body.bg11 a:link, body.bg11 a:visited, body.section-artist a:link, body.section-artist a:visited {
+    color: #6ccdd4; }
+    body.bg11 a:link.sub-link, body.bg11 a:visited.sub-link, body.section-artist a:link.sub-link, body.section-artist a:visited.sub-link {
+      color: #8bba2e; }
+  body.bg11 a:hover, body.bg11 a:active, body.section-artist a:hover, body.section-artist a:active {
+    color: #8bba2e; }
+    body.bg11 a:hover.sub-link, body.bg11 a:active.sub-link, body.section-artist a:hover.sub-link, body.section-artist a:active.sub-link {
+      color: #6ccdd4; }
+  body.bg11 header nav a:link, body.bg11 header nav a:visited, body.section-artist header nav a:link, body.section-artist header nav a:visited {
+    color: #8bba2e; }
+  body.bg11 header nav a:hover, body.bg11 header nav a:active, body.section-artist header nav a:hover, body.section-artist header nav a:active {
+    color: #6ccdd4; }
+  body.bg11 section.contact, body.section-artist section.contact {
+    background: rgba(48, 73, 70, 0.5); }
+  body.bg11 .content aside ul li, body.section-artist .content aside ul li {
+    color: #6ccdd4; }
+    body.bg11 .content aside ul li a.current, body.section-artist .content aside ul li a.current {
+      color: #8bba2e; }
+  body.bg11 footer .footer-about a:link, body.bg11 footer .footer-about a:visited, body.section-artist footer .footer-about a:link, body.section-artist footer .footer-about a:visited {
+    color: #8bba2e; }
+    body.bg11 footer .footer-about a:link.h3, body.bg11 footer .footer-about a:visited.h3, body.section-artist footer .footer-about a:link.h3, body.section-artist footer .footer-about a:visited.h3 {
+      color: #6ccdd4; }
+  body.bg11 footer .footer-sitemap ul li.primary a:link, body.bg11 footer .footer-sitemap ul li.primary a:visited, body.section-artist footer .footer-sitemap ul li.primary a:link, body.section-artist footer .footer-sitemap ul li.primary a:visited {
+    color: #8bba2e; }
+
+body.bg12 {
+  background: url("../images/bg12.jpg") fixed repeat; }
+  body.bg12 h1, body.bg12 h2, body.bg12 h3, body.bg12 h4, body.bg12 h5, body.bg12 h6,
+  body.bg12 .h1, body.bg12 .h2, body.bg12 .h3, body.bg12 .h4, body.bg12 .h5, body.bg12 .h6 {
+    color: #cc2513; }
+  body.bg12 a:link, body.bg12 a:visited {
+    color: #1160bd; }
+    body.bg12 a:link.sub-link, body.bg12 a:visited.sub-link {
+      color: #ee9300; }
+  body.bg12 a:hover, body.bg12 a:active {
+    color: #ee9300; }
+    body.bg12 a:hover.sub-link, body.bg12 a:active.sub-link {
+      color: #1160bd; }
+  body.bg12 header nav a:link, body.bg12 header nav a:visited {
+    color: #ee9300; }
+  body.bg12 header nav a:hover, body.bg12 header nav a:active {
+    color: #1160bd; }
+  body.bg12 section.contact {
+    background: rgba(21, 20, 26, 0.5); }
+  body.bg12 .content aside ul li {
+    color: #1160bd; }
+    body.bg12 .content aside ul li a.current {
+      color: #ee9300; }
+  body.bg12 footer .footer-about a:link, body.bg12 footer .footer-about a:visited {
+    color: #ee9300; }
+    body.bg12 footer .footer-about a:link.h3, body.bg12 footer .footer-about a:visited.h3 {
+      color: #1160bd; }
+  body.bg12 footer .footer-sitemap ul li.primary a:link, body.bg12 footer .footer-sitemap ul li.primary a:visited {
+    color: #ee9300; }
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  color: #343434;
+  font-family: "BandaRegular", BandaRegular, "Banda Regular", sans-serif;
+  font-size: 12px;
+  line-height: 12px; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "BandaRegular", BandaRegular, "Banda Regular", sans-serif;
+  font-weight: normal;
+  color: #9d244c; }
+
+h1, .h1 {
+  font-size: 3em;
+  margin: 1.25em 0 0.25em; }
+
+h2, h3, h4,
+.h2, .h3, .h4 {
+  font-size: 2em;
+  margin: 0.75em 0 0.25em; }
+
+h5, h6,
+.h5, .h6 {
+  font-size: 1.5em;
+  margin: 0.357142857em 0 0.25em; }
+
+li {
+  display: list-item; }
+
+body {
+  min-width: 1100px; }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #40b1b6; }
+  a:link.sub-link, a:visited.sub-link {
+    color: #dd6e52; }
+
+a:hover, a:active {
+  border-bottom: 0px;
+  color: #dd6e52; }
+  a:hover.sub-link, a:active.sub-link {
+    color: #40b1b6; }
+
+img.image-right {
+  float: right;
+  margin: 0.5em 0 0.5em 1em; }
+
+img.image-left {
+  float: left;
+  margin: 0.5em 1em 0.5em 0; }
+
+header {
+  display: block;
+  background: #fff;
+  min-height: 84px;
+  padding: 2em 0 1em; }
+  header h1 {
+    display: inline-block;
+    font-size: 4em;
+    line-height: 1em;
+    margin: 0; }
+  header nav {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    max-width: 69%;
+    width: 100%;
+    text-align: right;
+    float: right;
+    position: relative;
+    right: -1.5em; }
+    header nav ul {
+      margin: 0;
+      padding: 0; }
+      header nav ul li {
+        list-style: none;
+        display: inline-block;
+        text-align: center; }
+    header nav a:link, header nav a:visited {
+      font-size: 2em;
+      line-height: 2.25em;
+      color: #dd6e52;
+      display: inline-block;
+      padding: 0.25em 0.75em 0em;
+      background: #fff; }
+    header nav a:hover, header nav a:active {
+      color: #40b1b6; }
+
+section.contact {
+  background: rgba(23, 21, 29, 0.5);
+  font-size: 1.5em;
+  line-height: 1em;
+  width: 23%;
+  float: right;
+  clear: both; }
+  section.contact a:link, section.contact a:visited {
+    color: #fff;
+    padding: 0.5em 0;
+    display: inline-block; }
+  section.contact img {
+    vertical-align: text-bottom; }
+
+section.feature {
+  min-height: 32em; }
+  .subsection-gallery section.feature {
+    min-height: 16em; }
+
+section.content {
+  clear: both;
+  line-height: 2em;
+  width: 83.802816901%;
+  float: left; }
+  section.content .container {
+    width: 87.803%;
+    width: 100%;
+    margin: 0 0 0 auto; }
+  section.content li {
+    margin: 0.357142857em 0 0.5em; }
+  section.content p, section.content li, section.content td {
+    font-size: 1.5em; }
+    section.content p p, section.content p li, section.content p td,
+    section.content p h1, section.content p h2, section.content p h3, section.content p h4, section.content p h5, section.content p h6, section.content li p, section.content li li, section.content li td,
+    section.content li h1, section.content li h2, section.content li h3, section.content li h4, section.content li h5, section.content li h6, section.content td p, section.content td li, section.content td td,
+    section.content td h1, section.content td h2, section.content td h3, section.content td h4, section.content td h5, section.content td h6 {
+      font-size: 1em; }
+  section.content article {
+    background: #fff;
+    padding: 2em 0.833333em 3em 12em;
+    max-width: 61.458333333%;
+    max-width: 65.803%;
+    min-height: 700px;
+    display: inline-block;
+    float: left; }
+    section.content article h4:last-child {
+      text-align: right;
+      margin-right: 2em; }
+    section.content article object {
+      max-width: 95%; }
+  section.content aside {
+    max-width: 36.458333333%;
+    max-width: 33.458%;
+    float: left;
+    display: inline-block;
+    vertical-align: top; }
+    section.content aside .portletswap {
+      background: #fff;
+      padding: 3em 0 1em 1.533333em; }
+      section.content aside .portletswap img {
+        max-width: 95%; }
+      section.content aside .portletswap .portlet-static-article {
+        display: none; }
+    section.content aside ul {
+      margin: 0px;
+      line-height: 2em;
+      padding: 2em 0; }
+    section.content aside .lastfeat .portlet-static-article {
+      display: block; }
+    section.content aside .article {
+      padding: 2em;
+      border: 20px solid #fff; }
+      section.content aside .article .container {
+        margin: 0 auto;
+        padding: 1em 2em;
+        font-size: 1.5em;
+        line-height: 2em;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.8); }
+        section.content aside .article .container .intro {
+          text-transform: uppercase;
+          font-size: 0.75em; }
+        section.content aside .article .container .date {
+          text-align: right;
+          display: block;
+          border: 0px; }
+        section.content aside .article .container a {
+          font-size: 1.33333em;
+          display: block; }
+  section.content ul.nav, section.content .portlet-static-navigation ul {
+    margin: 0px;
+    line-height: 2em;
+    padding: 2em 0; }
+    section.content ul.nav li, section.content .portlet-static-navigation ul li {
+      list-style: none;
+      font-size: 2em;
+      color: #40b1b6; }
+    section.content ul.nav li:before, section.content .portlet-static-navigation ul li:before {
+      content: '>';
+      margin-right: 0.5em;
+      vertical-align: middle; }
+    section.content ul.nav a, section.content .portlet-static-navigation ul a {
+      display: inline-block;
+      max-width: 80%;
+      padding: 0.5em 0 0.25em;
+      vertical-align: middle; }
+      section.content ul.nav a .current, section.content .portlet-static-navigation ul a .current {
+        color: #dd6e52; }
+
+.section-artist.subsection-gallery section.content p {
+  font-size: 1.25em;
+  width: 95%; }
+
+.subsection-statement h1.documentFirstHeading {
+  display: none; }
+
+footer {
+  clear: both;
+  width: 94.676%;
+  color: #fff;
+  background: rgba(51, 51, 51, 0.75);
+  float: right;
+  margin-top: 1em;
+  font-size: 1.5em;
+  line-height: 1.33em;
+  padding: 1.25em 0 0.25em; }
+  footer .container {
+    margin: 0 auto 0 5.25%; }
+  footer .footer-about {
+    width: 30.208333333%;
+    display: inline-block; }
+    footer .footer-about a:link, footer .footer-about a:visited {
+      color: #dd6e52; }
+      footer .footer-about a:link.h3, footer .footer-about a:visited.h3 {
+        color: #40b1b6; }
+    footer .footer-about p.copyright {
+      font-size: 0.75em;
+      margin-top: 4em;
+      text-indent: -1.15em;
+      line-height: 1.25em; }
+  footer .footer-sitemap {
+    max-width: 66%;
+    float: right;
+    padding: 0.5em 0; }
+    footer .footer-sitemap ul {
+      padding: 0;
+      width: 22.333%;
+      float: left;
+      vertical-align: top;
+      margin-right: 1em; }
+      footer .footer-sitemap ul li {
+        list-style: none;
+        font-size: 0.777777778em;
+        line-height: 0.857143em;
+        padding: 0.357142857em 0 0.5em; }
+        footer .footer-sitemap ul li.primary a:link, footer .footer-sitemap ul li.primary a:visited {
+          color: #dd6e52;
+          font-size: 1.285714286em; }
+
+.subsection-gallery section.content aside {
+  display: none; }
+.subsection-gallery section.content article {
+  width: 100%;
+  max-width: 100%; }
+.subsection-gallery .gallery .nivoSlider {
+  max-width: 65.803%;
+  float: left;
+  min-height: 800px; }
+.subsection-gallery .gallery img {
+  max-width: 95%; }
+.subsection-gallery .gallery .nivo-thumbs-enabled {
+  max-width: 33.458%;
+  float: left; }
+  .subsection-gallery .gallery .nivo-thumbs-enabled a.nivo-control {
+    width: 23%;
+    display: inline-block;
+    max-height: 90px;
+    overflow: hidden; }
+  .subsection-gallery .gallery .nivo-thumbs-enabled img {
+    max-width: 100%;
+    opacity: 0.5; }
+  .subsection-gallery .gallery .nivo-thumbs-enabled a:hover.nivo-control img,
+  .subsection-gallery .gallery .nivo-thumbs-enabled a.nivo-control.active img {
+    opacity: 1; }
+  .subsection-gallery .gallery .nivo-thumbs-enabled a.nivo-control.active img {
+    border: 2px solid #dd6e52; }
+.subsection-gallery .portletswap {
+  max-width: 33.458%;
+  float: left; }
+.subsection-gallery .portlet-static-navigation {
+  max-width: 33.458%;
+  width: 100%;
+  float: right; }

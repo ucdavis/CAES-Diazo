@@ -1,0 +1,50 @@
+// Header styles
+
+
+header {
+	display: block;
+	background: #fff;
+	min-height: 84px;
+	padding: 2em 0 1em;
+
+	h1 {
+		display: inline-block;
+		font-size: 4em;
+		line-height: 1em;
+		margin: 0;
+	}
+	nav {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		display: inline-block;
+		max-width: 60%;
+		width: 100%;
+		text-align: right;
+		float: right;
+		position: relative;
+		right: -1.5em;
+
+		ul {
+			margin: 0;
+			padding: 0;
+
+			li {
+				list-style: none;
+				display: inline-block;
+				text-align: center;
+			}
+		}
+
+		a:link, a:visited {
+			font-size: 2em;
+			line-height: 2.25em;
+			color: $sub-link;
+			display: inline-block;
+			padding: 0.25em 0.75em 0em;
+			background: #fff;
+		}
+		a:hover, a:active {
+			color: $main-link;
+		}
+	}
+}

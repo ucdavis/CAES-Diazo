@@ -1,0 +1,35 @@
+// Shared styles and dependencies
+// Globaly used variables, mixins, and functions
+
+
+// Metrics
+
+
+
+// Colors
+	$body-text:			#343434;
+	$header-text:		#9d244c;
+	$main-link:			#40b1b6;
+	$sub-link:			#dd6e52;
+
+	$dark-background: 	#17151d;
+
+
+
+// Typography
+@import 'banda';
+
+	$banda:				"BandaRegular", BandaRegular, "Banda Regular", sans-serif;
+	$sans-serif:		Helvetica Neue, Helvetica Std, Helvetica, Univers, Arial, sans-serif;
+	$serif:				Georgia, Berkeley, serif;
+
+	// [Compass] Vertical rhythm set up
+	// Change these values to whatever you want for your proj
+	$base-font-size:					12px;
+	$base-line-height:					12px;
+	$default-rhythm-border-style:		solid;
+	$relative-font-sizing:				true;
+
+
+
+// Themes

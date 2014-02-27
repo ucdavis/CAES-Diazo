@@ -1,0 +1,22 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+	UC Davis College of Agricultural and Environmental Sciences -- @ucdavisCAES
+    <name> -- <role> -- <twitter>
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
+
+    SASS
+    Bourbon & Bourbon Neat
+    FontAwesome
+    Normalize.css
+    

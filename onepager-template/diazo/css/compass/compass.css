@@ -1,0 +1,67 @@
+/* line 34, ../../sass/compass/compass.scss */
+.compass {
+  margin: 1em auto;
+  position: relative;
+  width: 16em;
+  height: 16em;
+  font-size: 24px;
+  font-family: "Academy Engraved LET", "Papyrus";
+}
+/* line 7, ../../sass/compass/compass.scss */
+.compass .n, .compass .s, .compass .e, .compass .w {
+  position: absolute;
+  width: 4em;
+  height: 4em;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 13, ../../sass/compass/compass.scss */
+.compass .w {
+  left: 0px;
+}
+/* line 15, ../../sass/compass/compass.scss */
+.compass .n.w, .compass .s.w {
+  left: 2em;
+}
+/* line 17, ../../sass/compass/compass.scss */
+.compass .n, .compass .s {
+  left: 6em;
+}
+/* line 19, ../../sass/compass/compass.scss */
+.compass .n.e, .compass .s.e {
+  left: 10em;
+}
+/* line 21, ../../sass/compass/compass.scss */
+.compass .e {
+  left: 12em;
+}
+/* line 23, ../../sass/compass/compass.scss */
+.compass .n {
+  top: 0px;
+}
+/* line 25, ../../sass/compass/compass.scss */
+.compass .n.w, .compass .n.e {
+  top: 2em;
+}
+/* line 27, ../../sass/compass/compass.scss */
+.compass .w, .compass .e {
+  top: 6em;
+}
+/* line 29, ../../sass/compass/compass.scss */
+.compass .s.w, .compass .s.e {
+  top: 10em;
+}
+/* line 31, ../../sass/compass/compass.scss */
+.compass .s {
+  top: 12em;
+}
+/* line 38, ../../sass/compass/compass.scss */
+.compass .n p, .compass .s p, .compass .e p, .compass .w p {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+/* line 43, ../../sass/compass/compass.scss */
+.compass .n.w p, .compass .s.w p, .compass .n.e p, .compass .s.e p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}

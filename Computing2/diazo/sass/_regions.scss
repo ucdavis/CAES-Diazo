@@ -1,0 +1,178 @@
+// Regions
+// Page regions, named after their class and role names.
+// i.e. Banner, navigation, etc.
+
+// If you want more separation, you can set up an include per region, i.e.
+// @include 'region/banner';		// and then add region/_banner.scss
+
+
+// navigation 
+#nav-toggle {
+	a:link, #nav-toggle a:visited {
+  		color: #fff;
+	}
+	a {
+		display: none;
+		background: url("../images/navopen.png")
+	}
+}
+nav {
+	max-width:1200px;
+}
+
+ul#nav {
+	display:inline-block;
+	padding: 0px;
+	width:100%;
+	li a:hover {
+		color: $secondary-color !important;
+	}
+	> li {
+		padding: 1em;
+		padding-bottom: 1.2em;
+		padding-right:4%;
+		position: relative;
+		display:inline;
+		padding-left: 0px;
+		font-size:20px;
+		a {
+			@include futurabook;
+			color:#fff;
+			text-decoration:none;
+		}
+	}
+}
+
+
+ul#nav li:hover ul.submenu {
+	display: block;
+}
+li#portaltab-news ul.submenu {
+	width:70%;
+	li a{
+		padding-right: 3em;
+	}
+}
+ul.submenu {
+	background-color:rgba(0,40,85,.9);
+	width:115%;
+	top:50px;
+	z-index:100000;
+	li {
+		display: block;
+		border-top: solid 1px rgba(255,255,255,.9);
+		padding: 4px 8%;
+	}
+	li:first-child {
+		border-top:none;
+	}
+	li a {
+		color:#fff
+	}
+	a:link, a:visited {
+		color:#fff !important;
+	}
+	a:hover {
+		color:$secondary-color !important;
+	}
+}
+
+
+
+#content .eventDetails {
+	display: none;
+}
+
+.eventdetailsside {
+	display: none;
+}
+.subsection-event-items .eventdetailsside {
+	@include futurabook;
+	display: inline-block;
+    color: $light-gray;
+	font-size:$base-font-size;
+	line-height:1.5em;
+	color:$dark-gray;
+	margin-top:.4em;
+	padding-bottom:10px;
+	h4 {
+		@include futurabold;
+		color:$primary-color;
+		text-transform: uppercase;
+		line-height: 1.1em;
+		margin-top: .4em;
+		margin-bottom: .6em;
+		letter-spacing: .5px;
+	}
+}
+
+//breadcrumbers
+
+#portal-breadcrumbs {
+	margin-top:20px;
+	margin-bottom:0px;
+}
+
+// call to actions
+.cta {
+	width:20%;
+	display:inline-block;
+	vertical-align:top;
+	margin-right:6.08%;
+	text-align: center;
+	transition-delay: 0s;
+    transition-duration: 0.25s;
+    transition-property: all;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 0.25s;
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: ease;
+    &.support {
+		margin-right:0px;
+		float: right;
+		}
+}
+
+#content .cta {
+	p a:visited {
+		color:$dark-gray;
+	}
+	h2 a {
+		color:$primary-color;
+	}
+	&.gold h2 a {
+		color:$secondary-color;
+	}
+	p a:link, p a {
+		color:$dark-gray;
+	}
+	&:hover {
+		p a, h2 a, h2 a:link, h2 a:visited {
+			color:$secondary-color !important;
+		}
+
+	}
+}
+
+// Staff directory
+
+.template-directory_standard_view {
+	.row {
+		position:inherit;
+		float:none;
+	}
+	.position-0, .position-4 {
+		margin-left:0px;
+	}
+	.cell {
+		left:0;
+	}
+	.width-13, .width-3{
+		width:auto;
+	}
+	.width-3 {
+		margin-right:20px;
+	}
+}
+

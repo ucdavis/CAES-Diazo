@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <!--Head-->
+    <copy css:content="html" css:theme="html" attributes="lang dir" />
+    <copy css:content="head base" css:theme="head base" />
+    <replace css:content="head title" css:theme="head title" />
+    <!--<replace content="/html/head/title/text()" css:theme="#logo-contain h1" />-->
+    <before css:content="head style, head link, head script, head meta" css:theme-children="head" />
+
+    <!--Favicons-->
+
+    <theme href="olive-db.html" css:if-content=".template-database_view" />
+    <theme href="index.html" css:if-content="body.section-front-page" />
+    <theme href="content.html" css:if-content="#visual-portal-wrapper"/>
+
+
+
+    <!--Header-->
+    <copy css:content="#portal-searchbox " css:theme="#searchbar" />
+    <copy css:content=".portlet-static-topnav" css:theme="#rightheadnav" />
+    <copy css:content=".portlet-static-logo" css:theme="#hplogo" />
+    
+
+
+    <!--Navigation-->
+    <strip css:content="#portal-globalnav" />
+    <copy css:content="#portal-globalnav" css:theme="ul#nav" />
+
+    <!--Slider-->
+    <copy css:content=".portlet-static-slider" css:theme="#paralax" />
+    <!-- breads -->
+    <copy css:content="#portal-breadcrumbs" css:theme=".bread" />
+
+    <!--Content-->
+    <merge attributes="class" css:content="body" css:theme="body" />
+    <copy attributes="id dir" css:content="body" css:theme="body" />
+
+    <copy css:theme=".maincol" css:content="#content"/>
+    <prepend css:content="#edit-bar" css:theme=".maincol" />
+
+    <!-- Events Card -->
+    <copy css:content=".eventDetails table .app-period" css:theme=".eventdetailsside .when-period" />
+    <copy css:content=".eventDetails table .location" css:theme=".eventdetailsside .location" />
+    <copy css:content=".eventDetails table .contact-email" css:theme=".eventdetailsside .contact-email" />
+    <copy css:content=".eventDetails table .tel" css:theme=".eventdetailsside .contact-tel" />
+    <copy css:content=".eventDetails table .apply-online" css:theme=".eventdetailsside .apply-online" />
+
+    <!--Sidebar -->
+    <copy css:content="#portal-column-one .portletStaticText" css:theme=".portletstatic" />
+    <copy css:content="dt.portletHeader" css:theme=".portletstatic h2" />
+    <strip css:content="dl.portlet" attribute="class" />
+    <replace css:content=".managePortletsLink" css:theme=".manage" />
+
+    <!-- Support on front page -->
+    <copy css:content=".portlet-static-support" css:theme=".frontsupport" />
+    <!-- news on front page -->
+    <copy css:content=".portletNews" css:theme=".frontnews" />
+
+    <!-- events on front page -->
+    <copy css:content=".portletEvents" css:theme=".frontevents" />
+
+
+    <!-- Footer -->
+    <copy css:content=".portlet-static-contact" css:theme=".bottomcol.first" />
+    <copy css:content=".portlet-static-aboutfoot" css:theme=".bottomcol.second" />
+    <copy css:content=".portlet-static-connectfoot" css:theme=".bottomcol.third" />
+    <copy css:content=".portlet-static-otherlinks" css:theme=".bottomcol.last" />
+
+    <replace css:content="#portal-columns" css:theme="#portal-columns" />
+    <replace css:content-children="#portal-footer" css:theme-children="#portal-footer" />
+    <replace css:content="#portal-personaltools-wrapper" css:theme="#portal-personaltools-wrapper" />
+    <replace css:content="#portal-searchbox" css:theme="#portal-searchbox" />
+    <replace css:content="#portal-globalnav" css:theme="#portal-globalnav" />
+    <replace css:content="#portal-siteactions" css:theme="#portal-siteactions" />
+    <replace css:content="#portal-column-two" css:theme="#righthalf #rightportlets" />
+
+     <!-- Scripts via Control Pannel -->
+    <after css:content="#visual-portal-wrapper script" css:theme="body" />
+
+    <!--Portlets-->
+
+
+</rules>

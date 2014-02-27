@@ -1,0 +1,63 @@
+// Footer styles
+
+footer {
+	clear: both;
+	width: 94.676%;
+	background: rgba(#fff, 0.9);
+	float: right;
+	margin-top: 1em;
+	font-size: 1.5em;
+	line-height: 1.33em;
+	padding: 1.25em 0 0.25em;
+
+	.container {
+		margin: 0 auto 0 5.25%;
+	}
+
+	.footer-about {
+		width: 30.208333333%;
+		display: inline-block;
+
+		a:link, a:visited {
+			color: $sub-link;
+
+			&.h3 {color: $main-link;}
+		}
+
+		p.copyright {
+			font-size: 0.75em;
+			margin-top: 4em;
+			text-indent: -1.15em;
+			line-height: 1.25em;
+		}
+	}
+
+	.footer-sitemap {
+		max-width: 66%;
+		float: right;
+		padding: 0.5em 0;
+
+		ul {
+			&.top {}
+
+			padding: 0;
+			width: 22.333%;
+			float: left;
+			vertical-align: top;
+			margin-right: 1em;
+
+			li {
+				list-style: none;
+				font-size: 0.777777778em;
+				line-height: 0.857143em;
+				padding: 0.357142857em 0 0.5em;
+
+				&.primary a:link, &.primary a:visited {
+					color: $sub-link;
+					font-size: 1.285714286em;
+				}
+			}
+		}
+	}
+
+}

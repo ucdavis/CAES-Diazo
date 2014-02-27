@@ -1,0 +1,41 @@
+
+// Foundation
+// Styles for setting up the structure of the entire website
+
+// Normalize gets pulled in Bootstrap
+// @import 'normalize';
+
+// Border-box-sizing
+@import 'vendor/border-box-sizing';
+
+
+// Base typography
+body {
+	color: $body-text; 
+	font-family: $banda;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-weight: normal; 
+	color: $header-text;
+}
+
+h1, .h1 {font-size: 3em; margin: 1.25em 0 0.75em;}
+h2, h3, h4,
+.h2, .h3, .h4 {font-size: 2em; margin: 1.25em 0 0.75em;}
+h5, h6,
+.h5, .h6 {font-size: 1.5em; margin: 0.357142857em 0 0.5em;}
+
+
+// Base CSS 
+body {
+	background: url('../images/bg01.jpg') fixed repeat;
+	background-size: cover;
+	min-width: 1100px;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
