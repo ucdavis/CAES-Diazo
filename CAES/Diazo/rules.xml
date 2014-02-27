@@ -13,6 +13,7 @@
     <theme href="submain-tall.html" css:if-content=".template-frontpage_view" />
     <theme href="submain.html" css:if-content=".template-submain_view" />
     <theme href="news.html" css:if-content=".section-news.template-newsitem_view" />
+    <theme href="news-feature.html" css:if-content=".section-news.template-newsitem-feature_view" />
     <theme href="jobpost.html" css:if-content=".template-jobpost_view" />
     <theme href="feature.html" css:if-content=".template-feature_view" />
     <theme href="feature-tall.html" css:if-content=".template-featuretall_view" />
@@ -113,10 +114,13 @@
      <copy css:content=".section-front-page #portlets-above .portlet-static-social" css:theme=".section-front-page .actions div.social" />
 
     <!-- news specific -->
-    <copy css:content=".template-newsitem_view #category li" css:theme=".related .topics li" />
+    <copy css:content=".portaltype-news-item #category li" css:theme=".related .topics li" />
     <replace css:content="#portal-column-two .portlet-static-navigation > ul" css:theme=".rightcol nav.section ul" />
     <copy css:content="#portal-column-two .portlet-static-contents" css:theme=".rightcol nav.toc" />
     <copy css:content="#portal-column-two .portlet-static-archive" css:theme=".rightcol div.archive" />
+
+    <copy css:content="#portal-column-two .portlet-static-drought" css:theme=".rightcol div.feature" />
+
     <replace css:content=".section-news .portletSearch form" css:theme=".rightcol .search img" />
     <replace css:content=".section-news .portletSearch .portletFooter a" css:theme=".rightcol .search .more a" />
     <copy css:content=".section-news .portlet-static-header" css:theme=".newsheader" />

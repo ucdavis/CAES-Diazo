@@ -6,6 +6,12 @@
 		border-bottom: none;
 		border-top: none;
 	}
+	#content ul.twocollist {
+	li {
+		display:list-style;
+		width:100%;
+		}
+	}
 }
 
 /* header responsiveness */
@@ -18,9 +24,7 @@
 	}
 	.righthead {
 		width:25%;
-		display: block;
 		float:none;
-		margin-top: 1em;
 		.searchbar {
 			text-align:left;
 		}
@@ -211,7 +215,7 @@ ul#nav.open li {
 	display: block;
 	background-color: $primary-color;
 	padding: .5em 1em;
-	border-bottom: solid 1px rgba(51, 83, 121, 0.95);
+	border-bottom: solid 1px transparentize($secondary-color, .75);
 	list-style-image: square;
 	a {
 		color:#fff;

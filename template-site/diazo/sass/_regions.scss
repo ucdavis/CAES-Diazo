@@ -18,6 +18,8 @@
 }
 nav {
 	max-width:1200px;
+	width:79%;
+	margin-top: 10px;
 }
 
 ul#nav {
@@ -54,9 +56,9 @@ li#portaltab-news ul.submenu {
 	}
 }
 ul.submenu {
-	background-color:rgba(0,40,85,.9);
+	background-color:transparentize($primary-color, .1);
 	width:115%;
-	top:50px;
+	top:55px;
 	z-index:100000;
 	li {
 		display: block;

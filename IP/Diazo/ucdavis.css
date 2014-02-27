@@ -1,4 +1,3 @@
-
 * {box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
 
 body {
@@ -29,7 +28,7 @@ p {
 
 a:link, a:visited {text-decoration: none; color: inherit; }
 a:hover, a:active {}
-#content a:link, dl.portlet a:link {border-bottom: 0px !important;}
+/*#content a:link, dl.portlet a:link {border-bottom: 0px !important;}*/
 
 .icon {font-family: "SSStandard"; font-size: .7em; padding-right: 5px;}
 .icon.social {font-family: "SSSocial";}
@@ -49,7 +48,7 @@ a:hover, a:active {}
 .header .ucdavis-brand a {float: right; margin-right: 8%;}
 
 .header .top {width: 960px; margin: 0 auto;}
-.header #portal-logo {height: 100px; margin: 0 6%;}
+.header #portal-logo {height: 100px; margin: 0 6%; float: left;}
 .header .logo img {display: inline-block; padding: 20px 10px 10px 0;}
 .header h1 {
 	display: inline-block; 
@@ -68,7 +67,7 @@ a:hover, a:active {}
 }
 
 #portal-searchbox {margin: 45px 6% 0 0 !important;}
-#LSResult {z-index: 50;}
+#LSResult {z-index: 5000000;}
 
 
 
@@ -104,13 +103,16 @@ a:hover, a:active {}
 	vertical-align: top;
 	min-height: 60px;
 }
+	.site-AfghanAg .header nav ul li {
+		width: 13%;
+	}
 .header nav ul li a {
 	color: #fff;
 	display: inline-block;
-	padding: 6% 2% 4%;
+	padding: 8% 2% 8%;
 	font-weight: 300;
 	width: 100%;
-	height: 80%;
+	height: 100%;
 }
 
 /* ----- mega menus ----- */
@@ -120,12 +122,12 @@ a:hover, a:active {}
 .header nav ul > li:hover > a {
 	color: #fff;
 }
-.header nav .mega {
+.header nav .mega,
+.header nav ul li > .submenu {
 	background: #fff;
 	position: absolute;
 	border-bottom-right-radius: 18px;
 	border-bottom-left-radius: 18px;
-	top: 56px; left: -3px;
 	text-align: left;
 	border: 3px solid #d2a800;
 	box-shadow: 0px 0px 5px rgba(33,33,33,.3);
@@ -134,20 +136,27 @@ a:hover, a:active {}
 	min-width: 103%;
 	display: none;
 }
+	.header nav .mega.submenu {
+		top: 56px; left: -3px;
+	}
+	.header nav ul ul .submenu x {right: auto; top: 0px;}
 	.header nav #portaltab-about .mega {left: -11px;}
 	.header nav #portaltab-students .mega {left: -160px;}
 	.header nav #portaltab-research .mega {left: -308px;}
 	.header nav #portaltab-outreach .mega {left: -457px;}
 	.header nav #portaltab-news .mega {left: -605px;}
 	.header nav #portaltab-connect .mega {left: -754px;}
-.header nav ul > li:hover > .mega {
+.header nav ul > li:hover > .mega,
+.header nav ul > li:hover > .submenu {
 	display: block;
 }
-.header nav .mega {
+.header nav .mega,
+.header nav .submenu {
 	width: auto;
 	height: auto;
 }
-.header nav .mega li {
+.header nav .mega li,
+.header nav .submenu li {
 	display: block;
 	text-align: left;
 	width: auto !important;
@@ -155,46 +164,61 @@ a:hover, a:active {}
 	min-height: 0px;
 	/* float: left; */
 }
-.header nav ul.mega li:hover {
+.header nav ul.mega li:hover,
+.header nav ul.submenu li:hover {
 	background: transparent;
 }
-.header nav ul.mega li a {
+.header nav ul.mega li a,
+.header nav ul.submenu li a {
 	padding: 5px 15px;
 	width: 100%;
 	color: rgb(51, 83, 121) !important;
 }
+ul.submenu a.state-published:hover, .selected ul.submenu .state-published,
 .header nav .selected ul.mega ul.submenu a.state-published,
-.selected ul.submenu .state-published {
+.selected ul.submenu .state-published,
+.header nav .selected ul.submenu ul.submenu a.state-published {
 	color: rgb(51, 83, 121) !important;
 }  /* added this to ploneCustom.css because it was being overridden */
 
-.header nav ul.mega ul.sub li a {
+.header nav ul.submenu ul {
+	left: 95%;
+}
+.header nav ul.mega ul.sub li a,
+.header nav ul.submenu ul.sub li a {
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
-.header nav ul.mega li:hover > a {
+.header nav ul.mega li:hover > a,
+.header nav ul.submenu li:hover > a {
 	color: inherit;
 }
-.header nav ul.mega li a:hover {
+.header nav ul.mega li a:hover,
+.header nav ul.submenu li a:hover {
 	background: #d9aa01;
 	color: #fff !important;
 }
 .header nav .mega ul.sub a,
-.header nav .mega ul.sub {
+.header nav .mega ul.sub,
+.header nav .submenu ul.sub a,
+.header nav .submenu ul.sub {
 	font-size: .9em;
 	font-weight: normal;
 	letter-spacing: .5px;
 }
-.header nav .mega ul.sub li {
+.header nav .mega ul.sub li,
+.header nav .submenu ul.sub li {
 	width: auto;
 	float: none;
 	display: inline-block;
 }
-.header nav .mega ul.sub {
+.header nav .mega ul.sub,
+.header nav .submenu ul.sub {
 	color: #B3B4B4;
 	font-weight: lighter;
 }
-.header nav .mega li em {
+.header nav .mega li em,
+.header nav .submenu li em {
 	text-transform: uppercase;
 	font-style: normal;
 	font-size: .6em;
@@ -204,6 +228,22 @@ a:hover, a:active {}
 	display: block;
 }
 
+	.site-AfghanAg .header nav ul li#portaltab-educational-materials {
+		float: right;
+	}
+	.site-AfghanAg .header nav ul li#portaltab-educational-materials > a {
+		background: rgba(255,255,255,0.3);
+		background: #5B7F95;
+		border: 4px solid #002855;
+/*		border-bottom: 0px;
+		border-top: 0px;*/
+		padding: 10px 15px 15px;
+		position: relative;
+		top: -4px;
+	}
+	.site-AfghanAg .header nav ul li#portaltab-educational-materials > a:hover {
+		background: #d9aa01;
+	}
 
 
 
@@ -393,16 +433,18 @@ a:hover, a:active {}
 	vertical-align: top;
 	border: 1px solid #ddd;
 	padding: 8px;
-	min-height: 200px;
+	min-height: 230px;
 	margin-bottom: 1em;
 	min-width: 150px;
 	text-align: center;
 }
+	.main .menuitem h4 {min-height: 50px; line-height: 0.9em;}
 	.main .menuitem:hover {background: rgba(230,230,230,.8);}
 	.main .menuitem a {display: inline-block; padding: 3px;}
 	.main .menuitem img {max-width: 100%; width: 100%;}
 	.main .menuitem p, .main .menuitem li {font-size: .9em; margin-right: 10px;}
 	.main .menuitem li {list-style: none;}
+	.main #content .menuitem ul {margin-left: 0;}
 
 
 
@@ -564,4 +606,22 @@ dl.portlet.portlet-static-afghan-agriculture dd.portletItem {padding-bottom: 0;}
 
 .subsection-natural-resource-management .main .content #portal-column-one {display: none;}
 
+/* Fix TinyMCE gremlins */
+#internallinkcontainer div.row {
+    /* Image browser was jumbled */
+    float: none;
+}
+#content #internallinkcontainer .list.item span, 
+#content #internallinkcontainer .list.item a {
+    /* Link browser was packed too much */
+    position: inherit;
+}
+#internallinkcontainer input[type="radio"] {
+    vertical-align:     middle;
+}
+#internallinkcontainer.radioscrolllist { line-height: auto !important; }
+#internallinkcontainer .list.item span, #internallinkcontainer .list.item a { position: static !important; }
+
+
+/* @end */
 

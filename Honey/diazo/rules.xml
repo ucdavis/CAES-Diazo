@@ -12,8 +12,6 @@
     <before css:content="head style, head link, head script, head meta" css:theme-children="head" />
 
     <!--Favicons-->
-    <drop css:content="head link[rel='shortcut icon']" />
-    <drop css:content="head link[rel='apple-touch-icon']" />
 
     
     <theme href="index.html" css:if-content="body.section-front-page" />

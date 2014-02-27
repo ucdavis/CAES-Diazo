@@ -247,6 +247,25 @@ $container.imagesLoaded( function(){
 });
 </script>
 
+<!-- code to allow menus on touch devices -->
+<script type="text/javascript">
+$(document).load(function() {
+  $('.header nav ul li').bind('touchstart', function(){
+      $(this).addClass('hover');
+  }).bind('touchend', function(){
+      $(this).removeClass('hover');
+  });
+});
+
+// var nav = document.getElementById('nav');
+// var els= nav.getElementsByTagName('li');
+// for(var i = 0; i < els.length; i++){
+//     els[i].addEventListener(’touchstart’, function(){this.className = “hover”;}, false);
+//     els[i].addEventListener(’touchend’, function(){this.className = “”;}, false);
+// }
+
+</script>
+
 
 <!-- code to enable nivo slider -->
 <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>

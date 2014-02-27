@@ -77,7 +77,7 @@ Supports Thumbs: true
 	font-family: "futura-pt", Futura Std, Futura, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 400;
-    background-color: rgba(0,40,85,.9);
+    background-color: transparentize($primary-color, .1);
     margin-left:10%;
     margin-right: 68%;
     position: absolute;
@@ -90,7 +90,7 @@ Supports Thumbs: true
     color:#fff;
 }
 .theme-default .nivo-caption:hover {
-	background-color: #bb9207;
+	background-color: transparentize($secondary-color, .1);
 }
 .theme-default .nivo-controlNav.nivo-thumbs-enabled {
 	width: 100%;
