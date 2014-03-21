@@ -29,10 +29,11 @@
 		color: #858585; color: rgba(133,133,133,0.8);
 		@include uppercased(2px);
 		font-size: 0.6em;
-		min-height: 20px;
+		height: 20px;
 		line-height: 3em;
 		margin-bottom: 13px;
 	}
+	dl.portlet.portlet-static-manage-your-subscription dt {height: auto;}
 	dl.portlet dt {
 		font-weight: $book; 
 		background:transparent;
@@ -138,6 +139,7 @@
 		li {padding: 3px 0; font-weight: $light; font-size: 0.9em;}
 		li a, .twitter-share-button {padding-left: 20px;}
 		li.twitter {padding-top: 8px; padding-bottom: 0px;}
+		li.twitter iframe {padding-left: 20px;}
 	} // End .share
 
 	/* for some reason, an extra topic shows up first */

@@ -42,6 +42,13 @@ p {
 	p, li, td {color: #777;}
 }
 
+span.code {
+	background-color: #eee;
+	font-family: $monospace;
+	padding: 0 0.1em;
+	font-size: 0.8em;
+}
+
 ul.twocolumnlist {margin-left: 0;}
 .twocolumnlist {
 	.thegoods #content & li {
@@ -69,6 +76,7 @@ ul.twocolumnlist {margin-left: 0;}
 
 // Base CSS
 .clear {clear: both; display: block;}
+.hidden {display: none;}
 
 .main {
 	width: 70%;

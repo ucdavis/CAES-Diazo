@@ -253,9 +253,40 @@
   $(document).ready(function() {
     /* Simple image gallery. Uses default settings */
     $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='image']").attr('rel', 'gallery').fancybox();
-    $('.fancybox-media').attr('rel', 'media-gallery').fancybox();
+    // $('.fancybox-media').attr('rel', 'media-gallery').fancybox();
   });
 </script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      /* Simple image gallery. Uses default settings */
+
+      $('.fancybox').fancybox();
+       
+      /*Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+      */
+      $('.fancybox-media')
+        .attr('rel', 'media-gallery')
+        .fancybox({
+          openEffect : 'none',
+          closeEffect : 'none',
+          prevEffect : 'none',
+          nextEffect : 'none',
+
+          arrows : false,
+          helpers : {
+            media : {},
+            buttons : {},
+            overlay : {
+              css : {
+                'background' : 'rgba(55,55,55,0.85)'
+              }
+            }
+          }
+        });
+
+
+    });
+  </script>
   <script type="text/javascript">
   $(document).ready(function() {  
     $(".rightcol nav").find("a[href='"+window.location.href+"']").filter(":last").addClass("current");

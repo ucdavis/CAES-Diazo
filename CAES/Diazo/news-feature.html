@@ -18,7 +18,7 @@
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 <!-- Le styles -->
-<link href="css/caes-style-feature.css" rel="stylesheet">
+<link href="css/caes-style-newsfeature.css" rel="stylesheet">
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
 <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
@@ -165,7 +165,9 @@
     <p>Bostock is among 702 new fellows, honored for their scientifically or socially distinguished efforts to advance science or its applications. Bostock and other new fellows will be formally recognized in February during the association's annual meeting in Boston.</p>
   </section>
   <section class="rightcol">
-    <div class="feature">
+    <nav class="toc">
+    </nav>
+    <div class="archive">
     </div>
     <nav class="section">
       <h3>In this section</h3>
@@ -274,9 +276,40 @@ $(window).load(function() {
   $(document).ready(function() {
     /* Simple image gallery. Uses default settings */
     $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='/image']").attr('rel', 'gallery').fancybox();
-    $('.fancybox-media').attr('rel', 'media-gallery').fancybox();
+    // $('.fancybox-media').attr('rel', 'media-gallery').fancybox();
   });
 </script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      /* Simple image gallery. Uses default settings */
+
+      $('.fancybox').fancybox();
+       
+      /*Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+      */
+      $('.fancybox-media')
+        .attr('rel', 'media-gallery')
+        .fancybox({
+          openEffect : 'none',
+          closeEffect : 'none',
+          prevEffect : 'none',
+          nextEffect : 'none',
+
+          arrows : false,
+          helpers : {
+            media : {},
+            buttons : {},
+            overlay : {
+              css : {
+                'background' : 'rgba(55,55,55,0.85)'
+              }
+            }
+          }
+        });
+
+
+    });
+  </script>
   <script type="text/javascript">
   $(document).ready(function() {  
     $(".rightcol nav").find("a[href='"+window.location.href+"']").filter(":last").addClass("current");

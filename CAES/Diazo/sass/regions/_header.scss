@@ -12,8 +12,8 @@
 	a.logo {float: left; @include inline-block(top);}
 	.logo img {
 		@include inline-block(top); 
-		margin: 20px 10px 10px 0;
-		width: 131px; height: 22px;
+		margin: 20px 10px 10px -78px;
+		width: 211px; height: 27px;
 	}
 	h1 {
 		@include inline-block(top); 

@@ -33,6 +33,10 @@ dl.captioned dt img,
 .newsImage, #content img, #content iframe {
 	@include img-border;
 }
+#content img.noframe {
+	border: 0px none #fff !important; 
+	box-shadow: 0 0 0 #fff !important;
+}
 
 
 
@@ -44,3 +48,4 @@ dl.captioned dt img,
 @import 'components/menu';
 @import 'components/portletsbelow';
 @import 'components/forms';
+@import 'components/tinymce';

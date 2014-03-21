@@ -249,10 +249,44 @@
   <script type="text/javascript">
   $(document).ready(function() {
     /* Simple image gallery. Uses default settings */
-    $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='image']").attr('rel', 'gallery').fancybox();
-    $('.fancybox-media').attr('rel', 'media-gallery').fancybox();
+     $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='/image']").attr('rel', 'gallery').fancybox(); 
+    // $("dl.captioned > a").attr('rel', '');
+    // $("a[rel$='gallery']").fancybox();
+    // $('a > img').parent().attr('rel', 'gallery').fancybox();
+    // $('.fancybox-media').attr('rel', 'media-gallery').fancybox();
   });
 </script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      /* Simple image gallery. Uses default settings */
+
+      $('.fancybox').fancybox();
+       
+      /*Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+      */
+      $('.fancybox-media')
+        .attr('rel', 'media-gallery')
+        .fancybox({
+          openEffect : 'none',
+          closeEffect : 'none',
+          prevEffect : 'none',
+          nextEffect : 'none',
+
+          arrows : false,
+          helpers : {
+            media : {},
+            buttons : {},
+            overlay : {
+              css : {
+                'background' : 'rgba(55,55,55,0.85)'
+              }
+            }
+          }
+        });
+
+
+    });
+  </script>
   <script type="text/javascript">
   $(document).ready(function() {  
     $(".rightcol nav").find("a[href='"+window.location.href+"']").filter(":last").addClass("current");
@@ -283,7 +317,7 @@
 <script type="text/javascript">
     $(document).ready(function() {
         // Let's see, if we are coming from our special section:
-        if (document.referrer.indexOf('/news') != -1) {
+        if (document.referrer.indexOf('/CAES/news') != -1) {
             // Yes, we have the button to toggle portal_type-filter:
             if ($('#pt_toggle').length>0) {
                 // If it's checked we uncheck it:

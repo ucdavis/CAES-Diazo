@@ -38,7 +38,7 @@
 	}
 
 	/* ----- mega menus ----- */
-	ul > li:hover {
+	ul > li:hover , ul > li.hover {
 		background: rgba($bright-gold,0.9);
 		> a {color: #fff;}
 	}
@@ -162,9 +162,11 @@
 
 	} /* --- end .mega --- */
 
-	ul > li .mega:hover {@include transition(all 0.4s ease-in-out);}
-	ul > li:hover > .mega {
-		@include opacity(1);
+	ul > li .mega:hover, 
+	ul > li .mega.hover {@include transition(all 0.4s ease-in-out);}
+	ul > li:hover > .mega, 
+	ul > li.hover > .mega {
+		@include opacity(1); 
 		visibility: visible;
 	}
 	
