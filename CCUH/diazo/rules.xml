@@ -1,0 +1,35 @@
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <!-- CCUH XML -->
+    <!--Head-->
+    <copy css:content="html" css:theme="html" attributes="lang dir"/>
+    <copy css:content="head base" css:theme="head base"/>
+    <replace css:content="head title" css:theme="head title"/>
+    <before css:content="head style, head link, head script, head meta" css:theme-children="head"/>
+
+    <theme href="index.html" css:if-content="#visual-portal-wrapper" />
+
+    <merge attributes="class" css:content="body" css:theme="body" />
+    <copy attributes="id dir" css:content="body" css:theme="body" />
+
+
+    <copy css:theme=".maintext" css:content="#content"/>
+    <prepend css:content="#edit-bar" css:theme=".maintext" />
+
+    <replace css:theme="nav.topnav li" css:content="#portal-globalnav li" />
+    <copy attributes="href" css:theme=".home-logo" css:content="#portal-logo" />
+
+    <copy css:theme=".slideshow" css:content=".portlet-static-nivo" />
+    <replace css:theme=".slideshowedit" css:content=".managePortletsAboveLink" />
+    <before css:theme=".slideshowedit" css:content=".manageInHeaderPortletsLink" />
+    <replace css:theme=".portlets-right" css:content="#portal-column-two .visualPadding" />
+
+    <copy css:theme="footer" css:content="#portal-footer" />
+
+     <!-- Scripts via Control Pannel -->
+    <after css:content="#visual-portal-wrapper script" css:theme="body" />
+
+</rules>

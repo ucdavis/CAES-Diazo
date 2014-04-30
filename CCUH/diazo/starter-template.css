@@ -1,0 +1,242 @@
+* {
+margin: 0 auto;
+padding: 0 auto;
+}
+
+body {
+  background-color: #EAEAEA;
+  font-family: Verdana, Georgia, serif;
+  min-width: 460px;
+  font-size: 17px;
+}
+#content a:link, dl.portlet a:link {border-bottom: 0px;}
+a:link, a:visited {text-decoration: none;}
+
+#content a:link, #content a:visited {color: #4C721B;}
+
+img {max-width: 100%;}
+
+.container {
+/* width: 820px; */
+margin: 0 auto;
+}
+
+/*header*/
+header {
+width: 100%;
+margin: 0 auto;
+background: #3e5d17;
+height: 45px;
+padding-top: 15px;
+}
+header .logos {
+}
+
+#header_images {
+margin-top: 10px;
+border-bottom: 5px solid #4B721D;
+padding-bottom: 10px;
+width: 100%;
+}
+
+#header_images img {
+padding-right: 10px;
+height: 100px;
+width: auto;
+}
+	#header_images .one {width: 20.53010279%;}
+	#header_images .two {width: 22.87958884%;}
+	#header_images .three {width: 20.789574156%;}
+	#header_images .four {width: 16.124816446%;}
+	#header_images .five {width: 19.502202643%; padding-right: 0px;}
+
+/*nav*/
+
+nav {
+margin: 15px 0 0;
+padding-bottom: 10px;
+font-weight: bold;
+height: 40px;
+}
+
+nav ul {
+list-style-type: none;
+padding-left: 0;
+}
+
+nav li {
+display: inline-block;	
+padding-right: 4%;
+}
+
+nav li a {
+display: block;
+}
+
+nav li a:link, nav li a:visited {
+color: #8B0E04;
+text-decoration: none;
+}
+
+nav li a:hover, nav li a:active {
+border-bottom: 3px solid #8B0E04;
+color: #8B0E04;
+}
+
+.active a {
+border-bottom: 3px solid #8E0E04;
+}
+
+
+/* edit bar */
+
+#content li {display: list-item;}
+#content #edit-bar li {display: inline; font-size: 0.9em;}
+#content #edit-bar ul {margin-left: 0; list-style-type: none;}
+#content #contentActionMenus a:hover {color: #ccc !important;}
+
+div.portletAssignments {font-size: 1.25em;}
+
+/*left content*/
+
+/* ---- slider ---- */
+.slideshow {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.nivo-controlNav {display: none !important;}
+.theme-light.slider-wrapper {
+	background: transparent !important;
+}
+.theme-light .nivoSlider {
+}
+.theme-light .nivoSlider img,
+.theme-light .nivoSlider img.nivo-main-image,
+.theme-light .nivoSlider .nivo-slice,
+.theme-light .nivoSlider .nivo-slice img {
+	height: 100% !important;
+}
+.nivo-caption {
+	right: 4px; bottom: 2px;
+	color: #fff;
+}
+
+.caption {
+	float: right; 
+	margin-right: 4px;
+	color: #fff;
+	position: relative;
+	top: -20px;
+}
+.section-about-us .portlet-static-nivo img,
+.section-public .portlet-static-nivo img {width: 100%;}
+
+#content {
+margin: 5px 0;
+}
+
+/*right content*/
+#rightside {
+	padding-top: 22px;
+}
+.home-logo {
+	margin-bottom: 2em;
+	display: block;
+	padding: 0.42em 1em;
+}
+
+/*style*/
+h1, h2, h3, h4, h5, h6,
+.portletHeader span, 
+dl.portlet dt.portletHeader a:link {
+	font-family: Verdana, Georgia, serif;
+	color: #8B0E04;
+	font-weight: bold;
+}
+h1 {
+	font-weight: bold;
+	font-size: 27px;
+}
+#content p, #content li, #content td {
+	font-size: 1.3em;
+	line-height: 1.6em;
+	font-family: Verdana, Georgia, serif;
+}
+
+dl.portlet dt {background: transparent;}
+
+h2, .portletHeader span, 
+dl.portlet dt.portletHeader a:link {
+	display: block;
+	font-size: 15px;
+	border-bottom: 3px solid #8E0E04;
+}
+h4 {
+	font-size: 1.2em;
+}
+	dl.portlet a:link,
+	dl.portlet a:visited,
+	dl.portlet dt a:link, dl.portlet dt a:visited, dl.portlet dt a:hover {color: #8B0E04;}
+
+	dl.portlet.portlet-static-featured a:link,
+	dl.portlet.portletNews .portletItem a:link,
+	dl.portlet.portlet-static-featured a:visited,
+	dl.portlet.portletNews .portletItem a:visited {color: #333333;}
+
+	dl.portlet a:hover,
+	dl.portlet a:active {color: #B93939 !important;}
+
+.portletHeader span.portletTopLeft, 
+.portletHeader span.portletTopRight {display: none;}
+
+dd.portletFooter {font-style: italic;}
+
+.event_portlet_cat {font-size: 0.75em; letter-spacing: 0.5px; text-transform: uppercase; font-weight: normal; color: #000; display: block; padding-top: .25em;}
+.portletItemDetails {font-size: .9em; text-align: right;}
+dl.portlet dd.portletItem, dl.portlet dd.portletFooter, dl.portletError dd {
+	padding: 0 1em;
+}
+
+.template-folder_summary_view h2 {border-bottom: 0px;}
+.template-folder_summary_view .tileItem {
+	border-top: 1px solid #ccc;
+	padding: 1em 0;
+}
+
+strong {
+/*color: #4C721D;*/
+}
+
+.date, .link {
+font-size: 10.5px;
+}
+
+.link {
+color: #8E0E04;
+font-style: italic;
+text-align: right;
+}
+
+/*footer*/
+
+footer {
+text-align: center;
+margin: 50px 0 0 0;
+}
+
+footer a:link {
+color: #8E0E04;
+text-decoration: none;
+font-weight: bold;
+}
+
+footer a:visited, a:active {
+color: #8E0E04;
+border-bottom: 1px solid #8B0E04;
+}
+
+
+.portaltype-collection .tileItem {min-height: 90px; clear: both;}
+img.tileImage {border: 3px solid #fff;}

@@ -11,16 +11,16 @@
 	$header-text:		#9d244c;
 	$main-link:			#40b1b6;
 	$sub-link:			#dd6e52;
-
 	$dark-background: 	#17151d;
+
 
 
 
 // Typography
 @import 'banda';
 
-	$banda:				"BandaRegular", BandaRegular, "Banda Regular", sans-serif;
-	$sans-serif:		Helvetica Neue, Helvetica Std, Helvetica, Univers, Arial, sans-serif;
+	$banda:				"BandaRegular", BandaRegular, "Banda Regular", Trebuchet MS, sans-serif;
+	$sans-serif:		Trebuchet MS, Helvetica Neue, Helvetica Std, Helvetica, Univers, Arial, sans-serif;
 	$serif:				Georgia, Berkeley, serif;
 
 	// [Compass] Vertical rhythm set up
@@ -33,3 +33,103 @@
 
 
 // Themes
+body {
+	background: url('../images/bg01.jpg') fixed repeat;
+	background-size: cover;
+}
+
+	// 2
+	@mixin theme($header-color,$main-color,$sub-color,$dark-color) {
+		h1, h2, h3, h4, h5, h6,
+		.h1, .h2, .h3, .h4, .h5, .h6 {color: $header-color;}
+		a:link, a:visited {
+			color: $main-color;
+			&.sub-link {color: $sub-color;}
+		}
+		a:hover, a:active {
+			color: $sub-color;
+			&.sub-link {color: $main-color;}
+		}
+		header nav {
+			a:link, a:visited {
+				color: $sub-color;
+			}
+			a:hover, a:active {
+				color: $main-color;
+			}
+		}
+		section.contact {background: rgba($dark-color,0.5);}
+		.content aside ul li {
+			color: $main-color;
+			a.current {color: $sub-color;}
+		}
+		footer {
+			.footer-about {
+				a:link, a:visited {
+					color: $sub-color;
+					&.h3 {color: $main-color;}
+				}
+			}
+			.footer-sitemap ul li {
+				&.primary a:link, &.primary a:visited {
+					color: $sub-color;
+				}
+			}
+		}
+	}
+
+
+	body.bg02, body.section-videos {
+		background: url('../images/bg02.jpg') fixed repeat;
+		@include theme(#76757b, #a8a7ad, #353942, #18171f);
+	}
+
+	body.bg03, body.section-artist.subsection-gallery {
+		background: url('../images/bg03.jpg') fixed repeat;
+		@include theme(#55a2b6, #e89ab2, #9b7486, #0f3446);
+	}
+
+	body.bg04, body.section-teacher.subsection-gallery {
+		background: url('../images/bg04.jpg') fixed repeat;
+		@include theme(#f72e5c, #eea210, #3391b7, #1b2b21);
+	}
+
+	body.bg05, body.section-teacher {
+		background: url('../images/bg05.jpg') fixed repeat;
+		@include theme(#e03a00, #0084f0, #e35f14, #29212e);
+	}
+
+	body.bg06, body.section-lecturer {
+		background: url('../images/bg06.jpg') fixed repeat;
+		@include theme(#ce90b5, #7eb8c3, #f3900f, #8a677d);
+	}
+
+	body.bg07, body.section-auth.subsection-excerpts {
+		background: url('../images/bg07.jpg') fixed repeat;
+		@include theme(#ac4f24, #d58aa8, #ad4b1c, #623b36);
+	}
+
+	body.bg08 {
+		background: url('../images/bg08.jpg') fixed repeat;
+		@include theme(#849897, #af605c, #4d5973, #3c3350);
+	}
+
+	body.bg09, body.section-biography {
+		background: url('../images/bg09.jpg') fixed repeat;
+		@include theme(#f7ab19, #e96437, #f9ab9f, #4c4533);
+	}
+
+	body.bg10, body.section-auth {
+		background: url('../images/bg10.jpg') fixed repeat;
+		@include theme(#75a4b4, #d73526, #f59c3e, #111e31);
+	}
+
+	body.bg11, body.section-artist {
+		background: url('../images/bg11.jpg') fixed repeat;
+		@include theme(#ff8106, #6ccdd4, #8bba2e, #304946);
+	}
+
+	body.bg12 {
+		background: url('../images/bg12.jpg') fixed repeat;
+		@include theme(#cc2513, #1160bd, #ee9300, #15141a);
+	}

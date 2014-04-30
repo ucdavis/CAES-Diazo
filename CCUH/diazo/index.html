@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <title>California Center for Urban Horticulture</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.0.0/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/light.css" type="text/css" media="screen" />
+
+    <style type="text/css">
+      .nivoSlider {
+          position:relative;
+          background:url(images/loading.gif) no-repeat 50% 50%;
+      }
+      .nivoSlider img {
+          position:absolute;
+          top:0px;
+          left:0px;
+          display:none;
+          width: 100%; 
+      }
+      .nivoSlider a {
+          border:0;
+          display:block;
+      }
+    </style>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="bootstrap-3.0.0/assets/js/html5shiv.js"></script>
+      <script src="bootstrap-3.0.0/assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  <header>
+    <div class="logos container">
+      <a href="http://ucdavis.edu" title="UC Davis"><img src="images/logo-ucdavis.png" alt="UC Davis" /></a>
+      <a href="http://caes.ucdavis.edu"><img src="images/logo-caes.png" alt="CA&amp;ES" /></a>
+    </div>
+  </header>
+  
+  <div class="container">
+
+    <div class="col-md-8">
+  
+    <section id="header_images">
+      <img src="images/ccuh_header_01.jpg" class="one" />
+      <img src="images/ccuh_header_02.jpg" class="two"/>
+      <img src="images/ccuh_header_03.jpg" class="three"/>
+      <img src="images/ccuh_header_04.jpg" class="four"/>
+      <img src="images/ccuh_header_05.jpg" class="five"/>
+      <!-- <div class="border"></div> -->
+    </section>
+
+ <nav class="topnav">
+ <ul>
+            <li class="active"><a href="#">Home</a></li>
+<!--             <li><a href="academia.html">Academia</a></li>
+            <li><a href="industry.html">Industry</a></li>
+			<li><a href="public.html">Public</a></li>
+            <li><a href="about.html">About Us</a></li>
+			<li><a href="contact.html">Contact</a></li>
+            <li><a href="giving.html">Giving</a></li> -->
+ </ul>
+ </nav>
+   
+
+
+<section id="content">
+
+  <div class="slideshow">
+    <img src="images/slideshow1.jpg" />
+  </div>
+  <div class="slideshowedit"></div>
+  <div class="maintext">
+  <h1>Enchancing urban living through horticulture</h1>
+  <p>Located at the University of California, Davis, the <strong>California Center for Urban Horticulture (CCUH)</strong> draws upon the knowledge and expertise of our partners in academia, industry, and the public with a mission to help Californians</p>
+
+  <ul>
+  <li>develop more water-conserving, pest-resistant and disease-resistant home gardens</li>
+  <li>create environmentally sound public landscapes and parks</li>
+  <li>produce better plant materials for sustainable urban landscapes</li>
+  </ul>
+
+  <p>We seek to address the state's growing water demands, increasing chemical inputs into the environment, and loss of wild lands in order to improve the quality of urban life.</p>
+  </div>
+</section>
+</div>
+<div class="col-md-4">
+<section id="rightside">
+<a class="home-logo"><img src="images/ccuh_logo.jpg" /></a>
+
+<div class="portlets-right">
+<p><h2>Events</h2></p>
+<p><strong>SAVE THE DATE! Current Issues in Invasive Emerging Pest & Diseases</strong><br />
+- Industry Seminar<br /><br />
+Wednesday, February 5th, 2014. Registration here.<br />
+<span class="date">Feb 05, 2014</span></p>
+
+<p><strong>SAVE THE DATE! Pollinator Gardening Workshop</strong> - public workshop
+<br /><br />
+Saturday, March 15th, 2014<br />
+<span class="date">Mar 15, 2014</span></p>
+
+<p class="link">see more events</p>
+
+<p><h2>News</h2></p>
+<p>Dave Fujino new chair of SHRE Advisory Committee<br />
+Jul 24, 2013</p>
+<p class="link">more news...</p>
+
+<p><h2>Featured</h2></p>
+<p>Evapotranspiration Adjustment Factor (ETAF) Study
+<br /><br />
+Kurapia: Low Water Groundcover
+<br /><br />
+Landscape Water Conservation Resources Map</p>
+</div>
+</section>
+</div>
+    </div><!-- /.container -->
+
+<footer>
+<p><a href="#">Home</a> | <a href="#">Academia</a> | <a href="#">Industry</a> | <a href="#">Public</a> | <a href="#">About Us</a> | <a href="#">Contact</a><br />
+<a href="#">Questions or Comments?</a> | <a href="#">Login</a><br />
+<em>Copyright &#169;  The Regents of the University of California, Davis campus 2007-08. All Rights Reserved</em></p>
+</footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster 
+    <script src="bootstrap-3.0.0/assets/js/jquery.js"></script>-->
+    <script src="bootstrap-3.0.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- code to enable nivo slider -->
+    <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+    jQuery(window).load(function() {
+        $('#slider').nivoSlider({
+            effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
+            animSpeed: 1000, // Slide transition speed
+            pauseTime: 8000, // How long each slide will show
+            directionNav: false, // Next & Prev navigation
+            controlNav: false, // 1,2,3... navigation
+            controlNavThumbs: false, // Use thumbnails for Control Nav
+            pauseOnHover: true, // Stop animation while hovering
+            manualAdvance: false // Force manual transitions
+        });
+    });
+    </script>
+
+    
+<!-- code for Google Analytics -->
+<div id="footer-js">&nbsp;</div>
+  </body>
+</html>

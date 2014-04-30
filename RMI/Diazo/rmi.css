@@ -2137,7 +2137,9 @@ span.slidedate {
 	vertical-align: top;
 	margin-top: 5px;
 	margin-right: 15px;
-	float:left;
+}
+table.nothing td {
+	vertical-align: top;
 }
 .section-contact #content-core li {
 	display: inline-block;

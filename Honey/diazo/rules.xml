@@ -39,6 +39,13 @@
     <copy css:theme=".maincol" css:content="#content"/>
     <prepend css:content="#edit-bar" css:theme=".maincol" />
 
+    <!-- Events Card -->
+    <copy css:content=".eventDetails table .app-period" css:theme=".eventdetailsside .when-period" />
+    <copy css:content=".eventDetails table .location" css:theme=".eventdetailsside .location" />
+    <copy css:content=".eventDetails table .contact-email" css:theme=".eventdetailsside .contact-email" />
+    <copy css:content=".eventDetails table .tel" css:theme=".eventdetailsside .contact-tel" />
+    <copy css:content=".eventDetails table .apply-online" css:theme=".eventdetailsside .apply-online" />
+
     <!--Sidebar -->
     <copy css:content="#portal-column-one .portletStaticText" css:theme=".portletstatic" />
     <copy css:content="dt.portletHeader" css:theme=".portletstatic h2" />

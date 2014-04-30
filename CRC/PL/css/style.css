@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* normalize.scss v2.1.2 | MIT/GPLv2 License | bit.ly/normalize-with-compass */
 /* ==========================================================================
@@ -943,13 +944,13 @@ body.bg12 {
 
 body {
   color: #343434;
-  font-family: "BandaRegular", BandaRegular, "Banda Regular", sans-serif;
+  font-family: "BandaRegular", BandaRegular, "Banda Regular", Trebuchet MS, sans-serif;
   font-size: 12px;
   line-height: 12px; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "BandaRegular", BandaRegular, "Banda Regular", sans-serif;
+  font-family: "BandaRegular", BandaRegular, "Banda Regular", Trebuchet MS, sans-serif;
   font-weight: normal;
   color: #9d244c; }
 
@@ -1049,7 +1050,7 @@ section.contact {
     vertical-align: text-bottom; }
 
 section.feature {
-  min-height: 32em; }
+  min-height: 28em; }
   .subsection-gallery section.feature {
     min-height: 16em; }
 

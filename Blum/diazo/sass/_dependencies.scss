@@ -21,8 +21,8 @@
 // Colors
 	// The UC Davis standard colors
 
-	$primary-color:		#002855; // h1,h2,h3,h4 banner colors
-	$secondary-color:	#BB9207; // accent color, a hovers, underlines
+	$primary-color:		#41475D; // h1,h2,h3,h4 banner colors
+	$secondary-color:	#E9BE60; // accent color, a hovers, underlines
 	$dark-gray:			#333433; // p,li color in main content
 	$middle-gray: 		#515151; // p,li color in portlet/sidebar
 	$light-gray:		#9b9b9b; // summary, discreet
@@ -31,7 +31,8 @@
 	$boxcolor:			#ffffff; //	content boxs
 	$borders:			#dddddd; // border color
 
-
+	// colors yay
+	$green:				#7E8843; // portlet headers
 // variables yo!
 	$max-width: 1200px;
 
@@ -75,10 +76,10 @@
 }
 
 @mixin contentbox {
-	background-color:#ffffff;
+
 	overflow: auto;
 	width: 100%;
-	border:solid 1px $borders;
+
 	padding: 1em;
 	margin: 1em 0;
 	height:auto;

@@ -168,10 +168,13 @@ p.greenbutton a:link, p.greenbutton a:visited, p.greenbutton a:active {
 
 .frontsupport p.greenbutton {
 	margin-top: 1em;
-	float:right;
+	float:left;
 	margin-left: 8px;
+	margin-bottom: 16px;
 }
-
+.frontevents dd.portletItem, .frontnews dd.portletItem {
+	margin-bottom: 30px;
+}
 .frontsupport p.greenbutton a:link {
 	color:#fff;
 	width:25%;
@@ -737,11 +740,11 @@ footer {
 tables
 
 ------- */
-table.abouttable tbody, table.bordered tbody {
+table.abouttable tbody, table.bordered tbody, table.varietytable body {
 	padding: 10px;
 }
 
-table.abouttable, table.bordered, table.productstable {
+table.abouttable, table.bordered, table.productstable, table.varietytable {
 	padding-bottom: 2.5em;
     width: 100%;
 }
@@ -752,7 +755,7 @@ table.plain th, table.plain td {
     border-right: none;
     font-size: 1.2em;
 }
-table.abouttable td, table.bordered td, table.productstable td {
+table.abouttable td, table.bordered td, table.productstable td, table.varietytable td {
 	color: #282C2D;
     font-family: "futura-pt",Futura Std,Futura,Arial,sans-serif;
     font-size: 1.4em;
@@ -763,6 +766,12 @@ table.abouttable td, table.bordered td, table.productstable td {
     border-top-style: solid;
     border-top-width: 1px;
     vertical-align: top;
+}
+table.varietytable td {
+    font-size: 1.4em;
+    font-style: normal;
+    font-weight: 400;
+    padding: .5em;
 }
 table.abouttable td, table.productstable td{
 	font-size: 1em
@@ -1658,4 +1667,42 @@ input.btn:hover {
 }
 #content-core dd {
 	margin-left: 0px;
+}
+
+
+ul#nav li:hover ul.submenu {
+	display: block;
+}
+li#portaltab-news ul.submenu {
+	width:70%;
+}
+ul#nav li#portaltab-news ul.submenu li a {
+	padding-right: 3em;
+}
+ul.submenu {
+	background-color:rgba(120,126,18,.9);
+	width:115%;
+	top:45px;
+}
+.webkit ul.submenu {
+	top:42px;
+}
+ul#nav ul.submenu li {
+	display: block;
+	border-top: solid 1px rgba(139,146,25,.9);
+	padding: .3em 0em;
+}
+ul#nav ul.submenu li:first-child {
+	border-top: none;
+}
+ul#nav ul.submenu li a {
+	color:#fff;
+	font-size: .8em;
+	padding: 0em .5em;
+}
+ul#nav ul.submenu a:link, ul#nav ul.submenu a:visited {
+	color:#fff !important;
+}
+ul#nav ul.submenu a:hover {
+	color:#AAAF4C !important;
 }
