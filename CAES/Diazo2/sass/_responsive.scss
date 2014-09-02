@@ -1,0 +1,124 @@
+// // Responsive
+// // Adjustments to type sizes, grids, and images.
+
+
+// /* ---- "media queries" ----- */
+// // @media all and (max-width: 1024px) {
+// //   .header nav .mega .story .featmain {width: 49%;}
+// //   .main, .header .top {width: 90%;}
+// // }
+
+
+// @media all and (max-width: 900px) {
+//   // .portlet-static-nivo .static.text h2 {font-size: 1.25em;}
+//   // .header a.logo {float: none; vertical-align: middle; padding-bottom: 11px;}
+//   // .header nav ul li > a {font-size: 0.9em;}
+//   // .header .search {display: none;}
+// }
+
+// @media all and (max-width: 800px) {
+//   // .header .logo img {margin-bottom: 2px; margin-left: 0px;}
+//   // .header h1, .section-front-page .header h1 {padding-top: 0px;}
+//   // .header a.logo {vertical-align: bottom;}
+
+//   // .header nav .mega {
+//   //   padding: 10px 2% 20px;
+//   //   min-width: 90%;
+//   //   .description {display: none;}
+//   //   .col.story {width: 30%;}
+//   //   .story .featmain {
+//   //     width: 100%;
+//   //     .details:after {content: "";}
+//   //   }
+//   // }
+
+//   // .nivo-controlNav {display: none;}
+
+//    // footer {
+//    //    .container {
+//    //      // max-width: 100%;
+//    //      // section, section.social {width: 50%; padding: 10px;}
+//    //      // section.sitemap {width: 100%;}
+//    //    }
+//    //    // .portlet-static-contact img {left: 0;}
+//    //  }
+// }
+
+// @media all and (max-width: 768px) {
+// }
+
+
+// @media only screen and (min-device-width: 320px) and (orientation:portrait),
+//                    (max-device-width: 1024px) and (orientation:landscape){
+//        // .header .search {max-width: 80px; max-height: 45px; overflow: hidden; display: none;}
+//        // .header .search .searchField,
+//        // .header .search .searchButton {@include inline-block(top); float: left;}
+
+//        // .header .search .searchField {max-width: 80px;}
+
+//        // .search.footersearch .searchField {max-width: 120px;}
+
+//        // .footer .content section.social li a {background-image: none;}
+
+//    // footer {
+//    //    .container {
+//    //      // max-width: 100%;
+//    //      // section, section.social {width: 50%; padding: 10px;}
+//    //      // section.sitemap {width: 100%;}
+//    //    }
+//    //    // .portlet-static-contact img {left: 0;}
+//    //  }
+
+//    //     .main object {display: none;}
+// }
+
+// @media only screen and (min-device-width: 320px) and (orientation:portrait),
+//                    (max-device-width: 768px) and (orientation:portrait) {
+//       //  .header {
+//       //     // .top {min-height: 55px; height: auto;}
+//       //     // a.logo {float: none;}
+//       //     // a.logo.title {display: block;}
+//       //     // .logo img {width: 60%; margin-top: 2em; height: auto;}
+//       //     // .search {
+//       //     //   max-width: 80px; max-height: 45px; overflow: hidden; display: none;
+//       //     //   .searchField,
+//       //     //   .searchButton {@include inline-block(top); float: left;}
+//       //     //   .searchField {max-width: 80px;}
+//       //     // }
+ 
+//       //     // nav {
+//       //     //   display: none;
+//       //     //   .mega {min-width: 320px;}
+//       //     // }
+//       //     // .menu-trigger {display: block;}
+//       //  }
+
+
+//       //  // .diazo-content .main {max-width: 100%; width: 100%; left: 0;}
+
+
+//       //  .thegoods {
+//       //     // left: 0;
+//       //     // border-right: 0px;
+//       //     // width: 100%;
+//       //     // padding-top: 20px;
+//       //     // h1, p.description {margin-right: 10px;}
+//       //     // p, li, td {margin-right: 5%;}
+//       //   }
+//       //  // .rightcol {float: none; clear: both; width: 100%;}
+
+//       //  // .search.footersearch .searchField {max-width: 120px;}
+
+//       //  // .footer .content section.social li a {background-image: none;} 
+
+//       //  footer {
+//       //   .container {
+//       //     // max-width: 100%;
+//       //     // section {width: 100%; clear: both; padding: 10px;}
+//       //     // section.social, section.sitemap {width: 100%;}
+//       //   }
+//       //   // .portlet-static-contact img {left: 0;}
+//       // }
+
+//       //  // .main object {display: none;}
+// }

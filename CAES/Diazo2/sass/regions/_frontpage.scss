@@ -1,0 +1,568 @@
+// Front page styles 
+// For index.html and submain.html 
+// Masonry styles
+
+.grid-sizer {
+	width: 100%;
+
+	@include breakpoint($lil) {width: 50%;}
+	@include breakpoint($large) {width: 33.33333%;}
+
+	.diazo-submain & {
+		width: 100%;
+
+		@include breakpoint($lil) {width: 50%;}
+		@include breakpoint($medium) {width: 8.333333333%;}
+		@include breakpoint($large) {width: 25%;}
+	}
+
+	// .diazo-submain.section-admin & {
+	// 	@include breakpoint($medium) {width: 50%;}
+	// }
+}
+
+
+.main {
+	.diazo-submain & {margin-top: 20px;}
+	.section-front-page & {margin: 1em auto;}
+}
+
+.main .news {
+	width: 100%;
+	@include inline-block(top);
+	position: relative;
+	z-index: 50;
+
+	@include breakpoint($medium) {width: 75%;}
+
+	.diazo-submain & {width: 100%;} /* -- make this flexible -- */
+
+	h4 {font-weight: $medium;}
+
+	.box {
+		width: 234px;
+		width: 100%;
+		float: left;
+		padding: 6px 6px;
+		background: #fff;
+		border: 1px solid rgba(33, 33, 33, 0.1);
+		vertical-align: top;
+		margin: 0 6px 6px 0;
+		color: rgba(7,22,38,0.7);
+
+		@include breakpoint($lil) {width: 48.5%;}
+		@include breakpoint($large) {width: 32.544%;}
+
+		.diazo-submain & {
+			width: 100%; 
+
+			@include breakpoint($lil) {width: 48.5%;}
+			@include breakpoint($medium) {width: 32%;}
+			@include breakpoint($large) {width: 24%;}
+		}
+
+		// .diazo-submain.section-admin & {
+		// 	@include breakpoint($medium) {width: 24%;}
+		// }
+
+		.section-front-page & {
+			width: 230px; width: 100%;
+
+			@include breakpoint($lil) {width: 48.5%;}
+			@include breakpoint($large) {width: 32%;}
+
+			img {
+				max-height: 100px; width: auto; float: right; padding: 0 0 1em 1em;
+				@include breakpoint($lil) {max-height: 999px; width: 100%; padding: 0; float: none;}
+			}
+		}
+		&.right {margin-right: 0px;}
+
+		h3 {margin-top: 0.25em;}
+		h4 {margin-top: 0.5em;}
+
+		p:last-child {margin-bottom: 0px;}
+		a:link, a:visited {color: $bright-gold; font-weight: $bold;}
+		a:hover, a:active {color: $ucdavis-gold; font-weight: $bold;}
+
+		.leadtext {
+			background: $ucdavis-blue;
+			color: #fff !important;
+			@include uppercased(1px, $bold);
+			margin-bottom: 0px;
+			font-size: 0.7em;
+			font-family: $futura;
+
+			a {display: block; padding: 10px 7px 8px;}
+			a:link, a:visited {color: #fff !important;}
+		} // End .box .leadtext
+
+		&.col2 {
+			width: 474px; width: 50%;
+			padding: 10px 8px;
+
+			@include breakpoint($medium) {width: 49.494949495%;}
+
+			&.left.intro {width: 474px; width: 49.494949495%;} 
+
+			.diazo-submain &, .diazo-submain &.left.intro {
+				width: 100%;
+
+				@include breakpoint($medium) {width: 49%;}
+				// @include breakpoint($large) {width: 49%;}
+			}
+		}
+		&.col3 {
+			width: 710px; width: 100%;
+
+			@include breakpoint($small) {width: 98.6%;}
+
+			.diazo-submain & {width: 74.873096447%;}
+		}
+		&.col4 { // Where is this used?? Academic majors
+			width: 960px; width: 100%; margin-right: 0;
+		}
+
+		&.feature {	 
+			/* overwrite from slider feature */
+			text-align: left; 
+			@include box-shadow(none);
+
+			h3 {
+				font-size: 1.4em; 
+				font-weight: $bold;
+			}
+			h4 {
+				@include uppercased(2px, $bold);
+				font-size: .8em;
+			}
+			p a {font-weight: $bold;}
+
+			h3.deansearch {font-size: 1.2em; font-weight: $medium;}
+		} // End .box.feature
+
+		&.blue {
+			background: rgba($ucdavis-blue,0.5); 
+			color: #fff;
+
+			h3 {
+				color: #fff; 
+				font-weight: $medium;
+				margin-top: 0.5em;
+			}
+			h4 {
+				margin-top: 0px;
+				@include uppercased(2px, $bold);
+				font-size: 0.6em;
+				color: #fff;
+
+				.subsection-research-main &, 
+				.subsection-outreach-main &, 
+				.subsection-news-main & {margin-top: 10px;}
+
+				.subsection-future-future & img {
+					margin-top: 15px;
+					margin-right: 0px;
+					@include box-shadow(none);
+					border: none;
+				}
+
+			}
+			p {margin-bottom: 0.5em;}
+			a:link, a:visited {color: #fff; font-weight: $bold;}
+			a:hover, a:active {color: $bright-gold; font-weight: $bold;}
+
+			img {
+				@include inline-block(top); 
+				border: 2px solid #fff; 
+				@include box-shadow(0px 0px 5px rgba(0,0,0,0.2));
+
+				width: 100%;
+
+				@include breakpoint($lil) {width: 50%; float: left;}
+				@include breakpoint($small) {width: auto; max-width: 50%;}
+
+				.subsection-connect-main & {
+					@include breakpoint($small) {max-width: 100%;}
+				}
+			}
+			.subsection-current-current & .blueadvising img {
+				@include box-shadow(none);
+				border:none;
+			}
+			.buttons img {
+				border: 0px; 
+				@include box-shadow(none); 
+				margin-top: 0.25em;
+
+				width: 47%; margin-right: 0.25em;
+				@include breakpoint($lil) {width: 46%;}
+				@include breakpoint($small) {width: auto;}
+				// @include breakpoint($small) {width: auto;}
+			}
+			.text {
+				@include inline-block(top);
+				margin: 8px 0 0 10px;
+				width: 100%;
+				vertical-align: top;
+
+				@include breakpoint($lil) {width: 47%; margin-bottom: 0.5em;}
+				@include breakpoint(480px) {margin-bottom: 1em;}
+				@include breakpoint(520px) {margin-bottom: 3em;}
+				@include breakpoint(560px) {margin-bottom: 4em;}
+				@include breakpoint($small) {width: 40%; margin-bottom: 3em;}
+				@include breakpoint($medium) {margin-bottom: 0;}
+				@include breakpoint($ultra) {margin-bottom: 3em;}
+				@include breakpoint($gigantor) {margin-bottom: 4em;}
+
+				.subsection-connect-main & {
+					width: auto;
+					@include breakpoint($lil) {width: auto;}
+					@include breakpoint($small) {width: auto;}
+				}
+			}
+
+
+			.blueadvising {
+				@include inline-block(top);
+				width: 49%;
+				margin-top: 10px;
+
+				h4 {text-transform: none;}
+				h4 a {
+					padding-bottom: 1px;
+					font-size: 1.5em;
+					text-transform: none;
+					letter-spacing: 0.25px;
+				}
+			} // End .blueadvising
+		} // End .box.blue
+
+		&.gold {
+			background: $dark-gold;
+			color: #fff;
+
+			a:link, a:visited {
+				color: #fff !important; 
+				font-weight: $bold;
+			}
+
+			.leadtext {
+				font-size: .3em;
+				background: #fff;
+				color: rgba($ucdavis-blue, 0.9);
+
+				a:link, a:visited {color: rgba($ucdavis-blue, 0.9) !important;}
+			}
+		} // End .box.gold
+
+		&.lightgold {
+			background: rgba($bright-gold, 0.7);
+
+			&.feature h4 {color: $dark-gold;}
+		} // End .box.lightgold
+
+		&.large {
+			font-size: 2.1em;
+			font-weight: $extralight;
+			font-family: $futura;
+			p {
+				line-height: 1.2em;
+				margin-bottom: 0.25em;
+				strong {font-weight: $book;}
+			}
+		} // End .box.large
+
+		&.article {
+			@include breakpoint($small) {
+				////////
+			}
+			h4 {font-size: 1em;}
+			.section-front-page & h4 {
+				font-weight: $medium;
+				@include breakpoint($medium) {font-size: 1.2em; font-weight: $bold;}
+			}
+		} // End .box.article
+
+		&.actions {
+			img {margin-bottom: 0.25em;}
+			img:first-child {margin-top: 0.25em;}
+		} // End .box.actions
+
+		&.intro {
+			font-size: 1.2em;
+			h3 {margin-top: 0.2em; font-size: 1.5em;}
+			p {font-size: 0.75em;}
+			ul {
+				margin-top: 0.25em;
+			}
+			li {
+				list-style: square;
+				display: list-item;
+				font-size: 0.75em;
+				margin: 0 0 0.25em 1.5em;
+			}
+
+			@include breakpoint($medium) {
+				font-size: 1.5em;
+				// p, li {font-size: 0.75em;}
+			}
+
+			.section-front-page & p {
+				margin: 0.5em 0.5em 0.75em 0;
+				@include breakpoint($medium) {margin-right: 2.5em;}
+			}
+			.section-research & ul {
+				width: 45%;
+				margin-right: 3%;
+				@include inline-block(top);
+				font-size: 0.85em;
+				vertical-align: top;
+			}
+		} // End .box.intro
+
+		&.frontpagearchive {
+			border: none;
+			background-color: $ucdavis-blue;
+			padding-top: 0px;
+		}
+
+		.quote {
+			font-family: $futura;
+			font-size: 1em; font-weight: $light;
+		}
+		.quotee {
+			text-align: right; 
+			display: block; 
+			font-size: 0.9em;
+			a {font-size: 1.2em;}
+		}
+
+		.section-front-page &.blue.large a:link,
+		.section-front-page &.blue.large a:visited,
+		.section-front-page &.blue.large a:hover,
+		.section-front-page &.blue.large a:active {font-weight: $book !important;}
+
+	} // End .box
+
+	div img {max-width: 100%; width: 100%;}
+	.details {
+		font-weight: $bold;
+		&:after {content: ' —';}
+	}
+
+} // End .main .news
+
+
+.main {
+	.actions {
+		width: 100%;
+		@include inline-block(top);
+		vertical-align: top;
+
+		@include breakpoint($medium) {width: 24%;}
+
+		.media-slider {
+			background: #fff;
+			border: 1px solid rgba(33, 33, 33, 0.1);
+			width: 100%;
+			margin-bottom: 1em;
+
+			.portlet-static-media > h4, .portlet-static-media > p a {
+				@include uppercased(2px);
+				color: $ucdavis-gold;
+				font-weight: $bold;
+				font-size: 0.8em;
+				margin: 0.5em 0.5em 0.25em;
+			}
+
+			.portlet-static-media > p {
+				padding: 0;
+				display: inline-block; 
+				width: 100%;
+				text-align: center;
+				padding: 0 0.5em;
+				height: 2em;
+				overflow: hidden;
+				a {
+					display: block;
+					position: relative;
+					z-index: 500; 
+				}
+
+				@include breakpoint($large) {width: 50%; text-align: right;}
+			}
+
+			.theme-light .nivoSlider {
+				min-height: 100px;
+				width: 96%;
+				margin: 0 auto;
+				// position: static;
+
+				.nivo-caption {
+					position: relative; 
+					background: #fff;
+					z-index: 50;
+
+					h4 {
+						font-size: 1em;
+						margin-left: .25em;
+
+						@include breakpoint($large) {font-size: 1.25em;}
+					}
+				}
+			}
+			.nivo-controlNav {
+				padding: 1em 0.25em 0.25em;
+				display: inline-block;
+				text-align: center;
+				width: 100%;
+				float: left;
+				position: relative;
+				z-index: 500;
+
+				@include breakpoint($large) {text-align: left; width: 49%;}
+			}
+		}
+
+		.search {
+			background: rgba(255,255,255,.5); 
+			width: 100%;
+			border: 1px solid rgba(33, 33, 33, 0.1);
+
+			input.searchField {
+				border: 1px solid #c7c7c7;
+				background: rgba(0,0,0,.03);
+				height: 40px; width: 95%;
+				padding: 11px 5px 7px;
+				margin: 8px 6px;
+				font-size: 1.4em;
+				-moz-appearance: none;
+			}
+			input.searchButton {
+				background: url(../img/icon-search.svg) no-repeat 20px center #113a68;
+				background-size: 16px auto;
+				height: 32px; width: 95%;
+				margin: 0px 6px 8px;
+				@include box-shadow(none);
+				border: 0px;
+				cursor: pointer;
+				text-indent: 48px;
+				overflow: hidden;
+				font-family: $futura;
+				@include uppercased(2px);
+				font-size: 0.75em !important;
+				font-weight: $bold;
+				text-align: left;
+			}
+		}
+
+		.social {margin-top: 10px;}
+		.buttons { 
+			padding: 0; margin: 0;
+			clear: both;
+
+			a {
+				display: block;
+				height: 50px;
+				margin-top: 8px;
+				background: url(../img/btn-frontpageaction.png) $ucdavis-gold no-repeat right center;
+				border: 2px solid $dark-gold;
+
+				img {padding: 0 5%; vertical-align: middle;}
+			}
+			li {
+				list-style: none; width: 100%;
+				a {
+					font-family: $futura;
+
+					em {
+						font-weight: $bold;
+						display: inline;
+						font-style: normal;
+						font-size: 1.5em;
+						letter-spacing: 2px;
+						line-height: 1em;
+
+						@include breakpoint($small) {display: inline;}
+						@include breakpoint($medium) {display: block; font-size: 1.25em;}
+						@include breakpoint($large) {font-size: 1.75em;}
+					}
+
+					h4 {
+						display: inline-block;
+						width: 65%;
+						font-size: 0.75em;
+						color: #fff;
+						margin-top: 0;
+						vertical-align: middle;
+					}
+				}
+
+					&.join {
+						@include uppercased;
+					}
+					&.blog {
+						font-weight: $medium;
+						em {font-weight: $medium; letter-spacing: 1px;}
+					}
+					&.support {
+						font-weight: $medium;
+						font-size: 1.5em;
+					}
+			}
+			li:first-child a {margin-top: 0px;}
+		} // End .main .actions .buttons
+
+		.internal {
+			font-family: $futura;
+			background: #fff;
+			border: 1px solid rgba(33, 33, 33, 0.1);
+			margin-top: 10px;
+			padding: 0 13px;
+
+			li {
+				list-style-image: url(../img/li-grey.png);
+				list-style-position: inside;
+				padding: 7px 0 7px 4px;
+				font-weight: $medium;
+				color: #646464;
+				display: list-item;
+
+				font-size: 0.8em;
+				width: 50%; 
+				float: left;
+
+				@include breakpoint($medium) {float: none; width: 100%;}
+				@include breakpoint($large) {font-size: 1em;}
+
+				&.ucdavis {
+					list-style: none;
+					list-style-position: outside;
+					display: block;
+					padding: 7px 0 15px;
+					max-width: 200px;
+
+					a {width: 90%; display: block;}
+					img {width: 100%;}
+				}
+			}
+		}
+		.portlet-static-social {
+			width: 75%;
+			margin: 0 auto;
+
+			@include breakpoint($lil) {width: 50%;}
+			@include breakpoint($medium) {width: 100%;}
+
+			a {
+				width: 32%;
+				display: inline-block;
+			}
+			img {
+				width: 100%;
+			}
+		}
+	} // End .main .actions
+} // End .main
+

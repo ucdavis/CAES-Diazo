@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>monitor</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Admin-Sprites" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="monitor" sketch:type="MSArtboardGroup" fill-opacity="0.952162591" fill="#C99700">
+            <path d="M48.000118,3.99987411 L6.00000787,3.99987411 C4.33333683,3.99987411 3,5.33321095 3,6.99988198 L3,39.9999685 C3,41.6666396 4.33333683,42.9999764 6.00000787,42.9999764 L21.0000472,42.9999764 L21.0000472,45.8888729 L12.5555806,50.1111062 C12.111135,50.333329 11.9444679,50.7777746 12.0000236,51.2222202 C12.111135,51.6666658 12.5555806,52 13.0000262,52 L41.0000997,52 C41.5556567,52 42.0001023,51.5555544 42.0001023,50.9999974 C42.0001023,50.6111075 41.7778795,50.2222176 41.3889896,50.1111062 L33.0000787,45.8888729 L33.0000787,42.9999764 L48.000118,42.9999764 C49.6667891,42.9999764 51.0001259,41.6666396 51.0001259,39.9999685 L51.0001259,6.99988198 C51.0001259,5.33321095 49.6667891,3.99987411 48.000118,3.99987411 Z M45.0001101,36.9999607 L9.00001574,36.9999607 L9.00001574,9.99988985 L45.0001101,9.99988985 L45.0001101,36.9999607 Z" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

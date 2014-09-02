@@ -1,0 +1,111 @@
+// Search box styles
+
+
+#searchGadget {
+	// width: 10em;
+	width: 79%;
+	color: #fff;
+}
+
+.highlightedSearchTerm {
+	background-color: #AAE8FF;
+}
+
+input.searchField {
+	background: rgba(200,200,200,.25); 
+	border: 1px solid rgba(255,255,255,.25); 
+	height: 22px; 
+	-moz-appearance: none;
+	padding: 3px;
+	margin-right: 3px;
+
+	.search.footersearch & {
+		max-width: 120px;
+		@include breakpoint($medium) {max-width: 999px;}
+	}
+}
+
+input[type="text"]#searchGadget:focus {
+	background: transparent; 
+	color: #fff;
+}
+input.searchButton {
+	vertical-align: top;
+	background: transparent url(../img/icon-search.png) center center no-repeat; 
+	border: 0px; 
+	// width: 26px; 
+	width: 15%;
+	height: 22px; 
+	cursor: pointer; 
+	padding: 3px;
+	@include inline-block(top);
+
+	.LSBox & {color: #fff;}
+}
+
+#LSResult {
+	z-index: 50; 
+	margin-top: 10px; 
+	background: rgba(255,255,255,.8);
+
+	.footersearch & {display: none !important;}
+}
+
+#livesearchLegend {
+	color: #fff;
+	background-color: $ucdavis-blue;
+	font-family: $futura;
+	letter-spacing: .5px;
+}
+
+.LSDescr {
+	font-size: 0.75em; 
+	font-family: $sans-serif; 
+	font-weight: normal; 
+	color: #666; 
+	margin-left: 1em;
+}
+
+.rightcol { // for content pages
+	input.searchField {
+		background: rgba(255,255,255,0.5);
+		border: 1px solid rgba($ucdavis-blue,0.33);
+		margin-right: 0px;
+		width: 178px;
+		padding: 3px 10px;
+		height: 34px;
+		margin-left: 0px; 
+
+		.webkit & {margin-left: 0px;}
+	}
+	input.searchButton {
+		background: url(../img/btn-searchgold.jpg) no-repeat;
+		height: 34px;
+		width: 40px;
+	}
+} // End .main .rightcol
+
+
+.template-search {
+
+	input.searchButton {
+		height: 44px;
+		background: rgba($ucdavis-blue, 0.9) no-repeat url(../img/icon-search.png) center
+		 center;
+		width: 44px;
+		text-indent: 44px;
+	}
+
+	a.link-category {
+		@include inline-block(top); 
+		padding: 0px 5px; 
+		font-size: 0.7em; 
+		font-family: $futura;
+		@include uppercased(0.5px, $bold);
+		background: #ddd; 
+	}
+	.searchResults {
+		dd .discreet {margin-bottom: 1.5em; display: block;}
+		dd .documentLocation {margin-top: 0.75em; display: block;}
+	}
+}

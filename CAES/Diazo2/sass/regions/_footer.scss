@@ -1,0 +1,83 @@
+// Footer styles
+
+footer {
+	clear: both;
+	background: $dark-blue;
+	color: #fff;
+	margin-top: 20px;
+	padding: 30px 0 10px;
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+		border-bottom: 1px solid rgba(255,255,255,.5);
+		margin-bottom: 5px;
+		padding-bottom: 5px;
+		padding-top: 3px;
+		font-size: 0.8em;
+		font-weight: $bold;
+	}
+	p {
+		color: rgba(255,255,255,0.9); 
+		letter-spacing: 0.5px;
+		em, strong {color: rgba(255,255,255,1);}
+	}
+
+	a:hover {color: $bright-gold;}
+
+	.container {
+		max-width: 100%;
+		margin: 0px auto;
+
+		@include breakpoint($medium) {@include unresponsive-sizes;}
+
+		section {
+			width: 100%;
+			clear: both;
+			padding: 10px;
+
+			@include breakpoint($medium) {width: 50%; padding: 10px 2% 10px 10px; clear: none; float: left;}
+			@include breakpoint($mega) {width: 23%;}
+
+			&.social {
+				width: 100%;
+
+				@include breakpoint($medium) {width: 50%;}
+				@include breakpoint($mega) {width: 20%;}
+
+				li a {
+					padding-bottom: 2px;
+					padding-left: 25px; 
+					background: url(../img/sprite-sosh.png) 0px -3px no-repeat;
+				}
+				li.facebook a {background-position: 0px -3px;}
+				li.twitter a {background-position: 0px -24px;}
+				li.wordpress a {background-position: 0px -45px;}
+			}
+			&.sitemap {
+				padding-right: 0;
+				width: 100%;
+
+				@include breakpoint($medium) {width: 100%;}
+				@include breakpoint($mega) {width: 30%;}
+			}
+
+			li {list-style: none;}
+		} // End footer .container .section
+	} // End footer .container
+
+	.portlet-static-contact img {
+		position: relative;
+		left: 0px;
+		@include breakpoint($medium) {left: -50px;}
+	}
+	.portlet-static-social li {font-size: 0.8em;}
+
+	.portlet-static-sitemap li {
+		font-size: 0.75em;
+		width: 45%; margin-right: 4%; 
+		@include inline-block(top); vertical-align: top;
+	}
+} // End footer
+
+
+	 

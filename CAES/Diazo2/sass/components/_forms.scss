@@ -1,0 +1,18 @@
+// Forms
+
+
+/* edit forms */
+.portlet-static-website-review {
+	background: rgba(255,155,155,0.5); 
+	padding-bottom: 1em;
+}
+
+.ArchetypesSelectionWidget label {padding-left: 0.5em; font-size: 0.8em;}
+.ArchetypesMultiSelectionWidget .ArchetypesMultiSelectionValue {
+	@include inline-block(top); width: 48%;
+	label {padding-left: 0.5em; font-size: 0.8em;}
+}
+
+input[type="submit"] {font-size: 1em !important;}
+
+.subsection-events-college-celebration-nominations h1.documentFirstHeading {display: none;}

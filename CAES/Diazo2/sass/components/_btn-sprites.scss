@@ -1,0 +1,63 @@
+// Button sprites
+
+$icons-spacing:			5px;
+
+@import "../vendor/compass/utilities/sprites";
+@import "icons/*.png";
+@include all-icons-sprites;
+
+
+.main .news .box.actions, .main .news .box.blue .buttons {
+
+	a, a:link {
+		display: block;
+		width: 100%;
+		background-color: $dark-gold;
+		border: 3px solid $darker-gold;
+		min-height: 54px;
+		font-family: $futura;
+		line-height: 1.1em;
+		padding-left: 60px;
+		padding-top: 0.35em;
+		margin-top: 0.5em;
+		color: #fff;
+		@include uppercased(2px, $bold);
+
+		strong { 
+			display: block;
+			font-size: 1.25em;
+			letter-spacing: 1.5px;
+		}
+	}
+
+	a:visited {color: #fff;}
+
+	a:hover, a:active {
+		background-color: lighten($dark-gold,5);
+	}
+
+}
+
+.main .news .box.blue .buttons {
+	clear: both; 
+
+	a, a:link {
+		background-color: $header-blue;
+		border: 3px solid $dark-blue;
+		display: inline-block;
+
+		@include breakpoint($lil) {width: 48%; margin-right: 1%;}
+
+		strong {
+		}
+	}
+
+	a:visited {color: #fff;}
+
+	a:hover, a:active {background-color: lighten($header-blue,5);}
+}
+
+
+
+
+

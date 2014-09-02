@@ -1,0 +1,21 @@
+// TinyMCE styles
+
+
+/* Fix TinyMCE gremlins */
+#internallinkcontainer {
+
+	div.row {
+	    /* Image browser was jumbled */
+	    float: none;
+	}
+	input[type="radio"] {
+    	vertical-align: middle;
+	}
+
+	/* Link browser was packed too much */
+	&.radioscrolllist {line-height: auto !important;}
+	#content & .list.item span, #content & .list.item a {position: inherit;}
+}
+
+
+/* @end */

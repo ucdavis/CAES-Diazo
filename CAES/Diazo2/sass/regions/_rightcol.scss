@@ -1,0 +1,158 @@
+// Right column styles (on content pages)
+
+.template-search nav.section {display: none;}
+
+.rightcol {
+	width: 100%;
+	margin-left: -1px; /* --- i'm not sure this is necessary */
+	padding: 61px 0 30px;
+	float: none;
+	clear: both; 
+	font-family: $futura;
+
+	@include breakpoint($medium) {float: right; clear: none; width: 28.0766%;}
+
+	a {
+		padding: 0.3em 10px 0.2em 0;
+		&:hover {
+			background: rgba(113,113,113,0.1);
+		}
+	}
+	a:link, a:visited {border-bottom: 0px;}
+	
+	div, .portlet {
+		margin-top: 50px;
+	}
+	.portlet div {margin-top: 0;}
+
+	dl.portlet dt, h3 {
+		border-left: 5px solid rgba($ucdavis-blue,0.75);
+		padding: 0;
+		padding-left: 15px;
+		color: #858585; color: rgba(133,133,133,0.8);
+		@include uppercased(2px);
+		font-size: 0.6em;
+		min-height: 20px;
+		line-height: 3em;
+		margin-bottom: 13px;
+	}
+	dl.portlet.portlet-static-manage-your-subscription dt {height: auto;}
+	dl.portlet dt {
+		font-weight: $book; 
+		background:transparent;
+		font-size: 1.25em;
+		line-height: 1.5em;
+	}
+	dl.portlet h4 {padding-left: 15px; font-weight: $extralight; letter-spacing: 1px;}
+
+	dl.portlet p {font-size: 1.1em; padding-left: 20px;}
+
+	.portletCollection div {padding-left: 20px;}
+	.portletCollection h4 {font-size: 1.1em;}
+
+	p.leadtext a {
+	    background: rgba($ucdavis-blue, 0.9);
+	    color: #FFFFFF !important;
+	    font-family: $futura;
+	    font-size: 0.8em;
+	    padding: 8px 7px 6px;
+	    margin-bottom: 0;
+	    @include uppercased(1.5px, $bold);
+	}
+ 
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+		nav ul {
+			font-weight: $extralight;
+		}
+		.related ul {width: 110%;}
+	li {
+		color: #153861;
+		list-style: none;
+	}
+		nav li {
+			letter-spacing: 1px;
+		}
+		nav li.parent {
+			font-weight: $heavy;
+		}
+		nav li a, li a {
+			padding-left: 20px;
+			@include inline-block(top);
+			border-bottom: 0px;
+		}
+			nav li a.current {
+				font-weight: $bold;
+				font-size: 1.1em;
+				background: rgba(113, 113, 113, 0.1);
+				background-image: url("../img/currentarrow3.png");
+				background-repeat: no-repeat;
+				background-position: -8px 2px;
+				letter-spacing: 0px;
+			}
+		nav ul ul li a {
+			padding-left: 30px;
+			font-size: 0.8em;
+		}
+			nav ul ul li a.current {
+				font-size: 0.9em;
+			}
+		ul ul li a {
+			padding-left: 30px;
+		}
+
+		.topics li {
+			@include inline-block(top);
+			width: 48%;
+		}
+		.topics a {
+			padding-left: 20px;
+			@include inline-block(top);
+			font-size: 0.75em;
+			font-weight: $heavy;
+			vertical-align: top;
+			width: 75%;
+		}
+
+	.more, .portlet .portletFooter {
+		text-align: right;
+		font-size: 0.6em;
+		@include uppercased(1px, $bold);
+		color: $ucdavis-gold;
+		margin-top: 1em;
+	}
+		.more a {padding-left: 10px;}
+		.portlet .portletFooter {
+			font-size: 0.75em;
+		}
+		.search img {
+			margin-left: 20px;
+		}
+
+
+	.portletSearch form#livesearch1 {padding-left: 20px;}
+
+
+	div.LSBox, div.LSBox div {margin-top: 0;}
+	.search form#livesearch1 {padding-left: 20px;}
+
+	.share {
+		li {padding: 3px 0; font-weight: $light; font-size: 0.9em;}
+		li a, .twitter-share-button {padding-left: 20px;}
+		li.twitter {padding-top: 8px; padding-bottom: 0px;}
+		li.twitter iframe {padding-left: 20px;}
+	} // End .share
+
+	/* for some reason, an extra topic shows up first */
+	.related .topics li:first-child {display: none;} 
+
+} // End .rightcol
+
+
+
+dl.portlet dd.portletItem, 
+dl.portlet dd.portletFooter, 
+dl.portletError dd {padding: 0;}
+

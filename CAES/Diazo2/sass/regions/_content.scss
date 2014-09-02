@@ -1,0 +1,107 @@
+// Content page styles
+
+// .main {
+.diazo-content .main {
+	margin-top: 0; position: relative; 
+
+	max-width: 100%; width: 100%; left: 0;
+	@include breakpoint($medium) {
+		@include unresponsive-sizes; 
+		width: 90%;
+		left: -20px;
+	}
+}
+
+.thegoods {
+	background: #fdfdfd;
+	background: rgba(255,255,255,0.6);
+	@include box-shadow(0px 0px 8px rgba(45,45,44,0.1));
+	float: left;
+	min-height: 800px;
+	padding: 20px 5% 30px 2%;
+
+	left: 0;
+	border-right: 0px;
+	width: 100%;
+
+	@include breakpoint($medium) {
+		border-right: 1px solid rgba($ucdavis-blue,0.5);
+		width: 71.9234%;
+		padding-top: 50px;
+	}
+
+	h1 {
+		font-weight: $extralight;
+		font-size: 2.25em;
+		line-height: 1.2em;
+		margin: 0 10px 0 0;
+		letter-spacing: 0.25px;
+
+		@include breakpoint($medium) {margin-right: 80px;}
+	}
+	div {font-family: $serif;}
+	p, li, td {
+		font-family: $serif;
+		font-size: 1em;
+		margin-right: 5%;
+		color: #272525;
+		color: rgba(39,37,37,0.85);
+
+		@include breakpoint($mega) {margin-right: 15%;}
+	}
+	#parent-fieldname-text {
+		color: #272525;
+		color: rgba(39,37,37,0.85);
+	}
+	p.description {
+		font-family: $futura;
+		color: #a3a3a3;
+		font-weight: $extralight;
+		font-size: 1.2em;
+		margin: 0 10px 25px 0;
+
+		@include breakpoint($medium) {margin-right: 80px;}
+	}
+	p.byline, .result-byline {
+		font-weight: $bold;
+		color: rgba($ucdavis-blue,0.86);
+		font-size: 0.9em;
+	}
+	h2, h3, h4 {
+		font-family: $serif;
+		color: rgba($ucdavis-blue,0.86);
+	}
+	.portaltype-collection & h2 {font-size: 1.5em;}
+
+	img {max-width: 100%;}
+
+	#content .menuitem.button a {
+		font-family: $futura;
+		font-weight: $medium;
+		background: url(../img/bg-logobtn.jpg) top right rgb(201,151,0) no-repeat; 
+		border: 3px solid $ucdavis-gold;
+		min-height: 34px;
+		padding-top: 10px;
+	}
+
+} // End .thegoods
+
+#content {font-size: 100%;} /* because Plone lowers it */
+//} // End .main
+
+#content .documentDescription {
+	font-family: $futura;
+	color: #a3a3a3;
+	font-weight: $extralight;
+	font-size: 1.2em;
+	margin: 0 10px 25px 0;
+
+	@include breakpoint($medium) {margin-right: 80px;}
+}
+
+#content div.documentByLine, 
+.template-summary_view .documentByLine,
+.diazoed.template-folder_listing .documentByLine {display: none;}
+
+.section-news.template-summary_view .tileItem .documentByLine {@include inline-block(top);}
+

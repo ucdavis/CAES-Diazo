@@ -1,0 +1,191 @@
+// News section
+
+.section-news .thegoods {min-height: 1400px;}
+
+.publication {
+	@include inline-block(top);
+	width: 100%;
+	margin: 0 2em 4em 2em;
+	font-size: 0.85em;
+	vertical-align: bottom;
+	line-height: 1.2em;
+
+	@include breakpoint($lil) {width: 35%;}
+	@include breakpoint($medium) {width: 27%; margin-left: 0;}
+}
+
+.subsection-articles-topic {
+	
+	.documentByLine {display: none;}
+	#content-core .tileItem .documentByLine {display: block !important;}
+
+	#content dt {
+		width: 100%; margin-right: 1%; 
+		padding: 3px 0;
+		@include inline-block(top);
+		vertical-align: top;
+
+		@include breakpoint($medium) {width: 48%;}
+
+		a {padding: 3px 0;}
+	}
+}
+
+.outlookSquare {
+	width: 100%; 
+	@include inline-block(top); 	
+	vertical-align: top; 
+	text-align: center;
+
+	@include breakpoint($lil) {width: 45%;}
+	@include breakpoint($medium) {width: 32%; min-height: 300px;}
+
+	h2 {margin-bottom: 0.5em;}
+}
+
+/* hide "Files folder" in year archive */
+.portaltype-folder.subsection-articles #content-core dt:first-child {display: none;}
+
+
+
+/* ----- news items ----- */
+
+.portaltype-news-item {
+	// .slider {min-width: 100px; width: 300px; height: 250px; float: right;} // Terrible
+
+}
+
+.portaltype-news-item #content div.documentByLine {
+	display: block;
+	color: rgba($ucdavis-blue,0.86);
+	font-family: $serif;
+	font-weight: $bold;
+	font-size: 0.9em;
+}
+
+#content-core dd.image-caption {margin: 0;}
+#content div.newsImageContainer p.discreet, dd.image-caption {
+	background-color: transparent; 
+	color: rgba(92,92,92,0.8);
+	font-weight: $light;
+	font-style: italic;
+	top: 0;
+	width: 300px;
+	padding: 10px 5px;
+	font-family: $futura;
+}
+
+
+// Currents styles
+
+.newsheader {
+	display: none;
+	margin: 0 auto;
+
+	.subsection-publications-currents & {
+		display: block;
+		background: repeat-x url(../img/bg-news.png) 0 6px; 
+		height: 50px;
+		margin-bottom: -100px;
+		width: 70%;
+		@include unresponsive-sizes;
+		position: relative;
+		z-index: 5;
+		top: -1px;
+		max-width: 100%;
+
+		@include breakpoint($medium) {max-width: 90%;}
+	}
+	.portlet-static-header {
+		float: left;
+		background: $header-blue !important;
+		height: 50px;
+		padding-top: 18px;
+		margin: 0 auto;
+		width: 100%;
+
+		@include breakpoint($medium) {width: 71.9234%;}
+	}
+	h2 {
+		margin-top: 0; 
+		margin-left: 22px;
+		font-weight: $light; 
+		font-size: 1.4em; 
+		color: #fff;
+		letter-spacing: 1px;
+
+		img {padding-bottom: 5px;}
+	}
+
+} // End .newsheader
+
+.subsection-publications #content .menuitem img {border: 0px none; @include box-shadow(none);}
+.subsection-publications .newsheader {background-image: none !important;}
+
+.subsection-publications-currents {
+	.thegoods {padding-top: 53px;}
+	&.portaltype-news-item #content div.documentByLine, .related,
+	.documentByLine, .tileFooter {display: none;}
+	#content h1.documentFirstHeading {
+		font-size: 1.25em; 
+		text-align: right; 
+		position: relative; 
+		z-index: 20; 
+		top: -51px;
+		margin-right: 0;
+
+		@include breakpoint($medium) {margin-top: -51px !important; color: #fff;}
+	}
+	.rightcol {
+		padding-top: 38px;
+		nav {margin-top: 50px;}
+	}
+}
+
+
+
+// Topic features
+#content .expertlist {
+	ul {
+		margin-left: 0;
+		li {
+			list-style: none; 
+			display: inline-block; 
+			font-size: 80%; 
+			margin-right: 20px; 
+			width: 29%; 
+			vertical-align: top;
+
+			p {margin-right: 0;}
+			img {border-radius: 50%; max-width: 120px;}
+		}
+	}
+}
+
+.rightcol .feature dl.portlet.portlet-static-drought {
+	margin-bottom: 50px;
+
+	p {
+		font-size: 0.9em;
+		a {font-size: 1.25em;}
+	}
+	.portletHeader {font-size: 0.8em; height: 20px;}
+}
+
+.template-newsitem-feature_view h1.documentFirstHeading, 
+.section-news.portaltype-news-item.template-newsitem-feature_view #content div.documentByLine {display: none;}
+
+.template-newsitem-feature_view {
+	#portlets-below dl.portlet.portlet-static-news {margin-right: 5%; width: 44%;}
+	#portlets-below dl.portlet.portlet-static-resources {margin-right: 0%; width: 45%;}
+	.portlet-static-news {
+		display: block;
+
+		em {font-size: 0.8em;}
+	}
+
+	.thegoods {
+		.portlet-static-news li, .portlet-static-resources p {margin-bottom: 1em; font-size: 0.9em;}
+	}
+} 
+

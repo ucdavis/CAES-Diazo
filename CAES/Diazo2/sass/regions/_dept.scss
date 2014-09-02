@@ -1,0 +1,38 @@
+// Department pages
+// The profiles on each department
+
+
+// Portlets below the intro paragraph on dept pages
+dl.portlet {
+	&.portlet-collection-departmental-majors p,
+	&.portlet-collection-related-majors p,
+	&.portlet-collection-related-majors a img,
+	&.portlet-collection-departmental-majors a img {display: none;}
+}
+
+dl.portlet-collection-news .portletFooter, 
+dl.portlet-collection-faculty .portletFooter {text-align: right;}
+
+#portlets-below dl.portlet.portlet-collection-news {
+	width: 100%;
+
+	@include breakpoint($small) {width: 80%;}
+	@include breakpoint($large) {width: 40%;}
+}
+
+.portlet-collection-news {
+	div.box {clear: both; margin-bottom: 2em;}
+	img {
+		height: 70px;
+		float: left;
+		margin: 0 10px 0 0;
+		border: 3px solid #fff;
+	}
+	#portlets-below & p {margin-right: 0;}
+	.details:after {content: ' — ';}
+}
+
+.portlet-collection-faculty {
+	img {width: 95%;}
+	.box {width: 49%;}
+}

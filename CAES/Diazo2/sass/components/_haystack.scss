@@ -1,0 +1,45 @@
+// Haystack styles
+
+.template-haystack {
+
+	.search-for-all-the-things {
+		margin: 0 0 2em;
+
+		input {
+			padding: 0.5em;
+			font-size: 1.5em;
+
+			&[type="text"] {
+				width: 80%;
+			}
+			&[type="submit"] {
+				font-size: 1.5em !important;
+				color: #fff;
+				border: 0px;
+				background: $ucdavis-blue;
+				font-family: $futura;
+				@include uppercased;
+			}
+		}
+	}
+
+	.result-section {
+		h2 {
+			@include uppercased;
+			font-family: $futura;
+			border-bottom: 1px solid $ucdavis-blue;
+			margin-top: 2em;
+			margin-bottom: 0.5em;
+		}
+		h3 {
+			clear: both;
+			margin-top: 1em;
+		}
+		img {
+			float: right; 
+			margin: 0 1em 0.5em; 
+			max-width: 25%;
+		}
+	}
+
+}

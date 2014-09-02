@@ -1,0 +1,45 @@
+// Pathbar styles
+
+.mid {
+	border-bottom: 1px solid #d4d4d4;
+	position: relative;
+	z-index: 5;
+	margin-top: -1px;
+}
+.pathbar {
+	min-height: 29px;
+	font-family: $futura;
+	font-size: 0.55em;
+	@include uppercased(2px, $bold);
+	color: $gray-blue;
+	color: rgba(117,135,155,0.75);
+
+	width: 70%;
+	margin: 0px auto;
+	@include unresponsive-sizes;
+
+	span {
+		a, #breadcrumbs-current {
+			padding-bottom: 6px;
+			@include inline-block(bottom);
+		}
+	}
+
+	.home a, #breadcrumbs-home a {
+		width: 28px; height: 32px;
+		background: url(../img/path-home.png) no-repeat;
+		text-indent: -999px;
+		padding-right: 3px;
+		padding-bottom: 0;
+		overflow: hidden;
+		position: relative;
+		top: 1px;
+	}
+	.breadcrumbSeparator {
+		color: $gray-blue;
+		padding-bottom: 6px;
+		@include inline-block(bottom);
+	}
+	#breadcrumbs-home .breadcrumbSeparator {display: none;}
+}
+

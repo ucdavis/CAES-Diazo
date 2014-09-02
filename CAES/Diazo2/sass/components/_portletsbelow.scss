@@ -1,0 +1,38 @@
+// Portlets below
+// Generic styles for portlets below the content
+
+#portlets-below {
+	dl.portlet {
+		width: 100%; 
+		float: left;
+		vertical-align: top;
+		margin-top: 2em;
+		margin-right: 10%;
+		margin-bottom: 4em;
+
+		@include breakpoint($medium) {width: 35%;}
+
+		dt {
+			color: rgba(133, 133, 133, 0.8);
+			font-family: $futura;
+			@include uppercased(2px, $extralight);
+			background: transparent;
+			border-left: 5px solid rgba(66, 92, 126, 0.9);
+			line-height: 2em;
+			padding: 0;
+			margin-bottom: 1.25em;
+		} // End dt
+
+		dt a, 
+		&.portletCollection dt span.portletTitle, 
+		&.portletStaticText dt {
+			padding: 0 0 0 15px;
+		}
+
+	} // End dl.portlet
+
+	.portletStaticText p, .portletStaticText li {margin-right: 0;}
+	dl.portlet.portletStaticText .portletItem {font-size: 1.25em;}
+
+} // End #portlets-below
+

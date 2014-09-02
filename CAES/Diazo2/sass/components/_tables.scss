@@ -1,0 +1,48 @@
+// Table styles
+
+.thegoods {
+	td {
+		padding: 0.5em 1em 0.5em 0; 
+		vertical-align: top;
+
+		p, li {margin: 0;}
+		h4 {margin-top: 0.25em;}
+	}
+}
+
+table.table-100 {width: 100%;}
+table.listing td {padding-left: 0.5em;}
+table.shorty td {padding: 0 1em 0 0;}
+
+.col-33 {width: 33%;}
+.col-25 {width: 25%;}
+.col-50 {width: 50%;}
+.col-66 {width: 66%;}
+
+table.lotsotext {
+	@extend table.table-100;
+}
+table.lotsotext td, table#meetourteamtable td {
+	font-size: .9em; 
+	padding-bottom: 1.5em;
+
+	width: 100%; display: inline-block;
+
+	&:first-child {border-top: 1px solid #CACACA;}
+	
+	@include breakpoint($lil) {
+		width: auto;
+		display: table-cell;
+		border-top: 1px solid #CACACA;
+		&:first-child {margin-top: 0; padding-top: 0.5em; width: 33%;}
+	}
+}
+table.lotsotext th {
+	width: 100%; display: inline-block;
+	
+	@include breakpoint($lil) {
+		width: auto;
+		display: table-cell;
+		&:first-child {margin-top: 0;}
+	}
+}

@@ -1,0 +1,121 @@
+// Menu styles
+// The pages with menu structures of an image with a title on it
+// Like the department list page: http://www.caes.ucdavis.edu/research/dept
+
+.thegoods .menuitem {
+	@include inline-block(top); 
+	vertical-align: top; 
+	width: 29%; 
+	margin-right: 5%;
+	margin-bottom: 25px;
+
+	&.rightedge {margin-right: 0;}
+	h3 {
+		color: #004c85;
+		font-family: $futura;
+		font-size: 1.5em;
+	}
+	p {
+		font-size: 0.85em;
+		margin-right: 0;
+	}
+}
+
+.template-menu_view {
+	.thegoods {
+		padding-right: 10px;
+		width: 100%;
+
+		@include breakpoint($medium) {width: 68.85%;}
+	}
+	.rightcol {
+		width: 100%;
+
+		@include breakpoint($medium) {float: right; clear: none; width: 31.15%;}
+	}
+
+	&.subsection-dept .thegoods h3, &.subsection-centers .thegoods h3 {
+		font-size: 1.6em;
+		border-bottom: 2px solid rgba($ucdavis-blue,0.86);
+	    margin-bottom: 10px;
+	}
+
+	.menuitem {
+		width: 100%;
+		margin-right: 1%;
+		margin-bottom: 10px;
+		height: 135px;
+		overflow: hidden;
+		position: relative;
+
+		@include breakpoint($large) {width: 48%;}
+
+		h4 {
+			font-family: $futura;
+			font-weight: $heavy;
+			position: absolute;
+			bottom: 8px; left: 0px;
+			z-index: 10;
+			width: 70%;
+			@include text-shadow(0px 0px 10px rgba(33,33,33,0.7));
+			background: rgba(33,33,33,0.5);
+			padding: 3px 5px 5px 10px;
+
+			a {display: block;}
+			a:link, a:visited, a:hover, a:active {color: #fff !important;}
+		}
+
+	} // End .menuitem
+	.thegoods #content .menuitem h4 a:hover {color: #fff !important;}
+} // End .template-menu_view
+
+// TODO: abstract these subsection overrides with generic classes, i.e. menuitem-full
+
+.subsection-publications .menuitem {
+	width: 100%; 
+	margin-right: 4%;
+
+	@include breakpoint($lil) {width: 45%;}
+	@include breakpoint($medium) {width: 28%;}
+}
+
+.template-menu_view #content .menuitem img, 
+.subsection-programs #content .menuitem.crop img {
+	max-width: 768px;
+	height: auto;
+	width: auto;
+	overflow: hidden;
+	position: relative;
+	border: 0px !important;
+
+	@include breakpoint($large) {left: -50%; height: 100%;}
+}
+.template-menu_view.subsection-events #content .menuitem img, 
+.template-menu_view.subsection-museums #content .menuitem img,
+.template-menu_view.subsection-programs #content .menuitem img {
+	height: 100%;
+	width: auto;
+	overflow: hidden;
+	left: 0;
+
+	@include breakpoint($large) {left: 0; height: auto; width: 100%;}
+}
+
+.subsection-programs #content .menuitem.crop img {
+	@include breakpoint($large) {height: 100%; width: auto;}
+}
+
+/* menu item for museums */
+.subsection-museums .menuitem,
+.subsection-events .menuitem {
+	width: 90%;
+	height: 130px;
+	overflow: hidden;
+	position: relative;
+}
+.subsection-museums .menuitem h4 a:link,
+.subsection-museums .menuitem h4 a:visited,
+.subsection-museums #content .menuitem h4 a:hover,
+.subsection-museums .menuitem h4 a:active {
+	color: #fff !important;
+}

@@ -1,0 +1,215 @@
+// Nav styles
+
+
+.diazoed .portlet-static-nav {display: block;}
+
+.header {
+	.menu-trigger {
+		display: block;
+		@include breakpoint($medium) {display: none;}
+	}
+}
+
+.header nav {
+	background: repeat-x url(../img/bg-nav.png) #eaeae9 bottom;
+	@include box-shadow(0px 0px 4px rgba(0,11,11,0.2));
+	height: 34px;
+	position: relative;
+	clear: both;
+
+	display: none;
+	@include breakpoint($medium) {display: block;}
+
+	ul {
+		margin: 0 auto; padding: 0px;
+		font-family: $futura;
+		position: relative;
+
+		width: 70%;
+		@include unresponsive-sizes;
+
+		li {
+			width: 13.5%;
+			z-index: 10;
+			@include inline-block(top);
+			list-style: none;
+			text-align: center;
+
+			a {
+				color: #004c85;
+				@include inline-block(top);
+				padding: 10px 0 3px;
+				font-weight: $extrabold;
+				width: 100%;
+			}
+			.col.story h4 a {padding: 0; font-weight: $medium; width: 100%;}
+			.webkit & a {font-weight: $medium; letter-spacing: 0.5px;}
+		}
+	}
+
+	/* ----- mega menus ----- */
+	ul > li:hover {
+		background: rgba($bright-gold,0.9);
+		> a {color: #fff;}
+	}
+	ul > li .mega {@include transition(all 0.4s ease-in-out);}
+	
+	.mega {
+		background: #fff;
+		position: absolute;
+		visibility: hidden;
+		z-index: 5000;
+		top: 33px; // 1px less than height of .header nav
+		left: 0px;
+		width: 98%;
+		
+		max-width: 100%;
+		min-width: 90%;
+		padding: 10px 2% 20px;
+		text-align: left;
+		border: 3px solid $bright-gold;
+		@include border-bottom-right-radius(18px);
+		@include border-bottom-left-radius(18px);
+		@include box-shadow(0px 0px 5px rgba(33,33,33,0.1));
+		@include opacity(0); // Otherwise transition is awk
+
+		@include breakpoint($medium) {
+			// @include unresponsive-sizes;
+		}
+
+		@include breakpoint($large) {
+			padding: 10px 5% 20px;
+			min-width: 320px;
+		}
+
+		.col {
+			width: 60%;
+			float: left;
+		}
+		.col.story {
+			float: right;
+			width: 30%;
+			@include breakpoint($large) {width: 40%;}
+
+			.description {
+				display: none;
+				@include breakpoint($large) {display: inline;}
+			}
+		}
+
+		ul {
+			width: auto;
+			min-width: 10px;
+
+			li {
+				display: block;
+				text-align: left;
+				width: auto;
+
+				em {
+					@include uppercased(1px, $bold);
+					font-style: normal;
+					font-size: 0.6em;
+					color: #b3b4b4;
+					display: block;
+
+					.webkit & {font-weight: $heavy;}
+				}
+
+				a {
+					padding-bottom: 0px;
+					width: auto;
+				}
+			}
+			li:hover {
+				background: transparent;
+				> a {color: inherit;}
+			}
+		}
+		ul.leftmenu,
+		ul.rightmenu {
+			width: 48%;
+			margin-right: 2%;
+			float: left;
+		}
+		ul.rightmenu {margin-right: 0; float: right;}
+
+		ul.sub {
+			margin: 0;
+			font-size: 0.9em;
+			font-weight: $light;
+			letter-spacing: 0.5px;
+			color: #b3b4b4;
+
+			a {			
+				font-size: 0.9em;
+				font-weight: $book;
+				letter-spacing: 0.5px;
+			}
+			li {
+				width: auto;
+				float: none;
+				@include inline-block(top);
+			}
+			li a {
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+		}
+
+		.story {
+			.featpic {
+				// padding-right: 0.75em;
+				float: left;
+				width: 145px;
+
+				img {width: 130px;}
+			}
+
+			.featmain {
+				float: left;
+				width: 100%;
+
+				@include breakpoint($large) {width: 56%;}
+				@include breakpoint($mega) {width: 49%;}
+
+				h3 {
+					margin-top: 0;
+					font-size: 0.85em;
+				}
+				p {font-family: $sans-serif;}
+				.details {
+					font-weight: $bold;
+					@include breakpoint($large) {&:after {content: ' —';}}
+				}
+			}
+
+			h4 {margin-top: 0.4em;}
+		}
+		// .webkit & .story .featmain {
+		// 	width: 55%; 
+		// 	margin-left: 0.75em;
+		// }
+
+	} /* --- end .mega --- */
+
+	ul > li .mega:hover {@include transition(all 0.4s ease-in-out);}
+	ul > li:hover > .mega {
+		@include opacity(1);
+		visibility: visible;
+	}
+	
+	/* --- overwrite for the connect menu --- */
+	#portaltab-connect .mega {
+		.col {width: 60%;}
+		.col.story {
+			width: 32%;
+			p {margin: 0px; font-size: 0.9em;}
+		}
+		ul.leftmenu {width: 60%;}
+		ul.rightmenu {width: 38%;}
+	}
+
+} /* --- end .header nav --- */
+
+

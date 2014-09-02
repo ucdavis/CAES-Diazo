@@ -1,0 +1,20 @@
+// Executive committee page
+// http://www.caes.ucdavis.edu/about/academics/executive-committee
+
+.subsection-academics-executive-committee {
+	.thegoods {
+		min-height: 1200px;
+
+		table {width: 100%; margin-bottom: 2.5em !important;}
+		td {width: 50%;}
+	}
+
+	.rightcol .portletCollection {
+		h4 {margin-top: 0.25em;}
+		div {@include inline-block(top); width: 40%;}
+		img, p {display: none;}
+		a {@include inline-block(top);}
+	}
+}
+
+

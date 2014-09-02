@@ -1,0 +1,50 @@
+// Get involved section
+// Formerly known as "Connect"
+
+.section-connect span.documentByLine {display:none;}
+
+.rightcol dl.portlet-static-give-now a {
+	border-bottom: 0px;
+	&:hover {background-color: transparent;}
+}
+
+.subsection-giving .thegoods, 
+.subsection-giving-impacts.template-newsitem_view .thegoods {min-height: 1000px;}
+
+
+.subsection-giving-impacts-endowed-chairs {
+	table {
+		width: 100%;
+		td.endowtitle {
+			font-family: $futura;
+			font-size: 1.4em;
+			font-weight: $extralight;
+			line-height: 1.1em;
+			color: $ucdavis-blue;
+			height: 20px;
+			margin: 10px 0 0; 
+			padding-left: 15px;
+			border-left: 5px solid rgba($ucdavis-blue,0.67);
+		}
+		td.endowdate {font-weight: $bold;}
+		td.endowpurpose {padding-bottom: 40px;}
+		td.imagetd {min-width: 120px;}
+	} // End table
+
+	.thegoods .table td img {
+		max-width: auto !important;
+	}
+
+} // End endowed chair section
+
+
+
+// Events section
+.subsection-events-college-celebration {
+	.thegoods td {padding-right: 4em;}
+	th {
+		font-family: $futura;
+		font-weight: $extralight;
+		font-size: 1.5em;
+	}
+}

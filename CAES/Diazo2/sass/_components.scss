@@ -1,0 +1,70 @@
+// Components
+// Modular components and their states. 
+// These pieces should be able to be used anywhere. Things like: icons, buttons, messages, etc.
+
+
+// Link styles
+a:link, a:visited {
+	text-decoration: none; 
+	color: inherit; 
+}
+a:hover, a:active {}
+dl.portlet a:link {
+	color: $dull-blue;
+	border-bottom: 0px;
+} 
+#content a:link, #content a:visited {
+	color: $ucdavis-blue;
+	border-bottom: 1px solid #ddd; 
+}
+#content a:hover, dl.portlet a:hover {
+	color: $med-blue !important; 
+	background: rgba(113, 113, 113, 0.1);
+}
+
+
+// Image styles
+img.image-left, img.image-right, .captioned img {border: 0px;}
+
+.template-summary_view .tileImage img, 
+#content img.image-right, 
+#content img.image-left,
+dl.captioned dt img,
+.newsImage, #content img, #content iframe,
+.template-haystack .search-results img {
+	@include img-border;
+	max-width: 100%;
+}
+#content img.noframe {
+	border: 0px none #fff !important; 
+	box-shadow: 0 0 0 #fff !important;
+}
+
+dl.fullright {
+	width: 100% !important;
+
+	img {height: auto;}
+	dd.image-caption {width: 100% !important;}
+
+	@include breakpoint($medium) {width: auto !important;}
+}
+
+
+// SVG Styles
+
+
+
+
+ 
+// Imports
+@import 'components/tables';
+@import 'components/fancybox';
+@import 'components/search';
+@import 'components/scrollup';
+@import 'components/menu';
+@import 'components/mobilemenu';
+@import 'components/portletsbelow'; // #finishdropbox
+@import 'components/forms';
+@import 'components/tinymce';
+@import 'components/haystack';
+@import 'components/btn-sprites';

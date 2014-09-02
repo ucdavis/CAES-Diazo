@@ -1,0 +1,89 @@
+// Header styles
+
+
+.header {
+	background: $header-blue;
+
+	.top {
+		margin: 0px auto;
+		min-height: 55px; height: auto;
+
+		width: 90%;
+		@include breakpoint($medium) {height: 55px;}
+		@include breakpoint($mega) {@include unresponsive-sizes;}
+	}	
+	a.logo {
+		float: none; @include inline-block(top);
+		vertical-align: bottom;
+		@include breakpoint($medium) {vertical-align: middle; padding-bottom: 11px;}
+		@include breakpoint($large) {float: left; vertical-align: top; padding-bottom: 0px;}
+
+		&.title {
+			display: block;
+			@include breakpoint($medium) {display: inline-block;}
+		}
+	}
+	.logo img {
+		@include inline-block(top); 
+		margin: 20px 10px 2px 0px;
+
+		width: 60%;
+		height: auto;
+
+		@include breakpoint($medium) {
+			width: 211px; height: 27px;
+			margin-top: 20px; 
+		}
+		@include breakpoint($mediumlarge) {
+			margin-bottom: 10px; margin-left: -78px;
+		}
+	}
+	h1 {
+		@include inline-block(top); 
+		vertical-align: top; 
+		color: #fff; 
+		line-height: 1em; 
+		font-size: 1.2em; 
+		font-weight: $light;
+		letter-spacing: 0.75px;
+		margin: 0; 
+		padding: 0 0 7px;
+		@include breakpoint($mediumlarge) {padding-top: 24px;}
+	}
+	.section-front-page & h1 {
+		font-size: 1.35em; 
+		font-weight: $book; 
+		padding-top: 0px; 
+		@include breakpoint($mediumlarge) {padding-top: 23px;}
+	}
+	.webkit & h1 {letter-spacing: 1px;}
+	.search {
+		@include inline-block(top); 
+		vertical-align: top; 
+		padding-top: 21px;  
+	    float: right;
+		overflow: hidden;
+
+	    max-width: 80px; 
+	    max-height: 45px; 
+	    display: none;
+
+	    .searchField,
+	    .searchButton {
+	    	@include inline-block(top); float: left;
+	    }
+	    .searchField {
+	    	max-width: 80px;
+	    	@include breakpoint($mini) {max-width: 999px;}
+	    }
+
+	    @include breakpoint($mini) {
+	    	max-width: 220px;
+	    }
+	    @include breakpoint($large) {
+	    	display: block;
+	    	max-width: 9999px;
+	    }
+	}
+}
+	

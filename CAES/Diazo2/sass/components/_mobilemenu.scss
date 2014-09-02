@@ -1,0 +1,67 @@
+// Mobile menu
+
+@import "mpmenu/*.png";
+@include all-mpmenu-sprites; 
+
+.diazoed .portlet-static-mpnav {display: block;}
+
+
+.menu-trigger {
+	float: right;
+	display: none;
+}
+
+.menu-trigger:before {
+	background: url(../img/icon-menu.png);
+	height: 21px; width: 29px;
+	top: 18px; right: 0px; left: auto;
+}
+
+.mp-menu ul {
+
+	li > a {
+		font-size: 1.25em;
+	}
+
+	li > a.icon {
+		padding-left: 3em;
+		margin-left: 1.5em;
+	}
+
+	li.sub > a {
+		font-size: 0.9em;
+		background: transparentize(#fff,0.95);
+		padding-left: 3.6em;
+
+		&:hover {background: transparent;}
+	}	
+}
+
+.mpmenu-right {
+	background-image: none;
+
+	&:after {
+		content: '';
+		display: inline-block;
+		width: 54px; height: 29px;
+		@include mpmenu-sprite(right);
+		background-position: 0 -446px;
+	}
+}
+
+.mp-menu ul li.mpmenu-left {
+	background-image: none;
+
+	&:before {
+		content: '';
+		display: inline-block;
+		width: 54px; height: 54px;
+		@include mpmenu-sprite(left);
+		left: -12px;
+		opacity: 0.2;
+	}
+}
+
+h2.icon {
+	padding-left: 3.6em;
+}

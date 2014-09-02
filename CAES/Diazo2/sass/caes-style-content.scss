@@ -1,0 +1,38 @@
+// CAES Starter set up
+// This is the base file that pulls together all the other elements.
+//
+// Content version
+//
+
+@import 'vendor';				// Select which vendor libraries to include here
+
+  @import 'vendor/jqueryfancybox';
+  
+@import 'dependencies';			// Global variables and shared styles
+@import 'foundation';			// Structural CSS
+@import 'components';			// Reusable pieces, i.e. icons, buttons
+@import 'regions';				// Page region styles
+
+@import 'regions-content';
+
+@import 'responsive';			// Responsive styles
+
+   
+
+// Last minute styles
+.nivoSlider {
+  position:relative;
+  background:url(../img/loading.gif) no-repeat 50% 50%;
+}
+.nivoSlider img {
+  position:absolute;
+  top:0px;
+  left:0px;
+  display:none;
+  width: 100%; 
+}
+.nivoSlider a {
+  border:0;
+  display:block;
+}
+// .portlet-static-nivo {height: 310px;}

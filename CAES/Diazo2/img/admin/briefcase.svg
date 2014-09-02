@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>briefcase</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Admin-Sprites" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="briefcase" sketch:type="MSArtboardGroup" fill-opacity="0.952162591" fill="#C99700">
+            <path d="M48.000118,11.9998977 L36.0000865,11.9998977 L36.0000865,6.99988461 C36.0000865,5.49988067 35.2223067,4.44432235 33.6111914,3.83320963 C32.2222989,3.27765262 30.1111822,2.99987411 27.0000629,2.99987411 C23.8889437,2.99987411 21.777827,3.27765262 20.3889345,3.83320963 C18.7778192,4.44432235 18.0000393,5.49988067 18.0000393,6.99988461 L18.0000393,11.9998977 L6.00000787,11.9998977 C4.33333683,11.9998977 3,13.3332345 3,14.9999056 L3,41.9999764 C3,43.6666474 4.33333683,44.9999843 6.00000787,44.9999843 L48.000118,44.9999843 C49.6667891,44.9999843 51.0001259,43.6666474 51.0001259,41.9999764 L51.0001259,14.9999056 C51.0001259,13.3332345 49.6667891,11.9998977 48.000118,11.9998977 Z M23.0000525,7.99988723 L31.0000734,7.99988723 L31.0000734,11.9998977 L23.0000525,11.9998977 L23.0000525,7.99988723 Z" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,94 @@
+// Feature tall 
+// Pages of template-featuretall_view
+
+.main {
+	margin-top: 0; 
+	position: relative; 
+	left: 0;
+
+	@include breakpoint($small) {left: -20px;}
+}
+.thegoods {padding-top: 20px;}
+h1.documentFirstHeading {display: none;}
+
+.slidefeature {
+	height: 390px;
+
+	.subsection-current-commencement & .nivo-caption {display: none !important;}
+}
+
+div.portlet-static-nivo {
+	height: 390px;
+
+	// .static.text {@include unresponsive-sizes;}
+
+	.static.text .nivo-caption, .static.text .spotlighttext {
+		bottom: 0;
+		display: block;
+		left: 13.5%;
+		position: absolute;
+		top: 309px;
+	}
+
+	ul {
+		width: 1190px; width: 100%; 
+		margin: 0 auto;
+		position: relative;
+	
+		li {
+			height: 310px; 
+			overflow: hidden; 
+			margin-bottom: 0px;
+			float: none;
+		}
+	}
+}
+
+.spotlighttext {
+	img {
+		float: left;
+		width: 100%;
+	}
+}
+
+.main .news .box.article h4 {font-size: 1em;}
+
+
+
+
+/*   custom pages   */
+.subsection-current-commencement {
+	.thegoods {
+		min-height: 900px;
+
+		#content-core {
+			div {
+				margin-bottom: 2em;
+				p {margin-right: 0;}
+			}
+			div.menuitem {
+				margin-bottom: 1em;
+				width: 90%;
+				margin-left: 6%;
+				margin-right: 0;
+				@include inline-block(top);
+				vertical-align: top;
+				text-align: center;
+
+				@include breakpoint($small) {width: 45%; margin-left: 3%;}
+				@include breakpoint($mediumlarge) {width: 90%; margin-left: 6%;}
+				@include breakpoint($large) {width: 40%;}
+			}
+		}
+	} // End .thegoods
+
+	#content .menuitem a {
+		background: rgba($bright-gold,0.9);
+		color: #fff;
+		font-size: 1.1em;
+		width: 100%;
+		display: block;
+
+		&:hover {background: rgba($ucdavis-gold,0.5);}
+	}
+}
