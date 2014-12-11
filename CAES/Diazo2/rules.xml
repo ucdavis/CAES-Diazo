@@ -134,6 +134,7 @@
 
     <!-- front page -->
     <copy css:content=".section-front-page .portlet-static-media" css:theme=".section-front-page .actions .media-slider" />
+    <copy css:content=".section-front-page .portlet-static-ads" css:theme=".section-front-page .actions .ads" />
     <copy css:content=".section-front-page .portletSearch form" css:theme=".section-front-page .actions .search" />
     <copy css:content=".section-front-page .portlet-static-buttons2 li" css:theme=".section-front-page .actions ul.buttons" />
      <copy css:content=".section-front-page .portlet-static-internal li" css:theme=".section-front-page .actions ul.internal" />

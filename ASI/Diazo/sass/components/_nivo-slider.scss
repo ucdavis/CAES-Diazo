@@ -1,0 +1,59 @@
+// Nivo styles	
+
+.feature {
+	.nivo-caption {
+		bottom: 0;
+		width: 100%;
+		position: absolute;
+		background: $dark-background;
+
+		@include breakpoint($nano) {
+		}
+		@include breakpoint($milli) {
+			width: 60%;
+			left: 30%;
+			background: rgba($dark-background,0.75);
+		}
+		@include breakpoint($deci) {
+			width: 40%;
+			left: 50%;
+			top: 30%;
+			bottom: auto;
+		}
+		@include breakpoint($kilo) {top: 25%;}
+		@include breakpoint($mega) {top: 20%;}
+
+		h4 {
+			color: $main-link;
+			font-size: 1.5rem;
+			margin-top: 0.5rem;
+
+			@include breakpoint($deci) {font-size: 2rem;}
+		}
+		h2 {
+			margin-top: 0;
+			line-height: 2.5rem;
+			margin-bottom: 1rem;
+			letter-spacing: 0;
+
+			a {
+				color: #fff;
+				font-size: 2rem;
+
+				@include breakpoint($deci) {font-size: 2.5rem;}
+			}
+		}
+	}
+
+	.nivo-controlNav {
+		position: absolute;
+		right: 5%;
+		bottom: 5%;
+		display: none;
+
+		@include breakpoint($deci) {
+			display: block;
+		}
+	}
+	
+}

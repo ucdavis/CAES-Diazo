@@ -52,7 +52,7 @@
 	#breadcrumbs-3 {display: none;}
 }
 
-#content .facultyStaffDirectory {
+#content .facultyStaffDirectory, .search-results {
 	.listing {
 		@include inline-block(top); 
 		width: 100%;

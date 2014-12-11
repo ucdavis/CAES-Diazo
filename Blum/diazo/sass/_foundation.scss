@@ -117,7 +117,8 @@ footer {
 
 #content {
 	p a:link, p a:visited {
-		color:$primary-color
+		color:$primary-color;
+		text-decoration:underline;
 	}
 	p a:hover {
 		color:$secondary-color !important;
@@ -426,13 +427,15 @@ footer {
 
 /* ---- Template: One Column; --- */
 
-.template-onecol_view .maincol {
+.template-onecol_view .maincol, .template-fg_base_view_p3 .portaltype-formfolder .maincol {
 	width:100%;
 	display: inline-block;
 	vertical-align: top;
 }
-
-.template-onecol_view .portlet_column {
+.portaltype-formfolder .maincol {
+	width:100% !important;
+}
+.template-onecol_view .portlet_column, .portaltype-formfolder .portlet_column {
 	display:none;
 }
 

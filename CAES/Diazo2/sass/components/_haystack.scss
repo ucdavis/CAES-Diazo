@@ -40,6 +40,23 @@
 			margin: 0 1em 0.5em; 
 			max-width: 25%;
 		}
+
+		.listing img {
+			max-width: 100%;
+			float: none;
+			margin: 0;
+		}
+
+		.fsd-headshot a {border-bottom: 0 !important;}
 	}
 
+}
+
+
+
+#content .result-section ul.jobTitle {
+	margin-bottom: 1em;
+	margin-left: 0;
+
+	li {list-style: none;}
 }

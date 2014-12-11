@@ -1,0 +1,154 @@
+// Header styles
+
+
+header {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	max-height: 42px;
+	z-index: 500;
+
+	&.stuck {
+		position: fixed;
+		top: 0px;
+	}
+
+	.diazoed & .portlet-static-asi-nav {display: block;}
+
+	// Structure
+	section {
+		height: rhythm(3.5);
+
+		&.mainnav {
+			background: #fff;
+			float: left;
+			padding: 0 0 0 1.5em;
+			width: 79.473684211%;
+
+			@include breakpoint($nano) {width: 50%;}
+			@include breakpoint($centi) {width: 79.473684211%;}
+		}
+
+		&.search {
+			float: right;
+			background: rgba(#000,0.5);
+			width: 20.526315789%;
+
+			img {max-width: 20px;}
+
+			@include breakpoint($nano) {
+				width: 50%;
+				
+				a {width: 12%; text-align: left;}
+				input.searchbox {
+					display: inline-block; 
+					min-width: 84%; 
+					max-width: 100%; 
+					margin-top: 3px; 
+					float: right;
+				}
+			}
+			@include breakpoint($centi) {width: 20.526315789%; max-width: 312px;}
+		}
+	} // End section structures
+
+	h1 {
+		display: inline-block;
+		float: left;
+		@include adjust-font-size-to(24px);
+		margin: 0 1em 0 0;
+
+		img {position: relative; height: 16.5px; max-width: 100%; width: auto; vertical-align: middle; top: -1.25px;}
+		abbr {font-size: 0.75em; font-weight: 600; color: $ucdavis-gold;}
+		abbr[title] {border-bottom: 0px;}
+		.logotext {display: block;}
+	}
+	nav {
+		font-family: $futura;
+		text-transform: capitalize;
+		letter-spacing: 1px;
+		text-align: left;
+		position: relative;
+		top: 0px;
+		left: -1.25em; /* Minus left padding of first a:link (1.25em) and space from sect padding (5em) */
+
+		@include breakpoint($pico) {display: none;}
+		@include breakpoint($centi) {display: inline-block; width: 65%;}
+		@include breakpoint($hecto) {display: inline-block; width: 50%;}
+
+		ul {
+			@extend ul.navlist;
+			li {line-height: 42px;}
+		}
+
+		& ul li > a {
+			@include adjust-font-size-to(15px);
+			display: inline-block;
+			padding: 0 0.75em 0;
+			line-height: 42px;
+		}
+		a:link, a:visited {
+			color: $light-gray;
+			font-weight: normal;
+		}
+		a:hover, a:active {
+			color: $main-link;
+		}
+	}
+
+	ul.socialnav {
+		@extend ul.navlist;
+		margin: auto;
+		width: 17%;
+		text-align: right;
+		float: right;
+
+		@include breakpoint($pico) {display: none;}
+		@include breakpoint($hecto) {display: inline-block; width: 21%;}
+
+		a {
+			@include adjust-font-size-to(15px);
+			display: inline-block;
+			padding: 0.75em 0.75em 0 0;
+		}
+
+		img {
+			width: 75%;
+			vertical-align: bottom;
+		}
+	}
+
+		
+	.search {
+		padding: rhythm(.25) 2em;
+		margin: auto;
+
+		a {
+			display: inline-block;
+			height: rhythm(3); width: 20%;
+			vertical-align: middle;
+			padding-top: 0.5em;
+
+			img {
+				width: 50%;
+			}
+		}
+		input.searchbox {
+			height: rhythm(2);
+			width: 75%;
+			border: 0;
+			box-shadow: 0;
+			background: rgba(#fff, 0.5);
+		}
+
+		@include breakpoint($pico) {
+			padding: 0.75em 2em;
+			a {
+				width: 100%; 
+				text-align: center;
+				img {width: 100%;}
+			}
+			input.searchbox {display: none;}
+		}
+	}
+}

@@ -31,8 +31,10 @@ div.portlet-static-nivo {
 
 
 .slider {
-	height: 310px; width: 1440px; /* what it was before */
+	height: 250px; width: 1440px; /* what it was before */
 	width: 100%;
+
+	@include breakpoint($gigantor) {height: 310px;}
 
 	.text {
 		z-index: 500;

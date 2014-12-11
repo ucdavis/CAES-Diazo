@@ -1,0 +1,76 @@
+// Components
+// Modular components and their states. 
+// These pieces should be able to be used anywhere. Things like: icons, buttons, messages, etc.
+
+@import 'components/codropsmenu-asi';
+@import 'components/fancybox';
+@import 'components/megamenu';
+@import 'components/scrollup';
+@import 'components/nivo-slider';
+@import 'components/portlets';
+@import 'components/focus';
+
+
+// Link styles
+a:link, a:visited {
+	text-decoration: none;
+	color: $main-link;
+
+	&.sub-link {color: $sub-link;}
+}
+a:hover, a:active {
+	border-bottom: 0px;
+	color: $sub-link;
+
+	&.sub-link {color: $main-link;}
+}
+
+
+// Nav list
+ul.navlist {
+	margin: 0;
+	padding: 0;
+
+	li {
+		list-style: none;
+		display: inline-block;
+		text-align: center;
+	}
+}
+
+
+// Breadcrumbs
+
+.breadcrumbs {
+	max-width: 45%;
+	float: left;
+
+	ul {
+		@extend ul.navlist;
+		padding-left: 9em;
+		background: rgba(#000, 0.5);
+		color: #fff;
+
+		li {
+			padding: 0.5em 0;
+			vertical-align: middle;
+
+			&:after {content: ' > '; margin: 0 0.5em;}
+			&.current:after {content: '';}
+
+			&.current {font-weight: bold;}
+			a {color: #fff;}
+		}
+	}
+}
+
+
+// Images
+img.image-right {
+	float: right; 
+	margin: rhythm(1) 0 rhythm(1) 1em;
+}
+img.image-left {
+	float: left;
+	margin: rhythm(1) 1em rhythm(1) 0;
+}

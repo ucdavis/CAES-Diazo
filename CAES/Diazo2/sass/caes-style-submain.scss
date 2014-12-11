@@ -17,6 +17,7 @@
 
 	@import 'regions-content';
 	@import 'regions/submainview'; 
+  @import 'regions/submainnav';
 
 @import 'responsive';			// Responsive styles
 
@@ -33,6 +34,7 @@
   left:0px;
   display:none;
   width: 100%; 
+  height: auto !important;
 }
 .nivoSlider a {
   border:0;

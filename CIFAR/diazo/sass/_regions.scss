@@ -115,10 +115,10 @@ ul.submenu {
 
 // call to actions
 .cta {
-	width:20%;
+	width:30%;
 	display:inline-block;
 	vertical-align:top;
-	margin-right:6.08%;
+	margin-right:4.08%;
 	text-align: center;
 	transition-delay: 0s;
     transition-duration: 0.25s;
@@ -136,6 +136,9 @@ ul.submenu {
 }
 
 #content .cta {
+	p a {
+		text-decoration:none;
+	}
 	p a:visited {
 		color:$dark-gray;
 	}

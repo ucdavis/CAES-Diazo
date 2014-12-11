@@ -1,0 +1,26 @@
+// Feature styles
+
+section.feature {
+	width: 100%;
+	// float: right; 
+	vertical-align: top;
+	height: auto;
+	position: relative; 
+	z-index: -1;
+	padding-top: 4em;
+
+	.diazo-content & {min-height: rhythm(9.75);}
+	.diazo-content.dexteritied & {min-height: rhythm(28);}
+
+	@include breakpoint($pico) {
+		float: none; clear: both;
+		height: auto;
+	}
+	@include breakpoint($micro) {padding-top: 0;}
+	@include breakpoint($deci) {
+		float: right; clear: none;
+		height: 215px;
+
+		.diazo-content & {height: auto;}
+	}
+}

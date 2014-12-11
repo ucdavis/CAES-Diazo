@@ -1,0 +1,64 @@
+// Codrops overwrite
+
+@import "mpmenu/*.png";
+@include all-mpmenu-sprites; 
+
+.mpmenu-sprite, .mpmenu-home, .mpmenu-left, .mpmenu-right, .mp-back:after, .mp-menu ul li.icon-arrow-left > a:before {
+  background-image: url(../css-img/mpmenu-s569d5a05d4.png);
+  background-repeat: no-repeat;
+}
+
+#mp-menu {
+	color: #fff;
+
+	.diazoed & {display: block;}
+}
+
+.mp-level {
+	z-index: 1;
+	background: #ccc;
+}
+
+.mp-menu ul li > a {
+	background: $med-gray;
+	padding: 1.2em 1em 1.2em 1.8em;
+}
+
+.mp-menu.mp-overlap h2 {
+	background: #fff;
+}
+
+.mp-menu ul li a:hover, .mp-level > ul > li:first-child > a:hover {
+	background: #eee;
+	box-shadow: 0 -1px rgba(0, 0, 0, 0.2) inset, 0 1px rgba(0, 0, 0, 0.2) inset;
+}
+
+.mp-back {
+	background: #ccc;
+	color: #fff !important;
+
+	&:after {
+		content: '';
+		display: inline-block;
+		width: 10px; height: 18px;
+		@include mpmenu-sprite(right);
+	}
+
+	&:hover {color: #333 !important; box-shadow: 0 -1px rgba(0, 0, 0, 0.2) inset, 0 1px rgba(0, 0, 0, 0.2) inset;}
+}
+
+.mp-menu ul li.icon-arrow-left > a {
+	background-image: none;
+
+	&:before {
+		content: '';
+		display: inline-block;
+		width: 10px; height: 14px;
+		left: 2.5%;
+		position: absolute;
+		@include mpmenu-sprite(left);
+		// left: -12px;
+		opacity: 0.25;
+		z-index: 0;
+	}
+}

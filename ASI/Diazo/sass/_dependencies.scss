@@ -1,0 +1,236 @@
+// Shared styles and dependencies
+// Globaly used variables, mixins, and functions
+
+
+// Metrics
+
+
+
+// Colors
+	$body-text:			#343434;
+	$header-text:		#ad5c10;
+	$subheader-text:	#deb308;
+	$main-link:			#a5a914;
+	$sub-link:			#897b00;
+
+	$primary-bg:		#ffffff;
+	$secondary-bg:		#EFEFEF;
+
+	// $light-background: 	#efefef;
+	$med-background:	#e6e4da;
+	$dark-background: 	#252222;
+
+	$light-gray:		#bcbcbc;
+	$med-gray:			#626262;
+
+	$ucdavis-gold:		#ddb307;
+	$ucdavis-blue:		#002855;
+	$asi-blue: 			#004b85;
+	$asi-brown:			#8a7c00;
+
+	// Programs
+	$sarep-uno: 		$ucdavis-gold;
+	$sarep-dos:			$asi-blue;
+
+	$rr-uno: 			#008eaa;
+	$rr-dos:			#78be20;
+	
+	$sf-uno:			#4F2C1D;
+	$sf-dos:			#aca39a;
+	
+	$infas-uno:			#5b7f95;
+	$infas-dos:			#ba0c2f;
+	
+	$safs-uno:			#ed8b00;
+	$safs-dos:			#4f2c1d;
+	
+	$research-uno:		#642667;
+	$research-dos:		#008eaa;
+
+
+// Typography
+
+	$futura:			"futura-pt", Futura Std, Futura, Arial, sans-serif;
+	$futura-condensed: 	"futura-pt-condensed", Futura Condensed, Arial Narrow, Calibri, sans-serif;
+	// $futura: 			"futura-pt", Arial, sans-serif; // For testing Typekit Futura
+	$cabin:				"Cabin", Cabin, sans-serif;
+	$sans-serif:		Helvetica Neue, Helvetica Std, Helvetica, Univers, Arial, sans-serif;
+	$serif:				Georgia, Berkeley, serif;
+
+	// [Compass] Vertical rhythm set up
+	// Change these values to whatever you want for your proj
+	$base-font-size:					10px;
+	$base-line-height:					12px;
+	$default-rhythm-border-style:		solid;
+	$relative-font-sizing:				true;
+	$rhythm-unit: 						"rem";
+
+	// Font weights - Futura Typekit
+	$extralight:		200;
+	$light:				300;
+	$book:				400;
+	$medium:			500;
+	$heavy:				600;
+	$bold:				700;
+	$extrabold:			800;
+
+
+
+
+// Widths
+
+	$leftcol-width:			25.855263158%;
+	$rightcol-width:		74.144736842%;
+
+
+// Media query sizers
+
+	$mega:					1400px;
+	$kilo:					1100px;
+	$hecto:					1020px;
+	$deci:					960px;
+	$centi:					800px;
+	$milli:					700px;
+	$micro:					620px;
+	$nano:					460px;
+	$pico:					1px;
+
+
+
+// Themes
+
+	// All caps spaced out headline style
+	@mixin uppercased($spacing: 1px, $weight: inherit) {
+		text-transform: uppercase;
+		letter-spacing: $spacing;
+		font-weight: $weight;
+	}
+
+	// Causes a CSS transition when certain properties change
+	@mixin transformers {
+		// @include transition(color 0.25s ease-in-out, background-color 0.25s ease-in-out,
+		// 	height 0.25s ease-in-out, width 0.25s ease-in-out, opacity 0.25s ease-in-out);
+	}
+
+	@mixin slidingdowntown {
+		transition-delay: 0s;
+	    transition-duration: 0.25s;
+	    transition-property: top;
+	    transition-timing-function: ease;
+	    -webkit-transition-delay: 0s;
+	    -webkit-transition-duration: 0.25s;
+	    -webkit-transition-property: top;
+	    -webkit-transition-timing-function: ease;
+	}
+
+	.clearfix {
+		@include clearfix;
+	}
+
+	@mixin clearfix {
+	  &:after {
+	    content: "";
+	    display: table;
+	    clear: both;
+	  }
+	}
+
+
+	// Style for top and bottom borders, used on mini-headers and front page buttons
+	@mixin sandwiched($color: $sarep-uno) {
+		border-top: $color 2px solid;
+		border-bottom: $color 2px solid;
+	}
+
+	@mixin sandwiched-uno {
+		.section-front-page &, .section-asi & {@include sandwiched($asi-blue);}
+		.section-sarep & {@include sandwiched($sarep-uno);}
+		.section-rr & {@include sandwiched($rr-uno);}
+		.section-sf & {@include sandwiched($sf-uno);}
+		.section-infas & {@include sandwiched($infas-uno);}
+		.section-safs & {@include sandwiched($safs-uno);}
+	}
+
+	@mixin sandwiched-dos {
+		.section-front-page &, .section-asi & {@include sandwiched($asi-brown);}
+		.section-sarep & {@include sandwiched($sarep-dos);}
+		.section-rr & {@include sandwiched($rr-dos);}
+		.section-sf & {@include sandwiched($sf-dos);}
+		.section-infas & {@include sandwiched($infas-dos);}
+		.section-safs & {@include sandwiched($safs-dos);}
+	}
+	
+
+	// Style to add a pointer arrow inside a box (i.e. for callouts)
+	@mixin arrowd($color: $sareup-uno, $height: 18px, $direction: left) {
+		position: relative;
+
+		&:before {
+			top: 50%;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			margin-top: -$height;
+
+		    @if $direction == top {
+   				border: $height transparent solid;
+			    border-top-color: $color;
+		    	top: 0;
+		    }
+		    @else if $direction == bottom {
+   				border: $height transparent solid;
+			    border-bottom-color: $color;
+		    	bottom: 0;
+		    }
+		    @else if $direction == left {
+   				border: $height solid transparent;
+			    border-left-color:   $color;
+		    	left: 0;
+		    }
+		    @else if $direction == right {
+   				border: $height solid transparent;
+			    border-right-color:  $color;
+		    	right: 0;
+		    }
+		}
+	}
+
+
+	@mixin centerbg-uno {
+		.section-front-page &, .section-asi & {background: $asi-blue;}
+		.section-sarep & {background: $sarep-uno;}
+		.section-rr & {background: $rr-uno;}
+		.section-sf & {background: $sf-uno;}
+		.section-infas & {background: $infas-uno;}
+		.section-safs & {background: $safs-uno;}
+	}
+
+	@mixin centerbg-dos {
+		.section-front-page &, .section-asi & {background: $asi-brown;}
+		.section-sarep & {background: $sarep-dos;}
+		.section-rr & {background: $rr-dos;}
+		.section-sf & {background: $sf-dos;}
+		.section-infas & {background: $infas-dos;}
+		.section-safs & {background: $safs-dos;}
+	}
+
+	@mixin centertext-uno {
+		.section-front-page &, .section-asi & {color: $asi-blue;}
+		.section-sarep & {color: $sarep-uno;}
+		.section-rr & {color: $rr-uno;}
+		.section-sf & {color: $sf-uno;}
+		.section-infas & {color: $infas-uno;}
+		.section-safs & {color: $safs-uno;}
+	}
+
+	@mixin centertext-dos {
+		.section-front-page &, .section-asi & {color: $asi-brown;}
+		.section-sarep & {color: $sarep-dos;}
+		.section-rr & {color: $rr-dos;}
+		.section-sf & {color: $sf-dos;}
+		.section-infas & {color: $infas-dos;}
+		.section-safs & {color: $safs-dos;}
+	}
+

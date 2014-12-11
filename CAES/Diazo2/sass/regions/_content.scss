@@ -67,7 +67,7 @@
 		color: rgba($ucdavis-blue,0.86);
 		font-size: 0.9em;
 	}
-	h2, h3, h4 {
+	h2, h3, h4, label {
 		font-family: $serif;
 		color: rgba($ucdavis-blue,0.86);
 	}
@@ -89,7 +89,7 @@
 #content {font-size: 100%;} /* because Plone lowers it */
 //} // End .main
 
-#content .documentDescription {
+#content .documentDescription, .thegoods div.documentDescription {
 	font-family: $futura;
 	color: #a3a3a3;
 	font-weight: $extralight;
@@ -98,6 +98,8 @@
 
 	@include breakpoint($medium) {margin-right: 80px;}
 }
+
+.dexteritied .thegoods div.documentDescription {margin-top: 1em;} /* for the dexterity content types because they don't have #content */
 
 #content div.documentByLine, 
 .template-summary_view .documentByLine,

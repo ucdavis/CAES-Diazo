@@ -1,0 +1,98 @@
+// submain nav
+// Styles for the menu that spans the middle of the page
+// on submain pages, like http://caes.ucdavis.edu/about
+
+.submain-nav {
+	background: transparentize(#ccc,0.75);
+	// background:  rgba($ucdavis-blue,0.2);
+	border-bottom: 1px solid rgba(#333, 0.15);
+
+	.menus {
+		@include unresponsive-sizes;
+		margin: 0 auto;
+		padding: 0.5em 0 1.5em;
+	}
+
+	ul {
+		width: auto;
+		min-width: 10px;
+		font-family: $futura;
+		margin: 0 auto;
+		padding: 0;
+		color: $ucdavis-blue;
+		// color: #fff;
+
+		li {
+			display: block;
+			text-align: left;
+			width: auto;
+
+			em {
+				@include uppercased(1px, $bold);
+				font-style: normal;
+				font-size: 0.6em;
+				color: #999;
+				// color: #333;
+				display: block;
+
+				.webkit & {font-weight: $heavy;}
+			}
+
+			a {
+				padding: 10px 0 3px;
+				padding-bottom: 0px;
+				font-weight: $extrabold;
+				width: auto;
+				@include inline-block(top);
+				letter-spacing: 0.25px;
+			}
+		}
+		li:hover {
+			background: transparent;
+			> a {color: inherit;}
+		}
+	}
+
+	ul.leftmenu,
+	ul.rightmenu, ul.midmenu {
+		width: 30%;
+		margin-right: 2%;
+		@include inline-block(top);
+	}
+	ul.rightmenu {
+		margin-right: 0;
+
+		&:after {@include clearfix;}
+	}
+
+	ul.sub {
+		margin: 0;
+		font-size: 0.9em;
+		font-weight: $light;
+		letter-spacing: 0.5px;
+		color: #777;
+		color: #333;
+
+		a {			
+			font-size: 0.9em;
+			font-weight: $book;
+			letter-spacing: 0.5px;
+
+			&:after {
+				content: '| ';
+				padding: 0 0.5em;
+			}
+		}
+		li {
+			width: auto;
+			float: none;
+			@include inline-block(top);
+
+			&:last-child a:after {content: '';}
+		}
+		li a {
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+	}
+}

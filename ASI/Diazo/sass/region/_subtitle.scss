@@ -1,0 +1,84 @@
+// Subtitle block
+
+
+.subtitle {
+	clear: both;
+	background: $sarep-uno;
+	color: #fff;
+	line-height: rhythm(2);
+	padding: rhythm(0.5) 3.5em rhythm(0.75);
+	z-index: 999;
+
+	@include centerbg-uno;
+
+	h1, h2 {
+		color: #fff;
+		margin: rhythm(0.25) 0 0;
+	}
+	h1 {
+		font-weight: $bold;
+		@include breakpoint($pico) {margin-top: 0.175em;}
+	}
+	h2 {
+		font-size: 2.1em;
+		@include breakpoint($pico) {display: none;}
+		@include breakpoint($deci) {display: block;}
+	}
+
+	.menu-trigger {display: none;}
+
+	@include breakpoint($pico) {
+		padding: 0;
+		position: fixed; 
+		width: 100%;
+
+		.center-title {
+			width: 79.473684211%;
+			float: left;
+			padding-left: 1.5em;
+		}
+		.menu-trigger {
+			display: block;
+			width: 20.526315789%;
+			float: right;
+			text-align: center;
+			position: relative;
+			padding: 1.15em 0 0.35em;
+		}
+
+		.menu-trigger:after {
+			clear: both;
+		}
+	}
+	@include breakpoint($centi) {
+		width: 100%;
+		position: static;
+		padding: rhythm(0.5) 3.5em rhythm(0.75);
+
+		.center-title {width: 100%; float: none; padding-left: 0;}
+		.menu-trigger {display: none;}
+	}
+}
+
+span.menu-trigger-sub {display: none;}
+
+	.subtitle.stuck {
+		position: fixed;
+		// top: 0px;
+		width: 100%;
+
+		h1 {@include adjust-font-size-to(24px);}
+		h2 {display: none;}
+
+		@include breakpoint($pico) {
+			width: 100%;
+			h1 {
+				padding: rhythm(0.25) 0 rhythm(0.5);
+				font-size: 1.75em;
+				margin-top: 0.3em;
+			}
+		}
+		@include breakpoint($centi) {
+			width: $leftcol-width;
+		}
+	}

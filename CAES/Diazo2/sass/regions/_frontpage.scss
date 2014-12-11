@@ -21,6 +21,10 @@
 	// }
 }
 
+.section-front-page {
+	.portlet-static-nivo .static.text .spotlighttext {bottom: 8%; background: rgba(#fff,0.85);}
+}
+
 
 .main {
 	.diazo-submain & {margin-top: 20px;}
@@ -75,6 +79,11 @@
 				max-height: 100px; width: auto; float: right; padding: 0 0 1em 1em;
 				@include breakpoint($lil) {max-height: 999px; width: 100%; padding: 0; float: none;}
 			}
+
+			// Special cases
+			&.drought img {
+				@include breakpoint($lil) {width: auto; float: left;}
+			}
 		}
 		&.right {margin-right: 0px;}
 
@@ -103,9 +112,9 @@
 
 			@include breakpoint($medium) {width: 49.494949495%;}
 
-			&.left.intro {width: 474px; width: 49.494949495%;} 
+			&.intro {width: 474px; width: 49.494949495%;} 
 
-			.diazo-submain &, .diazo-submain &.left.intro {
+			.diazo-submain &, .diazo-submain &.intro {
 				width: 100%;
 
 				@include breakpoint($medium) {width: 49%;}
@@ -140,6 +149,24 @@
 
 			h3.deansearch {font-size: 1.2em; font-weight: $medium;}
 		} // End .box.feature
+
+		&.goldheader {
+			h3 a img {
+				margin: 2px 8px 0px;
+			}
+			padding: 0px;
+			h3 {
+				font-size: 1.2em;
+				margin-top: 0.5em;
+			}
+			h4 {
+				margin-top: 0;
+				padding: 1em 0.5em 0.5em;
+				color: #fff;
+				background: $dark-gold;
+				font-size: 0.75em;
+			}
+		} // End .box.goldheader
 
 		&.blue {
 			background: rgba($ucdavis-blue,0.5); 
@@ -182,10 +209,15 @@
 				@include breakpoint($lil) {width: 50%; float: left;}
 				@include breakpoint($small) {width: auto; max-width: 50%;}
 
-				.subsection-connect-main & {
-					@include breakpoint($small) {max-width: 100%;}
+				&.full {width: 100%;}
+
+				.subsection-connect-main &, .subsection-current-current &,
+				.subsection-research-main &, .subsection-outreach-main &,
+				.subsection-news-main & {
+					@include breakpoint($small) {max-width: 100%; margin-bottom: 0.5em;}
 				}
 			}
+
 			.subsection-current-current & .blueadvising img {
 				@include box-shadow(none);
 				border:none;
@@ -222,6 +254,20 @@
 				}
 			}
 
+
+			&.horizontal {
+				.buttons {
+					width: 100%;
+					@include breakpoint($small) {width: 48%; float: right;}
+				}
+				.text {
+					@include breakpoint($small) {width: 48%; margin-bottom: 0;}
+				}
+
+				img {
+					@include breakpoint($small) {max-width: 100%;}
+				}
+			}
 
 			.blueadvising {
 				@include inline-block(top);
@@ -321,7 +367,7 @@
 			}
 		} // End .box.intro
 
-		&.frontpagearchive {
+		&.darkblue {
 			border: none;
 			background-color: $ucdavis-blue;
 			padding-top: 0px;
@@ -362,19 +408,22 @@
 
 		@include breakpoint($medium) {width: 24%;}
 
-		.media-slider {
+		.media-slider, .ads {
 			background: #fff;
 			border: 1px solid rgba(33, 33, 33, 0.1);
 			width: 100%;
 			margin-bottom: 1em;
 
-			.portlet-static-media > h4, .portlet-static-media > p a {
+			.portlet-static-media > h4, .portlet-static-media > p a,
+			.portlet-static-ads > h4 {
 				@include uppercased(2px);
 				color: $ucdavis-gold;
 				font-weight: $bold;
 				font-size: 0.8em;
 				margin: 0.5em 0.5em 0.25em;
 			}
+
+			.portlet-static-media > h4, .portlet-static-ads > h4 {font-size: 1.25em;}
 
 			.portlet-static-media > p {
 				padding: 0;
@@ -422,6 +471,15 @@
 				z-index: 500;
 
 				@include breakpoint($large) {text-align: left; width: 49%;}
+			}
+
+			.portlet-static-ads {
+				img {
+					max-width: 100%;
+					width: 96%;
+					display: block;
+					margin: 0 auto;
+				}
 			}
 		}
 

@@ -15,7 +15,7 @@ body {
 	// min-width: 960px; #rwd
 	// min-width: 320px;
 	// max-width: 1400px;
-	background: url(../img/bg.jpg) repeat;
+	background: url(../img/bg.png) repeat;
 	font-family: $sans-serif;
 	color: $dark-blue;
 }
@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {margin-top: 1em;}
 h2 {margin-top: 1em; letter-spacing: 0.2px; font-size: 1.75em;}
 h3 {margin-top: 1em; font-size: 1.5em;}
-h4 {margin-top: 1em; font-size: 1.5em;}
+h4 {margin-top: 1em; font-size: 1.3em;}
 h5 {margin-top: 0.5em;}
 h6 {margin-top: 0.5em;}
 p {
@@ -129,7 +129,9 @@ ul.twocolumnlist {margin-left: 0;}
 .portlet-static-contact .button {display: none;}
 .section-front-page .portlet-static-contact .button {display: none;}
 
-
+.no-csstransforms3d .mp-pusher, .no-js .mp-pusher {
+	// padding-left:inherit !important;
+}
 
 
 

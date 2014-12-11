@@ -1,0 +1,380 @@
+// Front pager styles
+
+.diazo-index {
+
+	div.feature .portlet-static-slideshow,
+	.portlet-static-cta, .portlet-static-multimedia {display: block;}
+
+	.rightcol {
+		@include breakpoint($deci) {width: 100%;}
+		@include clearfix;
+	}
+
+	section.leftnav {display: none;}
+	section.content {width: 100%; background: transparent;}
+
+	// section.feature {height: 480px;}
+
+	section.content .programs p {margin: 0.5em 0 0;}
+
+	div.main {
+		position: relative;
+	}
+
+	.leftcol {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 50;
+	}
+
+	.title h4 {width: 100%; display: block;}
+
+	.tools {
+		margin: 0 5em;
+		width: 14.855%;
+		float: right;
+		text-align: center;
+
+		@include breakpoint($pico) {
+			margin: 0;
+			float: none;
+			width: 94%;
+			padding: 1em 2em;
+		}
+		@include breakpoint($kilo) {width: 16.55%; float: right; margin: 0 5em 0 0;}
+
+		h3, p {text-align: left;}
+		p.footer {text-align: right;}
+
+		p {
+			display: block;
+			clear: both;
+
+			@include breakpoint($micro) {float: right; }
+		}
+
+		h3 {
+			font-size: 3em;
+			@include uppercased(2px, $bold);
+			float: left;
+			vertical-align: bottom;
+
+			@include breakpoint($micro) {
+				display: block; 
+			}
+		}
+
+		a {
+			margin: 0 auto;
+			width: $leftcol-width;
+			vertical-align: bottom;
+
+			img {
+				margin-bottom: -1.25em; opacity: 0.5;
+
+				@include breakpoint($pico) {
+					float: left; 
+					display: block; 
+					padding: 0 2em;
+				}
+			}
+		}
+	}
+
+}
+
+.cta {
+	width: 92.131578947%;
+	margin: 5em;
+
+	@include breakpoint($pico) {
+		width: 100%; margin: 0;
+	}
+	@include breakpoint($kilo) {
+		width: 92.131578947%; margin: 2em 2em 2em 5em;
+	}
+
+	.about {
+		background: $sarep-dos;
+		color: #fff;
+		width: 34.525547445%;
+		float: left;
+		padding: rhythm(0.5) 5%;
+
+		@include centerbg-dos;
+
+		@include breakpoint($pico) {float: none; width: 100%;}
+		@include breakpoint($nano) {padding: rhythm(0.5) 5%;}
+		@include breakpoint($hecto) {width: $leftcol-width; float: left; padding: rhythm(0.5) 2%;}
+
+		a:link, a:visited {@include centertext-uno;}
+		a:hover, a:active {}
+
+		h2 {
+			color: #fff;
+			font-weight: $heavy;
+		}
+		p {
+			@include breakpoint($micro) {
+				display: inline-block;
+				vertical-align: top;
+				// width: 44%;
+				// margin-right: 5%;
+			}
+			@include breakpoint($hecto) {display: block; width: 100%; margin-right: 0;}
+		}
+	}
+	.areaintro {
+		background: $sarep-dos;
+		width: 65.474452555%;
+		padding: rhythm(0.5) 5%;
+
+		h4 {color: #fff; margin-top: 1.35em;}
+	}
+	.programs {
+		background: #fff;
+		width: 65.474452555%;
+		float: left;
+		margin-bottom: 6em;
+		padding: rhythm(0.5) 1em;
+		@extend .clearfix;
+
+		@include breakpoint($pico) {float: none; width: 100%;}
+		@include breakpoint($hecto) {width: $rightcol-width; float: left;}
+
+		& > h4 {
+			color: $sarep-uno;
+			text-align: center;
+			padding: 0.25em 0;
+			@include uppercased(3px);
+			font-size: 1.5rem;
+			margin: 1em;
+
+			@include centertext-uno;
+			@include sandwiched-uno;
+		}
+
+		div {
+			width: 30%;
+			margin: 0 1.5%;
+			float: left;
+			padding: rhythm(1.25) 1em rhythm(0.5);
+			vertical-align: top;
+
+			@include breakpoint($pico) {float: none; margin: 0; width: 94%;}
+			@include breakpoint($nano) {width: 45%; margin: 0 1.5% 2em; float: left;}
+			@include breakpoint($centi) {width: 30%; margin-bottom: 0; min-height: 10px; min-height: 0px;}
+
+			h3 {
+				line-height: rhythm(1);
+				font-size: 3em;
+				line-height: 1em;
+				margin: 0.5em 0 0;
+
+				a {
+					font-family: $futura-condensed;
+					color: $sarep-dos;
+
+					@include centertext-dos;
+				}
+			}
+			p {
+				font-size: 1.5em;
+
+				@include breakpoint($pico) {font-size: 1.5em;}
+				@include breakpoint($centi) {font-size: 1.5em;}
+			}
+
+			&.cc {
+				@include breakpoint($nano) {margin: 0 auto; float: none; width: 97%;}
+				@include breakpoint($centi) {width: 30%; float: left; margin: 0 1.5%;}
+			}
+		}
+
+		div.quicklinks {
+			width: 100%;
+			clear: both;
+			margin: 1em 0;
+			padding: rhythm(0.5) 1em;
+			@extend .clearfix;
+
+			div {
+				min-height: 0;
+				background: #fff;
+				@include sandwiched;
+				width: 98%;
+				font-size: 3em;
+				line-height: 1em;
+				padding: 0;
+				margin: 0 0 3rem 0;
+				font-family: $futura;
+				text-align: center;
+
+				@include sandwiched-uno;
+
+				@include breakpoint($micro) {width: 48%; margin: 0; text-align: left;}
+
+				&:first-child {margin-right: 4%;}
+
+				a {
+					color: $sarep-uno; 
+					padding: 3% 10%; 
+					display: block; 
+					width: 100%;
+
+					@include centertext-uno;
+				}
+				img {
+					margin: 0 auto;
+					display: block;
+
+					@include breakpoint($micro) {
+						float: left; padding: 0 1.5em 0 0;
+					}
+				}
+				.title {display: block; font-weight: bold; font-size: 0.9em;}
+			}
+		}
+
+	}
+}
+
+.features {
+
+	margin: 0 auto 6em; 
+	clear: both; 
+	background-color:#fff;
+	padding: 6em 0;
+
+	.inner {
+		margin: 0 auto;
+		width: 93.1316%;
+	}
+	
+	.multimedia {
+		width: 100%;
+		vertical-align: top;
+		display: inline-block;
+		margin-right: 2em;
+		// background: $sarep-uno;
+
+			// background: #fff;
+			// border: 1px solid rgba(33, 33, 33, 0.1);
+			// width: 100%;
+			margin-bottom: 1em;
+
+			@include breakpoint($deci) {width: 31.751824818%;}
+
+
+			.portlet-static-multimedia > h4 {margin-bottom: 0.5em;}
+
+			.portlet-static-media > h4, .portlet-static-media > p a {
+				color: $ucdavis-gold;
+				font-weight: $bold;
+				font-size: 1.5rem;
+				margin: 0.5em 0.5em 0.25em;
+			}
+
+			.portlet-static-multimedia > p {
+				padding: 0;
+				display: inline-block; 
+				width: 100%;
+				text-align: center;
+				padding: 0 0.5em;
+				height: 2em;
+				overflow: hidden;
+				margin-top: 0;
+				a {
+					display: block;
+					position: relative;
+					z-index: 20; 
+				}
+
+				@include breakpoint($deci) {width: 40%; text-align: right;}
+			}
+
+			.theme-light .nivoSlider {
+				min-height: 100px;
+				width: 100%;
+				margin: 0 auto;
+				background: #fff;
+				// position: static;
+
+				.nivo-caption {
+					position: relative; 
+					background: #fff;
+					z-index: 10;
+
+					h4 {
+						font-size: 1.5rem;
+						margin-left: .25em;
+
+						@include breakpoint($deci) {font-size: 2rem;}
+					}
+					p {
+						color: $body-text;
+						margin-top: 0.25rem;
+					}
+				}
+			}
+			.nivo-controlNav {
+				padding: 0 0.25em 0.25em;
+				display: inline-block;
+				text-align: center;
+				width: 100%;
+				float: left;
+				position: relative;
+				z-index: 20;
+
+				a {
+					background: #ddd; padding: 0.5em 0.75em; margin: 0 0.25em;
+
+					&:first-child {margin-left: 0;}
+				}
+
+				@include breakpoint($deci) {text-align: left; width: 49%;}
+			}
+
+	}
+
+	.news {
+		width: 100%;
+		vertical-align: top;
+		display: inline-block;
+
+		@include breakpoint($deci) {width: 65.328467153%;}
+
+		& > h4 {margin-bottom: 0.5em;}
+
+		.article {
+			width: 100%;
+			display: inline-block;
+			vertical-align: top;
+			position: relative;
+			background: $sarep-uno;
+			min-height: 299px;
+			padding: 0;
+			float: left;
+			margin-bottom: 1.5em;
+			overflow: hidden;
+
+			@include centerbg-uno;
+
+			@include breakpoint($deci) {width: 33%;}
+
+			h4 {font-family: $futura-condensed; color: #fff;}
+			p {
+				color: #fff;
+
+				&.date {text-transform: uppercase; font-size: 1em; letter-spacing: 1px;}
+			}
+			img {
+				position: absolute; top: 0; left: 0; z-index: 0; opacity: 0.25;
+				width: 100%;
+				@include breakpoint($deci) {height: 100%;}
+			}
+			.text {position: absolute; padding: 2em; display: block; z-index: 15;}
+		}
+	}
+}

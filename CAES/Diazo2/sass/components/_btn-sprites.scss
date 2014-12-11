@@ -6,6 +6,27 @@ $icons-spacing:			5px;
 @import "icons/*.png";
 @include all-icons-sprites;
 
+// If you need to change the sprite (i.e. add a new icon)
+// re-include line 6 & 7 above, and hide line 21-29 below. 
+// Then once SASS recompiles, find the new line that matches 
+// the below, put it there, and comment out line 6 & 7 again.
+// Firefox can't load the icons when the background-image URL is
+// url('/img/whatevs') So it needs to be switched to url(../img/whatevs)
+
+// ... Just kidding, this breaks if you comment out line 5-7. But 
+// I think it works fine with the above and the below to correct the URL
+// If the sprite map gets updated though, fix line #27 below.
+
+
+.icons-sprite,.icons-book,.icons-compose,.icons-directions,
+.icons-facebook,.icons-flag,.icons-flask,.icons-gear,.icons-gift,
+.icons-globe,.icons-heart,.icons-home,.icons-inbox,.icons-info,
+.icons-left,.icons-list,.icons-location,.icons-map,.icons-news,
+.icons-notebook,.icons-olives,.icons-openbook,.icons-phone,.icons-right,
+.icons-star,.icons-trophy,.icons-twitter,.icons-user,.icons-users {
+	background-image:url(../img/icons-sa803e70a7b.png);
+	background-repeat:no-repeat;
+}
 
 .main .news .box.actions, .main .news .box.blue .buttons {
 
@@ -49,6 +70,17 @@ $icons-spacing:			5px;
 		@include breakpoint($lil) {width: 48%; margin-right: 1%;}
 
 		strong {
+		}
+	}
+
+	&.full {
+		clear: none;
+
+		.subsection-connect-main & {width: 100%;}
+
+		a, a:link {
+			@include breakpoint($lil) {width: 100%; margin-right: 0;}
+			.subsection-connect-main & {padding-top: 1em;}
 		}
 	}
 

@@ -20,7 +20,9 @@
 
 		&.title {
 			display: block;
-			@include breakpoint($medium) {display: inline-block;}
+			font-size: 0.9em; 
+			width: 75%;
+			@include breakpoint($medium) {display: inline-block; font-size: 1em; width: auto;}
 		}
 	}
 	.logo img {
@@ -35,7 +37,7 @@
 			margin-top: 20px; 
 		}
 		@include breakpoint($mediumlarge) {
-			margin-bottom: 10px; margin-left: -78px;
+			margin-bottom: 10px;
 		}
 	}
 	h1 {

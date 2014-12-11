@@ -10,6 +10,9 @@ p.greenbutton {
 	font-style: normal;
 	font-weight: 400;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	a:link, a:visited, a {
+		text-decoration:none;
+	}
 }
 .template-plone-app-collection-interfaces-icollection p.greenbutton {
 	font-size: 1.1em;
@@ -22,6 +25,7 @@ p.greenbutton a:link, p.greenbutton a:visited, p.greenbutton a:active {
 	color:#fff;
 	width:25%;
 	background-color: $primary-color;
+	text-decoration:none;
 	padding: .35em .7em;
 }
 .webkit #content p.greenbutton a:link, .webkit #content p.greenbutton a:visited {
@@ -67,6 +71,19 @@ p.greenbutton a:link, p.greenbutton a:visited, p.greenbutton a:active {
 	padding: .35em .5em ;
 }
 .frontsupport p.greenbutton a:hover {
+	color:#AAAF4C!important;
+}
+.portlet_column .portletstatic p.greenbutton {
+	margin-top: 1em;
+	float:right;
+}
+.portlet_column .portletstatic p.greenbutton a:link {
+	color:#fff;
+	width:25%;
+	background-color: $primary-color;
+	padding: .35em .5em ;
+}
+.portlet_column .portletstatic p.greenbutton a:hover {
 	color:#AAAF4C!important;
 }
 
@@ -124,4 +141,7 @@ table.abouttable th {
 #content table.abouttable {
 	margin-bottom: 2em;
 }
-
+img.bordered {
+		border-radius:2%;
+		box-shadow:0 0 0 0.25em #FFFFFF, 0 0 0 .50em $secondary-color;
+}

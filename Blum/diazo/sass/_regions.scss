@@ -18,7 +18,7 @@
 }
 nav {
 	max-width:1200px;
-	width:79%;
+	width:100%;
 	margin-top: 11px;
 }
 
@@ -143,6 +143,10 @@ ul.submenu {
 #content .cta {
 	p a:visited {
 		color:$dark-gray;
+		text-decoration:none;
+	}
+	p a {
+		text-decoration:none;
 	}
 	h2 a {
 		color:$primary-color;
@@ -187,4 +191,50 @@ ul.submenu {
 		border-bottom:2px solid $secondary-color;
 		padding-bottom:3px;
 	}
+}
+
+//giving support
+.givingdiv {
+	margin:30px 0px;
+	padding:15px 0px;
+	border-bottom:2px dotted $secondary-color;
+}
+.giving_image {
+	width:30%;
+	display:inline-block;
+	text-align:center;
+	img {
+		border-radius:50%;
+		box-shadow:0 0 0 0.25em #FFFFFF, 0 0 0 .50em $secondary-color;
+	}
+}
+.giving_words {
+	width:48%;
+	display:inline-block;
+	text-align:left;
+	vertical-align:top;
+	padding-top:2rem;
+}
+p.standout {
+	color:#fff;
+	background-color:$primary-color;
+	padding:1rem;
+	width:100%;
+	display:inline-block;
+	a {
+		color:#fff;
+	}
+}
+.portletstatic p.standout a:link, .portletstatic .portlet_column p.standout a:visited {
+	color:$secondary-color;
+	&:hover {
+		color:#fff;
+	}
+}
+p.standout_gold {
+	color:#fff;
+	background-color:$secondary-color;
+	padding:1rem;
+	width:100%;
+	display:inline-block;
 }

@@ -1,0 +1,170 @@
+// Content area
+
+section.content {
+
+	display: inline-block;
+	background: $primary-bg;
+	line-height: rhythm(2);
+	// width: 100%;
+	width: 100%;
+	float: left;
+
+	@include breakpoint($pico) {
+		width: 100%; float: none; clear: both;
+	}
+
+	// .diazo-content & {
+	// 	@include background-image(linear-gradient(left, $med-background, $med-background $leftcol-width, $primary-bg $leftcol-width, $primary-bg 100%));
+	// }
+
+	iframe {
+		width: 100%; min-height: 1200px; min-width: 320px;
+	
+		@include breakpoint($nano) {min-width: 40px;}
+		@include breakpoint($micro) {min-width: 575px;}
+		@include breakpoint($milli) {min-width: 675px;}
+		@include breakpoint($centi) {min-width: 750px;}
+		@include breakpoint($deci) {min-width: 690px;}
+		@include breakpoint($kilo) {min-width: 790px;}
+		@include breakpoint($mega) {min-width: 1000px;}
+	}
+
+	p, li, td, fieldset, dl {
+		@include adjust-font-size-to(15px);
+		margin: rhythm(1) 0 rhythm(1);
+
+		p, li, td, fieldset, dl,
+		h1, h2, h3, h4, h5, h6 {
+			font-size: 1em;
+		}
+	}
+
+	h1.documentFirstHeading {clear: both;}
+
+	li {
+		display: inline;
+		margin: rhythm(1/4) 0 rhythm(1/2) 1em;
+	}
+
+	#content-core li, .portletItem li {
+		display: list-item;
+		list-style: square;
+	}
+
+	.callout a {
+		background: transparentize(#fff,0.35);
+		padding: 0.5em 0.5em 0.5em 1.25em;
+		@include border-radius(8px);
+		display: block;
+		@include arrowd($sarep-uno, 18px, left);
+		line-height: 1em;
+	}
+
+	article {
+		background: $primary-bg;
+		padding: rhythm(2) 7em rhythm(3) 4em;
+		max-width: $rightcol-width;
+		display: inline-block;
+		float: left;
+
+		@include breakpoint($pico) {max-width: 100%; padding: 1em 2em;}
+		@include breakpoint($centi) {max-width: 80%; padding: 1em 6em;}
+		@include breakpoint($deci) {max-width: $rightcol-width; padding: rhythm(2) 7em rhythm(3) 4em;}
+
+		.template-document-fullwidth_view &, .template-atct_edit & {max-width: 90%;}
+
+		#content-core ul.columns {
+			@extend ul.navlist;
+
+			li {
+				margin: 0 1% 2em 0; 
+				vertical-align: top;
+				text-align: left;
+
+				img {display: block; width: 90%; margin-bottom: 1em;}
+			}
+
+			&.four li {
+				width: 100%;
+
+				@include breakpoint($micro) {width: 48%;}
+				@include breakpoint($hecto) {width: 23%;}
+			}
+			&.three li {
+				width: 100%;
+
+				@include breakpoint($micro) {width: 48%;}
+				@include breakpoint($hecto) {width: 33%;}
+			}
+			&.two li {
+				width: 100%;
+
+				@include breakpoint($micro) {width: 48%;}
+			}
+		}
+
+		object {max-width: 95%;}
+
+		div.documentDescription {
+			@include adjust-font-size-to(18px);
+		}
+
+		.portfolio {
+			background: transparentize(#fff,0.35);
+			padding: 0.5em 1em 0.5em 2em;
+			@include border-radius(8px);
+		}
+	}
+
+	section.categories {
+		display: inline-block;
+		max-width: 100%;
+		vertical-align: top;
+		padding: rhythm(4) 7em rhythm(3) 4em;
+
+		@include breakpoint($centi) {max-width: 100 - $rightcol-width;}
+
+		span {
+			display: block;
+			font-size: 1.25em;
+		}
+
+		ul {
+			margin-top: 1em;
+		}
+
+		li {
+			display: list-item;
+			margin-left: 0;
+
+			a {
+				display: block;
+			}
+		}
+	}
+
+	.portletsbelowcontent {
+		// background: $primary-bg;
+		padding: rhythm(2) 7em rhythm(3) 4em;
+		max-width: 100%;
+		display: inline-block;
+		float: left;
+		width: 100%;
+
+		@include breakpoint($pico) {max-width: 100%; padding: 1em 2em;}
+		@include breakpoint($centi) {max-width: 80%; padding: 1em 6em;}
+		@include breakpoint($deci) {max-width: 100%; padding: rhythm(2) 7em rhythm(3) 4em;}
+
+		.portlet {
+			width: 50%;
+			float: left; 
+			vertical-align: top;
+		}
+	}
+
+}  // End section.content
+
+
+
+
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+
+    <!--Head-->
+    <copy css:content="html" css:theme="html" attributes="lang dir" />
+    <copy css:content="head base" css:theme="head base" />
+    <replace css:content="head title" css:theme="head title" />
+    <before css:content="head style, head link, head script, head meta" css:theme-children="head" />
+
+    <!--Favicons-->
+    
+
+    <!--Content-->
+    <theme href="index.html" css:if-content=".section-front-page #visual-portal-wrapper" />
+    <theme href="index.html" css:if-content=".subsection-front-page #visual-portal-wrapper" />
+    <theme href="focus.html" css:if-content=".portaltype-focus #visual-portal-wrapper" />
+    <theme href="content.html" css:if-content="#visual-portal-wrapper" />
+
+    <merge attributes="class" css:content="body" css:theme="body" />
+    <copy attributes="id dir" css:content="body" css:theme="body" />
+
+    <replace css:content="#portal-logo a" css:theme="header h1 a" />
+
+    <!--Nav-->
+    <copy css:content-children=".portlet-static-asi-nav" css:theme="header .mainnav" />
+    <copy css:content-children=".portlet-static-subtitle" css:theme=".leftcol .subtitle" />
+
+    <copy css:content-children=".portletNavigationTree ul.navTreeLevel0" css:theme=".leftnav nav ul" />
+
+    <copy css:theme=".diazo-index div.feature" css:content=".portlet-static-slideshow" />
+    <copy css:theme=".diazo-index section.content .cta" css:content=".portlet-static-cta" />
+    <copy css:theme=".diazo-index div.multimedia" css:content=".portlet-static-multimedia" />
+
+    <copy css:theme=".content article" css:content-children="#content"/>
+    <copy css:theme=".nondex .categories li a" css:content="#category a.link-category" />
+    <prepend css:content="#edit-bar" css:theme=".content article" />
+
+    <!--Portlets-->
+    <replace css:content="#mp-menu" css:theme="div.mp-menu-standin" />
+    <copy css:content="#viewlet-below-content .portlet" css:theme=".portletsbelowcontent" />
+
+    <!--Focus-->
+    <copy css:theme=".dex .categories span" css:content="#form-widgets-subjects span" />
+    <replace css:theme=".dex .splashimg img" css:content="#form-widgets-splash img" />
+
+    <!--Footer-->
+    <replace css:content=".portlet-static-footer-contact" css:theme="footer .footer-contact" />
+    <replace css:content=".portlet-static-footer-about" css:theme="footer .about" />
+    <replace css:content=".portlet-static-footer-programs" css:theme="footer .programs" />
+    <replace css:content=".portlet-static-footer-sitemap" css:theme="footer .sitemap" />
+
+</rules>

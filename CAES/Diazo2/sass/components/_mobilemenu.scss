@@ -3,6 +3,22 @@
 @import "mpmenu/*.png";
 @include all-mpmenu-sprites; 
 
+// If you need to change the sprite (i.e. add a new icon)
+// re-include line 3 & 4 above, and hide line 13-20 below. 
+// Then once SASS recompiles, find the new line that matches 
+// the below, put it there, and comment out line 3 & 4 again.
+// Firefox can't load the icons when the background-image URL is
+// url('/img/whatevs') So it needs to be switched to url(../img/whatevs)
+
+.mpmenu-sprite,.mpmenu-flag,.mpmenu-flask,
+.mpmenu-globe,.mpmenu-heart,.mpmenu-home,
+.mpmenu-info,.mpmenu-left,.mpmenu-news,
+.mpmenu-right,.mpmenu-star,.mpmenu-users,
+.mpmenu-right:after,.mp-menu ul li.mpmenu-left:before {
+	background-image: url(../img/mpmenu-s0733c5c654.png);
+	background-repeat:no-repeat;
+}
+
 .diazoed .portlet-static-mpnav {display: block;}
 
 

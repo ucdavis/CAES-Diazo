@@ -1,0 +1,17 @@
+// Regions
+// Page regions, named after their class and role names.
+// i.e. Banner, navigation, etc.
+
+// If you want more separation, you can set up an include per region, i.e.
+// @import 'region/banner';		// and then add region/_banner.scss 
+
+
+@import 'region/header'; 
+@import 'region/subtitle'; 
+@import 'region/leftnav'; 
+@import 'region/feature'; 
+@import 'region/content'; 
+@import 'region/footer'; 
+
+@import 'region/index';
+

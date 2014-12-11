@@ -1,0 +1,16 @@
+// Fancy fancy box
+
+.fancybox-overlay {background: rgba(38,38,38,0.75);}
+.fancybox-custom .fancybox-skin {@include box-shadow(0 0 50px #222);}
+
+.fancybox-title-float-wrap {
+	width: 100%;
+
+	.child {
+		text-align: left;
+		white-space: normal;
+		width: 100%;
+	}
+}
+
+.fancybox-nav span {visibility: visible;}

@@ -1,0 +1,64 @@
+// Megamenu styles
+
+div.megamenu {
+	@include opacity(0);
+	visibility: hidden;
+	@include transition(all 0.4s ease-in-out);
+
+	position: fixed;
+	top: 30px; left: 0px; 
+	z-index: 500;
+	padding: 1.5em 2em;
+
+	background: rgba(255,255,255,0.9);
+	width: $rightcol-width;
+	text-transform: none;
+	letter-spacing: 0px;
+
+	li {
+		width: 33%;
+		float: left;
+		text-align: left;
+		padding: 1em 1.5em;
+		line-height: normal;
+
+		a {padding: 0;}
+
+		a.thumb {
+			float: left; vertical-align: top;
+			width: $leftcol-width;
+			padding-top: 0.75rem;
+		}
+		div.text {
+			float: right; vertical-align: top;
+			width: $rightcol-width;
+			padding: 0 0 0 1em;
+
+			a {
+				font-family: $futura;
+				font-weight: $bold;
+				font-size: 2.1rem;
+				line-height: 2.4rem;
+			}
+			p {
+				font-family: $cabin;
+				font-size: 1.2rem;
+				line-height: 1.8rem;
+				margin: 0;
+			}
+		}
+
+		&.sarep div.text a {color: #ddb307}
+		&.rr div.text a {color: #608da2}
+		&.sf div.text a {color: #b52126}
+		&.infas div.text a {color: #ab6865}
+		&.safs div.text a {color: #d6543b}
+		&.research div.text a {color: #473f65}
+	}
+}
+
+section.mainnav nav li:hover > div.megamenu {
+	@include opacity(1);
+	visibility: visible;
+	@include transition(all 0.4s ease-in-out);
+}

@@ -1,0 +1,89 @@
+
+// Foundation
+// Styles for setting up the structure of the entire website
+
+// Normalize gets pulled in Bootstrap
+// @import 'normalize';
+
+// Border-box-sizing
+@import 'vendor/border-box-sizing';
+@include establish-baseline;
+
+
+// Base typography
+html {
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+}
+body {
+	// background: url("../css-img/bg.jpg") $light-background fixed no-repeat;
+	// background-size: cover;
+	background-color:$primary-bg;
+	color: $body-text; 
+	font-family: $cabin;
+	// font-size: 1.2rem;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: $futura;
+	font-weight: heavy; 
+	color: $header-text;
+}
+
+h1, .h1 {
+	@include adjust-font-size-to(30px);
+	margin: rhythm(1.5,30px) 0 rhythm(0,30px);
+}
+h2, .h2 {
+	@include adjust-font-size-to(28px);
+	margin: rhythm(1.5,28px) 0 rhythm(0,28px);
+}
+h3, .h3 {
+	@include adjust-font-size-to(24px);
+	margin: rhythm(1.5,24px) 0 rhythm(0,24px);
+}
+h4, .h4 {
+	@include adjust-font-size-to(20px);
+	margin: rhythm(1.5,20px) 0 rhythm(0,20px);
+}
+h5, h6,
+.h5, .h6 {
+	@include adjust-font-size-to(15px);
+	margin: rhythm(1,15px) 0 rhythm(0,15px);
+}
+
+li {display: list-item;}
+
+img {max-width: 100%; height: auto;}
+
+p.footer {
+	text-align: right;
+}
+
+.clear {@include clearfix;}
+
+
+// Base CSS 
+* {
+	@include transformers;
+}
+body {
+	// min-width: 1100px;
+}
+
+.leftcol {
+	width: $leftcol-width;
+	float: left;
+
+	@include breakpoint($pico) {width: 100%; float: none;}
+	@include breakpoint($centi) {width: $leftcol-width; float: left;}
+}
+.rightcol {
+	@include breakpoint($pico) {width: 100%; float: none;}
+	@include breakpoint($deci) {width: $rightcol-width; float: left;}
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+

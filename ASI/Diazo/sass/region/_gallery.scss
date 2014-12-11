@@ -1,0 +1,58 @@
+// Gallery
+
+.subsection-gallery {
+	section.content {
+		aside {display: none;}
+		article {
+			width: 100%; max-width: 100%;
+		}
+	}
+
+	.gallery {
+		.nivoSlider {
+			max-width: 65.803%;
+			float: left;
+			min-height: 800px;
+		}
+		img {max-width: 95%;}
+
+		.nivo-thumbs-enabled {
+			max-width: 33.458%;
+			float: left;
+
+			a.nivo-control {
+				width: 23%; 
+				display: inline-block; 
+				max-height: 90px; 
+				overflow: hidden;
+			}
+			img {
+				max-width: 100%; 
+				opacity: 0.5;
+			}
+			a:hover.nivo-control img,
+			a.nivo-control.active img {
+				opacity: 1;
+			}
+			a.nivo-control.active img {
+				border: 2px solid $sub-link;
+			}
+		}
+	}
+
+	.portletswap {
+		max-width: 33.458%;
+		float: left;
+	}
+
+	.portlet-static-navigation {
+		max-width: 33.458%;
+		width: 100%;
+		float: right;
+	}
+
+	// ul.nav, .portlet-static-navigation ul {
+	// 	float: right;
+	// }
+
+}

@@ -156,7 +156,7 @@ div.portlet-static-nivo {
 		.box.col4.gold {background-color: #fff;}
 
 		.box.col2 p.aboutacademics {font-size: 92%;}
-		.box .col2 .left .masonry-brick {font-size: 115%;}
+		// .box .col2 .intro .masonry-brick {font-size: 115%;}
 
 	} // End .main .news
 	.majorcaes {
@@ -199,6 +199,12 @@ div.portlet-static-nivo {
 		text-align: center; 
 		// background: url(../img/sprite-admin.png) no-repeat -33.3333% -15px;
 		@include uppercased(1px);
+
+		img.svg {
+			display: block;
+			margin: 0 auto 1em;
+			width: 54px; height: 54px;
+		}
 
 		svg {
 			display: block;

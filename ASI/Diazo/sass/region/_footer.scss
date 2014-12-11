@@ -1,0 +1,105 @@
+// Footer styles
+
+.diazoed .portlet-static-footer-contact, .diazoed .portlet-static-footer-about, 
+.diazoed .portlet-static-footer-programs, .diazoed .portlet-static-footer-sitemap {display: block;}
+
+footer {
+	clear: both;
+	color: #404040;
+	background: $secondary-bg;
+	margin-top: 20px;
+	padding: 30px 0 10px;
+	margin-top: -3px;
+	@include adjust-font-size-to(15px);
+
+	h1, h2, h3, h4, h5, h6 {
+		border-bottom: 1px solid #404040;
+		margin-bottom: 5px;
+		padding-bottom: 5px;
+		padding-top: 3px;
+		font-size: 0.8em;
+		font-weight: $bold;
+	}
+
+	h5 {
+		margin-top: 7.5px;
+		padding-top: 0;
+	}
+
+	p {
+		color: #404040; 
+		margin-bottom: 1em;
+		font-size: 0.9em;
+		em, strong {color: #404040;}
+	}
+
+	ul {padding-left: 0; margin-bottom: 1em;}
+
+	a:hover {color: $sub-link;}
+
+	img.sarep {
+		display: none;
+		max-width: 33%;
+		vertical-align: middle;
+		margin-top: 1em;
+
+		&.anr {max-width: 65%;}
+
+		.section-sarep & {display: inline;}
+	}
+
+	.container {
+		max-width: 100%;
+		margin: 0px auto;
+		width: 96%;
+
+		@include breakpoint($pico) {}
+
+		section, div.portletStaticText {
+			width: 100%;
+			clear: both;
+			padding: 10px;
+
+			@include breakpoint($milli) {width: 50%; padding: 10px 2% 10px 10px; clear: none; float: left;}
+			@include breakpoint($centi) {width: 25%;}
+
+			&.footer-contact, &.portlet-static-footer-contact {
+				padding-top: 14px;
+			}
+
+			&.programs, &.portlet-static-footer-programs {
+				width: 100%;
+
+				@include breakpoint($milli) {width: 50%;}
+				@include breakpoint($centi) {width: 15%;}
+
+				li a {
+					padding-bottom: 2px;
+					font-size: 1.35em;
+				}
+			}
+			&.sitemap, &.portlet-static-footer-sitemap {
+				padding-right: 0;
+				width: 100%;
+
+				@include breakpoint($milli) {width: 100%;}
+				@include breakpoint($centi) {width: 30%;}
+			}
+
+			li {list-style: none;}
+		} // End footer .container .section
+	} // End footer .container
+
+	.portlet-static-footer-contact img {
+		position: relative;
+		left: 0px;
+		// @include breakpoint($pico) {left: -50px;}
+	}
+	.portlet-static-footer-programs li, .programs li {font-size: 0.8em;}
+
+	.portlet-static-footer-sitemap li, .sitemap li {
+		font-size: 0.85em;
+		width: 45%; margin-right: 4%; 
+		@include inline-block(top); vertical-align: top;
+	}
+} // End footer

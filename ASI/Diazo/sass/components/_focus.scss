@@ -1,0 +1,15 @@
+// Focus dexterity type
+
+// Positions uploaded dexterity image behind the content (a la a background image)
+.splashimg img {
+	display: block; 
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	position: fixed;
+}
+
+.dex #formfield-form-widgets-subjects, .dex #formfield-form-widgets-splash,
+.dex #folder-listing, #formfield-form-widgets-body label {display: none;}

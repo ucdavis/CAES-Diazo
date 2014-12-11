@@ -13,6 +13,25 @@
 	border-bottom: 1px solid #fff;
 	height: auto; width: 100%; /* #TODO - stretches image and weird crop */
 	overflow: hidden;
+
+	.template-feature_view &, .portaltype-center &,
+	.portaltype-department &, .portaltype-club &,
+	.portaltype-major & {
+		img {
+			width: 100%; height: auto;
+
+			left: -75%;
+
+			@include breakpoint($lil) {left: -50%;}
+			@include breakpoint($small) {left: 0;}
+		}
+
+		.static.text .spotlighttext {
+			bottom: 60px;
+
+			@include breakpoint($gigantor) {bottom: 0;}
+		}
+	}
 }
 .slider {
 	width: 100%; /* setting to 1190px leaves black bars on right and left */

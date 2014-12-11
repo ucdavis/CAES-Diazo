@@ -34,6 +34,7 @@ dl.captioned dt img,
 .template-haystack .search-results img {
 	@include img-border;
 	max-width: 100%;
+	height: auto !important;
 }
 #content img.noframe {
 	border: 0px none #fff !important; 
@@ -49,6 +50,9 @@ dl.fullright {
 	@include breakpoint($medium) {width: auto !important;}
 }
 
+img.none-respo {
+	height:auto;
+}
 
 // SVG Styles
 
