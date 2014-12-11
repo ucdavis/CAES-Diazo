@@ -1374,10 +1374,9 @@ ul#nav li:hover ul.submenu {
 p.donate-btn {
 	margin-top: 10px;
 }
-table.responsive th, table.responsive td {
-	display:inline-block;
+.image_float img {
+	margin: 20px;
 }
-
 /*
 li#portaltab-news ul.submenu {
 	width:70%;

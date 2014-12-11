@@ -54,7 +54,7 @@
 
     <!--Spotlight -->
     <copy css:content=".portlet-static-connect" css:theme="#slleft" />
-    <copy css:content=".portlet-static-spotlightnews" css:theme="#slright" />
+    <copy css:content=".portlet-static-events-at-a-glance" css:theme="#slright" />
 
     <!-- News on front page -->
     <strip css:content="dl.portletNews" />

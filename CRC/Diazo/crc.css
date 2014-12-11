@@ -45,7 +45,9 @@ h3 {
 	font-weight: 600;
 	letter-spacing: .5px;
 }
-
+h3 a {
+	color:#c79900;
+}
 h4 /* footer header */ {
 	font-size: 1.4em;
 	color:#ffffff;
@@ -85,13 +87,13 @@ p {
 	font-weight: 400;
 }
 .documentDescription {
-	font-size:1.5em;
+	font-size:1.8em;
 	color:#002855;
-	line-height:1.5em;
+	line-height:1.6em;
 	margin-bottom:0px;
 	font-family: "futura-pt",sans-serif;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 400;
 }
 #main_content p {
 	margin-bottom: 10px;
@@ -326,7 +328,7 @@ img.tileImage {
     transition-duration: .05s;
     transition-timing-function: ease-out;
 
-  height: 190px;
+  height: 219px;
   border-bottom:3px solid #d9aa01;
 
 }
@@ -539,12 +541,15 @@ li.fb a:hover {
 	height:287px;
 	background-color:#ffffff;
 	border-bottom: 3px solid #042b58;
-	
+	margin-bottom:20px;
+}
+.template-withslider_view #slider {
+	display:block;
 }
 .section-front-page #slider {
 	display: block;
 }
-
+.section-our
 h1#parent-fieldname-title {
 	background-color: #022a56;
     color: #FFFFFF;
@@ -1155,7 +1160,9 @@ span.slidedate {
 	display: none;
 }
 
-
+.template-withslider_view img.newsImage {
+	display:none;
+}
 /* 
 
 ---------------------||||||||| EVENTsection |||||||||-----
@@ -1813,7 +1820,7 @@ table.dataTable tr.odd {
 	margin-top: -40px;
 }
 #cceprightcol {
-	width:27%;
+	width:28%;
 	float:right;
 	height: auto;
 	background-color: #E5E9EF;

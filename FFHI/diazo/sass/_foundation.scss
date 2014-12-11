@@ -1,0 +1,479 @@
+
+// Foundation
+// Styles for setting up the structure of the entire website
+
+@import 'normalize';
+
+// Border-box-sizing
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+html {
+	font-size:10px;
+	-webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    line-height:1.5;
+    @include breakpoint(tablet) {
+	    font-size:8px;
+	}
+	@include breakpoint(mobile) {
+	    font-size:7px;
+	}
+}
+// Base typography
+h1, h2, h3, h4, h5, h6 {
+	font-family:$serif;
+	letter-spacing: .010em;
+	color:$primary-color;
+	line-height:1.2em;
+}
+h1 {
+	font-size: 3.2rem;
+}
+h2 {
+	font-size: 2.6rem;
+}
+h3 {
+	font-size: 2.4rem;
+}
+h4 {
+	font-size: 2rem;
+	color: $light-gray;
+}
+h5 {
+	font-size: $h5-font-size;
+}
+h6 {
+	font-size: $h5-font-size;
+}
+p {
+	font-family:$sans-serif;
+	line-height:1.625;
+	letter-spacing:.025rem;
+	font-size:1.6rem;
+	color:$dark-gray;
+	margin-top:.4em;
+}
+
+li {
+	font-family:$sans-serif;
+	font-size:$base-font-size;
+	color:$dark-gray;	
+}
+ul.twocol li {
+	display: inline-block !important;
+	width: 49%;
+	vertical-align: top;
+}
+#content .documentDescription, #content #description /* summary */ {
+	font-family:$sans-serif;
+	color:$light-gray;
+	font-size: 18px;
+	font-weight:100;
+	padding:8px 0px 9px 0px;
+	line-height:1.3em;
+}
+#content div.documentByLine, span.documentByLine /* document date - by - rights */ {
+	font-family:$sans-serif;
+	color: $primary-color;
+	font-size:14px;
+	margin-top:5px;
+    display: none;
+}
+dt.portletHeader /* portlet header */ {
+	font-family:$sans-serif;
+	color:$secondary-color;
+	font-size:1.4rem;
+	text-transform: uppercase;
+	line-height: 1.1em;
+	letter-spacing: .5px;
+	margin-top:6px;
+	a {
+		color:#fff;
+	}
+	a:hover {
+		color:#f5f5f5;
+	}
+}
+span.code {
+	background-color: #eee;
+	font-family: $monospace;
+	padding: 0 0.1em;
+	font-size: 0.8em;
+}
+#portal-breadcrumbs {
+	font-size:1.4rem;
+	color:$middle-gray;
+}
+/* anchor styles */
+a:link, a:visited {
+	color:$primary-color;
+}
+a:hover, a:active {
+	color:$secondary-color;
+}
+
+header{
+	a:link, a:visited{
+		color:#fff;
+	}
+	a:hover {
+		color:$secondary-color;
+	}
+}
+footer {
+	a:link, a:visited {
+		color:$primary-color;
+	}
+	a:hover {
+		color:$secondary-color;
+	}
+}
+
+#content {
+	p a:link, p a:visited {
+		color:$primary-color;
+		text-decoration:underline;
+	}
+	p a:hover {
+		color:$secondary-color !important;
+	}
+	ul li a:link, li a:visited {
+		color:$primary-color;
+	}
+	ul li a:hover {
+		color:$secondary-color;
+	}
+	h2 a:link, h2 a:visited {
+		color:$primary-color;
+	}
+	h2 a:hover {
+		color:$secondary-color !important;
+	}
+	h3 a:link, h2 a:visited {
+		color:$primary-color;
+	}
+	h3 a:hover {
+		color:$secondary-color !important;
+	}
+}
+
+//
+body {
+	margin: 0 auto; 
+	min-width: 270px;
+	position: relative;
+	font-family:$sans-serif;
+}
+img {
+	max-width:100%;
+	border: none !important;
+}
+
+//header 
+
+header {
+	background-color:$primary-color;
+	// background-image:url("../images/stardust.png");
+	height:auto;
+	width:100%;
+	position: relative;
+}
+.header_contents {
+	@include outer-container;
+	padding-top: 1.2em;
+	padding-bottom: .6em;
+}
+.lefthead{
+	width:70%; /*70% */
+	display:inline-block;
+	margin-top:15px;
+	h1 {
+		margin-top:0px;
+		margin-bottom:10px;
+	}
+	p {
+		font-style: italic;
+		color:#fff;
+		margin-top:-10px;
+		margin-bottom:10px;
+	}
+}
+
+.righthead{
+	width:20%; /* 20%*/
+	display:inline-block;
+	float:right;
+	text-align:right;
+	vertical-align: top;
+	margin-bottom:10px;
+	a,p {
+		color:#fff;
+		text-decoration:none;
+		margin: .4em 0 1em 0;
+	}
+	a:hover {
+		color:$secondary-color;
+	}
+	.topnav {
+		display:inline-block;
+	}
+	img {
+		float:right;
+		margin-bottom:5px;
+	}
+}
+
+
+// slider
+#banner {
+	border-bottom:5px solid $primary-color;
+	margin:0 auto;
+	text-align:center;
+	background-color:#fff;
+	p {
+		margin-top:0px;
+	}
+}
+.slider-wrapper {
+	overflow: hidden;
+	max-width: 2100px;
+	margin: 0 auto;
+}
+
+
+// main col
+#totalcontent {
+	@include outer-container;
+}
+
+.maincol {
+	// border-bottom:solid 1px $borders;
+	@include contentbox;
+	padding-left:0px;
+	display:inline-block;
+    h1 {
+		margin-bottom:0px;
+	}
+}
+#content {
+	margin: 0px;
+	ul {
+		list-style-type:square;
+	}
+	a:link, dl.portlet a:link {
+		border-bottom: none;
+	}
+}
+
+.section-front-page h1.documentFirstHeading, .section-front-page .documentDescription {
+	display: none;
+}
+#edit-bar {
+	font-size: 100%;
+}
+
+
+// homepage columns
+
+.frontportlets {
+	height:auto;
+	width:100%;
+
+}
+.frontportlets_contents {
+	@include outer-container;
+	padding-top: 1.2em;
+	padding-bottom: 3.2em;
+	width:82%;
+}
+.frontmain {
+	@include transitiontime;
+	width:69.3%;
+	display:inline-block;
+	vertical-align: top;
+	margin-right:1%;
+	dd.portletItem{
+		@include contentbox;
+		margin-top:0px;
+		padding-top:.5em;
+	}
+	img {
+		// float:left;
+		padding-right: 3%;
+		padding-bottom:10px;
+	}
+}
+.frontaside {
+	@include transitiontime;
+	width:29%;
+	float:right;
+	display:inline-block;
+	vertical-align:top;
+	.portletWrapper {
+		@include contentbox;
+	}
+}
+
+// sidebar 
+
+.portlet_column {
+	display: inline-block;
+	width:30%; /* 24.3 */
+    vertical-align: top;
+    padding:1em;
+}
+.portletstatic {
+	ul {
+		margin-left: 10%;
+		margin-top: 2px;
+	}
+	li {
+		display: list-item;
+		list-style: disc;
+		padding:.4rem;
+	}
+	a:link, .portlet_column a:visited {
+		color:$primary-color;
+	}
+	a:hover {
+		color:$secondary-color;
+	}
+	dd.portletItem {
+		margin-bottom: 10px;
+	}
+	.portletWrapper {
+		margin-bottom:30px;
+	}
+}
+
+
+
+
+// footer
+
+.scrollup {
+    width:40px;
+    height:40px;
+    opacity:0.3;
+    position:fixed;
+    bottom:50px;
+    right:2%;
+    display:none;
+    text-indent:-9999px;
+    background:url('../images/icon_top.png') no-repeat;}
+
+footer {
+	height:auto;
+
+	width:100%;
+	padding: 1.5em 0px 2em 0px;
+	clear:both;
+}
+#footer_contents {
+	border-top:solid 2px $primary-color;
+	padding-top:10px;
+	@include outer-container;
+	h6 {
+		padding-bottom: .35em;
+		font-size:20px;
+	}
+	ul li {
+		display: list-item;
+		list-style: square;
+	    vertical-align: top;
+	    color:#fff;
+	    margin-left:4%;
+	}
+}
+.bottomcol {
+	display:inline-block;
+	vertical-align:top;
+	width:23%;
+	margin-right:1%;
+	height:auto;
+	vertical-align: top;
+	clear:both;
+	&.last {
+		margin-right: 0px;
+	}
+	p, h6, li, ol {
+		color:$primary-color;
+	}
+}
+
+
+
+/* ---- Template: One Column; --- */
+
+.template-onecol_view .maincol, .template-fg_base_view_p3 .portaltype-formfolder .maincol {
+	width:100%;
+	display: inline-block;
+	vertical-align: top;
+}
+.portaltype-formfolder .maincol {
+	width:100% !important;
+}
+.template-onecol_view .portlet_column, .portaltype-formfolder .portlet_column {
+	display:none;
+}
+
+
+
+/* ---- Templates; --- */
+
+//homepage call to actions view w/ 3 col 
+.template-hp-ctafeed_view {
+	.maincol {
+		width:100%;
+		display:block;
+		margin:0 auto;
+		margin-top:20px;
+	}
+	.frontportlets_contents {
+		padding-top:0px;
+	}
+	.frontmain {
+		width:100%;
+	}
+	.frontaside {
+		display:none;
+	}
+	.BelowPortletManager1, .BelowPortletManager2, .BelowPortletManager3 {
+		margin-top:13px;
+	}
+}
+
+
+//homepage two col feed
+.template-hp-twocolfeed_view .maincol {
+	display:none;
+}
+
+// default
+.template-fg_base_view_p3 .maincol, .template-manage-portlets  .maincol, .template-member_search_form .maincol, .template-file_view .maincol, .template-directory_standard_view .maincol, .template-folder_summary_view .maincol, .template-plone-app-collection-interfaces-icollection .maincol, .template-summary_view .maincol, .template-event_view .maincol, .template-newsitem_view .maincol, .template-standard_view .maincol, .template-twocol_view .maincol {
+	width:66%; /* 75% */
+	margin-right:3%;
+}
+.subsection-news #content-core img {
+	margin-top: 1em;
+	height: auto;
+}
+
+/* individual news item*/
+.newsImageContainer img {
+	margin-top: .5em;
+	height: auto;
+	float:right;
+}
+#content div.newsImageContainer p.discreet {
+	font-family:$sans-serif;
+	width:100%;
+	background-color: rgba(250, 250, 250, .01);
+	color:#A3A3A3;
+	top:0px;
+	padding:0px;
+	font-size: 1.2em;
+}
+
+

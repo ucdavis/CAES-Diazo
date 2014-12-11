@@ -1,0 +1,296 @@
+// Regions
+// Page regions, named after their class and role names.
+// i.e. Banner, navigation, etc.
+
+// If you want more separation, you can set up an include per region, i.e.
+// @include 'region/banner';		// and then add region/_banner.scss
+.breadandsearch {
+	border-bottom:1px solid $borders;
+	margin-top:2%;
+}
+.bread {
+	width:60%;
+	display:inline-block;
+	vertical-align:top;
+	padding-bottom:1%;
+}
+.searchbar {
+	width:38%;
+	display:inline-block;
+	vertical-align:bottom;
+	margin-bottom:-1px;
+}
+input.searchButton{
+		background: url("../images/icon-search.svg") no-repeat scroll center center transparent;
+	    border: 0 none;
+	    cursor: pointer;
+	    display: inline-block;
+	    height: 36px;
+	    padding: 3px;
+	    vertical-align: top;
+	    width: 36px;
+	    background-position:center 10px;
+	}
+#portal-searchbox {
+	clear:none;
+	float:none;
+	font-size: 100%;
+	text-align: right;
+	margin:0px;
+}
+#searchGadget, .LSBox input.searchButton {
+	color:#002855;
+}
+input.searchField {
+    -moz-appearance: none;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.31);
+    background-color:#fff;
+    border: 1px solid $borders;
+    margin-right: 3px;
+    padding: 5px;
+    color:#333;
+    font-size:16px;
+    box-shadow: none;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    padding-top:7px;
+    padding-bottom:7px;
+    padding-left:10px;
+    .webkit & {
+    	height: 25px;
+    }
+}
+.searchSection {
+	display:none;
+}
+// navigation 
+#nav-toggle {
+	a:link, #nav-toggle a:visited {
+  		color: #fff;
+	}
+	a {
+		display: none;
+		background: url("../images/navopen.png")
+	}
+}
+nav {
+	max-width:1200px;
+	width:100%;
+	margin-top: 11px;
+}
+
+ul#nav {
+	display:inline-block;
+	padding: 0px;
+	width:100%;
+	li a:hover {
+		color: $secondary-color !important;
+	}
+	> li {
+		padding-right:3%;
+		position: relative;
+		display:inline;
+		padding-left: 0px;
+		font-size:20px;
+		a {
+			font-family:$sans-serif;
+			color:#fff;
+			text-decoration:none;
+			font-weight:300;
+		}
+	}
+}
+
+
+ul#nav li:hover ul.submenu {
+	display: block;
+}
+li#portaltab-news ul.submenu {
+	width:70%;
+	li a{
+		padding-right: 3em;
+	}
+}
+ul.submenu {
+	background-color:transparentize($primary-color, .1);
+	width:115%;
+	top:55px;
+	z-index:100000;
+	li {
+		display: block;
+		border-top: solid 1px rgba(255,255,255,.9);
+		padding: 4px 8%;
+	}
+	li:first-child {
+		border-top:none;
+	}
+	li a {
+		color:#fff
+	}
+	a:link, a:visited {
+		color:#fff !important;
+	}
+	a:hover {
+		color:$secondary-color !important;
+	}
+}
+
+
+
+#content .eventDetails {
+	display: none;
+}
+
+.eventdetailsside {
+	display: none;
+}
+.subsection-event-items .eventdetailsside {
+	font-family:$sans-serif;
+	display: inline-block;
+    color: $light-gray;
+	font-size:$base-font-size;
+	line-height:1.5em;
+	color:$dark-gray;
+	margin-top:.4em;
+	padding-bottom:10px;
+	h4 {
+		font-family:$sans-serif;
+		color:$primary-color;
+		text-transform: uppercase;
+		line-height: 1.1em;
+		margin-top: .4em;
+		margin-bottom: .6em;
+		letter-spacing: .5px;
+	}
+}
+
+//breadcrumbers
+
+#portal-breadcrumbs {
+	margin-top:20px;
+	margin-bottom:0px;
+}
+
+// call to actions
+.cta {
+	width:20%;
+	display:inline-block;
+	vertical-align:top;
+	margin-right:6.08%;
+	text-align: center;
+	transition-delay: 0s;
+    transition-duration: 0.25s;
+    transition-property: all;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 0.25s;
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: ease;
+    &.support {
+		margin-right:0px;
+		float: right;
+		}
+	img {
+		padding-bottom:20px;
+	}
+
+}
+
+#content .cta {
+	p a:visited {
+		color:$dark-gray;
+		text-decoration:none;
+	}
+	p a {
+		text-decoration:none;
+	}
+	h2 a {
+		color:$primary-color;
+	}
+	p a:link, p a {
+		color:$dark-gray;
+	}
+	&:hover {
+		p a, h2 a, h2 a:link, h2 a:visited {
+			color:$secondary-color !important;
+		}
+
+	}
+}
+
+// Staff directory
+
+.template-directory_standard_view {
+	.row {
+		position:inherit;
+		float:none;
+	}
+	.position-0, .position-4 {
+		margin-left:0px;
+	}
+	.cell {
+		left:0;
+	}
+	.width-13, .width-3{
+		width:auto;
+	}
+	.width-3 {
+		margin-right:20px;
+	}
+}
+
+//grant section
+
+.grants {
+	margin-bottom:45px;
+	h2 {
+		border-bottom:2px solid $secondary-color;
+		padding-bottom:3px;
+	}
+}
+
+//giving support
+.givingdiv {
+	margin:30px 0px;
+	padding:15px 0px;
+	border-bottom:2px dotted $secondary-color;
+}
+.giving_image {
+	width:30%;
+	display:inline-block;
+	text-align:center;
+	img {
+		border-radius:50%;
+		box-shadow:0 0 0 0.25em #FFFFFF, 0 0 0 .50em $secondary-color;
+	}
+}
+.giving_words {
+	width:48%;
+	display:inline-block;
+	text-align:left;
+	vertical-align:top;
+	padding-top:2rem;
+}
+p.standout {
+	color:#fff;
+	background-color:$primary-color;
+	padding:1rem;
+	width:100%;
+	display:inline-block;
+	a {
+		color:#fff;
+	}
+}
+.portletstatic p.standout a:link, .portletstatic .portlet_column p.standout a:visited {
+	color:$secondary-color;
+	&:hover {
+		color:#fff;
+	}
+}
+p.standout_gold {
+	color:#fff;
+	background-color:$secondary-color;
+	padding:1rem;
+	width:100%;
+	display:inline-block;
+}

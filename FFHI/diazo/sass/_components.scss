@@ -1,0 +1,147 @@
+// Components
+// Modular components and their states. 
+// These pieces should be able to be used anywhere. Things like: icons, buttons, messages, etc.
+
+
+
+//buttons 
+p.greenbutton {
+	font-family: "futura-pt", Futura Std, Futura, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	a:link, a:visited, a {
+		text-decoration:none;
+	}
+}
+.template-plone-app-collection-interfaces-icollection p.greenbutton {
+	font-size: 1.1em;
+	color:#fff;
+}
+p.greenbutton a:link, p.greenbutton a:visited, p.greenbutton a:active {
+	color:#fff;
+}
+#content p.greenbutton a:link, #content p.greenbutton a:visited {
+	color:#fff;
+	width:25%;
+	background-color: $primary-color;
+	text-decoration:none;
+	padding: .35em .7em;
+}
+.webkit #content p.greenbutton a:link, .webkit #content p.greenbutton a:visited {
+	padding: .45em;
+}
+#content p.greenbutton a:hover {
+	color:$secondary-color !important;
+}
+.portletstatic p.greenbutton {
+	margin-top: 1em;
+}
+.portletstatic p.greenbutton a:link {
+	color:#fff;
+	width:25%;
+	background-color: $primary-color;
+	padding: .35em .7em;
+	font-size: .9em;
+}
+.portletstatic p.greenbutton a:hover {
+	color:#AAAF4C!important;
+}
+.frontevents p.greenbutton {
+	margin-top: 1em;
+}
+.frontevents p.greenbutton a:link {
+	color:#fff;
+	width:25%;
+	background-color: $primary-color;
+	padding: .35em;
+	font-size: .9em;
+}
+.frontevents p.greenbutton a:hover {
+	color:#AAAF4C!important;
+}
+.frontsupport p.greenbutton {
+	margin-top: 1em;
+	float:right;
+}
+.frontsupport p.greenbutton a:link {
+	color:#fff;
+	width:25%;
+	background-color: $primary-color;
+	padding: .35em .5em ;
+}
+.frontsupport p.greenbutton a:hover {
+	color:#AAAF4C!important;
+}
+.portlet_column .portletstatic p.greenbutton {
+	margin-top: 1em;
+	float:right;
+}
+.portlet_column .portletstatic p.greenbutton a:link {
+	color:#fff;
+	width:25%;
+	background-color: $primary-color;
+	padding: .35em .5em ;
+}
+.portlet_column .portletstatic p.greenbutton a:hover {
+	color:#AAAF4C!important;
+}
+
+//tables
+
+/* ------
+
+tables
+
+------- */
+table.abouttable tbody, table.bordered tbody {
+	padding: 10px;
+}
+
+table.abouttable, table.bordered, table.productstable {
+	padding-bottom: 2.5em;
+    width: 100%;
+}
+table.plain th, table.plain td {
+	font-family: "futura-pt",Futura Std,Futura,Arial,sans-serif;
+    font-style: normal;
+    border-left: none;
+    border-right: none;
+    font-size: 1.2em;
+}
+table.abouttable td, table.bordered td, table.productstable td {
+	color: #282C2D;
+    font-family: "futura-pt",Futura Std,Futura,Arial,sans-serif;
+    font-size: 1.4em;
+    font-style: normal;
+    font-weight: 400;
+    padding: 1.2em;
+    border-top-color: #CACACA;
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+table.abouttable td, table.productstable td{
+	font-size: 1em
+}
+table.abouttable th {
+	color: $primary-color;
+    font-family: "futura-pt",sans-serif;
+    font-size: 1.9em;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 0.75em;
+    margin-bottom: 0.6em;
+    margin-top: 0.4em;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+    padding-top: .5em;
+}
+
+#content table.abouttable {
+	margin-bottom: 2em;
+}
+img.bordered {
+		border-radius:2%;
+		box-shadow:0 0 0 0.25em #FFFFFF, 0 0 0 .50em $secondary-color;
+}
